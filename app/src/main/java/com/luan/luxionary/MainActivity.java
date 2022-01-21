@@ -189,12 +189,12 @@ public class MainActivity extends AppCompatActivity {
         tvCenterImg.setOnClickListener(mClickListener);
 
         // Sound
-        soundEng = MediaPlayer.create(MainActivity.this, R.raw.main_eng);
-        soundFra = MediaPlayer.create(MainActivity.this, R.raw.main_fra);
-        soundDeu = MediaPlayer.create(MainActivity.this, R.raw.main_deu);
-        soundIta = MediaPlayer.create(MainActivity.this, R.raw.main_ita);
-        soundSpa = MediaPlayer.create(MainActivity.this, R.raw.main_spa);
-        soundRus = MediaPlayer.create(MainActivity.this, R.raw.main_rus);
+//        soundEng = MediaPlayer.create(MainActivity.this, R.raw.main_eng);
+//        soundFra = MediaPlayer.create(MainActivity.this, R.raw.main_fra);
+//        soundDeu = MediaPlayer.create(MainActivity.this, R.raw.main_deu);
+//        soundIta = MediaPlayer.create(MainActivity.this, R.raw.main_ita);
+//        soundSpa = MediaPlayer.create(MainActivity.this, R.raw.main_spa);
+//        soundRus = MediaPlayer.create(MainActivity.this, R.raw.main_rus);
 
         // Buttons
         btnEng = (Button) findViewById(R.id.btnEng);
@@ -301,32 +301,32 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btnEng:
                     btnEng.startAnimation(aniTouch);
-                    soundEng.start();
+//                    soundEng.start();
                     pageEng();
                     break;
                 case R.id.btnFra:
                     btnFra.startAnimation(aniTouch);
-                    soundFra.start();
+//                    soundFra.start();
                     pageFra();
                     break;
                 case R.id.btnDeu:
                     btnDeu.startAnimation(aniTouch);
-                    soundDeu.start();
+//                    soundDeu.start();
                     pageDeu();
                     break;
                 case R.id.btnIta:
                     btnIta.startAnimation(aniTouch);
-                    soundIta.start();
+//                    soundIta.start();
                     pageIta();
                     break;
                 case R.id.btnSpa:
                     btnSpa.startAnimation(aniTouch);
-                    soundSpa.start();
+//                    soundSpa.start();
                     pageSpa();
                     break;
                 case R.id.btnRus:
                     btnRus.startAnimation(aniTouch);
-                    soundRus.start();
+//                    soundRus.start();
                     pageRus();
                     break;
                 case R.id.btnSidebar:
@@ -348,15 +348,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
-
-//    @Override
-//    protected void onDestroy() {
-//        super.onDestroy();
-//
-//        // Releasing the memory
-//        soundPool.release();
-//        soundPool = null;
-//    }
 
     // Text Color Animator
 //    private void setThemeAnimation(int fromColor, int toColor) {
