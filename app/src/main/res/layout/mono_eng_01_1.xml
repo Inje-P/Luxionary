@@ -97,62 +97,69 @@
                 <LinearLayout
                     android:id="@+id/layoutTitle"
                     android:layout_width="match_parent"
-                    android:layout_height="105dp"
+                    android:layout_height="100dp"
                     android:orientation="vertical">
 
                     <Space
                         android:layout_width="match_parent"
-                        android:layout_height="15dp"></Space>
+                        android:layout_height="20dp"></Space>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="70dp"
                         android:orientation="horizontal">
 
+                        <Space
+                            android:layout_width="30dp"
+                            android:layout_height="70dp" />
+
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="70dp"
-                            android:orientation="vertical">
+                            android:layout_weight="8">
 
-                            <LinearLayout
+                            <TextView
+                                android:id="@+id/tvTitle"
                                 android:layout_width="match_parent"
-                                android:layout_height="50dp">
-
-                                <TextView
-                                    android:id="@+id/tvTitle1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/pretendard_800"
-                                    android:gravity="center"
-                                    android:text="Alphabet"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="35dp"></TextView>
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp">
-
-                                <TextView
-                                    android:id="@+id/tvTitle2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/pretendard_600"
-                                    android:gravity="center"
-                                    android:text="기본적인 알파벳은 다음과 같아요"
-                                    android:textColor="@color/main_gray"
-                                    android:textSize="15dp"></TextView>
-
-                            </LinearLayout>
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/pretendard_800"
+                                android:gravity="center_vertical"
+                                android:text="Alphabet"
+                                android:textColor="@color/main_text"
+                                android:textSize="30dp"></TextView>
 
                         </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="2">
+
+                            <ImageButton
+                                android:id="@+id/btnPlay"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/custom_ripple_full_eng"
+                                android:fontFamily="@font/pretendard_800"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_play"></ImageButton>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="30dp"
+                            android:layout_height="70dp" />
 
                     </LinearLayout>
 
                     <Space
                         android:layout_width="match_parent"
-                        android:layout_height="15dp"></Space>
+                        android:layout_height="10dp"></Space>
 
                 </LinearLayout>
 
@@ -164,14 +171,13 @@
                     android:orientation="horizontal">
 
                     <Space
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1" />
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="8"
+                        android:layout_weight="1"
                         android:orientation="vertical">
 
                         <!-- 1 -->
@@ -185,39 +191,26 @@
                                 android:id="@+id/tv1a"
                                 android:layout_width="0dp"
                                 android:layout_height="40dp"
-                                android:layout_weight="2"
+                                android:layout_weight="3"
                                 android:fontFamily="@font/nunitosans_900"
-                                android:gravity="center"
+                                android:gravity="center_vertical"
                                 android:stateListAnimator="@null"
                                 android:text="A a"
                                 android:textColor="@color/eng_background"
-                                android:textSize="20dp"></TextView>
+                                android:textSize="25dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv1b"
                                 android:layout_width="0dp"
                                 android:layout_height="40dp"
-                                android:layout_weight="4"
+                                android:layout_weight="7"
                                 android:background="@android:color/transparent"
                                 android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
+                                android:gravity="center_vertical"
                                 android:stateListAnimator="@null"
                                 android:text="animal"
                                 android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv1c"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="4"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="alliance"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
+                                android:textSize="25dp"></TextView>
 
                         </LinearLayout>
 
@@ -233,39 +226,26 @@
                                 android:id="@+id/tv2a"
                                 android:layout_width="0dp"
                                 android:layout_height="40dp"
-                                android:layout_weight="2"
+                                android:layout_weight="3"
                                 android:fontFamily="@font/nunitosans_900"
-                                android:gravity="center"
+                                android:gravity="center_vertical"
                                 android:stateListAnimator="@null"
                                 android:text="B b"
                                 android:textColor="@color/eng_background"
-                                android:textSize="20dp"></TextView>
+                                android:textSize="25dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv2b"
                                 android:layout_width="0dp"
                                 android:layout_height="40dp"
-                                android:layout_weight="4"
+                                android:layout_weight="7"
                                 android:background="@android:color/transparent"
                                 android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
+                                android:gravity="center_vertical"
                                 android:stateListAnimator="@null"
                                 android:text="boring"
                                 android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv2c"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="4"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="breathtaking"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
+                                android:textSize="25dp"></TextView>
 
                         </LinearLayout>
 
@@ -281,39 +261,26 @@
                                 android:id="@+id/tv3a"
                                 android:layout_width="0dp"
                                 android:layout_height="40dp"
-                                android:layout_weight="2"
+                                android:layout_weight="3"
                                 android:fontFamily="@font/nunitosans_900"
-                                android:gravity="center"
+                                android:gravity="center_vertical"
                                 android:stateListAnimator="@null"
                                 android:text="C c"
                                 android:textColor="@color/eng_background"
-                                android:textSize="20dp"></TextView>
+                                android:textSize="25dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv3b"
                                 android:layout_width="0dp"
                                 android:layout_height="40dp"
-                                android:layout_weight="4"
+                                android:layout_weight="7"
                                 android:background="@android:color/transparent"
                                 android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
+                                android:gravity="center_vertical"
                                 android:stateListAnimator="@null"
                                 android:text="coffee"
                                 android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv3c"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="4"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="conglomerate"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
+                                android:textSize="25dp"></TextView>
 
                         </LinearLayout>
 
@@ -329,39 +296,26 @@
                                 android:id="@+id/tv4a"
                                 android:layout_width="0dp"
                                 android:layout_height="40dp"
-                                android:layout_weight="2"
+                                android:layout_weight="3"
                                 android:fontFamily="@font/nunitosans_900"
-                                android:gravity="center"
+                                android:gravity="center_vertical"
                                 android:stateListAnimator="@null"
                                 android:text="D d"
                                 android:textColor="@color/eng_background"
-                                android:textSize="20dp"></TextView>
+                                android:textSize="25dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv4b"
                                 android:layout_width="0dp"
                                 android:layout_height="40dp"
-                                android:layout_weight="4"
+                                android:layout_weight="7"
                                 android:background="@android:color/transparent"
                                 android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
+                                android:gravity="center_vertical"
                                 android:stateListAnimator="@null"
                                 android:text="drawing"
                                 android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv4c"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="4"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="dominence"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
+                                android:textSize="25dp"></TextView>
 
                         </LinearLayout>
 
@@ -1425,9 +1379,8 @@
                     </LinearLayout>
 
                     <Space
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1" />
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent" />
 
                 </LinearLayout>
 

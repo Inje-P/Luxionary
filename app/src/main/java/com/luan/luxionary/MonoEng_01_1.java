@@ -75,12 +75,6 @@ public class MonoEng_01_1 extends AppCompatActivity {
         btnPrev.setOnClickListener(mClickListener);
         btnNext.setOnClickListener(mClickListener);
 
-        // Title
-        tvTitle1 = (TextView) findViewById(R.id.tvTitle1);
-        tvTitle1.setOnClickListener(mClickListener);
-        tvTitle2 = (TextView) findViewById(R.id.tvTitle2);
-
-
 
 
         // Footer
