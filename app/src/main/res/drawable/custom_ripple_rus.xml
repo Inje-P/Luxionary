@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/rus_background"> <!-- Ripple Effect 색상 -->
+
+    <!-- 배경색 -->
+    <item android:id="@+id/ripple_rus">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/main_white"></solid>
+            <corners android:radius="15dp" />
+            <stroke
+                android:width="4dp"
+                android:color="@color/rus_background"></stroke>
+        </shape>
+    </item>
+
+</ripple>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    // Main
+    <color name="main_white">#FFFFFF</color>
+    <color name="main_text">#292929</color>
+    <color name="main_gray">#9B9B9B</color>
+    <color name="main_lightgray">#E8E5E5</color>
+    <color name="warning">#C80D0D</color>
+    <color name="confirmed">#0078BD</color>
+
+    <color name="eng_light">#FF93AD</color>
+    <color name="eng_background">#FF6388</color>
+    <color name="eng_dark">#B83756</color>
+
+    <color name="fra_light">#53D5FF</color>
+    <color name="fra_background">#0FB8EF</color>
+    <color name="fra_dark">#086684</color>
+
+    <color name="deu_light">#FFE098</color>
+    <color name="deu_background">#FFD36B</color>
+    <color name="deu_dark">#CB920C</color>
+
+    <color name="ita_light">#27FFC7</color>
+    <color name="ita_background">#0EDFA9</color>
+    <color name="ita_dark">#08A87F</color>
+
+    <color name="spa_light">#FFBB91</color>
+    <color name="spa_background">#FF9450</color>
+    <color name="spa_dark">#CD5910</color>
+
+    <color name="rus_light">#C2C6FF</color>
+    <color name="rus_background">#9A89FF</color>
+    <color name="rus_dark">#513FBD</color>
+
+    // English
+    <color name="eng_bg">#FFF7F9</color>
+    <color name="eng_main">#FF5D8F</color>
+    <color name="eng_sub">#FFA6C1</color>
+
+    // Français
+    <color name="fra_bg">#F4FAFF</color>
+    <color name="fra_main">#2196F3</color>
+    <color name="fra_sub">#64B5F6</color>
+
+    // Deutsch
+    <color name="deu_bg">#FFFDF6</color>
+    <color name="deu_main">#FFD400</color>
+    <color name="deu_sub">#FFE97F</color>
+
+    // Italiano
+    <color name="ita_bg">#F3FAF7</color>
+    <color name="ita_main">#0EDFA9</color>
+    <color name="ita_sub">#79FAD9</color>
+
+    // Español
+    <color name="spa_bg">#FFFDFB</color>
+    <color name="spa_main">#FF9F1C</color>
+    <color name="spa_sub">#FFBF69</color>
+
+    // Русский
+    <color name="rus_bg">#FCFBFF</color>
+    <color name="rus_main">#755DFF</color>
+    <color name="rus_sub">#BBAFFF</color>
+
+    // Default
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

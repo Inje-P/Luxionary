@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:duration="400"
+        android:drawable="@drawable/gradient_start_rus"></item>
+
+    <item android:duration="400"
+        android:drawable="@drawable/gradient_center_rus"></item>
+
+    <item android:duration="400"
+        android:drawable="@drawable/gradient_end_rus"></item>
+
+    <item android:duration="400"
+        android:drawable="@drawable/gradient_center_rus"></item>
+
+    <item android:duration="400"
+        android:drawable="@drawable/gradient_start_rus"></item>
+
+    <item android:duration="400"
+        android:drawable="@drawable/gradient_center_rus"></item>
+
+</animation-list>

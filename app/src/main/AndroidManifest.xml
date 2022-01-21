@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luan.luxionary">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Luxionary">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".SigninActivity"></activity>
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true">
+
+        </activity>
+        <activity android:name=".AvatarActivity"></activity>
+        <activity android:name=".SignupOkActivity"></activity>
+
+        <activity android:name=".IntroEng"></activity>
+        <activity android:name=".IntroFra"></activity>
+        <activity android:name=".IntroDeu"></activity>
+        <activity android:name=".IntroIta"></activity>
+        <activity android:name=".IntroSpa"></activity>
+        <activity android:name=".IntroRus"></activity>
+
+        <activity android:name=".DateActivity"></activity>
+        <activity android:name=".WelcomeActivity"></activity>
+
+        <activity android:name=".MainEng"></activity>
+        <activity android:name=".MainFra"></activity>
+        <activity android:name=".MainDeu"></activity>
+        <activity android:name=".MainIta"></activity>
+        <activity android:name=".MainSpa"></activity>
+        <activity android:name=".MainRus"></activity>
+
+        <activity android:name=".MonoEng"></activity>
+        <activity android:name=".MonoEng_01_0"></activity>
+        <activity android:name=".MonoEng_01_1"></activity>
+
+        <activity android:name=".MonoFra"></activity>
+        <activity android:name=".MonoFra_01_0"></activity>
+        <activity android:name=".MonoFra_01_1"></activity>
+
+        <activity android:name=".MonoDeu"></activity>
+        <activity android:name=".MonoDeu_01_0"></activity>
+        <activity android:name=".MonoDeu_01_1"></activity>
+
+        <activity android:name=".MonoIta"></activity>
+        <activity android:name=".MonoIta_01_0"></activity>
+        <activity android:name=".MonoIta_01_1"></activity>
+
+        <activity android:name=".MonoSpa"></activity>
+        <activity android:name=".MonoSpa_01_0"></activity>
+        <activity android:name=".MonoSpa_01_1"></activity>
+
+        <activity android:name=".MonoRus"></activity>
+        <activity android:name=".MonoRus_01_0"></activity>
+        <activity android:name=".MonoRus_01_1"></activity>
+
+    </application>
+</manifest>

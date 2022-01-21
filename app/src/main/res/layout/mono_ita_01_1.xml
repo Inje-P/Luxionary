@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_white"
+        tools:context=".MainEng">
+
+        <!-- Menu Bar (Bottom) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_menubar2">
+
+            <!-- Prev -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <ImageButton
+                    android:id="@+id/btnPrev"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    app:srcCompat="@drawable/ic_chevron_left"
+                    android:contentDescription="Prev Button"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"></ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/pretendard_800"
+                    android:textColor="@color/main_text"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:text="1. L'alfabeto"></TextView>
+
+            </LinearLayout>
+
+            <!-- Next -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <ImageButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    app:srcCompat="@drawable/ic_chevron_right"
+                    android:contentDescription="Next Button"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"></ImageButton>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ScrollView -->
+        <ScrollView
+            android:background="@color/main_white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- Container -->
+            <LinearLayout
+                android:id="@+id/layoutContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Title -->
+                <LinearLayout
+                    android:id="@+id/layoutTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"></Space>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp">
+
+                                <TextView
+                                    android:id="@+id/tvTitle1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/pretendard_800"
+                                    android:gravity="center"
+                                    android:text="L'alfabeto"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="35dp"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp">
+
+                                <TextView
+                                    android:id="@+id/tvTitle2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/pretendard_600"
+                                    android:text="기본적인 알파벳은 다음과 같아요"
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="15dp"></TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"></Space>
+
+                </LinearLayout>
+
+                <!-- Main Layout -->
+                <LinearLayout
+                    android:id="@+id/layoutMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <!-- 1 -->
+                        <LinearLayout
+                            android:id="@+id/ll1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv1a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="A a"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv1b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="ape"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv1c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="apertamente"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 2 -->
+                        <LinearLayout
+                            android:id="@+id/ll2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv2a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="B b"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv2b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="bello"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv2c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="benedizione"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 3 -->
+                        <LinearLayout
+                            android:id="@+id/ll3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv3a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="C c"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv3b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="cinque"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv3c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="cosmopolita"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 4 -->
+                        <LinearLayout
+                            android:id="@+id/ll4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv4a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="D d"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv4b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="donna"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv4c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="delicatezza"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 5 -->
+                        <LinearLayout
+                            android:id="@+id/ll5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv5a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="E e"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv5b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="erba"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv5c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="emozione"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 6 -->
+                        <LinearLayout
+                            android:id="@+id/ll6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv6a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="F f"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv6b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="fiore"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv6c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="funzionalità"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 7 -->
+                        <LinearLayout
+                            android:id="@+id/ll7"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv7a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="G g"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv7b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="giovedì"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv7c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="generazione"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 8 -->
+                        <LinearLayout
+                            android:id="@+id/ll8"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv8a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="H h"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv8b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="hotel"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv8c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="hamburger"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 9 -->
+                        <LinearLayout
+                            android:id="@+id/ll9"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv9a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="I i"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv9b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="ieri"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv9c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="internazionale"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 10 -->
+                        <LinearLayout
+                            android:id="@+id/ll10"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv10a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="L l"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv10b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="lingua"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv10c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="lucentezza"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 11 -->
+                        <LinearLayout
+                            android:id="@+id/ll11"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv11a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="M m"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv11b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="mondo"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv11c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="ministro"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 12 -->
+                        <LinearLayout
+                            android:id="@+id/ll12"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv12a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="N n"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv12b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="nonna"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv12c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="nascita"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 13 -->
+                        <LinearLayout
+                            android:id="@+id/ll13"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv13a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="O o"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv13b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="4"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="ottimo"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv13c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="occupazione"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 14 -->
+                        <LinearLayout
+                            android:id="@+id/ll14"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv14a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="P p"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv14b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="padre"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv14c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="pessimismo"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 15 -->
+                        <LinearLayout
+                            android:id="@+id/ll15"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv15a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="Q q"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv15b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="quaderno"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv15c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="questionario"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 16 -->
+                        <LinearLayout
+                            android:id="@+id/ll16"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv16a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="R r"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv16b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="radio"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv16c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="rivoluzione"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 17 -->
+                        <LinearLayout
+                            android:id="@+id/ll17"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv17a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="S s"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv17b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="settembre"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv17c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="solidarietà"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 18 -->
+                        <LinearLayout
+                            android:id="@+id/ll18"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv18a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="T t"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv18b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="tanto"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv18c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="tuttavia"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 19 -->
+                        <LinearLayout
+                            android:id="@+id/ll19"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv19a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="U u"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv19b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="uomini"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv19c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="università"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 20 -->
+                        <LinearLayout
+                            android:id="@+id/ll20"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv20a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="V v"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv20b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="vacanza"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv20c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="vuotaggine"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 21 -->
+                        <LinearLayout
+                            android:id="@+id/ll21"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv21a"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="40dp"
+                                android:textColor="@color/ita_background"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:text="Z z"
+                                android:textSize="20dp"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv21b"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="zucchero"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv21c"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="40dp"
+                                android:textColor="@color/main_text"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:text="dolcezza"
+                                android:textSize="16dp"
+                                android:background="@android:color/transparent"
+                                android:stateListAnimator="@null"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Menu Bar (Bottom) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_menubar">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+            <!-- Sidebar -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <ImageButton
+                    android:id="@+id/btnSidebar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    app:srcCompat="@drawable/ic_sidebar"
+                    android:contentDescription="Sidebar Button"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- Home -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <ImageButton
+                    android:id="@+id/btnHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    app:srcCompat="@drawable/ic_home"
+                    android:contentDescription="Home Button"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- Update -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <ImageButton
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    app:srcCompat="@drawable/ic_update"
+                    android:contentDescription="Update Button"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"></ImageButton>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_drawer"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

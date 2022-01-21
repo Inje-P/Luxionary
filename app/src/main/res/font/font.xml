@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    // Korean
+    <font android:fontStyle="normal"
+        android:fontWeight="100"
+        android:font="@font/pretendard_100"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="200"
+        android:font="@font/pretendard_200"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="300"
+        android:font="@font/pretendard_300"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/pretendard_400"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="500"
+        android:font="@font/pretendard_500"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="600"
+        android:font="@font/pretendard_600"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/pretendard_700"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="800"
+        android:font="@font/pretendard_800"/>
+
+    // Nunito Sans
+    <font android:fontStyle="normal"
+        android:fontWeight="200"
+        android:font="@font/nunitosans_200"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="300"
+        android:font="@font/nunitosans_300"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/nunitosans_400"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="600"
+        android:font="@font/nunitosans_600"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/nunitosans_700"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="800"
+        android:font="@font/nunitosans_800"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="900"
+        android:font="@font/nunitosans_900"/>
+
+    // Bebas Neue
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/bebas_neue"/>
+</font-family>

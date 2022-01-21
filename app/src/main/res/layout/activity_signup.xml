@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Main Layout -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <!-- Logo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgLogo"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/logo" />
+
+            </LinearLayout>
+
+            <!-- Login Form -->
+            <LinearLayout
+                android:id="@+id/loginForm"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="vertical">
+
+                <!-- Username -->
+                <LinearLayout
+                    android:id="@+id/llSignup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:orientation="vertical"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/custom_dark_block"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <!-- Nickname field -->
+                        <EditText
+                            android:id="@+id/etNickname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:fontFamily="@font/pretendard_500"
+                            android:hint="닉네임"
+                            android:textColorHint="#A6A6A6"
+                            android:paddingLeft="20dp"
+                            android:background="@null"
+                            android:textCursorDrawable="@drawable/text_cursor"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/main_text"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:background="@drawable/custom_light_block"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <Button
+                            android:id="@+id/btnNickCheck"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/pretendard_700"
+                            android:textSize="16dp"
+                            android:text="중복확인"
+                            android:textColor="@color/main_white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Password -->
+                <LinearLayout
+                    android:id="@+id/llSignup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/custom_dark_block"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <!-- Password field -->
+                        <EditText
+                            android:id="@+id/etPw"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="비밀번호"
+                            android:textColorHint="#A6A6A6"
+                            android:paddingLeft="20dp"
+                            android:background="@null"
+                            android:textCursorDrawable="@drawable/text_cursor"
+                            android:fontFamily="@font/pretendard_500"
+                            android:inputType="textPassword"
+                            android:text=""
+                            android:textColor="@color/main_text"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+
+                </LinearLayout>
+
+                <!-- Password Confirm -->
+                <LinearLayout
+                    android:id="@+id/llSignup3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/custom_dark_block"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp">
+
+                        <!-- Password Checking -->
+                        <EditText
+                            android:id="@+id/etPwCheck"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="비밀번호 확인"
+                            android:textColorHint="#A6A6A6"
+                            android:paddingLeft="20dp"
+                            android:textCursorDrawable="@drawable/text_cursor"
+                            android:fontFamily="@font/pretendard_500"
+                            android:inputType="textPassword"
+                            android:text=""
+                            android:background="@null"
+                            android:textColor="@color/main_text"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp">
+
+                        <!-- Password Confirm -->
+                        <EditText
+                            android:id="@+id/etPwConfirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="비밀번호 확인"
+                            android:textColorHint="#A6A6A6"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="10dp"
+                            android:textCursorDrawable="@drawable/text_cursor"
+                            android:fontFamily="@font/pretendard_500"
+                            android:inputType="text"
+                            android:text="비밀번호를 다시 한 번 입력해주세요."
+                            android:background="@null"
+                            android:textColor="@color/main_gray"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSignup4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+
+                    <!-- Name -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/custom_dark_block"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <!-- Name field -->
+                        <EditText
+                            android:id="@+id/etName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:fontFamily="@font/pretendard_500"
+                            android:hint="이름"
+                            android:textColorHint="#A6A6A6"
+                            android:paddingLeft="20dp"
+                            android:background="@null"
+                            android:textCursorDrawable="@drawable/text_cursor"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/main_text"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+
+                </LinearLayout>
+
+                <!-- Email (Account) -->
+                <LinearLayout
+                    android:id="@+id/llSignup5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/custom_dark_block"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <!-- Email field -->
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:fontFamily="@font/pretendard_500"
+                            android:hint="이메일 (ID로 사용)"
+                            android:textColorHint="#A6A6A6"
+                            android:paddingLeft="20dp"
+                            android:textCursorDrawable="@drawable/text_cursor"
+                            android:inputType="textEmailAddress"
+                            android:background="@null"
+                            android:textColor="@color/main_text"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSignup6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:orientation="vertical"
+                        android:background="@drawable/custom_light_block"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp">
+
+                        <Button
+                            android:id="@+id/btnSignup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/pretendard_700"
+                            android:textSize="16dp"
+                            android:text="가입하기"
+                            android:textColor="@color/main_white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:orientation="vertical"
+                        android:background="@drawable/custom_light_block"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp">
+
+                        <Button
+                            android:id="@+id/btnReturn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/pretendard_700"
+                            android:textSize="16dp"
+                            android:text="돌아가기"
+                            android:textColor="@color/main_white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"/>
+
+</LinearLayout>

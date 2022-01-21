@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:id="@+id/drawer"
+    android:background="@color/main_white">
+
+    <LinearLayout
+        android:background="@color/main_white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Header -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/bg_sidebar">
+
+            <!-- Upper Side -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"/>
+
+                <!-- Close Button -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/btnClose"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="40dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/icon_clear"></ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"></Space>
+
+            <!-- Lower Side -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"/>
+
+                <!-- Nickname -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9.2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="6">
+
+                        <TextView
+                            android:id="@+id/tvNickname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/pretendard_800"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="15dp"
+                            android:text="해리슨"
+                            android:textColor="@color/main_text"
+                            android:textSize="35dp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4">
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/pretendard_500"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center_vertical"
+                            android:text="luxionary@gmail.com"
+                            android:textColor="@color/main_gray"
+                            android:textSize="15dp"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Menu -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/black_upperline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_black_underline2"
+                android:text="내 계정"
+                android:textColor="@color/main_text"
+                android:textSize="20dp"
+                android:stateListAnimator="@null"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:fontFamily="@font/pretendard_700"/>
+
+            <Button
+                android:id="@+id/btnSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_black_underline2"
+                android:text="고객센터"
+                android:textColor="@color/main_text"
+                android:textSize="20dp"
+                android:stateListAnimator="@null"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:fontFamily="@font/pretendard_700"/>
+
+            <Button
+                android:id="@+id/btnSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_black_underline2"
+                android:text="설정"
+                android:textColor="@color/main_text"
+                android:textSize="20dp"
+                android:stateListAnimator="@null"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:fontFamily="@font/pretendard_700"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_vg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icon_clear"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="2dp"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="8dp"
+                android:src="@drawable/intro" />
+
+            <TextView
+                android:id="@+id/txttite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/pretendard_700"
+                android:text="아바타 저장하기"
+                android:textColor="@color/main_text"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/pretendard_500"
+                android:gravity="center_horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="선택한 아바타로 저장할까요?"
+                android:textAlignment="center"
+                android:textColor="@color/main_text"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/main_text"
+                    android:fontFamily="@font/pretendard_600"
+                    android:text="아니오"
+                    android:textColor="@color/main_white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btn_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:backgroundTint="@color/main_text"
+                    android:fontFamily="@font/pretendard_600"
+                    android:text="좋아요"
+                    android:textColor="@color/main_white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

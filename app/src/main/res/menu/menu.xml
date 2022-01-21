@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_profile"
+        android:title="프로필 관리"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/menu_account"
+        android:title="계정 관리"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/menu_setting"
+        android:title="설정"
+        app:showAsAction="always"></item>
+
+</menu>

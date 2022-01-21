@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="-3dp"
+        android:left="-3dp"
+        android:right="-3dp"
+        android:id="@+id/ripple_black_underline">
+        <shape android:shape="rectangle">
+            <solid android:color="#F5F5F5"></solid>
+            <stroke android:color="@color/main_text" android:width="2dp"></stroke>
+        </shape>
+    </item>
+
+</layer-list>

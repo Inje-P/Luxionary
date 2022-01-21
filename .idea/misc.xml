@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/custom_main.xml" value="0.3453703703703704" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/custom_menubar.xml" value="0.36822916666666666" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/custom_menubar2.xml" value="0.36822916666666666" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/custom_ripple_eng.xml" value="0.3453703703703704" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/custom_ripple_white.xml" value="0.2212962962962963" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/custom_underline.xml" value="0.3453703703703704" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_eng.xml" value="0.36822916666666666" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_intro.xml" value="0.1691995947315096" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/intro_eng.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/main_eng.xml" value="0.31521739130434784" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/main_fra.xml" value="0.171225937183384" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/mono_eng.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/mono_eng_01_0.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/mono_eng_01_1.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/mono_eng_01_2.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/mono_fra.xml" value="0.2427536231884058" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/mono_fra_01_2.xml" value="0.34791666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

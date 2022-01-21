@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgLogo"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loginForm"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_weight="1.5"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@drawable/custom_dark_block"
+                    android:orientation="horizontal">
+
+                    <!-- ID field -->
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:fontFamily="@font/pretendard_600"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="20dp"
+                        android:background="@null"
+                        android:textCursorDrawable="@drawable/text_cursor"
+                        android:textColor="@color/main_text"
+                        android:textColorHint="#A6A6A6"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_weight="1.5"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@drawable/custom_dark_block"
+                    android:orientation="horizontal">
+
+                    <!-- Password field -->
+                    <EditText
+                        android:id="@+id/etPw"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:fontFamily="@font/pretendard_600"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingStart="20dp"
+                        android:background="@null"
+                        android:textCursorDrawable="@drawable/text_cursor"
+                        android:text=""
+                        android:textColor="@color/main_text"
+                        android:textColorHint="#A6A6A6"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/custom_light_block"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnSignup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/pretendard_700"
+                            android:text="회원가입"
+                            android:textColor="@color/main_white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/custom_light_block"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnSignin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/pretendard_700"
+                            android:text="로그인"
+                            android:textColor="@color/main_white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="horizontal"></LinearLayout>
+</LinearLayout>

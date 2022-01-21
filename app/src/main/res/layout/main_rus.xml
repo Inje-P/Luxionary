@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/rus_bg"
+        android:orientation="vertical"
+        tools:context=".MainRus">
+
+        <!-- Profile -->
+        <LinearLayout
+            android:id="@+id/layoutProfile"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/main_rus_bg1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_underline"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <!-- Title -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="7"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="8">
+
+                            <TextView
+                                android:id="@+id/tvTitle1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/pretendard_800"
+                                android:gravity="bottom"
+                                android:text="Русский"
+                                android:textColor="@color/rus_main"
+                                android:textSize="40dp"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2">
+
+                            <TextView
+                                android:id="@+id/tvTitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/pretendard_800"
+                                android:gravity="bottom"
+                                android:paddingBottom="10dp"
+                                android:text="러시아어"
+                                android:textColor="@color/main_text"
+                                android:textSize="18dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Avatar -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgAvatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="65dp"
+                            android:padding="5dp"
+                            android:src="@drawable/avt_male1"></ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ScrollView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+
+            <!-- Container -->
+            <LinearLayout
+                android:id="@+id/layoutContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Main Layout -->
+                <LinearLayout
+                    android:id="@+id/layoutMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!-- Monocycle -->
+                        <LinearLayout
+                            android:id="@+id/llRus1"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnRus1"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:background="@drawable/ripple_rus"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:scaleType="fitCenter"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/main_white"
+                                app:srcCompat="@drawable/level_1"></ImageButton>
+
+                            <TextView
+                                android:id="@+id/tvRus1"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/pretendard_800"
+                                android:gravity="center"
+                                android:text="MONOCYCLE"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- Bicycle -->
+                        <LinearLayout
+                            android:id="@+id/llRus2"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="30dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnRus2"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:background="@drawable/ripple_rus"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="bottom"
+                                android:scaleType="fitCenter"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/main_white"
+                                app:srcCompat="@drawable/level_2"></ImageButton>
+
+                            <TextView
+                                android:id="@+id/tvRus2"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/pretendard_800"
+                                android:gravity="center"
+                                android:text="BICYCLE"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- Tricycle -->
+                        <LinearLayout
+                            android:id="@+id/llRus3"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="30dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnRus3"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:background="@drawable/ripple_rus"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="bottom"
+                                android:scaleType="fitCenter"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/main_white"
+                                app:srcCompat="@drawable/level_3"></ImageButton>
+
+                            <TextView
+                                android:id="@+id/tvRus3"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/pretendard_800"
+                                android:gravity="center"
+                                android:text="TRICYCLE"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- Quadricycle -->
+                        <LinearLayout
+                            android:id="@+id/llRus4"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnRus4"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:background="@drawable/ripple_rus"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="bottom"
+                                android:scaleType="fitCenter"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/main_white"
+                                app:srcCompat="@drawable/level_4"></ImageButton>
+
+                            <TextView
+                                android:id="@+id/tvRus4"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/pretendard_800"
+                                android:gravity="center"
+                                android:text="QUADRICYCLE"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Menu Bar (Bottom) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_menubar"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+            <!-- Sidebar -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnSidebar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_sidebar"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- Home -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_home"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- Update -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_update"></ImageButton>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/deu_background"> <!-- Ripple Effect 색상 -->
+
+    <!-- 배경색 -->
+    <item android:id="@+id/ripple_fra">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/deu_bg"></solid>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+</ripple>

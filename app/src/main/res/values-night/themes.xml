@@ -1,0 +1,24 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="Theme.Luxionary" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_text</item>
+        <item name="colorPrimaryVariant">@color/main_text</item>
+        <item name="colorOnPrimary">@color/main_text</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/main_text</item>
+        <item name="colorSecondaryVariant">@color/main_text</item>
+        <item name="colorOnSecondary">@color/main_text</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+    </style>
+</resources>
