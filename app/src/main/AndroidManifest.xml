@@ -27,12 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".StartActivity"></activity>
         <activity android:name=".SigninActivity"></activity>
-        <activity
-            android:name=".SignupActivity"
-            android:exported="true">
-
-        </activity>
+        <activity android:name=".SignupActivity"></activity>
         <activity android:name=".AvatarActivity"></activity>
         <activity android:name=".SignupOkActivity"></activity>
 

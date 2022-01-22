@@ -301,32 +301,26 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btnEng:
                     btnEng.startAnimation(aniTouch);
-//                    soundEng.start();
                     pageEng();
                     break;
                 case R.id.btnFra:
                     btnFra.startAnimation(aniTouch);
-//                    soundFra.start();
                     pageFra();
                     break;
                 case R.id.btnDeu:
                     btnDeu.startAnimation(aniTouch);
-//                    soundDeu.start();
                     pageDeu();
                     break;
                 case R.id.btnIta:
                     btnIta.startAnimation(aniTouch);
-//                    soundIta.start();
                     pageIta();
                     break;
                 case R.id.btnSpa:
                     btnSpa.startAnimation(aniTouch);
-//                    soundSpa.start();
                     pageSpa();
                     break;
                 case R.id.btnRus:
                     btnRus.startAnimation(aniTouch);
-//                    soundRus.start();
                     pageRus();
                     break;
                 case R.id.btnSidebar:
