@@ -3,10 +3,9 @@
     android:color="@color/deu_background"> <!-- Ripple Effect 색상 -->
 
     <!-- 배경색 -->
-    <item android:id="@+id/ripple_fra">
+    <item android:id="@+id/ripple_deu">
         <shape android:shape="rectangle">
-            <solid android:color="@color/deu_bg"></solid>
-            <corners android:radius="5dp" />
+            <solid android:color="@color/main_white"></solid>
         </shape>
     </item>
 

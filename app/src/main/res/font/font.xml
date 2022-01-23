@@ -26,7 +26,7 @@
         android:fontWeight="800"
         android:font="@font/pretendard_800"/>
 
-    // Nunito Sans
+    // Nunito Sans (International)
     <font android:fontStyle="normal"
         android:fontWeight="200"
         android:font="@font/nunitosans_200"/>
@@ -48,6 +48,32 @@
     <font android:fontStyle="normal"
         android:fontWeight="900"
         android:font="@font/nunitosans_900"/>
+
+    // Playfair Display (International)
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/playfairdisplay_400"/>
+    <font android:fontStyle="italic"
+        android:fontWeight="400"
+        android:font="@font/playfairdisplay_400i"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="500"
+        android:font="@font/playfairdisplay_500"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="600"
+        android:font="@font/playfairdisplay_600"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/playfairdisplay_700"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="800"
+        android:font="@font/playfairdisplay_800"/>
+    <font android:fontStyle="italic"
+        android:fontWeight="800"
+        android:font="@font/playfairdisplay_800i"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="900"
+        android:font="@font/playfairdisplay_900"/>
 
     // Bebas Neue
     <font android:fontStyle="normal"

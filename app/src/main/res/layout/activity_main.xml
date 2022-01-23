@@ -273,7 +273,7 @@
                                         android:stateListAnimator="@null"
                                         android:text="ENGLISH"
                                         android:textColor="@color/main_text"
-                                        android:textSize="30dp" />
+                                        android:textSize="28dp" />
 
                                 </LinearLayout>
 
@@ -295,7 +295,7 @@
                                         android:gravity="center_vertical"
                                         android:text="FRANÇAIS"
                                         android:textColor="@color/main_text"
-                                        android:textSize="30dp" />
+                                        android:textSize="28dp" />
 
                                 </LinearLayout>
 
@@ -317,7 +317,7 @@
                                         android:gravity="center_vertical"
                                         android:text="DEUTSCH"
                                         android:textColor="@color/main_text"
-                                        android:textSize="30dp" />
+                                        android:textSize="28dp" />
 
                                 </LinearLayout>
 
@@ -339,7 +339,7 @@
                                         android:gravity="center_vertical"
                                         android:text="ITALIANO"
                                         android:textColor="@color/main_text"
-                                        android:textSize="30dp" />
+                                        android:textSize="28dp" />
 
                                 </LinearLayout>
 
@@ -361,7 +361,7 @@
                                         android:gravity="center_vertical"
                                         android:text="ESPAÑOL"
                                         android:textColor="@color/main_text"
-                                        android:textSize="30dp" />
+                                        android:textSize="28dp" />
 
                                 </LinearLayout>
 
@@ -383,7 +383,7 @@
                                         android:gravity="center_vertical"
                                         android:text="РУССКИЙ"
                                         android:textColor="@color/main_text"
-                                        android:textSize="30dp" />
+                                        android:textSize="28dp" />
 
                                 </LinearLayout>
 
