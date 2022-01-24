@@ -133,7 +133,7 @@
                     android:orientation="horizontal">
 
                     <Space
-                        android:layout_width="30dp"
+                        android:layout_width="20dp"
                         android:layout_height="match_parent" />
 
                     <LinearLayout
@@ -147,6 +147,7 @@
                             android:id="@+id/llBanner"
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
+                            android:layout_marginBottom="10dp"
                             android:orientation="vertical">
 
                             <ImageButton
@@ -165,14 +166,16 @@
                         <LinearLayout
                             android:id="@+id/llDeu1"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:orientation="vertical">
 
                             <Button
                                 android:id="@+id/btnDeu1"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -196,7 +199,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu2"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -205,7 +208,9 @@
                                 android:id="@+id/btnDeu2"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -230,7 +235,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu3"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -238,7 +243,9 @@
                                 android:id="@+id/btnDeu3"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -262,7 +269,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu4"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -270,7 +277,9 @@
                                 android:id="@+id/btnDeu4"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -294,7 +303,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu5"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -302,7 +311,9 @@
                                 android:id="@+id/btnDeu5"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -326,7 +337,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu6"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -334,7 +345,9 @@
                                 android:id="@+id/btnDeu6"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -358,7 +371,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu7"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -366,7 +379,9 @@
                                 android:id="@+id/btnDeu7"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -390,7 +405,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu8"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -398,7 +413,9 @@
                                 android:id="@+id/btnDeu8"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -422,7 +439,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu9"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -430,7 +447,9 @@
                                 android:id="@+id/btnDeu9"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -454,7 +473,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu10"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -462,7 +481,9 @@
                                 android:id="@+id/btnDeu10"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -486,7 +507,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu11"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -494,7 +515,9 @@
                                 android:id="@+id/btnDeu11"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -518,7 +541,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu12"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -526,7 +549,9 @@
                                 android:id="@+id/btnDeu12"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -550,7 +575,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu13"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -558,7 +583,9 @@
                                 android:id="@+id/btnDeu13"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -582,7 +609,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu14"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -590,7 +617,9 @@
                                 android:id="@+id/btnDeu14"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -614,7 +643,7 @@
                         <LinearLayout
                             android:id="@+id/llDeu15"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginBottom="20dp"
                             android:orientation="vertical">
@@ -623,7 +652,9 @@
                                 android:id="@+id/btnDeu15"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
                                 android:background="@drawable/pastel_ripple_deu"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
@@ -646,7 +677,7 @@
                     </LinearLayout>
 
                     <Space
-                        android:layout_width="30dp"
+                        android:layout_width="20dp"
                         android:layout_height="match_parent" />
 
                 </LinearLayout>
@@ -659,8 +690,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/custom_menubar"
-            android:orientation="horizontal">
+            android:background="@drawable/custom_menubar2"
+            android:orientation="horizontal"
+            android:elevation="3dp">
 
             <Space
                 android:layout_width="0dp"

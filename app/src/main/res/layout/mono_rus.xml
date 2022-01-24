@@ -133,7 +133,7 @@
                     android:orientation="horizontal">
 
                     <Space
-                        android:layout_width="30dp"
+                        android:layout_width="20dp"
                         android:layout_height="match_parent" />
 
                     <LinearLayout
@@ -147,6 +147,7 @@
                             android:id="@+id/llBanner"
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
+                            android:layout_marginBottom="10dp"
                             android:orientation="vertical">
 
                             <ImageButton
@@ -165,13 +166,15 @@
                         <LinearLayout
                             android:id="@+id/llRus1"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:orientation="vertical">
 
                             <Button
                                 android:id="@+id/btnRus1"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -196,7 +199,7 @@
                         <LinearLayout
                             android:id="@+id/llRus2"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -204,6 +207,8 @@
                                 android:id="@+id/btnRus2"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -228,7 +233,7 @@
                         <LinearLayout
                             android:id="@+id/llRus3"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -236,6 +241,8 @@
                                 android:id="@+id/btnRus3"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -260,7 +267,7 @@
                         <LinearLayout
                             android:id="@+id/llRus4"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -268,6 +275,8 @@
                                 android:id="@+id/btnRus4"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -292,7 +301,7 @@
                         <LinearLayout
                             android:id="@+id/llRus5"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -300,6 +309,8 @@
                                 android:id="@+id/btnRus5"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -324,7 +335,7 @@
                         <LinearLayout
                             android:id="@+id/llRus6"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -332,6 +343,8 @@
                                 android:id="@+id/btnRus6"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -356,7 +369,7 @@
                         <LinearLayout
                             android:id="@+id/llRus7"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -364,6 +377,8 @@
                                 android:id="@+id/btnRus7"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -388,7 +403,7 @@
                         <LinearLayout
                             android:id="@+id/llRus8"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -396,6 +411,8 @@
                                 android:id="@+id/btnRus8"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -420,7 +437,7 @@
                         <LinearLayout
                             android:id="@+id/llRus9"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -428,6 +445,8 @@
                                 android:id="@+id/btnRus9"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -452,7 +471,7 @@
                         <LinearLayout
                             android:id="@+id/llRus10"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -460,6 +479,8 @@
                                 android:id="@+id/btnRus10"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -484,7 +505,7 @@
                         <LinearLayout
                             android:id="@+id/llRus11"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -492,6 +513,8 @@
                                 android:id="@+id/btnRus11"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -516,7 +539,7 @@
                         <LinearLayout
                             android:id="@+id/llRus12"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -524,6 +547,8 @@
                                 android:id="@+id/btnRus12"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -548,7 +573,7 @@
                         <LinearLayout
                             android:id="@+id/llRus13"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -556,6 +581,8 @@
                                 android:id="@+id/btnRus13"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -580,7 +607,7 @@
                         <LinearLayout
                             android:id="@+id/llRus14"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
@@ -588,6 +615,8 @@
                                 android:id="@+id/btnRus14"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -612,7 +641,7 @@
                         <LinearLayout
                             android:id="@+id/llRus15"
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginBottom="20dp"
                             android:orientation="vertical">
@@ -621,6 +650,8 @@
                                 android:id="@+id/btnRus15"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:elevation="2dp"
                                 android:textColor="@color/rus_background"
                                 android:gravity="center"
                                 android:fontFamily="@font/nunitosans_900"
@@ -644,7 +675,7 @@
                     </LinearLayout>
 
                     <Space
-                        android:layout_width="30dp"
+                        android:layout_width="20dp"
                         android:layout_height="match_parent" />
 
                 </LinearLayout>
@@ -658,7 +689,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:background="@drawable/custom_menubar">
+            android:background="@drawable/custom_menubar2"
+            android:elevation="3dp">
 
             <Space
                 android:layout_width="0dp"
