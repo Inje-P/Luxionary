@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "244772531164",
+    "project_id": "luxionary",
+    "storage_bucket": "luxionary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244772531164:android:366016a05170ef68373d19",
+        "android_client_info": {
+          "package_name": "com.luan.luxionary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244772531164-jkc40tbg7vlmd5ev9k0b3hkkrc5c34c6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.luan.luxionary",
+            "certificate_hash": "43749d84578272814adb419fdcec22db7b1fe77f"
+          }
+        },
+        {
+          "client_id": "244772531164-7hisbvlbda43mtfevt6b8sffdu4jb97r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEXdPsFzRftkl3PoOZfqAL_AOegPLZw3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244772531164-7hisbvlbda43mtfevt6b8sffdu4jb97r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
