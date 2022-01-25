@@ -147,7 +147,7 @@
                         android:orientation="horizontal">
 
                         <Space
-                            android:layout_width="30dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent" />
 
                         <LinearLayout
@@ -166,7 +166,7 @@
                                 <LinearLayout
                                     android:id="@+id/llDate"
                                     android:layout_width="match_parent"
-                                    android:layout_height="50dp"
+                                    android:layout_height="70dp"
                                     android:focusable="true"
                                     android:focusableInTouchMode="true"
                                     android:orientation="horizontal">
@@ -186,18 +186,16 @@
                                             android:id="@+id/btnDate"
                                             android:layout_width="0dp"
                                             android:layout_height="match_parent"
-                                            android:layout_marginTop="3dp"
-                                            android:layout_marginRight="5dp"
-                                            android:layout_marginBottom="3dp"
+                                            android:layout_margin="10dp"
                                             android:layout_weight="6"
-                                            android:background="@drawable/ripple_black_underline"
-                                            android:fontFamily="@font/bebas_neue"
+                                            android:background="@drawable/pastel_ripple_black"
+                                            android:fontFamily="@font/pretendard_800"
                                             android:gravity="center"
                                             android:stateListAnimator="@null"
                                             android:text="TODAY"
-                                            android:textColor="@color/main_text"
+                                            android:textColor="@color/main_white"
                                             android:textCursorDrawable="@drawable/text_cursor2"
-                                            android:textSize="35dp" />
+                                            android:textSize="22dp" />
 
                                     </LinearLayout>
 
@@ -207,9 +205,11 @@
                                 <LinearLayout
                                     android:id="@+id/llBanner"
                                     android:layout_width="match_parent"
-                                    android:layout_height="100dp"
-                                    android:layout_marginBottom="10dp"
-                                    android:background="@android:color/transparent"
+                                    android:layout_height="120dp"
+                                    android:layout_margin="10dp"
+                                    android:padding="20dp"
+                                    android:background="@drawable/box_white"
+                                    android:elevation="3dp"
                                     android:gravity="center_vertical"
                                     android:orientation="vertical">
 
@@ -220,7 +220,7 @@
                                         android:fontFamily="@font/pretendard_800"
                                         android:text="어떤 언어를"
                                         android:textColor="@color/main_text"
-                                        android:textSize="30dp"></TextView>
+                                        android:textSize="28dp"></TextView>
 
                                     <TextView
                                         android:id="@+id/tvBanner2"
@@ -229,7 +229,7 @@
                                         android:fontFamily="@font/pretendard_800"
                                         android:text="배워보시겠어요?"
                                         android:textColor="@color/main_text"
-                                        android:textSize="30dp"></TextView>
+                                        android:textSize="28dp"></TextView>
 
                                 </LinearLayout>
 
@@ -237,8 +237,10 @@
                                 <LinearLayout
                                     android:id="@+id/llCenterImg"
                                     android:layout_width="match_parent"
-                                    android:layout_height="180dp"
-                                    android:background="@drawable/main_bg2"
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/pastel_ripple_black"
+                                    android:elevation="3dp"
+                                    android:layout_margin="10dp"
                                     android:gravity="center_vertical"
                                     android:orientation="vertical">
 
@@ -249,7 +251,7 @@
                                         android:fontFamily="@font/pretendard_800"
                                         android:gravity="center"
                                         android:text="LUXIONARY"
-                                        android:textColor="@color/main_text"
+                                        android:textColor="@color/main_white"
                                         android:textSize="55dp"></TextView>
 
                                 </LinearLayout>
@@ -258,18 +260,19 @@
                                 <LinearLayout
                                     android:id="@+id/llEng"
                                     android:layout_width="match_parent"
-                                    android:layout_height="70dp"
+                                    android:layout_height="100dp"
                                     android:layout_marginTop="10dp"
-                                    android:orientation="vertical"
-                                    android:paddingTop="20dp">
+                                    android:orientation="vertical">
 
                                     <Button
                                         android:id="@+id/btnEng"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:background="@drawable/ripple_eng_underline"
+                                        android:layout_margin="10dp"
+                                        android:background="@drawable/pastel_ripple_eng"
+                                        android:elevation="3dp"
                                         android:fontFamily="@font/nunitosans_900"
-                                        android:gravity="center_vertical"
+                                        android:gravity="center"
                                         android:stateListAnimator="@null"
                                         android:text="ENGLISH"
                                         android:textColor="@color/main_text"
@@ -281,18 +284,19 @@
                                 <LinearLayout
                                     android:id="@+id/llFra"
                                     android:layout_width="match_parent"
-                                    android:layout_height="70dp"
+                                    android:layout_height="100dp"
                                     android:layout_marginTop="10dp"
-                                    android:orientation="vertical"
-                                    android:paddingTop="20dp">
+                                    android:orientation="vertical">
 
                                     <Button
                                         android:id="@+id/btnFra"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:background="@drawable/ripple_fra_underline"
+                                        android:layout_margin="10dp"
+                                        android:background="@drawable/pastel_ripple_fra"
+                                        android:elevation="3dp"
                                         android:fontFamily="@font/nunitosans_900"
-                                        android:gravity="center_vertical"
+                                        android:gravity="center"
                                         android:text="FRANÇAIS"
                                         android:textColor="@color/main_text"
                                         android:textSize="28dp" />
@@ -303,18 +307,19 @@
                                 <LinearLayout
                                     android:id="@+id/llDeu"
                                     android:layout_width="match_parent"
-                                    android:layout_height="70dp"
+                                    android:layout_height="100dp"
                                     android:layout_marginTop="10dp"
-                                    android:orientation="vertical"
-                                    android:paddingTop="20dp">
+                                    android:orientation="vertical">
 
                                     <Button
                                         android:id="@+id/btnDeu"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:background="@drawable/ripple_deu_underline"
+                                        android:layout_margin="10dp"
+                                        android:background="@drawable/pastel_ripple_deu"
+                                        android:elevation="3dp"
                                         android:fontFamily="@font/nunitosans_900"
-                                        android:gravity="center_vertical"
+                                        android:gravity="center"
                                         android:text="DEUTSCH"
                                         android:textColor="@color/main_text"
                                         android:textSize="28dp" />
@@ -325,18 +330,19 @@
                                 <LinearLayout
                                     android:id="@+id/llIta"
                                     android:layout_width="match_parent"
-                                    android:layout_height="70dp"
+                                    android:layout_height="100dp"
                                     android:layout_marginTop="10dp"
-                                    android:orientation="vertical"
-                                    android:paddingTop="20dp">
+                                    android:orientation="vertical">
 
                                     <Button
                                         android:id="@+id/btnIta"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:background="@drawable/ripple_ita_underline"
+                                        android:layout_margin="10dp"
+                                        android:background="@drawable/pastel_ripple_ita"
+                                        android:elevation="3dp"
                                         android:fontFamily="@font/nunitosans_900"
-                                        android:gravity="center_vertical"
+                                        android:gravity="center"
                                         android:text="ITALIANO"
                                         android:textColor="@color/main_text"
                                         android:textSize="28dp" />
@@ -347,18 +353,19 @@
                                 <LinearLayout
                                     android:id="@+id/llSpa"
                                     android:layout_width="match_parent"
-                                    android:layout_height="70dp"
+                                    android:layout_height="100dp"
                                     android:layout_marginTop="10dp"
-                                    android:orientation="vertical"
-                                    android:paddingTop="20dp">
+                                    android:orientation="vertical">
 
                                     <Button
                                         android:id="@+id/btnSpa"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:background="@drawable/ripple_spa_underline"
+                                        android:layout_margin="10dp"
+                                        android:background="@drawable/pastel_ripple_spa"
+                                        android:elevation="3dp"
                                         android:fontFamily="@font/nunitosans_900"
-                                        android:gravity="center_vertical"
+                                        android:gravity="center"
                                         android:text="ESPAÑOL"
                                         android:textColor="@color/main_text"
                                         android:textSize="28dp" />
@@ -369,18 +376,19 @@
                                 <LinearLayout
                                     android:id="@+id/llRus"
                                     android:layout_width="match_parent"
-                                    android:layout_height="70dp"
+                                    android:layout_height="100dp"
                                     android:layout_marginTop="10dp"
-                                    android:orientation="vertical"
-                                    android:paddingTop="20dp">
+                                    android:orientation="vertical">
 
                                     <Button
                                         android:id="@+id/btnRus"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:background="@drawable/ripple_rus_underline"
+                                        android:layout_margin="10dp"
+                                        android:background="@drawable/pastel_ripple_rus"
+                                        android:elevation="3dp"
                                         android:fontFamily="@font/nunitosans_900"
-                                        android:gravity="center_vertical"
+                                        android:gravity="center"
                                         android:text="РУССКИЙ"
                                         android:textColor="@color/main_text"
                                         android:textSize="28dp" />
@@ -391,31 +399,43 @@
                                 <LinearLayout
                                     android:id="@+id/llBottomImg"
                                     android:layout_width="match_parent"
-                                    android:layout_height="180dp"
-                                    android:background="@drawable/main_bg3"
+                                    android:layout_height="200dp"
+                                    android:layout_margin="10dp"
+                                    android:padding="20dp"
+                                    android:background="@drawable/box_white"
+                                    android:elevation="3dp"
                                     android:gravity="center_vertical"
-                                    android:layout_marginTop="20dp"
                                     android:orientation="vertical">
 
-                                    <TextView
-                                        android:id="@+id/tvBottomImg1"
+                                    <LinearLayout
+                                        android:id="@+id/llBottomImg2"
                                         android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:fontFamily="@font/pretendard_800"
-                                        android:textAlignment="textEnd"
-                                        android:text="외국어 공부가"
-                                        android:textColor="@color/main_text"
-                                        android:textSize="30dp"></TextView>
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/main_bg3"
+                                        android:gravity="center_vertical"
+                                        android:orientation="vertical">
 
-                                    <TextView
-                                        android:id="@+id/tvBottomImg2"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:fontFamily="@font/pretendard_800"
-                                        android:textAlignment="textEnd"
-                                        android:text="일상이 됩니다"
-                                        android:textColor="@color/main_text"
-                                        android:textSize="30dp"></TextView>
+                                        <TextView
+                                            android:id="@+id/tvBottomImg1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/pretendard_800"
+                                            android:text="외국어 공부가"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/main_text"
+                                            android:textSize="30dp"></TextView>
+
+                                        <TextView
+                                            android:id="@+id/tvBottomImg2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/pretendard_800"
+                                            android:text="일상이 됩니다"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/main_text"
+                                            android:textSize="30dp"></TextView>
+
+                                    </LinearLayout>
 
                                 </LinearLayout>
 
@@ -424,7 +444,7 @@
                         </LinearLayout>
 
                         <Space
-                            android:layout_width="30dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent" />
 
                     </LinearLayout>
@@ -440,8 +460,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/custom_menubar2"
-            android:orientation="horizontal"
-            android:elevation="3dp">
+            android:elevation="3dp"
+            android:orientation="horizontal">
 
             <Space
                 android:layout_width="0dp"

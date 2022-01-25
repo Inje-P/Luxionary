@@ -56,7 +56,7 @@
                                 android:gravity="center|bottom"
                                 android:text="내 계정"
                                 android:textColor="@color/main_text"
-                                android:textSize="40dp"></TextView>
+                                android:textSize="30dp"></TextView>
 
                         </LinearLayout>
 
@@ -73,7 +73,7 @@
                                 android:gravity="center_horizontal"
                                 android:text="개인정보 변경 후 저장 버튼을 눌러주세요"
                                 android:textColor="@color/main_gray"
-                                android:textSize="18dp"></TextView>
+                                android:textSize="15dp"></TextView>
 
                         </LinearLayout>
 
@@ -407,8 +407,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/custom_menubar"
-            android:orientation="horizontal">
+            android:background="@drawable/custom_menubar2"
+            android:orientation="horizontal"
+            android:elevation="3dp">
 
             <Space
                 android:layout_width="0dp"

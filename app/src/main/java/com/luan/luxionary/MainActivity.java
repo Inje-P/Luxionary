@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     Animation aniLlProfile, aniTitle1, aniTitle2, aniLlAvatar, aniAvatar;
     Animation aniBtnDate;
     Animation aniLlBanner;
-    Animation aniBanner1, aniBanner2, aniCenterImg1, aniCenterImg2;
+    Animation aniBanner1, aniBanner2, aniLlCenterImg, aniTvCenterImg;
     Animation aniBtnEng, aniBtnFra, aniBtnDeu, aniBtnSpa, aniBtnIta, aniBtnRus;
 
     // Sound
@@ -158,8 +158,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Date Section
         btnDate = (Button) findViewById(R.id.btnDate);
-        aniBtnDate = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
-        aniBtnDate.setStartOffset(400);
+        aniBtnDate = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
+        aniBtnDate.setStartOffset(200);
         btnDate.startAnimation(aniBtnDate);
         btnDate.setOnClickListener(mClickListener);
 
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
         llBanner = (LinearLayout) findViewById(R.id.llBanner);
         tvBanner1 = (TextView) findViewById(R.id.tvBanner1);
         tvBanner2 = (TextView) findViewById(R.id.tvBanner2);
-        aniLlBanner = AnimationUtils.loadAnimation(MainActivity.this, R.anim.alpha);
+        aniLlBanner = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniLlBanner.setStartOffset(400);
         aniBanner1 = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend);
         aniBanner1.setStartOffset(800);
@@ -180,12 +180,12 @@ public class MainActivity extends AppCompatActivity {
         // Center Image
         llCenterImg = (LinearLayout) findViewById(R.id.llCenterImg);
         tvCenterImg = (TextView) findViewById(R.id.tvCenterImg);
-        aniCenterImg1 = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend);
-        aniCenterImg1.setStartOffset(400);
-        aniCenterImg2 = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
-        aniCenterImg2.setStartOffset(800);
-        llCenterImg.startAnimation(aniCenterImg1);
-        tvCenterImg.startAnimation(aniCenterImg2);
+        aniLlCenterImg = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
+        aniLlCenterImg.setStartOffset(600);
+        aniTvCenterImg = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend);
+        aniTvCenterImg.setStartOffset(800);
+        llCenterImg.startAnimation(aniLlCenterImg);
+        tvCenterImg.startAnimation(aniTvCenterImg);
         tvCenterImg.setOnClickListener(mClickListener);
 
         // Sound
@@ -203,18 +203,18 @@ public class MainActivity extends AppCompatActivity {
         btnSpa = (Button) findViewById(R.id.btnSpa);
         btnIta = (Button) findViewById(R.id.btnIta);
         btnRus = (Button) findViewById(R.id.btnRus);
-        aniBtnEng = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
-        aniBtnEng.setStartOffset(600);
-        aniBtnFra = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
-        aniBtnFra.setStartOffset(800);
-        aniBtnDeu = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
-        aniBtnDeu.setStartOffset(1000);
-        aniBtnIta = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
-        aniBtnIta.setStartOffset(1200);
-        aniBtnSpa = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
-        aniBtnSpa.setStartOffset(1400);
-        aniBtnRus = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
-        aniBtnRus.setStartOffset(1600);
+        aniBtnEng = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
+        aniBtnEng.setStartOffset(800);
+        aniBtnFra = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
+        aniBtnFra.setStartOffset(1000);
+        aniBtnDeu = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
+        aniBtnDeu.setStartOffset(1200);
+        aniBtnIta = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
+        aniBtnIta.setStartOffset(1400);
+        aniBtnSpa = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
+        aniBtnSpa.setStartOffset(1600);
+        aniBtnRus = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
+        aniBtnRus.setStartOffset(1800);
         btnEng.startAnimation(aniBtnEng);
         btnFra.startAnimation(aniBtnFra);
         btnDeu.startAnimation(aniBtnDeu);
@@ -360,7 +360,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Rainbow Animation
     private void rainbow() {
-        Integer dark = Color.parseColor("#292929");
+        Integer white = Color.parseColor("#FFFFFF");
         Integer eng = Color.parseColor("#FF6388");
         Integer fra = Color.parseColor("#0FB8EF");
         Integer deu = Color.parseColor("#FFD36B");
@@ -368,7 +368,7 @@ public class MainActivity extends AppCompatActivity {
         Integer spa = Color.parseColor("#FF9450");
         Integer rus = Color.parseColor("#9A89FF");
 
-        ValueAnimator colorAni1 = ValueAnimator.ofObject(new ArgbEvaluator(), dark, eng);
+        ValueAnimator colorAni1 = ValueAnimator.ofObject(new ArgbEvaluator(), white, eng);
         colorAni1.setDuration(200);
         colorAni1.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
@@ -427,7 +427,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ValueAnimator colorAni7 = ValueAnimator.ofObject(new ArgbEvaluator(), rus, dark);
+        ValueAnimator colorAni7 = ValueAnimator.ofObject(new ArgbEvaluator(), rus, white);
         colorAni7.setDuration(200);
         colorAni7.setStartDelay(1200);
         colorAni7.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {

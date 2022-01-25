@@ -21,6 +21,10 @@ public class DateActivity extends AppCompatActivity {
     // Data from DB
     String strNick, strPw, strName, strEmail, strAvatar;
 
+    // LinearLayout
+    LinearLayout layout0, layout1, layout2, layout3;
+    Animation aniLayout0, aniLayout1, aniLayout2, aniLayout3;
+
     String[] monthKor = {"1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"};
     String[] monthEng = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
     String[] monthFra = {"janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"};
@@ -36,13 +40,13 @@ public class DateActivity extends AppCompatActivity {
             "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth", "nineteenth", "twentieth",
             "twenty-first", "twenty-second", "twenty-third", "twenty-fourth", "twenty-fifth", "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth", "thirty-first"};
     String[] doMFra = {"le premier", "le deux", "le trois", "le quatre", "le cinq", "le six", "le sept", "le huit", "le neuf", "le dix",
-            "le onze", "le douze", "le treize", "le quatorze", "le quinze", "le seize", "le dix-sept", "le dix-huit", "le dix-neuf", "vingt",
+            "le onze", "le douze", "le treize", "le quatorze", "le quinze", "le seize", "le dix-sept", "le dix-huit", "le dix-neuf", "le vingt",
             "le vingt-et-un", "le vingt-deux", "le vingt-trois", "le vingt-quatre", "le vingt-cinq", "le vingt-six", "le vingt-sept", "le vingt-huit", "le vingt-neuf", "le trente", "le trente-et-un"};
     String[] doMDeu = {"der erste", "der zweite", "der dritte", "der vierte", "der fünfte", "der sechste", "der siebte", "der achte", "der neunte", "der zehnte",
             "der elfte", "der zwölfte", "der dreizehnte", "der vierzehnte", "der fünfzehnte", "der sechzehnte", "der siebzehnte", "der achtzehnte", "der neunzehnte", "zwanzigste",
             "der einundzwanzigste", "der zweiundzwanzigste", "der dreiundzwanzigste", "der vierundzwanzigste", "der fünfundzwanzigste", "der sechsundzwanzigste", "der siebenundzwanzigste", "der achtundzwanzigste", "der neunundzwanzigste", "der dreißigste", "der einunddreißiste"};
     String[] doMIta = {"il primo", "il due", "il tre", "il quattro", "il cinque", "il sei", "il sette", "il otto", "il nove", "il dieci",
-            "il undici", "il dodoci", "il tredici", "il quattordici", "il quindici", "il sedici", "il diciassette", "il diciotto", "il diciannove", "il venti",
+            "il undici", "il dodici", "il tredici", "il quattordici", "il quindici", "il sedici", "il diciassette", "il diciotto", "il diciannove", "il venti",
             "il ventuno", "il ventidue", "il ventitré", "il ventiquattro", "il venticinque", "il ventisei", "il ventisette", "il ventiotto", "il ventinove", "il trenta", "il trentuno"};
     String[] doMSpa = {"el primero", "el dos", "el tres", "el cuatro", "el cinco", "el seis", "el siete", "el ocho", "el nueve", "el diez",
             "el once", "el doce", "el trece", "el catorce", "el quince", "el dieciséis", "el diecisiete", "el dieciocho", "el diecinueve", "el veinte",
@@ -51,7 +55,7 @@ public class DateActivity extends AppCompatActivity {
             "одиннадцатое", "двенадцатое", "тринадцатое", "четырнадцатое", "пятнадцатое", "шестнадцатое", "семнадцатое", "восемнадцатое", "девятнадцатое", "двадцатое",
             "двадцать первое", "двадцать второе", "двадцать третье", "двадцать четвёртое", "двадцать пятое", "двадцать шестое", "двадцать седьмое", "двадцать восьмое", "двадцать девятое", "тридцатое", "тридцать первое"};
 
-    String[] doWKor = {"일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"};
+    String[] doWKor = {"일\n요\n일", "월\n요\n일", "화\n요\n일", "수\n요\n일", "목\n요\n일", "금\n요\n일", "토\n요\n일"};
     String[] doWEng = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
     String[] doWFra = {"dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"};
     String[] doWDeu = {"Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"};
@@ -92,6 +96,23 @@ public class DateActivity extends AppCompatActivity {
         strName = getData.getStringExtra("name");
         strEmail = getData.getStringExtra("email");
         strAvatar = getData.getStringExtra("avatar");
+
+        // LinearLayout
+        layout0 = (LinearLayout) findViewById(R.id.layout0);
+        layout1 = (LinearLayout) findViewById(R.id.layout1);
+        layout2 = (LinearLayout) findViewById(R.id.layout2);
+        layout3 = (LinearLayout) findViewById(R.id.layout3);
+        aniLayout0 = AnimationUtils.loadAnimation(DateActivity.this, R.anim.descend_fast);
+        aniLayout1 = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend);
+        aniLayout1.setStartOffset(200);
+        aniLayout2 = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend);
+        aniLayout2.setStartOffset(500);
+        aniLayout3 = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend);
+        aniLayout3.setStartOffset(800);
+        layout0.startAnimation(aniLayout0);
+        layout1.startAnimation(aniLayout1);
+        layout2.startAnimation(aniLayout2);
+        layout3.startAnimation(aniLayout3);
 
         // Title
         tvTitle1 = (TextView) findViewById(R.id.tvTitle1);
