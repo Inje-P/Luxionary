@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
         llBanner = (LinearLayout) findViewById(R.id.llBanner);
         tvBanner1 = (TextView) findViewById(R.id.tvBanner1);
         tvBanner2 = (TextView) findViewById(R.id.tvBanner2);
-        aniLlBanner = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
+        aniLlBanner = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         aniLlBanner.setStartOffset(400);
         aniBanner1 = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend);
         aniBanner1.setStartOffset(800);
@@ -180,9 +180,9 @@ public class MainActivity extends AppCompatActivity {
         // Center Image
         llCenterImg = (LinearLayout) findViewById(R.id.llCenterImg);
         tvCenterImg = (TextView) findViewById(R.id.tvCenterImg);
-        aniLlCenterImg = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
+        aniLlCenterImg = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
         aniLlCenterImg.setStartOffset(600);
-        aniTvCenterImg = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend);
+        aniTvCenterImg = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         aniTvCenterImg.setStartOffset(800);
         llCenterImg.startAnimation(aniLlCenterImg);
         tvCenterImg.startAnimation(aniTvCenterImg);
@@ -360,7 +360,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Rainbow Animation
     private void rainbow() {
-        Integer white = Color.parseColor("#FFFFFF");
+        Integer white = Color.parseColor("#292929");
         Integer eng = Color.parseColor("#FF6388");
         Integer fra = Color.parseColor("#0FB8EF");
         Integer deu = Color.parseColor("#FFD36B");
@@ -373,7 +373,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni1.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                tvCenterImg.setTextColor((Integer) animator.getAnimatedValue());
+                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -383,7 +383,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                tvCenterImg.setTextColor((Integer) animator.getAnimatedValue());
+                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -393,7 +393,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni3.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                tvCenterImg.setTextColor((Integer) animator.getAnimatedValue());
+                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -403,7 +403,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni4.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                tvCenterImg.setTextColor((Integer) animator.getAnimatedValue());
+                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -413,7 +413,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni5.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                tvCenterImg.setTextColor((Integer) animator.getAnimatedValue());
+                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -423,7 +423,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni6.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                tvCenterImg.setTextColor((Integer) animator.getAnimatedValue());
+                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -433,7 +433,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni7.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                tvCenterImg.setTextColor((Integer) animator.getAnimatedValue());
+                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
             }
         });
 

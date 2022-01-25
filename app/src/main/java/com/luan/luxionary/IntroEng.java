@@ -60,4 +60,21 @@ public class IntroEng extends AppCompatActivity {
             }
         }, 2000);
     }
+
+    // Back Button
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intentBack = new Intent(IntroEng.this, MainActivity.class);
+        intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intentBack.putExtra("nick", strNick);
+        intentBack.putExtra("pw", strPw);
+        intentBack.putExtra("name", strName);
+        intentBack.putExtra("email", strEmail);
+        intentBack.putExtra("avatar", strAvatar);
+        startActivity(intentBack);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
+    }
+
 }

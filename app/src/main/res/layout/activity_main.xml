@@ -16,9 +16,9 @@
         <!-- Top Menu -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/main_bg1"
+            android:layout_height="140dp"
+            android:background="@drawable/box_white"
+            android:elevation="3dp"
             android:orientation="horizontal">
 
             <Space
@@ -35,37 +35,36 @@
                 <LinearLayout
                     android:id="@+id/llProfile"
                     android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:background="@drawable/custom_underline"
+                    android:layout_height="140dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="7"
+                        android:layout_marginBottom="20dp"
                         android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="6.5"
+                            android:layout_weight="1"
                             android:gravity="bottom">
 
                             <TextView
                                 android:id="@+id/tvTitleHello"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/bebas_neue"
-                                android:text="Hello,"
+                                android:fontFamily="@font/pretendard_700"
+                                android:text="안녕하세요,"
                                 android:textColor="@color/main_gray"
-                                android:textSize="25dp"></TextView>
+                                android:textSize="20dp"></TextView>
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3.5"
+                            android:layout_height="60dp"
                             android:gravity="bottom"
                             android:paddingBottom="10dp">
 
@@ -89,7 +88,7 @@
                         android:gravity="bottom"
                         android:orientation="vertical"
                         android:paddingLeft="10dp"
-                        android:paddingBottom="10dp">
+                        android:paddingBottom="20dp">
 
                         <LinearLayout
                             android:id="@+id/llAvatar"
@@ -167,6 +166,7 @@
                                     android:id="@+id/llDate"
                                     android:layout_width="match_parent"
                                     android:layout_height="70dp"
+                                    android:layout_marginTop="10dp"
                                     android:focusable="true"
                                     android:focusableInTouchMode="true"
                                     android:orientation="horizontal">
@@ -238,7 +238,7 @@
                                     android:id="@+id/llCenterImg"
                                     android:layout_width="match_parent"
                                     android:layout_height="100dp"
-                                    android:background="@drawable/pastel_ripple_black"
+                                    android:background="@color/main_text"
                                     android:elevation="3dp"
                                     android:layout_margin="10dp"
                                     android:gravity="center_vertical"

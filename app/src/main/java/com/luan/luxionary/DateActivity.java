@@ -103,12 +103,12 @@ public class DateActivity extends AppCompatActivity {
         layout2 = (LinearLayout) findViewById(R.id.layout2);
         layout3 = (LinearLayout) findViewById(R.id.layout3);
         aniLayout0 = AnimationUtils.loadAnimation(DateActivity.this, R.anim.descend_fast);
-        aniLayout1 = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend);
+        aniLayout1 = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
         aniLayout1.setStartOffset(200);
-        aniLayout2 = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend);
-        aniLayout2.setStartOffset(500);
-        aniLayout3 = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend);
-        aniLayout3.setStartOffset(800);
+        aniLayout2 = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
+        aniLayout2.setStartOffset(400);
+        aniLayout3 = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
+        aniLayout3.setStartOffset(600);
         layout0.startAnimation(aniLayout0);
         layout1.startAnimation(aniLayout1);
         layout2.startAnimation(aniLayout2);
