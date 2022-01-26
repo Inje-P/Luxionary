@@ -18,94 +18,104 @@
         <LinearLayout
             android:id="@+id/layoutProfile"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@drawable/main_rus_bg2"
+            android:layout_height="180dp"
+            android:background="@drawable/top_white"
+            android:elevation="3dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:orientation="horizontal">
-
-                <Space
-                    android:layout_width="30dp"
-                    android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/main_rus_bg2">
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/custom_underline"
-                    android:orientation="horizontal"
-                    android:paddingBottom="10dp">
+                    android:orientation="horizontal">
 
-                    <!-- Title -->
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent" />
+
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="160dp"
-                        android:layout_weight="7"
-                        android:orientation="vertical">
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_underline"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
 
+                        <!-- Title -->
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="8">
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="7"
+                            android:orientation="vertical">
 
-                            <TextView
-                                android:id="@+id/tvTitle1"
+                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:fontFamily="@font/pretendard_800"
-                                android:gravity="bottom"
-                                android:text="Русский"
-                                android:textColor="@color/rus_main"
-                                android:textSize="40dp"></TextView>
+                                android:layout_height="0dp"
+                                android:layout_weight="8">
+
+                                <TextView
+                                    android:id="@+id/tvTitle1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/pretendard_800"
+                                    android:gravity="bottom"
+                                    android:text="Русский"
+                                    android:textColor="@color/rus_main"
+                                    android:textSize="40dp"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2">
+
+                                <TextView
+                                    android:id="@+id/tvTitle2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/pretendard_800"
+                                    android:gravity="bottom"
+                                    android:paddingBottom="10dp"
+                                    android:text="러시아어"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="18dp"></TextView>
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
+                        <!-- Avatar -->
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="2">
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
 
-                            <TextView
-                                android:id="@+id/tvTitle2"
+                            <ImageView
+                                android:id="@+id/imgAvatar"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:fontFamily="@font/pretendard_800"
-                                android:gravity="bottom"
-                                android:paddingBottom="10dp"
-                                android:text="러시아어"
-                                android:textColor="@color/main_text"
-                                android:textSize="18dp"></TextView>
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="65dp"
+                                android:padding="5dp"
+                                android:src="@drawable/avt_male1"></ImageView>
 
                         </LinearLayout>
 
                     </LinearLayout>
 
-                    <!-- Avatar -->
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="160dp"
-                        android:layout_weight="3"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/imgAvatar"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="65dp"
-                            android:padding="5dp"
-                            android:src="@drawable/avt_male1"></ImageView>
-
-                    </LinearLayout>
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent" />
 
                 </LinearLayout>
-
-                <Space
-                    android:layout_width="30dp"
-                    android:layout_height="match_parent" />
 
             </LinearLayout>
 
@@ -142,25 +152,9 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content">
 
-                        <!-- Banner -->
-                        <LinearLayout
-                            android:id="@+id/llBanner"
+                        <Space
                             android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            android:layout_marginBottom="10dp"
-                            android:orientation="vertical">
-
-                            <ImageButton
-                                android:layout_width="match_parent"
-                                android:layout_height="120dp"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_900"
-                                android:scaleType="fitCenter"
-                                android:stateListAnimator="@null"
-                                android:textColor="@color/main_white"
-                                app:srcCompat="@drawable/level_1_none"></ImageButton>
-
-                        </LinearLayout>
+                            android:layout_height="20dp"/>
 
                         <!-- 1 -->
                         <LinearLayout

@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:elevation="3dp"
-            android:background="@drawable/custom_menubar2"
+            android:background="@drawable/top_white"
             android:orientation="horizontal">
 
             <!-- Prev -->

@@ -27,13 +27,13 @@ public class MonoEng extends AppCompatActivity {
     ImageView imgAvatar;
     Button btnEng1, btnEng2, btnEng3, btnEng4, btnEng5, btnEng6, btnEng7, btnEng8;
     Button btnEng9, btnEng10, btnEng11, btnEng12, btnEng13, btnEng14, btnEng15;
-    LinearLayout layoutProfile, llBanner;
+    LinearLayout layoutProfile;
     LinearLayout llEng1, llEng2, llEng3, llEng4, llEng5, llEng6, llEng7, llEng8;
     LinearLayout llEng9, llEng10, llEng11, llEng12, llEng13, llEng14, llEng15;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2, aniAvatar;
-    Animation aniLayoutProfile, aniLlBanner;
+    Animation aniLayoutProfile;
     Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
     Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15;
 
@@ -92,9 +92,6 @@ public class MonoEng extends AppCompatActivity {
         aniLayoutProfile = AnimationUtils.loadAnimation(MonoEng.this, R.anim.fadein);
         aniLayoutProfile.setStartOffset(600);
         layoutProfile.startAnimation(aniLayoutProfile);
-        llBanner = (LinearLayout) findViewById(R.id.llBanner);
-        aniLlBanner = AnimationUtils.loadAnimation(MonoEng.this, R.anim.ascend_fast);
-        llBanner.startAnimation(aniLlBanner);
 
         // Avatar
         imgAvatar = (ImageView) findViewById(R.id.imgAvatar);
