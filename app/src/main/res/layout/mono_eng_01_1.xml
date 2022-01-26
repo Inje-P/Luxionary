@@ -16,8 +16,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:elevation="3dp"
             android:background="@drawable/top_white"
+            android:elevation="3dp"
             android:orientation="horizontal">
 
             <!-- Prev -->
@@ -143,7 +143,7 @@
                                         android:gravity="center_vertical"
                                         android:text="Alphabet"
                                         android:textColor="@color/main_text"
-                                        android:textSize="30dp"></TextView>
+                                        android:textSize="25dp"></TextView>
 
                                 </LinearLayout>
 
@@ -184,12 +184,12 @@
                                     android:id="@+id/btnPlay"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/ripple_eng_full"
+                                    android:background="@drawable/pastel_ripple_eng_full"
                                     android:elevation="2dp"
                                     android:padding="10dp"
-                                    android:stateListAnimator="@null"
                                     android:scaleType="fitCenter"
-                                    android:src="@drawable/ic_play" />
+                                    android:src="@drawable/ic_play"
+                                    android:stateListAnimator="@null" />
 
                             </LinearLayout>
 

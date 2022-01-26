@@ -19,6 +19,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import org.w3c.dom.Text;
 
 public class MonoEng_01_1 extends AppCompatActivity {
+
     // Data from DB
     String strNick, strPw, strName, strEmail, strAvatar;
 
@@ -83,6 +84,7 @@ public class MonoEng_01_1 extends AppCompatActivity {
         btnUpdate = (ImageButton) findViewById(R.id.btnUpdate);
         btnSidebar.setOnClickListener(mClickListener);
         btnHome.setOnClickListener(mClickListener);
+        btnUpdate.setOnClickListener(mClickListener);
 
     }
 

@@ -10,14 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/main_white"
-        android:orientation="vertical"
-        tools:context=".MainEng">
+        android:orientation="vertical">
 
-        <!-- Menu Bar (Bottom) -->
+        <!-- Menu Bar (Top) -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/custom_menubar2"
+            android:background="@drawable/top_white"
+            android:elevation="3dp"
             android:orientation="horizontal">
 
             <!-- Prev -->
@@ -85,7 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@color/main_white">
+            android:background="@android:color/transparent">
 
             <!-- Container -->
             <LinearLayout
@@ -98,52 +98,98 @@
                 <LinearLayout
                     android:id="@+id/layoutTitle"
                     android:layout_width="match_parent"
-                    android:layout_height="105dp"
-                    android:orientation="vertical">
+                    android:layout_height="130dp"
+                    android:orientation="horizontal">
 
                     <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="15dp"></Space>
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <LinearLayout
+                            android:id="@+id/llTitle"
                             android:layout_width="match_parent"
-                            android:layout_height="70dp"
-                            android:orientation="vertical">
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/box_white"
+                            android:elevation="3dp"
+                            android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp">
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
 
-                                <TextView
-                                    android:id="@+id/tvTitle1"
+                                <!-- Title -->
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/pretendard_800"
-                                    android:gravity="center"
-                                    android:text="L'alphabet"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="35dp"></TextView>
+                                    android:layout_height="50dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="25dp">
+
+                                    <TextView
+                                        android:id="@+id/tvTitle1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/pretendard_800"
+                                        android:gravity="center_vertical"
+                                        android:text="L'alphabet"
+                                        android:textColor="@color/main_text"
+                                        android:textSize="25dp"></TextView>
+
+                                </LinearLayout>
+
+                                <!-- Subtitle -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="25dp">
+
+                                    <TextView
+                                        android:id="@+id/tvTitle2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/pretendard_600"
+                                        android:gravity="center_vertical"
+                                        android:text="알파벳"
+                                        android:textColor="@color/main_gray"
+                                        android:textSize="14dp"></TextView>
+
+                                </LinearLayout>
 
                             </LinearLayout>
 
+                            <!-- Play Button -->
                             <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp">
+                                android:id="@+id/layoutPlay"
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="25dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="25dp">
 
-                                <TextView
-                                    android:id="@+id/tvTitle2"
+                                <ImageButton
+                                    android:id="@+id/btnPlay"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:fontFamily="@font/pretendard_600"
-                                    android:gravity="center"
-                                    android:text="기본적인 알파벳은 다음과 같아요"
-                                    android:textColor="@color/main_gray"
-                                    android:textSize="15dp"></TextView>
+                                    android:background="@drawable/pastel_ripple_fra_full"
+                                    android:elevation="2dp"
+                                    android:padding="10dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_play"
+                                    android:stateListAnimator="@null" />
 
                             </LinearLayout>
 
@@ -152,8 +198,8 @@
                     </LinearLayout>
 
                     <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="15dp"></Space>
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
 
                 </LinearLayout>
 
@@ -165,20 +211,27 @@
                     android:orientation="horizontal">
 
                     <Space
-                        android:layout_width="30dp"
+                        android:layout_width="20dp"
                         android:layout_height="match_parent" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:background="@drawable/box_white"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
 
                         <!-- 1 -->
                         <LinearLayout
                             android:id="@+id/ll1"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1425,7 +1478,7 @@
                     </LinearLayout>
 
                     <Space
-                        android:layout_width="30dp"
+                        android:layout_width="20dp"
                         android:layout_height="match_parent" />
 
                 </LinearLayout>
@@ -1438,7 +1491,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/custom_menubar"
+            android:background="@drawable/custom_menubar2"
+            android:elevation="3dp"
             android:orientation="horizontal">
 
             <Space

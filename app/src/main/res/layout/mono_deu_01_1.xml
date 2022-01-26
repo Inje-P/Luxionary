@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
@@ -10,35 +9,35 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="@color/main_white"
-        tools:context=".MainEng">
+        android:orientation="vertical">
 
-        <!-- Menu Bar (Bottom) -->
+        <!-- Menu Bar (Top) -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:orientation="horizontal"
-            android:background="@drawable/custom_menubar2">
+            android:background="@drawable/top_white"
+            android:elevation="3dp"
+            android:orientation="horizontal">
 
             <!-- Prev -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="3">
+                android:layout_weight="3"
+                android:orientation="vertical">
 
                 <ImageButton
                     android:id="@+id/btnPrev"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="3dp"
                     android:layout_marginRight="60dp"
+                    android:layout_marginBottom="3dp"
                     android:background="@drawable/custom_ripple_transparent"
-                    app:srcCompat="@drawable/ic_chevron_left"
                     android:contentDescription="Prev Button"
                     android:padding="10dp"
-                    android:scaleType="fitCenter"></ImageButton>
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_chevron_left"></ImageButton>
 
             </LinearLayout>
 
@@ -51,10 +50,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/pretendard_800"
-                    android:textColor="@color/main_text"
                     android:gravity="center"
-                    android:textSize="16dp"
-                    android:text="1. Das Alphabet"></TextView>
+                    android:text="1. Das Alphabet"
+                    android:textColor="@color/main_text"
+                    android:textSize="16dp"></TextView>
 
             </LinearLayout>
 
@@ -62,20 +61,20 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="3">
+                android:layout_weight="3"
+                android:orientation="vertical">
 
                 <ImageButton
                     android:id="@+id/btnNext"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="3dp"
                     android:layout_marginLeft="60dp"
+                    android:layout_marginBottom="3dp"
                     android:background="@drawable/custom_ripple_transparent"
-                    app:srcCompat="@drawable/ic_chevron_right"
                     android:contentDescription="Next Button"
                     android:padding="10dp"
-                    android:scaleType="fitCenter"></ImageButton>
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_chevron_right"></ImageButton>
 
             </LinearLayout>
 
@@ -83,10 +82,10 @@
 
         <!-- ScrollView -->
         <ScrollView
-            android:background="@color/main_white"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
 
             <!-- Container -->
             <LinearLayout
@@ -99,52 +98,98 @@
                 <LinearLayout
                     android:id="@+id/layoutTitle"
                     android:layout_width="match_parent"
-                    android:layout_height="105dp"
-                    android:orientation="vertical">
+                    android:layout_height="130dp"
+                    android:orientation="horizontal">
 
                     <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="15dp"></Space>
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <LinearLayout
+                            android:id="@+id/llTitle"
                             android:layout_width="match_parent"
-                            android:layout_height="70dp"
-                            android:orientation="vertical">
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/box_white"
+                            android:elevation="3dp"
+                            android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp">
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
 
-                                <TextView
-                                    android:id="@+id/tvTitle1"
+                                <!-- Title -->
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/pretendard_800"
-                                    android:gravity="center"
-                                    android:text="Das Alphabet"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="35dp"></TextView>
+                                    android:layout_height="50dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="25dp">
+
+                                    <TextView
+                                        android:id="@+id/tvTitle1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/pretendard_800"
+                                        android:gravity="center_vertical"
+                                        android:text="Das Alphabet"
+                                        android:textColor="@color/main_text"
+                                        android:textSize="25dp"></TextView>
+
+                                </LinearLayout>
+
+                                <!-- Subtitle -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="25dp">
+
+                                    <TextView
+                                        android:id="@+id/tvTitle2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/pretendard_600"
+                                        android:gravity="center_vertical"
+                                        android:text="알파벳"
+                                        android:textColor="@color/main_gray"
+                                        android:textSize="14dp"></TextView>
+
+                                </LinearLayout>
 
                             </LinearLayout>
 
+                            <!-- Play Button -->
                             <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="20dp">
+                                android:id="@+id/layoutPlay"
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="25dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="25dp">
 
-                                <TextView
-                                    android:id="@+id/tvTitle2"
+                                <ImageButton
+                                    android:id="@+id/btnPlay"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:fontFamily="@font/pretendard_600"
-                                    android:text="기본적인 알파벳은 다음과 같아요"
-                                    android:textColor="@color/main_gray"
-                                    android:textSize="15dp"></TextView>
+                                    android:background="@drawable/pastel_ripple_deu_full"
+                                    android:elevation="2dp"
+                                    android:padding="10dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_play"
+                                    android:stateListAnimator="@null" />
 
                             </LinearLayout>
 
@@ -153,8 +198,8 @@
                     </LinearLayout>
 
                     <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="15dp"></Space>
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
 
                 </LinearLayout>
 
@@ -166,60 +211,66 @@
                     android:orientation="horizontal">
 
                     <Space
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
+                        android:layout_width="20dp"
                         android:layout_height="match_parent"/>
 
                     <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_weight="8"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/box_white"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
 
                         <!-- 1 -->
                         <LinearLayout
                             android:id="@+id/ll1"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                             <TextView
                                 android:id="@+id/tv1a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="A a"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv1b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Auto"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Auto"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv1c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Artikel"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Artikel"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -234,40 +285,40 @@
                             <TextView
                                 android:id="@+id/tv2a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="B b"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv2b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Bier"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Bier"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv2c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Buchstabe"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Buchstabe"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -282,40 +333,40 @@
                             <TextView
                                 android:id="@+id/tv3a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="C c"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv3b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Cello"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Cello"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv3c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Computerspiel"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Computerspiel"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -330,40 +381,40 @@
                             <TextView
                                 android:id="@+id/tv4a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="D d"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv4b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="doch"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="doch"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv4c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Deutschland"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Deutschland"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -378,40 +429,40 @@
                             <TextView
                                 android:id="@+id/tv5a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="E e"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv5b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="elegant"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="elegant"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv5c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Ewigkeit"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Ewigkeit"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -426,40 +477,40 @@
                             <TextView
                                 android:id="@+id/tv6a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="F f"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv6b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Finger"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Finger"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv6c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Forderung"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Forderung"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -474,40 +525,40 @@
                             <TextView
                                 android:id="@+id/tv7a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="G g"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv7b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Garten"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Garten"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv7c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Geheimnis"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Geheimnis"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -522,40 +573,40 @@
                             <TextView
                                 android:id="@+id/tv8a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="H h"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv8b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Herz"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Herz"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv8c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Heiligkeit"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Heiligkeit"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -570,40 +621,40 @@
                             <TextView
                                 android:id="@+id/tv9a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="I i"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv9b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="ich"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="ich"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv9c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Impression"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Impression"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -618,40 +669,40 @@
                             <TextView
                                 android:id="@+id/tv10a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="J j"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv10b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Jahr"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Jahr"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv10c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Justizgewalt"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Justizgewalt"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -666,40 +717,40 @@
                             <TextView
                                 android:id="@+id/tv11a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="K k"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv11b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Kaffee"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Kaffee"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv11c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Kenntnis"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Kenntnis"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -714,40 +765,40 @@
                             <TextView
                                 android:id="@+id/tv12a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="L l"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv12b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Land"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Land"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv12c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Liebling"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Liebling"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -762,40 +813,40 @@
                             <TextView
                                 android:id="@+id/tv13a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="M m"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv13b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Mund"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Mund"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv13c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="manchmal"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="manchmal"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -810,40 +861,40 @@
                             <TextView
                                 android:id="@+id/tv14a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="N n"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv14b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Name"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Name"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv14c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="notwendig"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="notwendig"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -858,40 +909,40 @@
                             <TextView
                                 android:id="@+id/tv15a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="O o"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv15b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="oft"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="oft"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv15c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Ordnung"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Ordnung"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -906,40 +957,40 @@
                             <TextView
                                 android:id="@+id/tv16a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="P p"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv16b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Platz"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Platz"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv16c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Perfektion"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Perfektion"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -954,40 +1005,40 @@
                             <TextView
                                 android:id="@+id/tv17a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="Q q"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv17b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Quote"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Quote"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv17c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Qualifikation"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Qualifikation"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1002,40 +1053,40 @@
                             <TextView
                                 android:id="@+id/tv18a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="R r"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv18b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Rat"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Rat"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv18c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="romantisch"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="romantisch"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1050,40 +1101,40 @@
                             <TextView
                                 android:id="@+id/tv19a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="S s"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv19b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Sohn"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Sohn"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv19c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Seriosität"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Seriosität"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1098,40 +1149,40 @@
                             <TextView
                                 android:id="@+id/tv20a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="T t"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv20b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Tag"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Tag"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv20c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Toilette"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Toilette"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1146,40 +1197,40 @@
                             <TextView
                                 android:id="@+id/tv21a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="U u"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv21b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Uhr"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Uhr"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv21c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Unternehmen"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Unternehmen"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1194,40 +1245,40 @@
                             <TextView
                                 android:id="@+id/tv22a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="V v"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv22b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Vater"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Vater"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv22c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="vollständig"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="vollständig"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1242,40 +1293,40 @@
                             <TextView
                                 android:id="@+id/tv23a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="W w"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv23b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Wahl"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Wahl"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv23c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="wunderbar"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="wunderbar"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1290,40 +1341,40 @@
                             <TextView
                                 android:id="@+id/tv24a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="X x"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv24b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Index"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Index"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv24c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Xenokratie"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Xenokratie"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1338,40 +1389,40 @@
                             <TextView
                                 android:id="@+id/tv25a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="Y y"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv25b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Ypsilon"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Ypsilon"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv25c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="systematisch"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="systematisch"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1386,40 +1437,40 @@
                             <TextView
                                 android:id="@+id/tv26a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="Z z"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv26b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Zeit"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Zeit"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv26c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Zeugnis"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Zeugnis"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1434,40 +1485,40 @@
                             <TextView
                                 android:id="@+id/tv27a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="Ä ä"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv27b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Ärger"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Ärger"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv27c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Ähnlichkeit"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Ähnlichkeit"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1482,40 +1533,40 @@
                             <TextView
                                 android:id="@+id/tv28a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="Ö ö"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv28b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Ökonomie"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Ökonomie"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv28c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Öffentlichkeit"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Öffentlichkeit"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1530,40 +1581,40 @@
                             <TextView
                                 android:id="@+id/tv29a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="Ü ü"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv29b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="über"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="über"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv29c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Überzeugung"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Überzeugung"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -1579,48 +1630,47 @@
                             <TextView
                                 android:id="@+id/tv30a"
                                 android:layout_width="0dp"
-                                android:layout_weight="2"
                                 android:layout_height="40dp"
-                                android:textColor="@color/deu_background"
-                                android:gravity="center"
+                                android:layout_weight="2"
                                 android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
                                 android:text="ß"
-                                android:textSize="20dp"
-                                android:stateListAnimator="@null"></TextView>
+                                android:textColor="@color/deu_background"
+                                android:textSize="20dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv30b"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Spaß"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Spaß"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tv30c"
                                 android:layout_width="0dp"
-                                android:layout_weight="4"
                                 android:layout_height="40dp"
-                                android:textColor="@color/main_text"
-                                android:gravity="center"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:text="Großbritannien"
-                                android:textSize="16dp"
+                                android:layout_weight="4"
                                 android:background="@android:color/transparent"
-                                android:stateListAnimator="@null"></TextView>
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="Großbritannien"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
                     </LinearLayout>
 
                     <Space
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
+                        android:layout_width="20dp"
                         android:layout_height="match_parent"/>
 
                 </LinearLayout>
@@ -1633,8 +1683,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:background="@drawable/custom_menubar">
+            android:background="@drawable/custom_menubar2"
+            android:elevation="3dp"
+            android:orientation="horizontal">
 
             <Space
                 android:layout_width="0dp"
@@ -1645,8 +1696,8 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="3">
+                android:layout_weight="3"
+                android:orientation="vertical">
 
                 <ImageButton
                     android:id="@+id/btnSidebar"
@@ -1654,10 +1705,10 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="3dp"
                     android:background="@drawable/custom_ripple_transparent"
-                    app:srcCompat="@drawable/ic_sidebar"
                     android:contentDescription="Sidebar Button"
                     android:padding="12dp"
-                    android:scaleType="fitCenter"></ImageButton>
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_sidebar"></ImageButton>
 
             </LinearLayout>
 
@@ -1665,8 +1716,8 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="3">
+                android:layout_weight="3"
+                android:orientation="vertical">
 
                 <ImageButton
                     android:id="@+id/btnHome"
@@ -1674,10 +1725,10 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="3dp"
                     android:background="@drawable/custom_ripple_transparent"
-                    app:srcCompat="@drawable/ic_home"
                     android:contentDescription="Home Button"
                     android:padding="12dp"
-                    android:scaleType="fitCenter"></ImageButton>
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_home"></ImageButton>
 
             </LinearLayout>
 
@@ -1685,8 +1736,8 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="3">
+                android:layout_weight="3"
+                android:orientation="vertical">
 
                 <ImageButton
                     android:id="@+id/btnUpdate"
@@ -1694,10 +1745,10 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="3dp"
                     android:background="@drawable/custom_ripple_transparent"
-                    app:srcCompat="@drawable/ic_update"
                     android:contentDescription="Update Button"
                     android:padding="12dp"
-                    android:scaleType="fitCenter"></ImageButton>
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_update"></ImageButton>
 
             </LinearLayout>
 
@@ -1710,6 +1761,6 @@
 
     </LinearLayout>
 
-    <include layout="@layout/activity_drawer"/>
+    <include layout="@layout/activity_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

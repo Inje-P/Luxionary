@@ -231,7 +231,7 @@
                                     android:id="@+id/llCenterImg"
                                     android:layout_width="match_parent"
                                     android:layout_height="100dp"
-                                    android:background="@drawable/pastel_ripple_black"
+                                    android:background="@color/main_text"
                                     android:elevation="3dp"
                                     android:layout_margin="10dp"
                                     android:gravity="center_vertical"
@@ -288,7 +288,7 @@
                                 <LinearLayout
                                     android:id="@+id/llEng"
                                     android:layout_width="match_parent"
-                                    android:layout_height="270dp"
+                                    android:layout_height="280dp"
                                     android:orientation="vertical">
 
                                     <LinearLayout
@@ -324,12 +324,12 @@
                                     <TextView
                                         android:id="@+id/tvEng"
                                         android:layout_width="match_parent"
-                                        android:layout_height="30dp"
-                                        android:fontFamily="@font/pretendard_800"
+                                        android:layout_height="40dp"
+                                        android:fontFamily="@font/nunitosans_900"
                                         android:gravity="center"
                                         android:text="ENGLISH"
                                         android:textColor="@color/main_text"
-                                        android:textSize="20dp"></TextView>
+                                        android:textSize="25dp"></TextView>
 
                                 </LinearLayout>
 
@@ -337,7 +337,7 @@
                                 <LinearLayout
                                     android:id="@+id/llFra"
                                     android:layout_width="match_parent"
-                                    android:layout_height="270dp"
+                                    android:layout_height="280dp"
                                     android:orientation="vertical">
 
                                     <LinearLayout
@@ -373,12 +373,12 @@
                                     <TextView
                                         android:id="@+id/tvFra"
                                         android:layout_width="match_parent"
-                                        android:layout_height="30dp"
+                                        android:layout_height="40dp"
                                         android:fontFamily="@font/pretendard_800"
                                         android:gravity="center"
                                         android:text="FRANÇAIS"
                                         android:textColor="@color/main_text"
-                                        android:textSize="20dp"></TextView>
+                                        android:textSize="25dp"></TextView>
 
                                 </LinearLayout>
 
@@ -386,7 +386,7 @@
                                 <LinearLayout
                                     android:id="@+id/llDeu"
                                     android:layout_width="match_parent"
-                                    android:layout_height="270dp"
+                                    android:layout_height="280dp"
                                     android:orientation="vertical">
 
                                     <LinearLayout
@@ -422,12 +422,12 @@
                                     <TextView
                                         android:id="@+id/tvDeu"
                                         android:layout_width="match_parent"
-                                        android:layout_height="30dp"
+                                        android:layout_height="40dp"
                                         android:fontFamily="@font/pretendard_800"
                                         android:gravity="center"
                                         android:text="DEUTSCH"
                                         android:textColor="@color/main_text"
-                                        android:textSize="20dp"></TextView>
+                                        android:textSize="25dp"></TextView>
 
                                 </LinearLayout>
 
@@ -435,7 +435,7 @@
                                 <LinearLayout
                                     android:id="@+id/llIta"
                                     android:layout_width="match_parent"
-                                    android:layout_height="270dp"
+                                    android:layout_height="280dp"
                                     android:orientation="vertical">
 
                                     <LinearLayout
@@ -476,7 +476,7 @@
                                         android:gravity="center"
                                         android:text="ITALIANO"
                                         android:textColor="@color/main_text"
-                                        android:textSize="20dp"></TextView>
+                                        android:textSize="25dp"></TextView>
 
                                 </LinearLayout>
 
@@ -484,7 +484,7 @@
                                 <LinearLayout
                                     android:id="@+id/llSpa"
                                     android:layout_width="match_parent"
-                                    android:layout_height="270dp"
+                                    android:layout_height="280dp"
                                     android:orientation="vertical">
 
                                     <LinearLayout
@@ -520,12 +520,12 @@
                                     <TextView
                                         android:id="@+id/tvSpa"
                                         android:layout_width="match_parent"
-                                        android:layout_height="30dp"
+                                        android:layout_height="40dp"
                                         android:fontFamily="@font/pretendard_800"
                                         android:gravity="center"
                                         android:text="ESPAÑOL"
                                         android:textColor="@color/main_text"
-                                        android:textSize="20dp"></TextView>
+                                        android:textSize="25dp"></TextView>
 
                                 </LinearLayout>
 
@@ -533,7 +533,7 @@
                                 <LinearLayout
                                     android:id="@+id/llRus"
                                     android:layout_width="match_parent"
-                                    android:layout_height="270dp"
+                                    android:layout_height="280dp"
                                     android:orientation="vertical">
 
                                     <LinearLayout
@@ -569,12 +569,12 @@
                                     <TextView
                                         android:id="@+id/tvRus"
                                         android:layout_width="match_parent"
-                                        android:layout_height="30dp"
+                                        android:layout_height="40dp"
                                         android:fontFamily="@font/pretendard_800"
                                         android:gravity="center"
                                         android:text="РУССКИЙ"
                                         android:textColor="@color/main_text"
-                                        android:textSize="20dp"></TextView>
+                                        android:textSize="25dp"></TextView>
 
                                 </LinearLayout>
 
