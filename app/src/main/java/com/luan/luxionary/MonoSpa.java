@@ -27,13 +27,13 @@ public class MonoSpa extends AppCompatActivity {
     TextView tvTitle1, tvTitle2;
     Button btnSpa1, btnSpa2, btnSpa3, btnSpa4, btnSpa5, btnSpa6, btnSpa7, btnSpa8;
     Button btnSpa9, btnSpa10, btnSpa11, btnSpa12, btnSpa13, btnSpa14, btnSpa15;
-    LinearLayout layoutProfile, llBanner;
+    LinearLayout layoutProfile;
     LinearLayout llSpa1, llSpa2, llSpa3, llSpa4, llSpa5, llSpa6, llSpa7, llSpa8;
     LinearLayout llSpa9, llSpa10, llSpa11, llSpa12, llSpa13, llSpa14, llSpa15;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2;
-    Animation aniLayoutProfile, aniLlBanner;
+    Animation aniLayoutProfile;
     Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
     Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15;
 
@@ -91,9 +91,6 @@ public class MonoSpa extends AppCompatActivity {
         aniLayoutProfile = AnimationUtils.loadAnimation(MonoSpa.this, R.anim.fadein);
         aniLayoutProfile.setStartOffset(600);
         layoutProfile.startAnimation(aniLayoutProfile);
-        llBanner = (LinearLayout) findViewById(R.id.llBanner);
-        aniLlBanner = AnimationUtils.loadAnimation(MonoSpa.this, R.anim.ascend_fast);
-        llBanner.startAnimation(aniLlBanner);
 
         // Touch Animation
         aniTouch = AnimationUtils.loadAnimation(MonoSpa.this, R.anim.scale);

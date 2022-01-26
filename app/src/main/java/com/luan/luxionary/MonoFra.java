@@ -27,13 +27,13 @@ public class MonoFra extends AppCompatActivity {
     TextView tvTitle1, tvTitle2;
     Button btnFra1, btnFra2, btnFra3, btnFra4, btnFra5, btnFra6, btnFra7, btnFra8;
     Button btnFra9, btnFra10, btnFra11, btnFra12, btnFra13, btnFra14, btnFra15;
-    LinearLayout layoutProfile, llBanner;
+    LinearLayout layoutProfile;
     LinearLayout llFra1, llFra2, llFra3, llFra4, llFra5, llFra6, llFra7, llFra8;
     LinearLayout llFra9, llFra10, llFra11, llFra12, llFra13, llFra14, llFra15;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2;
-    Animation aniLayoutProfile, aniLlBanner;
+    Animation aniLayoutProfile;
     Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
     Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15;
 
@@ -91,9 +91,6 @@ public class MonoFra extends AppCompatActivity {
         aniLayoutProfile = AnimationUtils.loadAnimation(MonoFra.this, R.anim.fadein);
         aniLayoutProfile.setStartOffset(600);
         layoutProfile.startAnimation(aniLayoutProfile);
-        llBanner = (LinearLayout) findViewById(R.id.llBanner);
-        aniLlBanner = AnimationUtils.loadAnimation(MonoFra.this, R.anim.ascend_fast);
-        llBanner.startAnimation(aniLlBanner);
 
         // Touch Animation
         aniTouch = AnimationUtils.loadAnimation(MonoFra.this, R.anim.scale);

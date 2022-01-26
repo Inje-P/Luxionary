@@ -27,13 +27,13 @@ public class MonoDeu extends AppCompatActivity {
     TextView tvTitle1, tvTitle2;
     Button btnDeu1, btnDeu2, btnDeu3, btnDeu4, btnDeu5, btnDeu6, btnDeu7, btnDeu8;
     Button btnDeu9, btnDeu10, btnDeu11, btnDeu12, btnDeu13, btnDeu14, btnDeu15;
-    LinearLayout layoutProfile, llBanner;
+    LinearLayout layoutProfile;
     LinearLayout llDeu1, llDeu2, llDeu3, llDeu4, llDeu5, llDeu6, llDeu7, llDeu8;
     LinearLayout llDeu9, llDeu10, llDeu11, llDeu12, llDeu13, llDeu14, llDeu15;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2;
-    Animation aniLayoutProfile, aniLlBanner;
+    Animation aniLayoutProfile;
     Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
     Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15;
 
@@ -91,9 +91,6 @@ public class MonoDeu extends AppCompatActivity {
         aniLayoutProfile = AnimationUtils.loadAnimation(MonoDeu.this, R.anim.fadein);
         aniLayoutProfile.setStartOffset(600);
         layoutProfile.startAnimation(aniLayoutProfile);
-        llBanner = (LinearLayout) findViewById(R.id.llBanner);
-        aniLlBanner = AnimationUtils.loadAnimation(MonoDeu.this, R.anim.ascend_fast);
-        llBanner.startAnimation(aniLlBanner);
 
         // Touch Animation
         aniTouch = AnimationUtils.loadAnimation(MonoDeu.this, R.anim.scale);
