@@ -23,6 +23,7 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/custom_ripple_white.xml" value="0.2212962962962963" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/custom_underline.xml" value="0.3453703703703704" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/default_dot.xml" value="0.13425925925925927" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/drawer_white.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/gradient_center_ita.xml" value="0.24947916666666667" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/gradient_end_ita.xml" value="0.24947916666666667" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/gradient_start_ita.xml" value="0.24947916666666667" />
@@ -60,7 +61,7 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_account.xml" value="0.25" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_avatar.xml" value="0.16032608695652173" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_date.xml" value="0.34791666666666665" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_drawer.xml" value="0.1691995947315096" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_drawer.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_intro.xml" value="0.1691995947315096" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_password.xml" value="0.33" />

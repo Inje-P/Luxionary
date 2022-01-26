@@ -231,7 +231,7 @@
                                     android:id="@+id/llCenterImg"
                                     android:layout_width="match_parent"
                                     android:layout_height="100dp"
-                                    android:background="@drawable/pastel_ripple_black"
+                                    android:background="@color/main_text"
                                     android:elevation="3dp"
                                     android:layout_margin="10dp"
                                     android:gravity="center_vertical"
