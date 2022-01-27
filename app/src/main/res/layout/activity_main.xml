@@ -510,8 +510,7 @@
                                                 android:fontFamily="@font/nunitosans_900"
                                                 android:scaleType="fitXY"
                                                 android:stateListAnimator="@null"
-                                                android:textColor="@color/main_white"
-                                                app:srcCompat="@android:color/transparent"></ImageButton>
+                                                android:textColor="@color/main_white"></ImageButton>
 
                                         </LinearLayout>
 
