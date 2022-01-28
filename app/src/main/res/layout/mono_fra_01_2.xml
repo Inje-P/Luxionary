@@ -141,7 +141,7 @@
                                         android:layout_height="match_parent"
                                         android:fontFamily="@font/pretendard_800"
                                         android:gravity="center_vertical"
-                                        android:text="La diphtongue"
+                                        android:text="Prononciation Ⅰ"
                                         android:textColor="@color/main_text"
                                         android:textSize="25dp"></TextView>
 
@@ -161,7 +161,7 @@
                                         android:layout_height="match_parent"
                                         android:fontFamily="@font/pretendard_600"
                                         android:gravity="center_vertical"
-                                        android:text="이중모음"
+                                        android:text="발음 1"
                                         android:textColor="@color/main_gray"
                                         android:textSize="14dp"></TextView>
 
@@ -242,7 +242,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ou"
+                                android:text="ai"
                                 android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
@@ -255,7 +255,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="douze"
+                                android:text="lait"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -268,7 +268,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ouverture"
+                                android:text="frais"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -281,7 +281,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="couvert"
+                                android:text="vraiment"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -303,7 +303,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="eu"
+                                android:text="ei"
                                 android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
@@ -316,7 +316,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Europe"
+                                android:text="reine"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -329,7 +329,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="seulement"
+                                android:text="Seine"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -342,7 +342,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="fleur"
+                                android:text="feignant"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -364,7 +364,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="œu"
+                                android:text="au"
                                 android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
@@ -377,7 +377,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="cœur"
+                                android:text="haut"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -390,7 +390,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="sœur"
+                                android:text="épaule"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -403,7 +403,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="œuvrette"
+                                android:text="automatique"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -425,7 +425,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="oi"
+                                android:text="eau"
                                 android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
@@ -438,7 +438,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="voilà"
+                                android:text="bateau"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -451,7 +451,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="loisir"
+                                android:text="oiseau"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -464,7 +464,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="voisinage"
+                                android:text="bureaucrate"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -486,7 +486,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ay"
+                                android:text="ou"
                                 android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
@@ -499,7 +499,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="rayon"
+                                android:text="douze"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -512,7 +512,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="crayon"
+                                android:text="ouverture"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -525,7 +525,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="paysage"
+                                android:text="couvert"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -547,7 +547,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ey"
+                                android:text="eu"
                                 android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
@@ -560,7 +560,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="volleyball"
+                                android:text="Europe"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -573,7 +573,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="barbeyer"
+                                android:text="seulement"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -586,7 +586,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Seychelles"
+                                android:text="fleur"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -608,7 +608,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="oy"
+                                android:text="œu"
                                 android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
@@ -621,7 +621,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="voyage"
+                                android:text="cœur"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -634,7 +634,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="joyeux"
+                                android:text="sœur"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -647,7 +647,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="royaume"
+                                android:text="œuvrette"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -669,7 +669,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ai"
+                                android:text="oi"
                                 android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
@@ -682,7 +682,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="lait"
+                                android:text="voilà"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -695,7 +695,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="frais"
+                                android:text="loisir"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -708,7 +708,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="vraiment"
+                                android:text="voisinage"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -730,7 +730,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ei"
+                                android:text="ay"
                                 android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
@@ -743,7 +743,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="reine"
+                                android:text="rayon"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -756,7 +756,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Seine"
+                                android:text="crayon"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -769,7 +769,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="feignant"
+                                android:text="paysage"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -791,7 +791,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="au"
+                                android:text="ey"
                                 android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
@@ -804,7 +804,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="haut"
+                                android:text="volleyball"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -817,7 +817,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="épaule"
+                                android:text="barbeyer"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -830,7 +830,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="automatique"
+                                android:text="Seychelles"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -852,7 +852,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="eau"
+                                android:text="oy"
                                 android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
@@ -865,7 +865,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="bateau"
+                                android:text="voyage"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -878,7 +878,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="oiseau"
+                                android:text="joyeux"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -891,7 +891,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="bureaucrate"
+                                android:text="royaume"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -987,7 +987,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="powder"
+                                android:text="amant"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1000,7 +1000,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="bowling"
+                                android:text="hampe"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1013,7 +1013,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="frown"
+                                android:text="hamburger"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1035,8 +1035,8 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ui"
-                                android:textColor="@color/eng_background"
+                                android:text="en"
+                                android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
                             <TextView
@@ -1048,7 +1048,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="quiz"
+                                android:text="cent"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1061,7 +1061,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="juice"
+                                android:text="enfant"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1074,7 +1074,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="inquiry"
+                                android:text="bienveillance"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1086,7 +1086,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginTop="10dp"
-                            android:layout_marginBottom="20dp"
                             android:orientation="horizontal">
 
                             <TextView
@@ -1097,8 +1096,8 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="uy"
-                                android:textColor="@color/eng_background"
+                                android:text="em"
+                                android:textColor="@color/fra_background"
                                 android:textSize="20dp"></TextView>
 
                             <TextView
@@ -1110,7 +1109,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="guy"
+                                android:text="empenne"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1123,7 +1122,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="buyer"
+                                android:text="empêcheur"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1136,9 +1135,559 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="fluyt"
+                                android:text="assemblée"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 16 -->
+                        <LinearLayout
+                            android:id="@+id/ll16"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv16a"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="in"
+                                android:textColor="@color/fra_background"
+                                android:textSize="20dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv16b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="afin"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv16c"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="câlin"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv16d"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="cinquante"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 17 -->
+                        <LinearLayout
+                            android:id="@+id/ll17"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv17a"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="im"
+                                android:textColor="@color/fra_background"
+                                android:textSize="20dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv17b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="impôt"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv17c"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="imposé"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv17d"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="important"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 18 -->
+                        <LinearLayout
+                            android:id="@+id/ll18"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv18a"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="ym"
+                                android:textColor="@color/fra_background"
+                                android:textSize="20dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv18b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="symbole"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv18c"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="olympique"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv18d"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="sympathique"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 19 -->
+                        <LinearLayout
+                            android:id="@+id/ll19"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv19a"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="ain"
+                                android:textColor="@color/fra_background"
+                                android:textSize="20dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv19b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="pain"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv19c"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="terrain"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv19d"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="maintenant"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 20 -->
+                        <LinearLayout
+                            android:id="@+id/ll20"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv20a"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="ein"
+                                android:textColor="@color/fra_background"
+                                android:textSize="20dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv20b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="sein"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv20c"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="enceinte"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv20d"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="éreintement"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 21 -->
+                        <LinearLayout
+                            android:id="@+id/ll21"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv21a"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="on"
+                                android:textColor="@color/fra_background"
+                                android:textSize="20dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv21b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="bon"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv21c"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="blonde"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv21d"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="annonce"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 22 -->
+                        <LinearLayout
+                            android:id="@+id/ll22"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv22a"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="om"
+                                android:textColor="@color/fra_background"
+                                android:textSize="20dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv22b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="combat"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv22c"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="comment"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv22d"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="accomplir"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 23 -->
+                        <LinearLayout
+                            android:id="@+id/ll23"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv23a"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="un"
+                                android:textColor="@color/fra_background"
+                                android:textSize="20dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv23b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="un"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv23c"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="aucun"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv23d"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="emprunt"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 24 -->
+                        <LinearLayout
+                            android:id="@+id/ll24"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv24a"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="um"
+                                android:textColor="@color/fra_background"
+                                android:textSize="20dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv24b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="parfum"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv24c"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="impérium"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv24d"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="circumduction"
+                                android:textColor="@color/main_text"
+                                android:textSize="15dp"></TextView>
 
                         </LinearLayout>
 

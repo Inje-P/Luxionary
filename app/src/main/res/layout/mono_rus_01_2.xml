@@ -141,7 +141,7 @@
                                         android:layout_height="match_parent"
                                         android:fontFamily="@font/pretendard_800"
                                         android:gravity="center_vertical"
-                                        android:text="Дифтонг"
+                                        android:text="Произношение Ⅰ"
                                         android:textColor="@color/main_text"
                                         android:textSize="25dp"></TextView>
 
@@ -161,7 +161,7 @@
                                         android:layout_height="match_parent"
                                         android:fontFamily="@font/pretendard_600"
                                         android:gravity="center_vertical"
-                                        android:text="이중모음"
+                                        android:text="발음 1"
                                         android:textColor="@color/main_gray"
                                         android:textSize="14dp"></TextView>
 
