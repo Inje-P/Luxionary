@@ -394,33 +394,21 @@ public class MainActivity extends AppCompatActivity {
                     rainbow();
                     break;
                 case R.id.btnEng:
-                    llEngBox.startAnimation(aniTouch);
-                    llEngImage.startAnimation(aniTouch);
                     pageEng();
                     break;
                 case R.id.btnFra:
-                    llFraBox.startAnimation(aniTouch);
-                    llFraImage.startAnimation(aniTouch);
                     pageFra();
                     break;
                 case R.id.btnDeu:
-                    llDeuBox.startAnimation(aniTouch);
-                    llDeuImage.startAnimation(aniTouch);
                     pageDeu();
                     break;
                 case R.id.btnIta:
-                    llItaBox.startAnimation(aniTouch);
-                    llItaImage.startAnimation(aniTouch);
                     pageIta();
                     break;
                 case R.id.btnSpa:
-                    llSpaBox.startAnimation(aniTouch);
-                    llSpaImage.startAnimation(aniTouch);
                     pageSpa();
                     break;
                 case R.id.btnRus:
-                    llRusBox.startAnimation(aniTouch);
-                    llRusImage.startAnimation(aniTouch);
                     pageRus();
                     break;
                 case R.id.btnSidebar:

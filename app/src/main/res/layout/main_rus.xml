@@ -120,191 +120,23 @@
 
         </LinearLayout>
 
-        <!-- ScrollView -->
-        <ScrollView
+        <!-- Container -->
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent">
+            android:background="@color/main_white">
 
-            <!-- Container -->
-            <LinearLayout
-                android:id="@+id/layoutContainer"
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clipToPadding="false"
+                android:foregroundGravity="center"
+                android:overScrollMode="never" />
 
-                <!-- Main Layout -->
-                <LinearLayout
-                    android:id="@+id/layoutMain"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <Space
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <Space
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"/>
-
-                        <!-- Monocycle -->
-                        <LinearLayout
-                            android:id="@+id/llRus1"
-                            android:layout_width="match_parent"
-                            android:layout_height="170dp"
-                            android:orientation="vertical">
-
-                            <ImageButton
-                                android:id="@+id/btnRus1"
-                                android:layout_width="match_parent"
-                                android:layout_height="120dp"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_rus"
-                                android:elevation="3dp"
-                                android:fontFamily="@font/nunitosans_900"
-                                android:padding="10dp"
-                                android:scaleType="fitCenter"
-                                android:stateListAnimator="@null"
-                                android:textColor="@color/main_white"
-                                app:srcCompat="@drawable/level_1"></ImageButton>
-
-                            <TextView
-                                android:id="@+id/tvRus1"
-                                android:layout_width="match_parent"
-                                android:layout_height="30dp"
-                                android:fontFamily="@font/pretendard_800"
-                                android:gravity="center"
-                                android:text="MONOCYCLE"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                        </LinearLayout>
-
-                        <!-- Bicycle -->
-                        <LinearLayout
-                            android:id="@+id/llRus2"
-                            android:layout_width="match_parent"
-                            android:layout_height="170dp"
-                            android:layout_marginTop="30dp"
-                            android:orientation="vertical">
-
-                            <ImageButton
-                                android:id="@+id/btnRus2"
-                                android:layout_width="match_parent"
-                                android:layout_height="120dp"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_rus"
-                                android:elevation="3dp"
-                                android:fontFamily="@font/nunitosans_900"
-                                android:gravity="bottom"
-                                android:padding="10dp"
-                                android:scaleType="fitCenter"
-                                android:stateListAnimator="@null"
-                                android:textColor="@color/main_white"
-                                app:srcCompat="@drawable/level_2"></ImageButton>
-
-                            <TextView
-                                android:id="@+id/tvRus2"
-                                android:layout_width="match_parent"
-                                android:layout_height="30dp"
-                                android:fontFamily="@font/pretendard_800"
-                                android:gravity="center"
-                                android:text="BICYCLE"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                        </LinearLayout>
-
-                        <!-- Tricycle -->
-                        <LinearLayout
-                            android:id="@+id/llRus3"
-                            android:layout_width="match_parent"
-                            android:layout_height="170dp"
-                            android:layout_marginTop="30dp"
-                            android:orientation="vertical">
-
-                            <ImageButton
-                                android:id="@+id/btnRus3"
-                                android:layout_width="match_parent"
-                                android:layout_height="120dp"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_rus"
-                                android:elevation="3dp"
-                                android:fontFamily="@font/nunitosans_900"
-                                android:gravity="bottom"
-                                android:padding="10dp"
-                                android:scaleType="fitCenter"
-                                android:stateListAnimator="@null"
-                                android:textColor="@color/main_white"
-                                app:srcCompat="@drawable/level_3"></ImageButton>
-
-                            <TextView
-                                android:id="@+id/tvRus3"
-                                android:layout_width="match_parent"
-                                android:layout_height="30dp"
-                                android:fontFamily="@font/pretendard_800"
-                                android:gravity="center"
-                                android:text="TRICYCLE"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                        </LinearLayout>
-
-                        <!-- Quadricycle -->
-                        <LinearLayout
-                            android:id="@+id/llRus4"
-                            android:layout_width="match_parent"
-                            android:layout_height="170dp"
-                            android:layout_marginTop="30dp"
-                            android:layout_marginBottom="30dp"
-                            android:orientation="vertical">
-
-                            <ImageButton
-                                android:id="@+id/btnRus4"
-                                android:layout_width="match_parent"
-                                android:layout_height="120dp"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_rus"
-                                android:elevation="3dp"
-                                android:fontFamily="@font/nunitosans_900"
-                                android:gravity="bottom"
-                                android:padding="10dp"
-                                android:scaleType="fitCenter"
-                                android:stateListAnimator="@null"
-                                android:textColor="@color/main_white"
-                                app:srcCompat="@drawable/level_4"></ImageButton>
-
-                            <TextView
-                                android:id="@+id/tvRus4"
-                                android:layout_width="match_parent"
-                                android:layout_height="30dp"
-                                android:fontFamily="@font/pretendard_800"
-                                android:gravity="center"
-                                android:text="QUADRICYCLE"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </ScrollView>
+        </RelativeLayout>
 
         <!-- Menu Bar (Bottom) -->
         <LinearLayout
