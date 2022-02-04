@@ -5,23 +5,27 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-public class MonoIta_01_1 extends AppCompatActivity {
+public class Lang101Eng_01_2 extends AppCompatActivity {
 
     // Data from DB
     String strNick, strPw, strName, strEmail, strAvatar;
 
     ImageButton btnPrev, btnNext;
 
-    TextView tvTitle1, tvTitle2;
-    Animation ani1, ani2;
+    // Main
+    LinearLayout layoutTitle, layoutMain;
+    ImageButton btnPlay;
+    Animation aniLayoutTitle, aniLayoutMain;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -35,7 +39,7 @@ public class MonoIta_01_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mono_ita_01_1);
+        setContentView(R.layout.lang101_eng_01_2);
 
         // Data from SQLite
         Intent getData = getIntent();
@@ -71,7 +75,18 @@ public class MonoIta_01_1 extends AppCompatActivity {
         btnPrev.setOnClickListener(mClickListener);
         btnNext.setOnClickListener(mClickListener);
 
+        // Layouts
+        layoutTitle = (LinearLayout) findViewById(R.id.layoutTitle);
+        layoutMain = (LinearLayout) findViewById(R.id.layoutMain);
+        aniLayoutTitle = AnimationUtils.loadAnimation(Lang101Eng_01_2.this, R.anim.descend);
+        aniLayoutMain = AnimationUtils.loadAnimation(Lang101Eng_01_2.this, R.anim.fadein);
+        aniLayoutMain.setStartOffset(400);
+        layoutTitle.startAnimation(aniLayoutTitle);
+        layoutMain.startAnimation(aniLayoutMain);
 
+        // Play Button
+        btnPlay = (ImageButton) findViewById(R.id.btnPlay);
+        btnPlay.setOnClickListener(mClickListener);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -87,7 +102,7 @@ public class MonoIta_01_1 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intentBack = new Intent(MonoIta_01_1.this, MonoIta.class);
+        Intent intentBack = new Intent(Lang101Eng_01_2.this, Lang101Eng_01_1.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intentBack.putExtra("nick", strNick);
         intentBack.putExtra("pw", strPw);
@@ -138,7 +153,7 @@ public class MonoIta_01_1 extends AppCompatActivity {
             switch (v.getId()) {
                 // Prev & Next Buttons
                 case R.id.btnPrev:
-                    Intent intentPrev = new Intent(MonoIta_01_1.this, MonoIta.class);
+                    Intent intentPrev = new Intent(Lang101Eng_01_2.this, Lang101Eng_01_1.class);
                     intentPrev.putExtra("nick", strNick);
                     intentPrev.putExtra("pw", strPw);
                     intentPrev.putExtra("name", strName);
@@ -149,7 +164,7 @@ public class MonoIta_01_1 extends AppCompatActivity {
                     finish();
                     break;
                 case R.id.btnNext:
-                    Intent intentNext = new Intent(MonoIta_01_1.this, MonoIta.class);
+                    Intent intentNext = new Intent(Lang101Eng_01_2.this, Lang101Eng.class);
                     intentNext.putExtra("nick", strNick);
                     intentNext.putExtra("pw", strPw);
                     intentNext.putExtra("name", strName);
@@ -159,12 +174,15 @@ public class MonoIta_01_1 extends AppCompatActivity {
                     overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                     finish();
                     break;
+                // Play Button
+                case R.id.btnPlay:
+                    break;
                 // Footer
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);
                     break;
                 case R.id.btnHome:
-                    Intent intentHome = new Intent(MonoIta_01_1.this, MainActivity.class);
+                    Intent intentHome = new Intent(Lang101Eng_01_2.this, MainActivity.class);
                     intentHome.putExtra("nick", strNick);
                     intentHome.putExtra("pw", strPw);
                     intentHome.putExtra("name", strName);

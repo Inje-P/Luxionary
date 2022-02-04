@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MonoFra_01_0 extends AppCompatActivity {
+public class Lang101Fra_01_0 extends AppCompatActivity {
     // Data from DB
     String strNick, strPw, strName, strEmail, strAvatar;
 
@@ -19,7 +19,7 @@ public class MonoFra_01_0 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mono_fra_01_0);
+        setContentView(R.layout.lang101_fra_01_0);
 
         Intent getData = getIntent();
         strNick = getData.getStringExtra("nick");
@@ -31,8 +31,8 @@ public class MonoFra_01_0 extends AppCompatActivity {
         tvTitle1 = (TextView) findViewById(R.id.tvTitle1);
         tvTitle2 = (TextView) findViewById(R.id.tvTitle2);
 
-        ani1 = AnimationUtils.loadAnimation(MonoFra_01_0.this, R.anim.descend);
-        ani2 = AnimationUtils.loadAnimation(MonoFra_01_0.this, R.anim.ascend);
+        ani1 = AnimationUtils.loadAnimation(Lang101Fra_01_0.this, R.anim.descend);
+        ani2 = AnimationUtils.loadAnimation(Lang101Fra_01_0.this, R.anim.ascend);
         tvTitle1.startAnimation(ani1);
         tvTitle2.startAnimation(ani2);
 
@@ -41,7 +41,7 @@ public class MonoFra_01_0 extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intentAccount = new Intent(MonoFra_01_0.this, MonoFra_01_1.class);
+                Intent intentAccount = new Intent(Lang101Fra_01_0.this, Lang101Fra_01_1.class);
                 intentAccount.putExtra("nick", strNick);
                 intentAccount.putExtra("pw", strPw);
                 intentAccount.putExtra("name", strName);

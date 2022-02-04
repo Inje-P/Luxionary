@@ -183,9 +183,9 @@ public class MainActivity extends AppCompatActivity {
         llCenterImg = (LinearLayout) findViewById(R.id.llCenterImg);
         tvCenterImg = (TextView) findViewById(R.id.tvCenterImg);
         aniLlCenterImg = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend_fast);
-        aniLlCenterImg.setStartOffset(800);
+        aniLlCenterImg.setStartOffset(400);
         aniTvCenterImg = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
-        aniTvCenterImg.setStartOffset(1000);
+        aniTvCenterImg.setStartOffset(600);
         llCenterImg.startAnimation(aniLlCenterImg);
         tvCenterImg.startAnimation(aniTvCenterImg);
         tvCenterImg.setOnClickListener(mClickListener);
@@ -195,11 +195,11 @@ public class MainActivity extends AppCompatActivity {
         tvBanner1 = (TextView) findViewById(R.id.tvBanner1);
         tvBanner2 = (TextView) findViewById(R.id.tvBanner2);
         aniLlBanner = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
-        aniLlBanner.setStartOffset(600);
+        aniLlBanner.setStartOffset(400);
         aniBanner1 = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend);
-        aniBanner1.setStartOffset(800);
+        aniBanner1.setStartOffset(600);
         aniBanner2 = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend);
-        aniBanner2.setStartOffset(1200);
+        aniBanner2.setStartOffset(800);
         llBanner.startAnimation(aniLlBanner);
         tvBanner1.startAnimation(aniBanner1);
         tvBanner2.startAnimation(aniBanner2);

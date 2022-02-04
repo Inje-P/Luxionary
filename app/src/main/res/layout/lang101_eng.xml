@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:background="@color/main_white"
         android:orientation="vertical"
-        tools:context=".MonoSpa">
+        tools:context=".Lang101Eng">
 
         <!-- Profile -->
         <LinearLayout
@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@drawable/main_spa_bg2">
+                android:background="@drawable/main_eng_bg2">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -64,8 +64,8 @@
                                     android:layout_height="match_parent"
                                     android:fontFamily="@font/pretendard_800"
                                     android:gravity="bottom"
-                                    android:text="Español"
-                                    android:textColor="@color/spa_main"
+                                    android:text="English"
+                                    android:textColor="@color/eng_main"
                                     android:textSize="40dp"></TextView>
 
                             </LinearLayout>
@@ -82,7 +82,7 @@
                                     android:fontFamily="@font/pretendard_800"
                                     android:gravity="bottom"
                                     android:paddingBottom="10dp"
-                                    android:text="스페인어"
+                                    android:text="영어"
                                     android:textColor="@color/main_text"
                                     android:textSize="18dp"></TextView>
 
@@ -157,27 +157,27 @@
 
                         <!-- 1 -->
                         <LinearLayout
-                            android:id="@+id/llSpa1"
+                            android:id="@+id/llEng1"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa1"
+                                android:id="@+id/btnEng1"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
-                                android:elevation="2dp"
+                                android:background="@drawable/pastel_ripple_eng"
+                                android:elevation="3dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="EL ALFABETO"
-                                android:textColor="@color/spa_background"
+                                android:text="ALPHABET"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa1"
+                                android:id="@+id/tvEng1"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -190,28 +190,28 @@
 
                         <!-- 2 -->
                         <LinearLayout
-                            android:id="@+id/llSpa2"
+                            android:id="@+id/llEng2"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa2"
+                                android:id="@+id/btnEng2"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="EL SALUDO"
-                                android:textColor="@color/spa_background"
+                                android:text="GREETING"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa2"
+                                android:id="@+id/tvEng2"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -224,28 +224,28 @@
 
                         <!-- 3 -->
                         <LinearLayout
-                            android:id="@+id/llSpa3"
+                            android:id="@+id/llEng3"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa3"
+                                android:id="@+id/btnEng3"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LOS NÚMEROS"
-                                android:textColor="@color/spa_background"
+                                android:text="NUMBERS"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa3"
+                                android:id="@+id/tvEng3"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -258,28 +258,28 @@
 
                         <!-- 4 -->
                         <LinearLayout
-                            android:id="@+id/llSpa4"
+                            android:id="@+id/llEng4"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa4"
+                                android:id="@+id/btnEng4"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LA FECHA Y LA HORA"
-                                android:textColor="@color/spa_background"
+                                android:text="DATE AND TIME"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa4"
+                                android:id="@+id/tvEng4"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -292,28 +292,28 @@
 
                         <!-- 5 -->
                         <LinearLayout
-                            android:id="@+id/llSpa5"
+                            android:id="@+id/llEng5"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa5"
+                                android:id="@+id/btnEng5"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="EL CUERPO"
-                                android:textColor="@color/spa_background"
+                                android:text="BODY"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa5"
+                                android:id="@+id/tvEng5"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -326,28 +326,28 @@
 
                         <!-- 6 -->
                         <LinearLayout
-                            android:id="@+id/llSpa6"
+                            android:id="@+id/llEng6"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa6"
+                                android:id="@+id/btnEng6"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LA FAMILIA"
-                                android:textColor="@color/spa_background"
+                                android:text="FAMILY"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa6"
+                                android:id="@+id/tvEng6"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -360,28 +360,28 @@
 
                         <!-- 7 -->
                         <LinearLayout
-                            android:id="@+id/llSpa7"
+                            android:id="@+id/llEng7"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa7"
+                                android:id="@+id/btnEng7"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LOS ALIMENTOS"
-                                android:textColor="@color/spa_background"
+                                android:text="FOODS"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa7"
+                                android:id="@+id/tvEng7"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -394,28 +394,28 @@
 
                         <!-- 8 -->
                         <LinearLayout
-                            android:id="@+id/llSpa8"
+                            android:id="@+id/llEng8"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa8"
+                                android:id="@+id/btnEng8"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LOS ADJECTIVOS"
-                                android:textColor="@color/spa_background"
+                                android:text="ADJECTIVES"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa8"
+                                android:id="@+id/tvEng8"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -428,28 +428,28 @@
 
                         <!-- 9 -->
                         <LinearLayout
-                            android:id="@+id/llSpa9"
+                            android:id="@+id/llEng9"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa9"
+                                android:id="@+id/btnEng9"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LOS LUGARES"
-                                android:textColor="@color/spa_background"
+                                android:text="PLACES"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa9"
+                                android:id="@+id/tvEng9"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -462,28 +462,28 @@
 
                         <!-- 10 -->
                         <LinearLayout
-                            android:id="@+id/llSpa10"
+                            android:id="@+id/llEng10"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa10"
+                                android:id="@+id/btnEng10"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LAS PREPOSICIONES"
-                                android:textColor="@color/spa_background"
+                                android:text="PREPOSITIONS"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa10"
+                                android:id="@+id/tvEng10"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -496,28 +496,28 @@
 
                         <!-- 11 -->
                         <LinearLayout
-                            android:id="@+id/llSpa11"
+                            android:id="@+id/llEng11"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa11"
+                                android:id="@+id/btnEng11"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LAS FRUTAS Y VERDURAS"
-                                android:textColor="@color/spa_background"
+                                android:text="FRUITS AND VEGETABLES"
+                                android:textColor="@color/eng_background"
                                 android:textSize="22dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa11"
+                                android:id="@+id/tvEng11"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -530,28 +530,28 @@
 
                         <!-- 12 -->
                         <LinearLayout
-                            android:id="@+id/llSpa12"
+                            android:id="@+id/llEng12"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa12"
+                                android:id="@+id/btnEng12"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LA COCINA"
-                                android:textColor="@color/spa_background"
+                                android:text="COOKING"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa12"
+                                android:id="@+id/tvEng12"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -564,28 +564,28 @@
 
                         <!-- 13 -->
                         <LinearLayout
-                            android:id="@+id/llSpa13"
+                            android:id="@+id/llEng13"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa13"
+                                android:id="@+id/btnEng13"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LAS COMPRAS"
-                                android:textColor="@color/spa_background"
+                                android:text="SHOPPING"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa13"
+                                android:id="@+id/tvEng13"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -598,28 +598,28 @@
 
                         <!-- 14 -->
                         <LinearLayout
-                            android:id="@+id/llSpa14"
+                            android:id="@+id/llEng14"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa14"
+                                android:id="@+id/btnEng14"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LOS PAÍSES"
-                                android:textColor="@color/spa_background"
+                                android:text="COUNTRIES"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa14"
+                                android:id="@+id/tvEng14"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -632,7 +632,7 @@
 
                         <!-- 15 -->
                         <LinearLayout
-                            android:id="@+id/llSpa15"
+                            android:id="@+id/llEng15"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
@@ -640,21 +640,21 @@
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnSpa15"
+                                android:id="@+id/btnEng15"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_spa"
+                                android:background="@drawable/pastel_ripple_eng"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="EL VIAJAR"
-                                android:textColor="@color/spa_background"
+                                android:text="TRAVELLING"
+                                android:textColor="@color/eng_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvSpa15"
+                                android:id="@+id/tvEng15"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -682,8 +682,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/custom_menubar2"
-            android:elevation="3dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:elevation="3dp">
 
             <Space
                 android:layout_width="0dp"

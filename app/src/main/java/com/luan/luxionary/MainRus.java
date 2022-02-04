@@ -369,7 +369,7 @@ public class MainRus extends AppCompatActivity {
     };
 
     public void pageLang101() {
-        Intent intentLang101 = new Intent(MainRus.this, MonoRus.class);
+        Intent intentLang101 = new Intent(MainRus.this, Lang101Rus.class);
         intentLang101.putExtra("nick", strNick);
         intentLang101.putExtra("pw", strPw);
         intentLang101.putExtra("name", strName);

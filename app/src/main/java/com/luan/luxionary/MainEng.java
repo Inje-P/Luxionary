@@ -371,7 +371,7 @@ public class MainEng extends AppCompatActivity {
     };
 
     public void pageMono() {
-        Intent intentLang101 = new Intent(MainEng.this, MonoEng.class);
+        Intent intentLang101 = new Intent(MainEng.this, Lang101Eng.class);
         intentLang101.putExtra("nick", strNick);
         intentLang101.putExtra("pw", strPw);
         intentLang101.putExtra("name", strName);
@@ -434,7 +434,7 @@ public class MainEng extends AppCompatActivity {
     }
 
     public void pageLang101() {
-        Intent intentLang101 = new Intent(MainEng.this, MonoEng.class);
+        Intent intentLang101 = new Intent(MainEng.this, Lang101Eng.class);
         intentLang101.putExtra("nick", strNick);
         intentLang101.putExtra("pw", strPw);
         intentLang101.putExtra("name", strName);

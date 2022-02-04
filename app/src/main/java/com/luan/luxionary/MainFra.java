@@ -369,7 +369,7 @@ public class MainFra extends AppCompatActivity {
     };
 
     public void pageLang101() {
-        Intent intentLang101 = new Intent(MainFra.this, MonoFra.class);
+        Intent intentLang101 = new Intent(MainFra.this, Lang101Fra.class);
         intentLang101.putExtra("nick", strNick);
         intentLang101.putExtra("pw", strPw);
         intentLang101.putExtra("name", strName);

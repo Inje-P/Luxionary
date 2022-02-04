@@ -21,11 +21,11 @@
         <activity
             android:name=".IntroActivity"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
         </activity>
         <activity android:name=".StartActivity"></activity>
         <activity android:name=".SigninActivity"></activity>
@@ -43,6 +43,7 @@
         <activity android:name=".DateActivity"></activity>
         <activity android:name=".WelcomeActivity"></activity>
 
+        <!-- Main -->
         <activity android:name=".MainEng"></activity>
         <activity android:name=".MainFra"></activity>
         <activity android:name=".MainDeu"></activity>
@@ -50,29 +51,39 @@
         <activity android:name=".MainSpa"></activity>
         <activity android:name=".MainRus"></activity>
 
-        <activity android:name=".MonoEng"></activity>
-        <activity android:name=".MonoEng_01_0"></activity>
-        <activity android:name=".MonoEng_01_1"></activity>
+        <!-- Language 101 (English)-->
+        <activity android:name=".Lang101Eng"></activity>
+        <activity android:name=".Lang101Eng_01_0"></activity>
+        <activity android:name=".Lang101Eng_01_1"></activity>
+        <activity android:name=".Lang101Eng_01_2"></activity>
 
-        <activity android:name=".MonoFra"></activity>
-        <activity android:name=".MonoFra_01_0"></activity>
-        <activity android:name=".MonoFra_01_1"></activity>
+        <!-- Language 101 (French)-->
+        <activity android:name=".Lang101Fra"></activity>
+        <activity android:name=".Lang101Fra_01_0"></activity>
+        <activity android:name=".Lang101Fra_01_1"></activity>
+        <activity android:name=".Lang101Fra_01_2"></activity>
 
-        <activity android:name=".MonoDeu"></activity>
-        <activity android:name=".MonoDeu_01_0"></activity>
-        <activity android:name=".MonoDeu_01_1"></activity>
+        <!-- Language 101 (German)-->
+        <activity android:name=".Lang101Deu"></activity>
+        <activity android:name=".Lang101Deu_01_0"></activity>
+        <activity android:name=".Lang101Deu_01_1"></activity>
+        <activity android:name=".Lang101Deu_01_2"></activity>
 
-        <activity android:name=".MonoIta"></activity>
-        <activity android:name=".MonoIta_01_0"></activity>
-        <activity android:name=".MonoIta_01_1"></activity>
+        <!-- Language 101 (Italian)-->
+        <activity android:name=".Lang101Ita"></activity>
+        <activity android:name=".Lang101Ita_01_0"></activity>
+        <activity android:name=".Lang101Ita_01_1"></activity>
+        <activity android:name=".Lang101Ita_01_2"></activity>
 
-        <activity android:name=".MonoSpa"></activity>
-        <activity android:name=".MonoSpa_01_0"></activity>
-        <activity android:name=".MonoSpa_01_1"></activity>
+        <!-- Language 101 (Spanish)-->
+        <activity android:name=".Lang101Spa"></activity>
+        <activity android:name=".Lang101Spa_01_0"></activity>
+        <activity android:name=".Lang101Spa_01_1"></activity>
 
-        <activity android:name=".MonoRus"></activity>
-        <activity android:name=".MonoRus_01_0"></activity>
-        <activity android:name=".MonoRus_01_1"></activity>
+        <!-- Language 101 (Russian)-->
+        <activity android:name=".Lang101Rus"></activity>
+        <activity android:name=".Lang101Rus_01_0"></activity>
+        <activity android:name=".Lang101Rus_01_1"></activity>
 
     </application>
 </manifest>

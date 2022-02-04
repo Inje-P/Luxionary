@@ -20,7 +20,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-public class MonoRus extends AppCompatActivity {
+public class Lang101Rus extends AppCompatActivity {
     // Data from DB
     String strNick, strPw, strName, strEmail, strAvatar;
 
@@ -49,7 +49,7 @@ public class MonoRus extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mono_rus);
+        setContentView(R.layout.lang101_rus);
 
         // Data from SQLite
         Intent getData = getIntent();
@@ -82,18 +82,18 @@ public class MonoRus extends AppCompatActivity {
         // Title
         tvTitle1 = (TextView) findViewById(R.id.tvTitle1);
         tvTitle2 = (TextView) findViewById(R.id.tvTitle2);
-        aniTitle1 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.descend);
-        aniTitle2 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.descend);
+        aniTitle1 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.descend);
+        aniTitle2 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.descend);
         aniTitle2.setStartOffset(400);
         tvTitle1.startAnimation(aniTitle1);
         tvTitle2.startAnimation(aniTitle2);
         layoutProfile = (LinearLayout) findViewById(R.id.layoutProfile);
-        aniLayoutProfile = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLayoutProfile = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLayoutProfile.setStartOffset(600);
         layoutProfile.startAnimation(aniLayoutProfile);
 
         // Touch Animation
-        aniTouch = AnimationUtils.loadAnimation(MonoRus.this, R.anim.scale);
+        aniTouch = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.scale);
 
         // Buttons & TextViews
         btnRus1 = (Button) findViewById(R.id.btnRus1);
@@ -158,35 +158,35 @@ public class MonoRus extends AppCompatActivity {
         llRus13 = (LinearLayout) findViewById(R.id.llRus13);
         llRus14 = (LinearLayout) findViewById(R.id.llRus14);
         llRus15 = (LinearLayout) findViewById(R.id.llRus15);
-        aniLl1 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl1 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl1.setStartOffset(200);
-        aniLl2 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl2 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl2.setStartOffset(400);
-        aniLl3 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl3 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl3.setStartOffset(600);
-        aniLl4 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl4 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl4.setStartOffset(800);
-        aniLl5 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl5 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl5.setStartOffset(1000);
-        aniLl6 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl6 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl6.setStartOffset(1200);
-        aniLl7 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl7 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl7.setStartOffset(1400);
-        aniLl8 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl8 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl8.setStartOffset(1500);
-        aniLl9 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl9 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl9.setStartOffset(1600);
-        aniLl10 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl10 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl10.setStartOffset(1700);
-        aniLl11 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl11 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl11.setStartOffset(1800);
-        aniLl12 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl12 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl12.setStartOffset(1900);
-        aniLl13 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl13 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl13.setStartOffset(2000);
-        aniLl14 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl14 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl14.setStartOffset(2100);
-        aniLl15 = AnimationUtils.loadAnimation(MonoRus.this, R.anim.fadein);
+        aniLl15 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl15.setStartOffset(2200);
         llRus1.startAnimation(aniLl1);
         llRus2.startAnimation(aniLl2);
@@ -217,7 +217,7 @@ public class MonoRus extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intentBack = new Intent(MonoRus.this, MainRus.class);
+        Intent intentBack = new Intent(Lang101Rus.this, MainRus.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intentBack.putExtra("nick", strNick);
         intentBack.putExtra("pw", strPw);
@@ -316,7 +316,7 @@ public class MonoRus extends AppCompatActivity {
                     drawerLayout.openDrawer(drawerView);
                     break;
                 case R.id.btnHome:
-                    Intent intentHome = new Intent(MonoRus.this, MainActivity.class);
+                    Intent intentHome = new Intent(Lang101Rus.this, MainActivity.class);
                     intentHome.putExtra("nick", strNick);
                     intentHome.putExtra("pw", strPw);
                     intentHome.putExtra("name", strName);
@@ -333,7 +333,7 @@ public class MonoRus extends AppCompatActivity {
     };
 
     public void page01() {
-        Intent intent01 = new Intent(MonoRus.this, MonoRus_01_0.class);
+        Intent intent01 = new Intent(Lang101Rus.this, Lang101Rus_01_0.class);
         intent01.putExtra("nick", strNick);
         intent01.putExtra("pw", strPw);
         intent01.putExtra("name", strName);

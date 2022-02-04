@@ -369,7 +369,7 @@ public class MainSpa extends AppCompatActivity {
     };
 
     public void pageLang101() {
-        Intent intentLang101 = new Intent(MainSpa.this, MonoSpa.class);
+        Intent intentLang101 = new Intent(MainSpa.this, Lang101Spa.class);
         intentLang101.putExtra("nick", strNick);
         intentLang101.putExtra("pw", strPw);
         intentLang101.putExtra("name", strName);

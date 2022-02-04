@@ -369,7 +369,7 @@ public class MainDeu extends AppCompatActivity {
     };
 
     public void pageLang101() {
-        Intent intentLang101 = new Intent(MainDeu.this, MonoDeu.class);
+        Intent intentLang101 = new Intent(MainDeu.this, Lang101Deu.class);
         intentLang101.putExtra("nick", strNick);
         intentLang101.putExtra("pw", strPw);
         intentLang101.putExtra("name", strName);

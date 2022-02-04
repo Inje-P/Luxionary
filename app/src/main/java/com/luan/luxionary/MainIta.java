@@ -369,7 +369,7 @@ public class MainIta extends AppCompatActivity {
     };
 
     public void pageLang101() {
-        Intent intentLang101 = new Intent(MainIta.this, MonoIta.class);
+        Intent intentLang101 = new Intent(MainIta.this, Lang101Ita.class);
         intentLang101.putExtra("nick", strNick);
         intentLang101.putExtra("pw", strPw);
         intentLang101.putExtra("name", strName);

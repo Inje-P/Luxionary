@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-public class MonoFra_01_1 extends AppCompatActivity {
+public class Lang101Spa_01_1 extends AppCompatActivity {
 
     // Data from DB
     String strNick, strPw, strName, strEmail, strAvatar;
@@ -35,7 +35,7 @@ public class MonoFra_01_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mono_fra_01_1);
+        setContentView(R.layout.lang101_spa_01_1);
 
         // Data from SQLite
         Intent getData = getIntent();
@@ -87,7 +87,7 @@ public class MonoFra_01_1 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intentBack = new Intent(MonoFra_01_1.this, MonoFra.class);
+        Intent intentBack = new Intent(Lang101Spa_01_1.this, Lang101Spa.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intentBack.putExtra("nick", strNick);
         intentBack.putExtra("pw", strPw);
@@ -138,7 +138,7 @@ public class MonoFra_01_1 extends AppCompatActivity {
             switch (v.getId()) {
                 // Prev & Next Buttons
                 case R.id.btnPrev:
-                    Intent intentPrev = new Intent(MonoFra_01_1.this, MonoFra.class);
+                    Intent intentPrev = new Intent(Lang101Spa_01_1.this, Lang101Spa.class);
                     intentPrev.putExtra("nick", strNick);
                     intentPrev.putExtra("pw", strPw);
                     intentPrev.putExtra("name", strName);
@@ -149,7 +149,7 @@ public class MonoFra_01_1 extends AppCompatActivity {
                     finish();
                     break;
                 case R.id.btnNext:
-                    Intent intentNext = new Intent(MonoFra_01_1.this, MonoFra.class);
+                    Intent intentNext = new Intent(Lang101Spa_01_1.this, Lang101Spa.class);
                     intentNext.putExtra("nick", strNick);
                     intentNext.putExtra("pw", strPw);
                     intentNext.putExtra("name", strName);
@@ -164,7 +164,7 @@ public class MonoFra_01_1 extends AppCompatActivity {
                     drawerLayout.openDrawer(drawerView);
                     break;
                 case R.id.btnHome:
-                    Intent intentHome = new Intent(MonoFra_01_1.this, MainActivity.class);
+                    Intent intentHome = new Intent(Lang101Spa_01_1.this, MainActivity.class);
                     intentHome.putExtra("nick", strNick);
                     intentHome.putExtra("pw", strPw);
                     intentHome.putExtra("name", strName);
