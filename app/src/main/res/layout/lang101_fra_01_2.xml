@@ -272,19 +272,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv1d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="vraiment"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 2 -->
@@ -330,19 +317,6 @@
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="Seine"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv2d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="feignant"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -394,19 +368,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv3d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="automatique"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 4 -->
@@ -452,19 +413,6 @@
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="oiseau"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv4d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="bureaucrate"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -516,19 +464,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv5d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="couvert"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 6 -->
@@ -574,19 +509,6 @@
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="seulement"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv6d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="fleur"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -638,19 +560,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv7d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="œuvrette"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 8 -->
@@ -696,19 +605,6 @@
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="loisir"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv8d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="voisinage"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -760,19 +656,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv9d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="paysage"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 10 -->
@@ -818,19 +701,6 @@
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="barbeyer"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv10d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="Seychelles"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -882,19 +752,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv11d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="royaume"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 12 -->
@@ -940,19 +797,6 @@
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="anglais"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv12d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="assurance"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1004,19 +848,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv13d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="hamburger"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 14 -->
@@ -1062,19 +893,6 @@
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="enfant"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv14d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="bienveillance"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1126,19 +944,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv15d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="assemblée"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 16 -->
@@ -1187,19 +992,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv16d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="cinquante"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 17 -->
@@ -1237,19 +1029,6 @@
 
                             <TextView
                                 android:id="@+id/tv17c"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="imposé"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv17d"
                                 android:layout_width="0dp"
                                 android:layout_height="40dp"
                                 android:layout_weight="1"
@@ -1309,19 +1088,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv18d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="sympathique"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 19 -->
@@ -1367,19 +1133,6 @@
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="terrain"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv19d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="maintenant"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1431,19 +1184,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv20d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="éreintement"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 21 -->
@@ -1489,19 +1229,6 @@
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="blonde"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv21d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="annonce"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1553,19 +1280,6 @@
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
-                            <TextView
-                                android:id="@+id/tv22d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="accomplir"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
                         </LinearLayout>
 
                         <!-- 23 -->
@@ -1611,19 +1325,6 @@
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="aucun"
-                                android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv23d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="emprunt"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -1675,19 +1376,6 @@
                                 android:text="impérium"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
-
-                            <TextView
-                                android:id="@+id/tv24d"
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/transparent"
-                                android:fontFamily="@font/nunitosans_700"
-                                android:gravity="center"
-                                android:stateListAnimator="@null"
-                                android:text="circumduction"
-                                android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
 
                         </LinearLayout>
 

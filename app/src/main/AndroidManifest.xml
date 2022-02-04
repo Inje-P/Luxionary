@@ -79,11 +79,13 @@
         <activity android:name=".Lang101Spa"></activity>
         <activity android:name=".Lang101Spa_01_0"></activity>
         <activity android:name=".Lang101Spa_01_1"></activity>
+        <activity android:name=".Lang101Spa_01_2"></activity>
 
         <!-- Language 101 (Russian)-->
         <activity android:name=".Lang101Rus"></activity>
         <activity android:name=".Lang101Rus_01_0"></activity>
         <activity android:name=".Lang101Rus_01_1"></activity>
+        <activity android:name=".Lang101Rus_01_2"></activity>
 
     </application>
 </manifest>

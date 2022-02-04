@@ -174,7 +174,7 @@ public class MainRus extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel(
-                "Россия 101",
+                "Русский 101",
                 "러시아어 첫걸음",
                 1,
                 R.drawable.banner_lang101));

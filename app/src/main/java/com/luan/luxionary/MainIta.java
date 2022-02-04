@@ -174,7 +174,7 @@ public class MainIta extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel(
-                "Italia 101",
+                "Italiano 101",
                 "이탈리아어 첫걸음",
                 1,
                 R.drawable.banner_lang101));

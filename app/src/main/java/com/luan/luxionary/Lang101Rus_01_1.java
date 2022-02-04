@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -20,8 +22,10 @@ public class Lang101Rus_01_1 extends AppCompatActivity {
 
     ImageButton btnPrev, btnNext;
 
-    TextView tvTitle1, tvTitle2;
-    Animation ani1, ani2;
+    // Main
+    LinearLayout layoutTitle, layoutMain;
+    ImageButton btnPlay;
+    Animation aniLayoutTitle, aniLayoutMain;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -71,7 +75,18 @@ public class Lang101Rus_01_1 extends AppCompatActivity {
         btnPrev.setOnClickListener(mClickListener);
         btnNext.setOnClickListener(mClickListener);
 
+        // Layouts
+        layoutTitle = (LinearLayout) findViewById(R.id.layoutTitle);
+        layoutMain = (LinearLayout) findViewById(R.id.layoutMain);
+        aniLayoutTitle = AnimationUtils.loadAnimation(Lang101Rus_01_1.this, R.anim.descend);
+        aniLayoutMain = AnimationUtils.loadAnimation(Lang101Rus_01_1.this, R.anim.fadein);
+        aniLayoutMain.setStartOffset(400);
+        layoutTitle.startAnimation(aniLayoutTitle);
+        layoutMain.startAnimation(aniLayoutMain);
 
+        // Play Button
+        btnPlay = (ImageButton) findViewById(R.id.btnPlay);
+        btnPlay.setOnClickListener(mClickListener);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -149,7 +164,7 @@ public class Lang101Rus_01_1 extends AppCompatActivity {
                     finish();
                     break;
                 case R.id.btnNext:
-                    Intent intentNext = new Intent(Lang101Rus_01_1.this, Lang101Rus.class);
+                    Intent intentNext = new Intent(Lang101Rus_01_1.this, Lang101Rus_01_2.class);
                     intentNext.putExtra("nick", strNick);
                     intentNext.putExtra("pw", strPw);
                     intentNext.putExtra("name", strName);

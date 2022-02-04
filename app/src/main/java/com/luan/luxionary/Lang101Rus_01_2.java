@@ -15,7 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-public class Lang101Spa_01_1 extends AppCompatActivity {
+public class Lang101Rus_01_2 extends AppCompatActivity {
 
     // Data from DB
     String strNick, strPw, strName, strEmail, strAvatar;
@@ -39,7 +39,7 @@ public class Lang101Spa_01_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lang101_spa_01_1);
+        setContentView(R.layout.lang101_rus_01_2);
 
         // Data from SQLite
         Intent getData = getIntent();
@@ -78,8 +78,8 @@ public class Lang101Spa_01_1 extends AppCompatActivity {
         // Layouts
         layoutTitle = (LinearLayout) findViewById(R.id.layoutTitle);
         layoutMain = (LinearLayout) findViewById(R.id.layoutMain);
-        aniLayoutTitle = AnimationUtils.loadAnimation(Lang101Spa_01_1.this, R.anim.descend);
-        aniLayoutMain = AnimationUtils.loadAnimation(Lang101Spa_01_1.this, R.anim.fadein);
+        aniLayoutTitle = AnimationUtils.loadAnimation(Lang101Rus_01_2.this, R.anim.descend);
+        aniLayoutMain = AnimationUtils.loadAnimation(Lang101Rus_01_2.this, R.anim.fadein);
         aniLayoutMain.setStartOffset(400);
         layoutTitle.startAnimation(aniLayoutTitle);
         layoutMain.startAnimation(aniLayoutMain);
@@ -102,7 +102,7 @@ public class Lang101Spa_01_1 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intentBack = new Intent(Lang101Spa_01_1.this, Lang101Spa.class);
+        Intent intentBack = new Intent(Lang101Rus_01_2.this, Lang101Rus_01_1.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intentBack.putExtra("nick", strNick);
         intentBack.putExtra("pw", strPw);
@@ -153,7 +153,7 @@ public class Lang101Spa_01_1 extends AppCompatActivity {
             switch (v.getId()) {
                 // Prev & Next Buttons
                 case R.id.btnPrev:
-                    Intent intentPrev = new Intent(Lang101Spa_01_1.this, Lang101Spa.class);
+                    Intent intentPrev = new Intent(Lang101Rus_01_2.this, Lang101Rus_01_1.class);
                     intentPrev.putExtra("nick", strNick);
                     intentPrev.putExtra("pw", strPw);
                     intentPrev.putExtra("name", strName);
@@ -164,7 +164,7 @@ public class Lang101Spa_01_1 extends AppCompatActivity {
                     finish();
                     break;
                 case R.id.btnNext:
-                    Intent intentNext = new Intent(Lang101Spa_01_1.this, Lang101Spa_01_2.class);
+                    Intent intentNext = new Intent(Lang101Rus_01_2.this, Lang101Rus.class);
                     intentNext.putExtra("nick", strNick);
                     intentNext.putExtra("pw", strPw);
                     intentNext.putExtra("name", strName);
@@ -174,12 +174,15 @@ public class Lang101Spa_01_1 extends AppCompatActivity {
                     overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                     finish();
                     break;
+                // Play Button
+                case R.id.btnPlay:
+                    break;
                 // Footer
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);
                     break;
                 case R.id.btnHome:
-                    Intent intentHome = new Intent(Lang101Spa_01_1.this, MainActivity.class);
+                    Intent intentHome = new Intent(Lang101Rus_01_2.this, MainActivity.class);
                     intentHome.putExtra("nick", strNick);
                     intentHome.putExtra("pw", strPw);
                     intentHome.putExtra("name", strName);
