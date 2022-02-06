@@ -71,10 +71,14 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_signup.xml" value="0.16032608695652173" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_signupok.xml" value="0.264" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_start.xml" value="0.23333333333333334" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_startOk.xml" value="0.23333333333333334" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_welcome.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/card_item_large.xml" value="0.18931159420289856" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/card_item_medium.xml" value="0.20742753623188406" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/intro_eng.xml" value="0.1361111111111111" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/item_viewpager.xml" value="0.264" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_deu_01_2.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_eng_01_2.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_fra_01_2.xml" value="0.34791666666666665" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_ita_01_2.xml" value="0.34791666666666665" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_rus_01_2.xml" value="0.34791666666666665" />

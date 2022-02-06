@@ -57,18 +57,13 @@
                 android:layout_height="0dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@drawable/custom_red_block"
                 android:orientation="horizontal">
 
-                <Button
+                <com.google.android.gms.common.SignInButton
                     android:id="@+id/btnGoogle"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/transparent"
-                    android:fontFamily="@font/pretendard_500"
-                    android:text="구글로 시작하기"
-                    android:textColor="@color/main_white"
-                    android:textSize="16dp" />
+                    android:layout_height="wrap_content"
+                    app:buttonSize="icon_only" />
 
             </LinearLayout>
 

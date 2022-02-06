@@ -33,8 +33,9 @@ import com.google.android.material.navigation.NavigationView;
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
+
     // Data from DB
-    String strNick, strPw, strName, strEmail, strAvatar;
+    String username, email, profile, avatar;
 
     // Back Button
     private BackHandler backHandler = new BackHandler(this);
@@ -78,13 +79,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Data from SQLite
+        // Data from Firebase
         Intent getData = getIntent();
-        strNick = getData.getStringExtra("nick");
-        strPw = getData.getStringExtra("pw");
-        strName = getData.getStringExtra("name");
-        strEmail = getData.getStringExtra("email");
-        strAvatar = getData.getStringExtra("avatar");
+        username = getData.getStringExtra("username");
+        email = getData.getStringExtra("email");
+        profile = getData.getStringExtra("profile");
 
         // Sidebar
         tvNickname = (TextView) findViewById(R.id.tvNickname);
@@ -112,10 +111,10 @@ public class MainActivity extends AppCompatActivity {
         llProfile.startAnimation(aniLlProfile);
         tvTitleHello = (TextView) findViewById(R.id.tvTitleHello);
         tvTitleName = (TextView) findViewById(R.id.tvTitleName);
-        if (strNick == null) {
+        if (username == null) {
             tvTitleName.setText("해리슨");
         } else {
-            tvTitleName.setText(strNick);
+            tvTitleName.setText(username);
         }
         aniTitle1 = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         aniTitle1.setStartOffset(200);
@@ -129,10 +128,10 @@ public class MainActivity extends AppCompatActivity {
         aniLlAvatar = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         llAvatar.startAnimation(aniLlAvatar);
         imgAvatar = (ImageView) findViewById(R.id.imgAvatar);
-        if (strAvatar == null) {
+        if (avatar == null) {
             imgAvatar.setImageResource(R.drawable.avt_male1);
         } else {
-            switch (strAvatar) {
+            switch (avatar) {
                 case "male1":
                     imgAvatar.setImageResource(R.drawable.avt_male1);
                     break;
@@ -342,15 +341,15 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onDrawerOpened(@NonNull View drawerView) {
-            if (strNick == null) {
+            if (username== null) {
                 tvNickname.setText("해리슨");
             } else {
-                tvNickname.setText(strNick);
+                tvNickname.setText(username);
             }
-            if (strEmail == null) {
+            if (email == null) {
                 tvEmail.setText("luxionary@gmail.com");
             } else {
-                tvEmail.setText(strEmail);
+                tvEmail.setText(email);
             }
         }
 
@@ -377,13 +376,12 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btnDate:
                     btnDate.startAnimation(aniTouch);
                     Intent intentDate = new Intent(MainActivity.this, DateActivity.class);
+                    intentDate.putExtra("username", username);
+                    intentDate.putExtra("email", email);
+                    intentDate.putExtra("profile", String.valueOf(profile));
+                    intentDate.putExtra("avatar", avatar);
                     startActivity(intentDate);
-                    intentDate.putExtra("nick", strNick);
-                    intentDate.putExtra("pw", strPw);
-                    intentDate.putExtra("name", strName);
-                    intentDate.putExtra("email", strEmail);
-                    intentDate.putExtra("avatar", strAvatar);
-                    overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
+                    overridePendingTransition(R.anim.fadein, R.anim.fadeout);
                     finish();
                     break;
                 case R.id.btnTasks:
@@ -416,13 +414,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btnHome:
                     Intent intentHome = new Intent(MainActivity.this, MainActivity.class);
+                    intentHome.putExtra("username", username);
+                    intentHome.putExtra("email", email);
+                    intentHome.putExtra("profile", String.valueOf(profile));
+                    intentHome.putExtra("avatar", avatar);
                     startActivity(intentHome);
-                    intentHome.putExtra("nick", strNick);
-                    intentHome.putExtra("pw", strPw);
-                    intentHome.putExtra("name", strName);
-                    intentHome.putExtra("email", strEmail);
-                    intentHome.putExtra("avatar", strAvatar);
-                    overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
+                    overridePendingTransition(R.anim.fadein, R.anim.fadeout);
                     finish();
                     break;
                 case R.id.btnUpdate:
@@ -430,21 +427,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
-
-    // Text Color Animator
-//    private void setThemeAnimation(int fromColor, int toColor) {
-//        Integer colorFrom = getResources().getColor(fromColor);
-//        Integer colorTo = getResources().getColor(toColor);
-//        ValueAnimator colorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), colorFrom, colorTo);
-//        colorAnimation.setDuration(200);
-//        colorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-//            @Override
-//            public void onAnimationUpdate(ValueAnimator animator) {
-//                tvCenterImg.setTextColor((Integer)animator.getAnimatedValue());
-//            }
-//        });
-//        colorAnimation.start();
-//    }
 
     // Rainbow Animation
     private void rainbow() {
@@ -564,13 +546,12 @@ public class MainActivity extends AppCompatActivity {
 
                 // 현재 아바타 변수 전달하기 (Intent & DB)
                 Intent intentAvatar = new Intent(MainActivity.this, AvatarActivity.class);
-                intentAvatar.putExtra("nick", strNick);
-                intentAvatar.putExtra("pw", strPw);
-                intentAvatar.putExtra("name", strName);
-                intentAvatar.putExtra("email", strEmail);
-                intentAvatar.putExtra("avatar", strAvatar);
+                intentAvatar.putExtra("username", username);
+                intentAvatar.putExtra("email", email);
+                intentAvatar.putExtra("profile", String.valueOf(profile));
+                intentAvatar.putExtra("avatar", avatar);
                 startActivity(intentAvatar);
-                overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
                 finish();
             }
         });
@@ -579,11 +560,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void pageEng() {
         Intent intentEng = new Intent(MainActivity.this, IntroEng.class);
-        intentEng.putExtra("nick", strNick);
-        intentEng.putExtra("pw", strPw);
-        intentEng.putExtra("name", strName);
-        intentEng.putExtra("email", strEmail);
-        intentEng.putExtra("avatar", strAvatar);
+        intentEng.putExtra("username", username);
+        intentEng.putExtra("email", email);
+        intentEng.putExtra("profile", String.valueOf(profile));
+        intentEng.putExtra("avatar", avatar);
         startActivity(intentEng);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -591,11 +571,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void pageFra() {
         Intent intentFra = new Intent(MainActivity.this, IntroFra.class);
-        intentFra.putExtra("nick", strNick);
-        intentFra.putExtra("pw", strPw);
-        intentFra.putExtra("name", strName);
-        intentFra.putExtra("email", strEmail);
-        intentFra.putExtra("avatar", strAvatar);
+        intentFra.putExtra("username", username);
+        intentFra.putExtra("email", email);
+        intentFra.putExtra("profile", String.valueOf(profile));
+        intentFra.putExtra("avatar", avatar);
         startActivity(intentFra);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -603,11 +582,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void pageDeu() {
         Intent intentDeu = new Intent(MainActivity.this, IntroDeu.class);
-        intentDeu.putExtra("nick", strNick);
-        intentDeu.putExtra("pw", strPw);
-        intentDeu.putExtra("name", strName);
-        intentDeu.putExtra("email", strEmail);
-        intentDeu.putExtra("avatar", strAvatar);
+        intentDeu.putExtra("username", username);
+        intentDeu.putExtra("email", email);
+        intentDeu.putExtra("profile", String.valueOf(profile));
+        intentDeu.putExtra("avatar", avatar);
         startActivity(intentDeu);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -615,11 +593,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void pageIta() {
         Intent intentIta = new Intent(MainActivity.this, IntroIta.class);
-        intentIta.putExtra("nick", strNick);
-        intentIta.putExtra("pw", strPw);
-        intentIta.putExtra("name", strName);
-        intentIta.putExtra("email", strEmail);
-        intentIta.putExtra("avatar", strAvatar);
+        intentIta.putExtra("username", username);
+        intentIta.putExtra("email", email);
+        intentIta.putExtra("profile", String.valueOf(profile));
+        intentIta.putExtra("avatar", avatar);
         startActivity(intentIta);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -627,11 +604,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void pageSpa() {
         Intent intentSpa = new Intent(MainActivity.this, IntroSpa.class);
-        intentSpa.putExtra("nick", strNick);
-        intentSpa.putExtra("pw", strPw);
-        intentSpa.putExtra("name", strName);
-        intentSpa.putExtra("email", strEmail);
-        intentSpa.putExtra("avatar", strAvatar);
+        intentSpa.putExtra("username", username);
+        intentSpa.putExtra("email", email);
+        intentSpa.putExtra("profile", String.valueOf(profile));
+        intentSpa.putExtra("avatar", avatar);
         startActivity(intentSpa);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -639,11 +615,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void pageRus() {
         Intent intentRus = new Intent(MainActivity.this, IntroRus.class);
-        intentRus.putExtra("nick", strNick);
-        intentRus.putExtra("pw", strPw);
-        intentRus.putExtra("name", strName);
-        intentRus.putExtra("email", strEmail);
-        intentRus.putExtra("avatar", strAvatar);
+        intentRus.putExtra("username", username);
+        intentRus.putExtra("email", email);
+        intentRus.putExtra("profile", String.valueOf(profile));
+        intentRus.putExtra("avatar", avatar);
         startActivity(intentRus);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();

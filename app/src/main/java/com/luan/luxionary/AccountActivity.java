@@ -3,29 +3,35 @@ package com.luan.luxionary;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.Toast;
+import android.widget.*;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.bumptech.glide.Glide;
 
 public class AccountActivity extends AppCompatActivity {
-    // DB
-    String strNick, strPw, strName, strEmail;
 
-    Animation logoAni;
-    Animation loginFormAni;
-    ImageView imgLogo;
-    LinearLayout loginForm;
-    Button btnSignup, btnSignin;
-    EditText etEmail, etPw;
-    String inputEmail, inputPw;
+    // Data from DB
+    String username, email, profile;
+
+    ImageView imgProfile;
+    EditText etUsername, etEmail;
+
+    // Sidebar
+    private DrawerLayout drawerLayout;
+    private View drawerView;
+    TextView tvNickname, tvEmail;
+    ImageView btnClose;
+
+    // Footer
+    ImageButton btnSidebar, btnHome, btnUpdate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,71 +39,84 @@ public class AccountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_account);
 
         Intent getData = getIntent();
-        strNick = getData.getStringExtra("nick");
-        strPw = getData.getStringExtra("pw");
-        strName = getData.getStringExtra("name");
-        strEmail = getData.getStringExtra("email");
+        username = getData.getStringExtra("username");
+        email = getData.getStringExtra("email");
+        profile = getData.getStringExtra("profile");
 
-        imgLogo = (ImageView) findViewById(R.id.imgLogo);
-        loginForm = (LinearLayout) findViewById(R.id.loginForm);
+        // Sidebar
+//        tvNickname = (TextView) findViewById(R.id.tvNickname);
+//        tvEmail = (TextView) findViewById(R.id.tvEmail);
+//        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        drawerView = (View) findViewById(R.id.drawer);
+//        drawerLayout.setDrawerListener(drawerListener);
+//        drawerView.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                return true;
+//            }
+//        });
+//        btnClose = (ImageView) findViewById(R.id.btnClose);
+//        btnClose.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                drawerLayout.closeDrawers();
+//            }
+//        });
+
+        imgProfile = (ImageView) findViewById(R.id.imgProfile);
+        etUsername = (EditText) findViewById(R.id.etUsername);
         etEmail = (EditText) findViewById(R.id.etEmail);
-        etPw = (EditText) findViewById(R.id.etPw);
-        btnSignup = (Button) findViewById(R.id.btnSignup);
-        btnSignin = (Button) findViewById(R.id.btnSignin);
 
-        // logoAni 애니메이션
-        logoAni = new TranslateAnimation(0, 0, 0, -100);
-        logoAni.setDuration(1000); // 지속시간
-        logoAni.setFillAfter(true); // 이동 후 이동한 자리에 남아 있을건지
+        // Data Setting
+        imgProfile = (ImageView) findViewById(R.id.imgProfile);
+        Glide.with(this).load(profile).into(imgProfile);
+        etUsername = (EditText) findViewById(R.id.etUsername);
+        etUsername.setText(username);
+        etEmail = (EditText) findViewById(R.id.etEmail);
+        etEmail.setText(email);
 
-        // loginFormAni 애니메이션
-        loginFormAni = new AlphaAnimation(0, 1);
-        loginFormAni.setDuration(1000);
-        loginFormAni.setStartOffset(1000);
-
-        imgLogo.setAnimation(logoAni);
-        loginForm.setAnimation(loginFormAni);
-
-        btnSignin.setOnClickListener(mClickListener);
-        btnSignup.setOnClickListener(mClickListener);
     }
+
+//    // Sidebar
+//    DrawerLayout.DrawerListener drawerListener = new DrawerLayout.DrawerListener() {
+//        @Override
+//        public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+//
+//        }
+//
+//        @Override
+//        public void onDrawerOpened(@NonNull View drawerView) {
+//            if (strNick == null) {
+//                tvNickname.setText("해리슨");
+//            } else {
+//                tvNickname.setText(strNick);
+//            }
+//            if (strEmail == null) {
+//                tvEmail.setText("luxionary@gmail.com");
+//            } else {
+//                tvEmail.setText(strEmail);
+//            }
+//        }
+//
+//        @Override
+//        public void onDrawerClosed(@NonNull View drawerView) {
+//
+//        }
+//
+//        @Override
+//        public void onDrawerStateChanged(int newState) {
+//
+//        }
+//    };
 
     View.OnClickListener mClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btnSignup:
-                    Intent intentAccount = new Intent(AccountActivity.this, SignupActivity.class);
-                    startActivity(intentAccount);
-                    overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
-                    finish();
                     break;
                 case R.id.btnSignin:
-                    if (etEmail.getText().toString().equals("")) {
-                        Toast.makeText(AccountActivity.this, "이메일을 입력해주세요.", Toast.LENGTH_SHORT).show();
-                        break;
-                    }
-                    inputEmail = etEmail.getText().toString();
-                    if (etPw.getText().toString().equals("")) {
-                        Toast.makeText(AccountActivity.this, "비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show();
-                        break;
-                    }
-                    inputPw = etPw.getText().toString();
-
-                    // DB와 데이터 비교하는 부분
-                    // 추후에 AWS와 연동 필요 !!
-                    if (strEmail == null || strPw == null) {
-                        Toast.makeText(AccountActivity.this, "등록된 계정이 아닙니다.", Toast.LENGTH_SHORT).show();
-                        break;
-                    } else {
-                        if (strEmail.equals(inputEmail) && strPw.equals(inputPw)) {
-                            showDialog();
-                            break;
-                        } else {
-                            Toast.makeText(AccountActivity.this, "계정 혹은 비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();
-                            break;
-                        }
-                    }
+                    break;
             }
         }
     };
@@ -130,10 +149,6 @@ public class AccountActivity extends AppCompatActivity {
             public void onClick(View v) {
                 dialog.dismiss();
                 Intent intentAccount = new Intent(AccountActivity.this, WelcomeActivity.class);
-                intentAccount.putExtra("nick", strNick);
-                intentAccount.putExtra("pw", strPw);
-                intentAccount.putExtra("name", strName);
-                intentAccount.putExtra("email", strEmail);
                 startActivity(intentAccount);
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                 finish();

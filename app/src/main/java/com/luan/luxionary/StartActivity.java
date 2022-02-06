@@ -2,6 +2,7 @@ package com.luan.luxionary;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -10,8 +11,19 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.SignInButton;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.GoogleAuthProvider;
 
 import java.util.ArrayList;
 
@@ -19,7 +31,14 @@ public class StartActivity extends AppCompatActivity {
 
     ViewPager2 viewPager2;
     TabLayout tabLayout;
-    Button btnGoogle, btnFacebook, btnEmail;
+
+    // Google Authentication
+    private SignInButton btnGoogle;
+    private FirebaseAuth auth;
+    private static final int REQ_SIGN_GOOGLE = 100;
+    private GoogleSignInClient googleSignInClient;
+
+    Button btnFacebook, btnEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +47,18 @@ public class StartActivity extends AppCompatActivity {
 
         viewPager2 = findViewById(R.id.viewPager2);
         tabLayout = findViewById(R.id.tabLayout);
-        btnGoogle = findViewById(R.id.btnGoogle);
         btnFacebook = findViewById(R.id.btnFacebook);
         btnEmail = findViewById(R.id.btnEmail);
-        btnGoogle.setOnClickListener(mClickListener);
         btnFacebook.setOnClickListener(mClickListener);
         btnEmail.setOnClickListener(mClickListener);
 
-        // ViewPager Content
+        /*
+         * ViewPager
+         *  */
         ArrayList<DataPage> list = new ArrayList<>();
         list.add(new DataPage(R.drawable.viewpager1, "하루를 채우는 외국어 학습", "일상 곳곳에서 외국어를 내것으로 만들어보세요"));
         list.add(new DataPage(R.drawable.viewpager2, "다양한 언어를 한번에", "커피 한잔 가격으로 다양한 언어를 배울 수 있어요"));
         list.add(new DataPage(R.drawable.viewpager3, "럭셔리한 나의 작은 습관", "평범한 일상에 품격을 더해보세요"));
-
         viewPager2.setAdapter(new ViewPagerAdapter(list));
 
         new TabLayoutMediator(tabLayout, viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
@@ -50,14 +68,71 @@ public class StartActivity extends AppCompatActivity {
             }
         }).attach();
 
+        /*
+        * Google Authentication
+        *  */
+        GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build();
+
+        googleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions);
+        auth = FirebaseAuth.getInstance();
+
+        btnGoogle = findViewById(R.id.btnGoogle);
+        btnGoogle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = googleSignInClient.getSignInIntent();
+                startActivityForResult(intent, REQ_SIGN_GOOGLE);
+            }
+        });
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == REQ_SIGN_GOOGLE) {
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+            if (task.isSuccessful()) {
+                GoogleSignInAccount account = task.getResult();
+                resultLogin(account);
+                Toast.makeText(StartActivity.this, "Completed", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Toast.makeText(StartActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void resultLogin(GoogleSignInAccount account) {
+        AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(), null);
+        auth.signInWithCredential(credential)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(StartActivity.this, "Welcome, " + account.getDisplayName(), Toast.LENGTH_SHORT).show();
+                            Log.d("Login", "Success");
+                            Intent intent = new Intent(StartActivity.this, MainActivity.class);
+                            intent.putExtra("username", account.getDisplayName());
+                            intent.putExtra("email", account.getEmail());
+                            intent.putExtra("profile", String.valueOf(account.getPhotoUrl()));
+                            startActivity(intent);
+                            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                            finish();
+                        } else {
+                            Log.d("Login", "Failed");
+                        }
+                    }
+                });
     }
 
     View.OnClickListener mClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
-                case R.id.btnGoogle:
-                    break;
                 case R.id.btnFacebook:
                     break;
                 case R.id.btnEmail:
