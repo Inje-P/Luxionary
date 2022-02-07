@@ -78,7 +78,7 @@ public class Lang101Spa_01_2 extends AppCompatActivity {
         // Layouts
         layoutTitle = (LinearLayout) findViewById(R.id.layoutTitle);
         layoutMain = (LinearLayout) findViewById(R.id.layoutMain);
-        aniLayoutTitle = AnimationUtils.loadAnimation(Lang101Spa_01_2.this, R.anim.descend);
+        aniLayoutTitle = AnimationUtils.loadAnimation(Lang101Spa_01_2.this, R.anim.descend_fast);
         aniLayoutMain = AnimationUtils.loadAnimation(Lang101Spa_01_2.this, R.anim.fadein);
         aniLayoutMain.setStartOffset(400);
         layoutTitle.startAnimation(aniLayoutTitle);

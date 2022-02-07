@@ -3,10 +3,7 @@ package com.luan.luxionary;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.ScaleAnimation;
@@ -177,7 +174,7 @@ public class AvatarActivity extends AppCompatActivity {
 
     private void showDialog() {
         Dialog dialog = new Dialog(this, R.style.DialogStyle);
-        dialog.setContentView(R.layout.save_dialog);
+        dialog.setContentView(R.layout.dialog_save);
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.bg_window);
         dialog.setCancelable(false);
 

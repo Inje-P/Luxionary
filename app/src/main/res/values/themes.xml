@@ -19,4 +19,9 @@
         <item name="android:windowMinWidthMinor">80%</item>
     </style>
 
+    <style name="DialogStyle2" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
 </resources>

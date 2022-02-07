@@ -228,24 +228,24 @@
 
                                 <!-- Center Img -->
                                 <LinearLayout
-                                    android:id="@+id/llCenterImg"
+                                    android:id="@+id/llRandom"
                                     android:layout_width="match_parent"
-                                    android:layout_height="100dp"
-                                    android:background="@color/main_text"
-                                    android:elevation="3dp"
+                                    android:layout_height="80dp"
                                     android:layout_margin="10dp"
                                     android:gravity="center_vertical"
                                     android:orientation="vertical">
 
-                                    <TextView
-                                        android:id="@+id/tvCenterImg"
+                                    <Button
+                                        android:id="@+id/btnRandom"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:fontFamily="@font/pretendard_800"
+                                        android:fontFamily="@font/bebas_neue"
                                         android:gravity="center"
-                                        android:text="LUXIONARY"
+                                        android:text="FEELING LUXIONARY"
                                         android:textColor="@color/main_white"
-                                        android:textSize="50dp"></TextView>
+                                        android:elevation="3dp"
+                                        android:background="@drawable/pastel_ripple_black"
+                                        android:textSize="55dp"></Button>
 
                                 </LinearLayout>
 

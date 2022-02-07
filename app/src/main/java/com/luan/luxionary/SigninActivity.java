@@ -1,18 +1,14 @@
 package com.luan.luxionary;
 
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.view.animation.DecelerateInterpolator;
 import android.view.animation.TranslateAnimation;
 import android.widget.*;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SigninActivity extends AppCompatActivity {
@@ -104,7 +100,7 @@ public class SigninActivity extends AppCompatActivity {
 
     private void showDialog() {
         Dialog dialog = new Dialog(this, R.style.DialogStyle);
-        dialog.setContentView(R.layout.signin_dialog);
+        dialog.setContentView(R.layout.dialog_signin);
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.bg_window);
         dialog.setCancelable(false);
 

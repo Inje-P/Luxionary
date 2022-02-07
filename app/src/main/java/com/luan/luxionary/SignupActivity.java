@@ -190,7 +190,7 @@ public class SignupActivity extends AppCompatActivity {
 
     private void dialogSignup() {
         Dialog dialog = new Dialog(this, R.style.DialogStyle);
-        dialog.setContentView(R.layout.signup_dialog);
+        dialog.setContentView(R.layout.dialog_signup);
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.bg_window);
         dialog.setCancelable(false);
 
@@ -233,7 +233,7 @@ public class SignupActivity extends AppCompatActivity {
 
     private void dialogReturn() {
         Dialog dialog = new Dialog(this, R.style.DialogStyle);
-        dialog.setContentView(R.layout.cancel_dialog);
+        dialog.setContentView(R.layout.dialog_cancel);
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.bg_window);
         dialog.setCancelable(false);
 

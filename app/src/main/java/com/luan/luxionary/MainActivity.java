@@ -1,10 +1,8 @@
 package com.luan.luxionary;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.*;
-import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.animation.*;
@@ -12,25 +10,15 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
-import android.media.AudioAttributes;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.media.SoundPool;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.Menu;
+import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.*;
 import android.widget.*;
-import android.widget.Toolbar;
 
-import com.google.android.material.navigation.NavigationView;
-
-import org.w3c.dom.Text;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,10 +29,16 @@ public class MainActivity extends AppCompatActivity {
     private BackHandler backHandler = new BackHandler(this);
 
     TextView tvTitleHello, tvTitleName;
-    TextView tvBanner1, tvBanner2, tvCenterImg;
-    LinearLayout llProfile, llAvatar, llBanner, llCenterImg;
+    TextView tvBanner1, tvBanner2;
+    LinearLayout llProfile, llAvatar, llBanner;
     ImageView imgAvatar;
     Button btnDate, btnTasks;
+
+    // Random Choice
+    LinearLayout llRandom;
+    Button btnRandom;
+    int randomChoice = 0;
+    Integer arrayRandom[] = new Integer[6];
 
     LinearLayout llEngBox, llFraBox, llDeuBox, llItaBox, llSpaBox, llRusBox;
     LinearLayout llEngImage, llFraImage, llDeuImage, llItaImage, llSpaImage, llRusImage;
@@ -55,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     Animation aniLlProfile, aniTitle1, aniTitle2, aniLlAvatar, aniAvatar;
     Animation aniBtnDate, aniBtnTasks;
     Animation aniLlBanner;
-    Animation aniBanner1, aniBanner2, aniLlCenterImg, aniTvCenterImg;
+    Animation aniBanner1, aniBanner2, aniLlRandom, aniBtnRandom;
 
     Animation aniLlEngBox, aniLlFraBox, aniLlDeuBox, aniLlSpaBox, aniLlItaBox, aniLlRusBox;
     Animation aniLlEngImage, aniLlFraImage, aniLlDeuImage, aniLlSpaImage, aniLlItaImage, aniLlRusImage;
@@ -179,15 +173,15 @@ public class MainActivity extends AppCompatActivity {
         btnTasks.setOnClickListener(mClickListener);
 
         // Center Image
-        llCenterImg = (LinearLayout) findViewById(R.id.llCenterImg);
-        tvCenterImg = (TextView) findViewById(R.id.tvCenterImg);
-        aniLlCenterImg = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend_fast);
-        aniLlCenterImg.setStartOffset(400);
-        aniTvCenterImg = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
-        aniTvCenterImg.setStartOffset(600);
-        llCenterImg.startAnimation(aniLlCenterImg);
-        tvCenterImg.startAnimation(aniTvCenterImg);
-        tvCenterImg.setOnClickListener(mClickListener);
+        llRandom = (LinearLayout) findViewById(R.id.llRandom);
+        btnRandom = (Button) findViewById(R.id.btnRandom);
+        aniLlRandom = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend_fast);
+        aniLlRandom.setStartOffset(400);
+        aniBtnRandom = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ascend_fast);
+        aniBtnRandom.setStartOffset(600);
+        llRandom.startAnimation(aniLlRandom);
+        btnRandom.startAnimation(aniBtnRandom);
+        btnRandom.setOnClickListener(mClickListener);
 
         // Banner
         llBanner = (LinearLayout) findViewById(R.id.llBanner);
@@ -374,7 +368,6 @@ public class MainActivity extends AppCompatActivity {
                     dialogAvatar();
                     break;
                 case R.id.btnDate:
-                    btnDate.startAnimation(aniTouch);
                     Intent intentDate = new Intent(MainActivity.this, DateActivity.class);
                     intentDate.putExtra("username", username);
                     intentDate.putExtra("email", email);
@@ -385,11 +378,37 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                     break;
                 case R.id.btnTasks:
-                    btnTasks.startAnimation(aniTouch);
                     break;
-                case R.id.tvCenterImg:
-                    tvCenterImg.startAnimation(aniTouch);
+                case R.id.btnRandom:
                     rainbow();
+                    Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Random random = new Random();
+                            randomChoice = random.nextInt(6) + 1;
+                            switch (randomChoice) {
+                                case 1:
+                                    dialogEng();
+                                    break;
+                                case 2:
+                                    dialogFra();
+                                    break;
+                                case 3:
+                                    dialogDeu();
+                                    break;
+                                case 4:
+                                    dialogIta();
+                                    break;
+                                case 5:
+                                    dialogSpa();
+                                    break;
+                                case 6:
+                                    dialogRus();
+                                    break;
+                            }
+                        }
+                    }, 1400);
                     break;
                 case R.id.btnEng:
                     pageEng();
@@ -430,7 +449,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Rainbow Animation
     private void rainbow() {
-        Integer dark = Color.parseColor("#292929");
+        Integer white = Color.parseColor("#FFFFFF");
         Integer eng = Color.parseColor("#FF6388");
         Integer fra = Color.parseColor("#0FB8EF");
         Integer deu = Color.parseColor("#FFD36B");
@@ -438,12 +457,12 @@ public class MainActivity extends AppCompatActivity {
         Integer spa = Color.parseColor("#FF9450");
         Integer rus = Color.parseColor("#9A89FF");
 
-        ValueAnimator colorAni1 = ValueAnimator.ofObject(new ArgbEvaluator(), dark, eng);
+        ValueAnimator colorAni1 = ValueAnimator.ofObject(new ArgbEvaluator(), white, eng);
         colorAni1.setDuration(200);
         colorAni1.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
+                btnRandom.setTextColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -453,7 +472,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
+                btnRandom.setTextColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -463,7 +482,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni3.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
+                btnRandom.setTextColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -473,7 +492,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni4.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
+                btnRandom.setTextColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -483,7 +502,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni5.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
+                btnRandom.setTextColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -493,17 +512,17 @@ public class MainActivity extends AppCompatActivity {
         colorAni6.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
+                btnRandom.setTextColor((Integer) animator.getAnimatedValue());
             }
         });
 
-        ValueAnimator colorAni7 = ValueAnimator.ofObject(new ArgbEvaluator(), rus, dark);
+        ValueAnimator colorAni7 = ValueAnimator.ofObject(new ArgbEvaluator(), rus, white);
         colorAni7.setDuration(200);
         colorAni7.setStartDelay(1200);
         colorAni7.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                llCenterImg.setBackgroundColor((Integer) animator.getAnimatedValue());
+                btnRandom.setTextColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -516,9 +535,172 @@ public class MainActivity extends AppCompatActivity {
         colorAni7.start();
     }
 
+    // Random Dialog (English)
+    private void dialogEng() {
+        Dialog dialog = new Dialog(this, R.style.DialogStyle2);
+        dialog.setContentView(R.layout.dialog_eng);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.random_window);
+        dialog.setCancelable(false);
+
+        ImageView btnClose = dialog.findViewById(R.id.btn_close);
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        ImageView btnYes = dialog.findViewById(R.id.btn_yes);
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                pageEng();
+            }
+        });
+
+        dialog.show();
+    }
+
+    // Random Dialog (French)
+    private void dialogFra() {
+        Dialog dialog = new Dialog(this, R.style.DialogStyle2);
+        dialog.setContentView(R.layout.dialog_fra);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.random_window);
+        dialog.setCancelable(false);
+
+        ImageView btnClose = dialog.findViewById(R.id.btn_close);
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        ImageView btnYes = dialog.findViewById(R.id.btn_yes);
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                pageFra();
+            }
+        });
+
+        dialog.show();
+    }
+
+    // Random Dialog (German)
+    private void dialogDeu() {
+        Dialog dialog = new Dialog(this, R.style.DialogStyle2);
+        dialog.setContentView(R.layout.dialog_deu);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.random_window);
+        dialog.setCancelable(false);
+
+        ImageView btnClose = dialog.findViewById(R.id.btn_close);
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        ImageView btnYes = dialog.findViewById(R.id.btn_yes);
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                pageDeu();
+            }
+        });
+
+        dialog.show();
+    }
+
+    // Random Dialog (Italian)
+    private void dialogIta() {
+        Dialog dialog = new Dialog(this, R.style.DialogStyle2);
+        dialog.setContentView(R.layout.dialog_ita);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.random_window);
+        dialog.setCancelable(false);
+
+        ImageView btnClose = dialog.findViewById(R.id.btn_close);
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        ImageView btnYes = dialog.findViewById(R.id.btn_yes);
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                pageIta();
+            }
+        });
+
+        dialog.show();
+    }
+
+    // Random Dialog (Spanish)
+    private void dialogSpa() {
+        Dialog dialog = new Dialog(this, R.style.DialogStyle2);
+        dialog.setContentView(R.layout.dialog_spa);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.random_window);
+        dialog.setCancelable(false);
+
+        ImageView btnClose = dialog.findViewById(R.id.btn_close);
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        ImageView btnYes = dialog.findViewById(R.id.btn_yes);
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                pageSpa();
+            }
+        });
+
+        dialog.show();
+    }
+
+    // Random Dialog (Russian)
+    private void dialogRus() {
+        Dialog dialog = new Dialog(this, R.style.DialogStyle2);
+        dialog.setContentView(R.layout.dialog_rus);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.random_window);
+        dialog.setCancelable(false);
+
+        ImageView btnClose = dialog.findViewById(R.id.btn_close);
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        ImageView btnYes = dialog.findViewById(R.id.btn_yes);
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                pageRus();
+            }
+        });
+
+        dialog.show();
+    }
+
+    // Avatar Dialog
     private void dialogAvatar() {
         Dialog dialog = new Dialog(this, R.style.DialogStyle);
-        dialog.setContentView(R.layout.avatar_dialog);
+        dialog.setContentView(R.layout.dialog_avatar);
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.bg_window);
         dialog.setCancelable(false);
 

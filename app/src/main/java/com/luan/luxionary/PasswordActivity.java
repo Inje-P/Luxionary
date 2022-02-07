@@ -104,7 +104,7 @@ public class PasswordActivity extends AppCompatActivity {
 
     private void showDialog() {
         Dialog dialog = new Dialog(this, R.style.DialogStyle);
-        dialog.setContentView(R.layout.signin_dialog);
+        dialog.setContentView(R.layout.dialog_signin);
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.bg_window);
         dialog.setCancelable(false);
 

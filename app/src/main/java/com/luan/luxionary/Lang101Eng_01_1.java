@@ -75,7 +75,7 @@ public class Lang101Eng_01_1 extends AppCompatActivity {
         // Layouts
         layoutTitle = (LinearLayout) findViewById(R.id.layoutTitle);
         layoutMain = (LinearLayout) findViewById(R.id.layoutMain);
-        aniLayoutTitle = AnimationUtils.loadAnimation(Lang101Eng_01_1.this, R.anim.descend);
+        aniLayoutTitle = AnimationUtils.loadAnimation(Lang101Eng_01_1.this, R.anim.descend_fast);
         aniLayoutMain = AnimationUtils.loadAnimation(Lang101Eng_01_1.this, R.anim.fadein);
         aniLayoutMain.setStartOffset(400);
         layoutTitle.startAnimation(aniLayoutTitle);
