@@ -179,18 +179,18 @@ public class MainRus extends AppCompatActivity {
                 1,
                 R.drawable.banner_lang101));
         modelArrayList.add(new MyModel(
-                "Vocabulary",
+                "Словарный запас",
                 "테마별 어휘",
                 2,
                 R.drawable.banner_vocabulary));
         modelArrayList.add(new MyModel(
-                "Grammar",
+                "Грамматика",
                 "종합 문법",
                 3,
                 R.drawable.banner_grammar));
         modelArrayList.add(new MyModel(
-                "Verbs",
-                "핵심 동사",
+                "Спряжение глагола",
+                "동사변화",
                 4,
                 R.drawable.banner_verbs));
         modelArrayList.add(new MyModel(

@@ -242,7 +242,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="а"
+                                android:text="ч"
                                 android:textColor="@color/rus_background"
                                 android:textSize="20dp"></TextView>
 
@@ -255,7 +255,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="а́збука"
+                                android:text="что́"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -268,7 +268,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="авто́бус"
+                                android:text="коне́чно"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -290,7 +290,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="я"
+                                android:text="г"
                                 android:textColor="@color/rus_background"
                                 android:textSize="20dp"></TextView>
 
@@ -303,7 +303,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="я́щик"
+                                android:text="его́"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -316,7 +316,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="язы́к"
+                                android:text="сего́дня"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -338,7 +338,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="э"
+                                android:text="дя"
                                 android:textColor="@color/rus_background"
                                 android:textSize="20dp"></TextView>
 
@@ -351,7 +351,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="э́то"
+                                android:text="дя́дюшка"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -364,7 +364,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="экску́рсия"
+                                android:text="медяни́ца"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -386,7 +386,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="е"
+                                android:text="тя"
                                 android:textColor="@color/rus_background"
                                 android:textSize="20dp"></TextView>
 
@@ -399,7 +399,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="е́сли"
+                                android:text="костя́к"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -412,7 +412,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="еди́нство"
+                                android:text="тя́жесть"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -434,7 +434,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="и"
+                                android:text="де"
                                 android:textColor="@color/rus_background"
                                 android:textSize="20dp"></TextView>
 
@@ -447,7 +447,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="и́рис"
+                                android:text="де́вушка"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -460,7 +460,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="испыта́ние"
+                                android:text="действи́тельно"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -482,7 +482,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ы"
+                                android:text="те"
                                 android:textColor="@color/rus_background"
                                 android:textSize="20dp"></TextView>
 
@@ -495,7 +495,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="сы́р"
+                                android:text="тепе́рь"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -508,7 +508,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="выцвета́ние"
+                                android:text="стереоти́п"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -530,7 +530,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="о"
+                                android:text="дё"
                                 android:textColor="@color/rus_background"
                                 android:textSize="20dp"></TextView>
 
@@ -543,7 +543,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="о́стров"
+                                android:text="дёшево"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -556,7 +556,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="отноше́ние"
+                                android:text="дёргать"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -578,7 +578,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ё"
+                                android:text="тё"
                                 android:textColor="@color/rus_background"
                                 android:textSize="20dp"></TextView>
 
@@ -591,7 +591,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ёлка"
+                                android:text="тётя"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -604,7 +604,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="небоскрёб"
+                                android:text="тёплый"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -626,7 +626,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="у"
+                                android:text="дю"
                                 android:textColor="@color/rus_background"
                                 android:textSize="20dp"></TextView>
 
@@ -639,7 +639,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="у́лица"
+                                android:text="дю́жина"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -652,7 +652,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="уси́лие"
+                                android:text="адюльте́р"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -664,7 +664,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginTop="10dp"
-                            android:layout_marginBottom="20dp"
                             android:orientation="horizontal">
 
                             <TextView
@@ -675,7 +674,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ю"
+                                android:text="тю"
                                 android:textColor="@color/rus_background"
                                 android:textSize="20dp"></TextView>
 
@@ -688,7 +687,7 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ю́ноша"
+                                android:text="тюрьма́"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 
@@ -701,7 +700,104 @@
                                 android:fontFamily="@font/nunitosans_700"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="исключе́ние"
+                                android:text="тюльпа́н"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 11 -->
+                        <LinearLayout
+                            android:id="@+id/ll11"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv11a"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="ди"
+                                android:textColor="@color/rus_background"
+                                android:textSize="20dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv11b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="дире́ктор"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv11c"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="еди́нство"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 12 -->
+                        <LinearLayout
+                            android:id="@+id/ll12"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv12a"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="ти"
+                                android:textColor="@color/rus_background"
+                                android:textSize="20dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv12b"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="ти́хо"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                            <TextView
+                                android:id="@+id/tv12c"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/nunitosans_700"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="стипе́ндия"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
 

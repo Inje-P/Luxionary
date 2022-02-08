@@ -164,7 +164,7 @@ public class Lang101Ita_01_2 extends AppCompatActivity {
                     finish();
                     break;
                 case R.id.btnNext:
-                    Intent intentNext = new Intent(Lang101Ita_01_2.this, Lang101Ita.class);
+                    Intent intentNext = new Intent(Lang101Ita_01_2.this, Lang101Ita_01_3.class);
                     intentNext.putExtra("nick", strNick);
                     intentNext.putExtra("pw", strPw);
                     intentNext.putExtra("name", strName);
