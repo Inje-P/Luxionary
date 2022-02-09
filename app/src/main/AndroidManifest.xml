@@ -32,6 +32,8 @@
         <activity android:name=".SignupActivity"></activity>
         <activity android:name=".AvatarActivity"></activity>
         <activity android:name=".SignupOkActivity"></activity>
+        <activity android:name=".AccountActivity"></activity>
+        <activity android:name=".PasswordActivity"></activity>
 
         <activity android:name=".IntroEng"></activity>
         <activity android:name=".IntroFra"></activity>

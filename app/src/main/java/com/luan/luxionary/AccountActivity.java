@@ -3,27 +3,40 @@ package com.luan.luxionary;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.*;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.bumptech.glide.Glide;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class AccountActivity extends AppCompatActivity {
 
     // Data from DB
-    String username, email, profile;
+    String username, email, profile, avatar;
 
     ImageView imgProfile;
     EditText etUsername, etEmail;
+    Button btnSave;
+    Pattern pattern = android.util.Patterns.EMAIL_ADDRESS;
+    LinearLayout layoutTop, layoutPi, layoutBtn;
+    Animation aniLayoutTop, aniLayoutPi, aniLayoutBtn;
 
     // Sidebar
     private DrawerLayout drawerLayout;
     private View drawerView;
     TextView tvNickname, tvEmail;
     ImageView btnClose;
+    Button btnAccount, btnSupport, btnSetting;
 
     // Footer
     ImageButton btnSidebar, btnHome, btnUpdate;
@@ -37,88 +50,181 @@ public class AccountActivity extends AppCompatActivity {
         username = getData.getStringExtra("username");
         email = getData.getStringExtra("email");
         profile = getData.getStringExtra("profile");
+        avatar = getData.getStringExtra("avatar");
 
         // Sidebar
-//        tvNickname = (TextView) findViewById(R.id.tvNickname);
-//        tvEmail = (TextView) findViewById(R.id.tvEmail);
-//        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-//        drawerView = (View) findViewById(R.id.drawer);
-//        drawerLayout.setDrawerListener(drawerListener);
-//        drawerView.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//                return true;
-//            }
-//        });
-//        btnClose = (ImageView) findViewById(R.id.btnClose);
-//        btnClose.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                drawerLayout.closeDrawers();
-//            }
-//        });
+        tvNickname = (TextView) findViewById(R.id.tvNickname);
+        tvEmail = (TextView) findViewById(R.id.tvEmail);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawerView = (View) findViewById(R.id.drawer);
+        drawerLayout.setDrawerListener(drawerListener);
+        drawerView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return true;
+            }
+        });
+        btnClose = (ImageView) findViewById(R.id.btnClose);
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.closeDrawers();
+            }
+        });
+        btnAccount = (Button) findViewById(R.id.btnAccount);
+        btnAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAccount = new Intent(AccountActivity.this, AccountActivity.class);
+                intentAccount.putExtra("username", username);
+                intentAccount.putExtra("email", email);
+                intentAccount.putExtra("profile", profile);
+                intentAccount.putExtra("avatar", avatar);
+                startActivity(intentAccount);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
 
+        // Layout Animation
+        layoutTop = (LinearLayout) findViewById(R.id.layoutTop);
+        layoutPi = (LinearLayout) findViewById(R.id.layoutPi);
+        layoutBtn = (LinearLayout) findViewById(R.id.layoutBtn);
+        aniLayoutTop = AnimationUtils.loadAnimation(AccountActivity.this, R.anim.descend);
+        aniLayoutPi = AnimationUtils.loadAnimation(AccountActivity.this, R.anim.fadein);
+        aniLayoutBtn = AnimationUtils.loadAnimation(AccountActivity.this, R.anim.fadein);
+        layoutTop.startAnimation(aniLayoutTop);
+        layoutPi.startAnimation(aniLayoutPi);
+        layoutBtn.startAnimation(aniLayoutBtn);
+
+        // Data Init
         imgProfile = (ImageView) findViewById(R.id.imgProfile);
         etUsername = (EditText) findViewById(R.id.etUsername);
         etEmail = (EditText) findViewById(R.id.etEmail);
-
-        // Data Setting
         imgProfile = (ImageView) findViewById(R.id.imgProfile);
-        Glide.with(this).load(profile).into(imgProfile);
+        if (profile == null) {
+            Glide.with(this).load(R.drawable.avt_male1).into(imgProfile);
+        } else {
+            Glide.with(this).load(profile).into(imgProfile);
+        }
         etUsername = (EditText) findViewById(R.id.etUsername);
-        etUsername.setText(username);
+        if (username == null) {
+            etUsername.setText("해리슨");
+        } else {
+            etUsername.setText(username);
+        }
         etEmail = (EditText) findViewById(R.id.etEmail);
-        etEmail.setText(email);
+        if (email == null) {
+            etEmail.setText("luxionary@gmail.com");
+        } else {
+            etEmail.setText(email);
+        }
+
+        // Buttons
+        btnSave = (Button) findViewById(R.id.btnSave);
+        btnSave.setOnClickListener(mClickListener);
+
+        // Footer
+        btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
+        btnHome = (ImageButton) findViewById(R.id.btnHome);
+        btnUpdate = (ImageButton) findViewById(R.id.btnUpdate);
+        btnSidebar.setOnClickListener(mClickListener);
+        btnHome.setOnClickListener(mClickListener);
+        btnUpdate.setOnClickListener(mClickListener);
 
     }
 
-//    // Sidebar
-//    DrawerLayout.DrawerListener drawerListener = new DrawerLayout.DrawerListener() {
-//        @Override
-//        public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
-//
-//        }
-//
-//        @Override
-//        public void onDrawerOpened(@NonNull View drawerView) {
-//            if (strNick == null) {
-//                tvNickname.setText("해리슨");
-//            } else {
-//                tvNickname.setText(strNick);
-//            }
-//            if (strEmail == null) {
-//                tvEmail.setText("luxionary@gmail.com");
-//            } else {
-//                tvEmail.setText(strEmail);
-//            }
-//        }
-//
-//        @Override
-//        public void onDrawerClosed(@NonNull View drawerView) {
-//
-//        }
-//
-//        @Override
-//        public void onDrawerStateChanged(int newState) {
-//
-//        }
-//    };
+    // Sidebar
+    DrawerLayout.DrawerListener drawerListener = new DrawerLayout.DrawerListener() {
+        @Override
+        public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+
+        }
+
+        @Override
+        public void onDrawerOpened(@NonNull View drawerView) {
+            if (username == null) {
+                tvNickname.setText("해리슨");
+            } else {
+                tvNickname.setText(username);
+            }
+            if (email == null) {
+                tvEmail.setText("luxionary@gmail.com");
+            } else {
+                tvEmail.setText(email);
+            }
+        }
+
+        @Override
+        public void onDrawerClosed(@NonNull View drawerView) {
+
+        }
+
+        @Override
+        public void onDrawerStateChanged(int newState) {
+
+        }
+    };
 
     View.OnClickListener mClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
-                case R.id.btnSignup:
+                case R.id.btnSave:
+                    // Username Setting
+                    if (etUsername.getText().toString().equals("")) {
+                        Toast.makeText(AccountActivity.this, "닉네임을 입력해주세요", Toast.LENGTH_SHORT).show();
+                    } else {
+                        username = etUsername.getText().toString();
+                    }
+
+                    // Email Setting
+                    if (etEmail.getText().toString().equals("")) {
+                        Toast.makeText(AccountActivity.this, "이메일을 입력해주세요", Toast.LENGTH_SHORT).show();
+                    } else {
+                        email = etEmail.getText().toString();
+                        Pattern pattern = Patterns.EMAIL_ADDRESS;
+                        Matcher matcher = pattern.matcher(email);
+                        if (matcher.find()) {
+                            showDialog();
+                        } else {
+                            Toast.makeText(AccountActivity.this, "잘못된 이메일 형식입니다.", Toast.LENGTH_SHORT).show();
+                        }
+                    }
                     break;
-                case R.id.btnSignin:
+                // Footer
+                case R.id.btnSidebar:
+                    drawerLayout.openDrawer(drawerView);
+                    break;
+                case R.id.btnHome:
+                    Intent intentHome = new Intent(AccountActivity.this, MainActivity.class);
+                    intentHome.putExtra("username", username);
+                    intentHome.putExtra("email", email);
+                    intentHome.putExtra("profile", profile);
+                    intentHome.putExtra("avatar", avatar);
+                    startActivity(intentHome);
+                    overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                    finish();
+                    break;
+                case R.id.btnUpdate:
                     break;
             }
         }
     };
 
+    // Email Format Checking
+//    public static boolean isEmail(String email) {
+//        boolean returnValue = false;
+//        String regex = "^[_a-zA-Z0-9-\\.]+@[\\.a-zA-Z0-9-]+\\.[a-zA-Z]+$";
+//        Pattern p = Pattern.compile(regex);
+//        Matcher m = p.matcher(email);
+//        if (m.matches()) { returnValue = true; }
+//        return returnValue;
+//    }
+
     private void showDialog() {
         Dialog dialog = new Dialog(this, R.style.DialogStyle);
-        dialog.setContentView(R.layout.dialog_signin);
+        dialog.setContentView(R.layout.dialog_accountsave);
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.bg_window);
         dialog.setCancelable(false);
 
@@ -142,10 +248,17 @@ public class AccountActivity extends AppCompatActivity {
         btnYes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(AccountActivity.this, "저장되었습니다", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
-                Intent intentAccount = new Intent(AccountActivity.this, WelcomeActivity.class);
-                startActivity(intentAccount);
-                overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
+
+                // 저장할 아바타 변수 전달하기 (Intent & DB)
+                Intent intentMain = new Intent(AccountActivity.this, MainActivity.class);
+                intentMain.putExtra("username", username);
+                intentMain.putExtra("email", email);
+                intentMain.putExtra("profile", profile);
+                intentMain.putExtra("avatar", avatar);
+                startActivity(intentMain);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
                 finish();
             }
         });

@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:background="@drawable/top_white"
-            android:elevation="3dp"
+            android:elevation="5dp"
             android:orientation="vertical">
 
             <LinearLayout

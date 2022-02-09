@@ -12,8 +12,9 @@ import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AvatarActivity extends AppCompatActivity {
+
     // Data from DB
-    String strNick, strPw, strName, strEmail, strAvatar;
+    String username, email, profile, avatar;
 
     TextView tvTitleHello, tvTitleName, tvBanner;
     ImageView imgAvatar;
@@ -31,21 +32,20 @@ public class AvatarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_avatar);
 
-        // Data from SQLite
+        // Data from Firebase
         Intent getData = getIntent();
-        strNick = getData.getStringExtra("nick");
-        strPw = getData.getStringExtra("pw");
-        strName = getData.getStringExtra("name");
-        strEmail = getData.getStringExtra("email");
-        strAvatar = getData.getStringExtra("avatar");
+        username = getData.getStringExtra("username");
+        email = getData.getStringExtra("email");
+        profile = getData.getStringExtra("profile");
+        avatar = getData.getStringExtra("avatar");
 
         // Title
         tvTitleHello = (TextView) findViewById(R.id.tvTitleHello);
         tvTitleName = (TextView) findViewById(R.id.tvTitleName);
-        if (strNick == null) {
+        if (username == null) {
             tvTitleName.setText("해리슨");
         } else {
-            tvTitleName.setText(strNick);
+            tvTitleName.setText(username);
         }
         aniTitle1 = AnimationUtils.loadAnimation(AvatarActivity.this, R.anim.descend);
         aniTitle2 = AnimationUtils.loadAnimation(AvatarActivity.this, R.anim.descend);
@@ -103,11 +103,10 @@ public class AvatarActivity extends AppCompatActivity {
         super.onBackPressed();
         Intent intentBack = new Intent(AvatarActivity.this, MainActivity.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intentBack.putExtra("nick", strNick);
-        intentBack.putExtra("pw", strPw);
-        intentBack.putExtra("name", strName);
-        intentBack.putExtra("email", strEmail);
-        intentBack.putExtra("avatar", strAvatar);
+        intentBack.putExtra("username", username);
+        intentBack.putExtra("email", email);
+        intentBack.putExtra("profile", profile);
+        intentBack.putExtra("avatar", avatar);
         startActivity(intentBack);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -121,7 +120,7 @@ public class AvatarActivity extends AppCompatActivity {
                     imgAvatar.startAnimation(aniAvtTouch);
                     break;
                 case R.id.btnSave:
-                    if (strAvatar == null) {
+                    if (avatar == null) {
                         Toast.makeText(AvatarActivity.this,"아바타를 선택해주세요",Toast.LENGTH_SHORT).show();
                         break;
                     } else {
@@ -131,42 +130,42 @@ public class AvatarActivity extends AppCompatActivity {
                 case R.id.btnMale1:
                     btnMale1.startAnimation(aniTouch);
                     imgAvatar.setImageResource(R.drawable.avt_male1);
-                    strAvatar = "male1";
+                    avatar = "male1";
                     break;
                 case R.id.btnMale2:
                     btnMale2.startAnimation(aniTouch);
                     imgAvatar.setImageResource(R.drawable.avt_male2);
-                    strAvatar = "male2";
+                    avatar = "male2";
                     break;
                 case R.id.btnMale3:
                     btnMale3.startAnimation(aniTouch);
                     imgAvatar.setImageResource(R.drawable.avt_male3);
-                    strAvatar = "male3";
+                    avatar = "male3";
                     break;
                 case R.id.btnMale4:
                     btnMale4.startAnimation(aniTouch);
                     imgAvatar.setImageResource(R.drawable.avt_male4);
-                    strAvatar = "male4";
+                    avatar = "male4";
                     break;
                 case R.id.btnFemale1:
                     btnFemale1.startAnimation(aniTouch);
                     imgAvatar.setImageResource(R.drawable.avt_female1);
-                    strAvatar = "female1";
+                    avatar = "female1";
                     break;
                 case R.id.btnFemale2:
                     btnFemale2.startAnimation(aniTouch);
                     imgAvatar.setImageResource(R.drawable.avt_female2);
-                    strAvatar = "female2";
+                    avatar = "female2";
                     break;
                 case R.id.btnFemale3:
                     btnFemale3.startAnimation(aniTouch);
                     imgAvatar.setImageResource(R.drawable.avt_female3);
-                    strAvatar = "female3";
+                    avatar = "female3";
                     break;
                 case R.id.btnFemale4:
                     btnFemale4.startAnimation(aniTouch);
                     imgAvatar.setImageResource(R.drawable.avt_female4);
-                    strAvatar = "female4";
+                    avatar = "female4";
                     break;
             }
         }
@@ -203,13 +202,12 @@ public class AvatarActivity extends AppCompatActivity {
 
                 // 저장할 아바타 변수 전달하기 (Intent & DB)
                 Intent intentMain = new Intent(AvatarActivity.this, MainActivity.class);
-                intentMain.putExtra("nick", strNick);
-                intentMain.putExtra("pw", strPw);
-                intentMain.putExtra("name", strName);
-                intentMain.putExtra("email", strEmail);
-                intentMain.putExtra("avatar", strAvatar);
+                intentMain.putExtra("username", username);
+                intentMain.putExtra("email", email);
+                intentMain.putExtra("profile", profile);
+                intentMain.putExtra("avatar", avatar);
                 startActivity(intentMain);
-                overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
                 finish();
             }
         });

@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout llRandom;
     Button btnRandom;
     int randomChoice = 0;
-    Integer arrayRandom[] = new Integer[6];
 
     LinearLayout llEngBox, llFraBox, llDeuBox, llItaBox, llSpaBox, llRusBox;
     LinearLayout llEngImage, llFraImage, llDeuImage, llItaImage, llSpaImage, llRusImage;
@@ -64,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
     private View drawerView;
     TextView tvNickname, tvEmail;
     ImageView btnClose;
+    Button btnAccount, btnSupport, btnSetting;
 
     // Footer
     ImageButton btnSidebar, btnHome, btnUpdate;
@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         username = getData.getStringExtra("username");
         email = getData.getStringExtra("email");
         profile = getData.getStringExtra("profile");
+        avatar = getData.getStringExtra("avatar");
 
         // Sidebar
         tvNickname = (TextView) findViewById(R.id.tvNickname);
@@ -96,6 +97,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 drawerLayout.closeDrawers();
+            }
+        });
+        btnAccount = (Button) findViewById(R.id.btnAccount);
+        btnAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAccount = new Intent(MainActivity.this, AccountActivity.class);
+                intentAccount.putExtra("username", username);
+                intentAccount.putExtra("email", email);
+                intentAccount.putExtra("profile", profile);
+                intentAccount.putExtra("avatar", avatar);
+                startActivity(intentAccount);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
             }
         });
 
@@ -124,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
         imgAvatar = (ImageView) findViewById(R.id.imgAvatar);
         if (avatar == null) {
             imgAvatar.setImageResource(R.drawable.avt_male1);
+            avatar = "male1";
         } else {
             switch (avatar) {
                 case "male1":
@@ -371,7 +387,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intentDate = new Intent(MainActivity.this, DateActivity.class);
                     intentDate.putExtra("username", username);
                     intentDate.putExtra("email", email);
-                    intentDate.putExtra("profile", String.valueOf(profile));
+                    intentDate.putExtra("profile", profile);
                     intentDate.putExtra("avatar", avatar);
                     startActivity(intentDate);
                     overridePendingTransition(R.anim.fadein, R.anim.fadeout);
@@ -428,6 +444,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btnRus:
                     pageRus();
                     break;
+                // Footer
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);
                     break;
@@ -435,7 +452,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intentHome = new Intent(MainActivity.this, MainActivity.class);
                     intentHome.putExtra("username", username);
                     intentHome.putExtra("email", email);
-                    intentHome.putExtra("profile", String.valueOf(profile));
+                    intentHome.putExtra("profile", profile);
                     intentHome.putExtra("avatar", avatar);
                     startActivity(intentHome);
                     overridePendingTransition(R.anim.fadein, R.anim.fadeout);
@@ -730,7 +747,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intentAvatar = new Intent(MainActivity.this, AvatarActivity.class);
                 intentAvatar.putExtra("username", username);
                 intentAvatar.putExtra("email", email);
-                intentAvatar.putExtra("profile", String.valueOf(profile));
+                intentAvatar.putExtra("profile", profile);
                 intentAvatar.putExtra("avatar", avatar);
                 startActivity(intentAvatar);
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout);
@@ -744,7 +761,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intentEng = new Intent(MainActivity.this, IntroEng.class);
         intentEng.putExtra("username", username);
         intentEng.putExtra("email", email);
-        intentEng.putExtra("profile", String.valueOf(profile));
+        intentEng.putExtra("profile", profile);
         intentEng.putExtra("avatar", avatar);
         startActivity(intentEng);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
@@ -755,7 +772,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intentFra = new Intent(MainActivity.this, IntroFra.class);
         intentFra.putExtra("username", username);
         intentFra.putExtra("email", email);
-        intentFra.putExtra("profile", String.valueOf(profile));
+        intentFra.putExtra("profile", profile);
         intentFra.putExtra("avatar", avatar);
         startActivity(intentFra);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
@@ -766,7 +783,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intentDeu = new Intent(MainActivity.this, IntroDeu.class);
         intentDeu.putExtra("username", username);
         intentDeu.putExtra("email", email);
-        intentDeu.putExtra("profile", String.valueOf(profile));
+        intentDeu.putExtra("profile", profile);
         intentDeu.putExtra("avatar", avatar);
         startActivity(intentDeu);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
@@ -777,7 +794,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intentIta = new Intent(MainActivity.this, IntroIta.class);
         intentIta.putExtra("username", username);
         intentIta.putExtra("email", email);
-        intentIta.putExtra("profile", String.valueOf(profile));
+        intentIta.putExtra("profile", profile);
         intentIta.putExtra("avatar", avatar);
         startActivity(intentIta);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
@@ -788,7 +805,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intentSpa = new Intent(MainActivity.this, IntroSpa.class);
         intentSpa.putExtra("username", username);
         intentSpa.putExtra("email", email);
-        intentSpa.putExtra("profile", String.valueOf(profile));
+        intentSpa.putExtra("profile", profile);
         intentSpa.putExtra("avatar", avatar);
         startActivity(intentSpa);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
@@ -799,7 +816,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intentRus = new Intent(MainActivity.this, IntroRus.class);
         intentRus.putExtra("username", username);
         intentRus.putExtra("email", email);
-        intentRus.putExtra("profile", String.valueOf(profile));
+        intentRus.putExtra("profile", profile);
         intentRus.putExtra("avatar", avatar);
         startActivity(intentRus);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
