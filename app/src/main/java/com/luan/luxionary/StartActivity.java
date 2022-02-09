@@ -38,7 +38,7 @@ public class StartActivity extends AppCompatActivity {
     private static final int REQ_SIGN_GOOGLE = 100;
     private GoogleSignInClient googleSignInClient;
 
-    Button btnFacebook, btnEmail;
+    Button btnEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +47,7 @@ public class StartActivity extends AppCompatActivity {
 
         viewPager2 = findViewById(R.id.viewPager2);
         tabLayout = findViewById(R.id.tabLayout);
-        btnFacebook = findViewById(R.id.btnFacebook);
         btnEmail = findViewById(R.id.btnEmail);
-        btnFacebook.setOnClickListener(mClickListener);
         btnEmail.setOnClickListener(mClickListener);
 
         /*
@@ -57,7 +55,7 @@ public class StartActivity extends AppCompatActivity {
          *  */
         ArrayList<DataPage> list = new ArrayList<>();
         list.add(new DataPage(R.drawable.viewpager1, "하루를 채우는 외국어 학습", "일상 곳곳에서 외국어를 내것으로 만들어보세요"));
-        list.add(new DataPage(R.drawable.viewpager2, "다양한 언어를 한번에", "커피 한잔 가격으로 다양한 언어를 배울 수 있어요"));
+        list.add(new DataPage(R.drawable.viewpager2, "다양한 언어를 한번에", "다양한 언어를 하나의 앱으로 배울 수 있어요"));
         list.add(new DataPage(R.drawable.viewpager3, "럭셔리한 나의 작은 습관", "평범한 일상에 품격을 더해보세요"));
         viewPager2.setAdapter(new ViewPagerAdapter(list));
 
@@ -133,8 +131,6 @@ public class StartActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
-                case R.id.btnFacebook:
-                    break;
                 case R.id.btnEmail:
                     Intent intentEmail = new Intent(StartActivity.this, SigninActivity.class);
                     startActivity(intentEmail);

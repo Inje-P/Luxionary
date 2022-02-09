@@ -81,18 +81,18 @@ public class MainEng extends AppCompatActivity {
         });
 
         // Title
+        layoutProfile = (LinearLayout) findViewById(R.id.layoutProfile);
+        aniLayoutProfile = AnimationUtils.loadAnimation(MainEng.this, R.anim.descend);
+        layoutProfile.startAnimation(aniLayoutProfile);
         tvTitle1 = (TextView) findViewById(R.id.tvTitle1);
         tvTitle1.setOnClickListener(mClickListener);
         tvTitle2 = (TextView) findViewById(R.id.tvTitle2);
-        aniTitle1 = AnimationUtils.loadAnimation(MainEng.this, R.anim.descend);
-        aniTitle2 = AnimationUtils.loadAnimation(MainEng.this, R.anim.descend);
-        aniTitle2.setStartOffset(400);
+        aniTitle1 = AnimationUtils.loadAnimation(MainEng.this, R.anim.fadein);
+        aniTitle1.setStartOffset(600);
+        aniTitle2 = AnimationUtils.loadAnimation(MainEng.this, R.anim.fadein);
+        aniTitle2.setStartOffset(800);
         tvTitle1.startAnimation(aniTitle1);
         tvTitle2.startAnimation(aniTitle2);
-        layoutProfile = (LinearLayout) findViewById(R.id.layoutProfile);
-        aniLayoutProfile = AnimationUtils.loadAnimation(MainEng.this, R.anim.fadein);
-        aniLayoutProfile.setStartOffset(600);
-        layoutProfile.startAnimation(aniLayoutProfile);
 
         // Avatar
         imgAvatar = (ImageView) findViewById(R.id.imgAvatar);
@@ -256,7 +256,6 @@ public class MainEng extends AppCompatActivity {
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(context, title + "\n" + idx, Toast.LENGTH_SHORT).show();
                     switch (idx) {
                         case 1:
                             pageLang101();

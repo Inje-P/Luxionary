@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvTitleHello, tvTitleName;
     TextView tvBanner1, tvBanner2;
-    LinearLayout llProfile, llAvatar, llBanner;
+    LinearLayout llTop, llProfile, llAvatar, llBanner;
     ImageView imgAvatar;
     Button btnDate, btnTasks;
 
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvEng, tvFra, tvDeu, tvIta, tvSpa, tvRus;
 
     Animation aniTouch;
-    Animation aniLlProfile, aniTitle1, aniTitle2, aniLlAvatar, aniAvatar;
+    Animation aniLlTop, aniLlProfile, aniTitle1, aniTitle2, aniLlAvatar, aniAvatar;
     Animation aniBtnDate, aniBtnTasks;
     Animation aniLlBanner;
     Animation aniBanner1, aniBanner2, aniLlRandom, aniBtnRandom;
@@ -115,6 +115,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Title
+        llTop = (LinearLayout) findViewById(R.id.llTop);
+        aniLlTop = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
+        llTop.startAnimation(aniLlTop);
         llProfile = (LinearLayout) findViewById(R.id.llProfile);
         aniLlProfile = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         llProfile.startAnimation(aniLlProfile);
@@ -128,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         aniTitle1 = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         aniTitle1.setStartOffset(200);
         aniTitle2 = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
-        aniTitle2.setStartOffset(500);
+        aniTitle2.setStartOffset(400);
         tvTitleHello.startAnimation(aniTitle1);
         tvTitleName.startAnimation(aniTitle2);
 
@@ -424,7 +427,7 @@ public class MainActivity extends AppCompatActivity {
                                     break;
                             }
                         }
-                    }, 1400);
+                    }, 1200);
                     break;
                 case R.id.btnEng:
                     pageEng();

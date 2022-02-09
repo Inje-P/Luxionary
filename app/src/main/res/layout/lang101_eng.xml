@@ -167,13 +167,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_eng"
+                                android:background="@drawable/pastel_ripple_eng_full"
                                 android:elevation="3dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="ALPHABET"
-                                android:textColor="@color/eng_background"
+                                android:textColor="@color/main_white"
                                 android:textSize="25dp"></Button>
 
                             <TextView

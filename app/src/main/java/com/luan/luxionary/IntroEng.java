@@ -58,7 +58,7 @@ public class IntroEng extends AppCompatActivity {
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                 finish();
             }
-        }, 2000);
+        }, 1500);
     }
 
     // Back Button

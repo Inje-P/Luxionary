@@ -36,8 +36,8 @@
                         android:id="@+id/layout0"
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
-                        android:layout_margin="15dp"
-                        android:background="@drawable/box_white"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/pastel_ripple_black"
                         android:elevation="3dp"
                         android:orientation="vertical">
 
@@ -53,8 +53,8 @@
                                 android:layout_marginTop="5dp"
                                 android:fontFamily="@font/pretendard_800"
                                 android:gravity="center"
-                                android:text="오늘은"
-                                android:textColor="@color/main_text"
+                                android:text="TODAY IS"
+                                android:textColor="@color/main_white"
                                 android:textSize="25dp"></TextView>
 
                         </LinearLayout>
@@ -90,11 +90,12 @@
                             android:id="@+id/layout1"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/box_white"
+                            android:background="@drawable/pastel_ripple_black"
                             android:elevation="3dp"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp">
 
                             <!-- Korean -->
                             <LinearLayout
@@ -106,11 +107,11 @@
                                     android:id="@+id/tvMonthTitle"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_marginTop="28dp"
+                                    android:layout_marginTop="15dp"
                                     android:fontFamily="@font/pretendard_800"
                                     android:gravity="center_horizontal"
                                     android:text="1월"
-                                    android:textColor="@color/main_text"
+                                    android:textColor="@color/main_white"
                                     android:textSize="18dp"></TextView>
 
                             </LinearLayout>
@@ -119,8 +120,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="8.5"
                                 android:layout_marginRight="5dp"
+                                android:layout_weight="8.5"
                                 android:orientation="horizontal">
 
                                 <!-- English, French, German -->
@@ -136,7 +137,7 @@
                                         android:layout_height="0dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -158,7 +159,7 @@
                                         android:layout_height="0dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -178,9 +179,9 @@
                                         android:id="@+id/llMonthDeu"
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
-                                        android:layout_marginBottom="20dp"
+                                        android:layout_marginBottom="15dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -212,7 +213,7 @@
                                         android:layout_marginRight="10dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -235,7 +236,7 @@
                                         android:layout_marginRight="10dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -256,9 +257,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="20dp"
+                                        android:layout_marginBottom="15dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -266,7 +267,6 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_marginLeft="5dp"
-                                            android:layout_marginTop="20dp"
                                             android:fontFamily="@font/nunitosans_700"
                                             android:gravity="bottom"
                                             android:text="январь"
@@ -286,11 +286,12 @@
                             android:id="@+id/layout2"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/box_white"
+                            android:background="@drawable/pastel_ripple_black"
                             android:elevation="3dp"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp">
 
                             <!-- Korean -->
                             <LinearLayout
@@ -302,11 +303,11 @@
                                     android:id="@+id/tvDoMTitle"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_marginTop="28dp"
+                                    android:layout_marginTop="15dp"
                                     android:fontFamily="@font/pretendard_800"
                                     android:gravity="center_horizontal"
                                     android:text="27일"
-                                    android:textColor="@color/main_text"
+                                    android:textColor="@color/main_white"
                                     android:textSize="18dp"></TextView>
 
                             </LinearLayout>
@@ -315,8 +316,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="8.5"
                                 android:layout_marginRight="5dp"
+                                android:layout_weight="8.5"
                                 android:orientation="horizontal">
 
                                 <!-- English, French, German -->
@@ -332,7 +333,7 @@
                                         android:layout_height="0dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -354,7 +355,7 @@
                                         android:layout_height="0dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -374,9 +375,9 @@
                                         android:id="@+id/llDoMDeu"
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
-                                        android:layout_marginBottom="20dp"
+                                        android:layout_marginBottom="15dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -408,7 +409,7 @@
                                         android:layout_marginRight="10dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -431,7 +432,7 @@
                                         android:layout_marginRight="10dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -452,9 +453,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="20dp"
+                                        android:layout_marginBottom="15dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -481,14 +482,15 @@
                             android:id="@+id/layout3"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="20dp"
                             android:layout_weight="1"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginRight="15dp"
-                            android:layout_marginBottom="30dp"
-                            android:background="@drawable/box_white"
+                            android:background="@drawable/pastel_ripple_black"
                             android:elevation="3dp"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp">
 
                             <!-- Korean -->
                             <LinearLayout
@@ -500,11 +502,11 @@
                                     android:id="@+id/tvDoWTitle"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_marginTop="28dp"
+                                    android:layout_marginTop="15dp"
                                     android:fontFamily="@font/pretendard_800"
                                     android:gravity="center_horizontal"
                                     android:text="일\n요\n일"
-                                    android:textColor="@color/main_text"
+                                    android:textColor="@color/main_white"
                                     android:textSize="18dp"></TextView>
 
                             </LinearLayout>
@@ -513,8 +515,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="8.5"
                                 android:layout_marginRight="5dp"
+                                android:layout_weight="8.5"
                                 android:orientation="horizontal">
 
                                 <!-- English, French, German -->
@@ -530,7 +532,7 @@
                                         android:layout_height="0dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -552,7 +554,7 @@
                                         android:layout_height="0dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -572,9 +574,9 @@
                                         android:id="@+id/llDoWDeu"
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
-                                        android:layout_marginBottom="20dp"
+                                        android:layout_marginBottom="15dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -606,7 +608,7 @@
                                         android:layout_marginRight="10dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -629,7 +631,7 @@
                                         android:layout_marginRight="10dp"
                                         android:layout_marginBottom="20dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView
@@ -650,9 +652,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="20dp"
+                                        android:layout_marginBottom="15dp"
                                         android:layout_weight="1"
-                                        android:background="@drawable/ripple_black_underline"
+                                        android:background="@drawable/ripple_white_underline"
                                         android:orientation="horizontal">
 
                                         <TextView

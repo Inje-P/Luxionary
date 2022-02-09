@@ -11,9 +11,9 @@
 
     <ImageView
         android:id="@+id/imgTitle"
-        android:padding="50dp"
         android:layout_width="match_parent"
         android:layout_height="350dp"
+        android:padding="50dp"
         android:scaleType="centerCrop"
         android:src="@drawable/viewpager1"></ImageView>
 
@@ -21,9 +21,9 @@
         android:id="@+id/tvTitle1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:fontFamily="@font/pretendard_800"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:fontFamily="@font/pretendard_800"
         android:textSize="25dp"
         tools:text="제목입니다" />
 
@@ -31,6 +31,7 @@
         android:id="@+id/tvTitle2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:fontFamily="@font/pretendard_600"
         android:text="이것은 설명입니다."
         android:textAlignment="center"
         android:textColor="@color/main_gray"
