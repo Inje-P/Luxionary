@@ -26,16 +26,16 @@ public class Lang101Deu extends AppCompatActivity {
 
     TextView tvTitle1, tvTitle2;
     Button btnDeu1, btnDeu2, btnDeu3, btnDeu4, btnDeu5, btnDeu6, btnDeu7, btnDeu8;
-    Button btnDeu9, btnDeu10, btnDeu11, btnDeu12, btnDeu13, btnDeu14, btnDeu15;
+    Button btnDeu9, btnDeu10, btnDeu11, btnDeu12, btnDeu13, btnDeu14, btnDeu15, btnDeu16;
     LinearLayout layoutProfile;
     LinearLayout llDeu1, llDeu2, llDeu3, llDeu4, llDeu5, llDeu6, llDeu7, llDeu8;
-    LinearLayout llDeu9, llDeu10, llDeu11, llDeu12, llDeu13, llDeu14, llDeu15;
+    LinearLayout llDeu9, llDeu10, llDeu11, llDeu12, llDeu13, llDeu14, llDeu15, llDeu16;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2;
     Animation aniLayoutProfile;
     Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
-    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15;
+    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15, aniLl16;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -112,6 +112,7 @@ public class Lang101Deu extends AppCompatActivity {
         btnDeu13 = (Button) findViewById(R.id.btnDeu13);
         btnDeu14 = (Button) findViewById(R.id.btnDeu14);
         btnDeu15 = (Button) findViewById(R.id.btnDeu15);
+        btnDeu16 = (Button) findViewById(R.id.btnDeu16);
         btnDeu1.setOnClickListener(mClickListener);
         btnDeu2.setOnClickListener(mClickListener);
         btnDeu3.setOnClickListener(mClickListener);
@@ -127,7 +128,7 @@ public class Lang101Deu extends AppCompatActivity {
         btnDeu13.setOnClickListener(mClickListener);
         btnDeu14.setOnClickListener(mClickListener);
         btnDeu15.setOnClickListener(mClickListener);
-        setColorStateList(btnDeu1, ContextCompat.getColor(this, R.color.deu_dark), btnDeu1.getCurrentTextColor());
+        btnDeu16.setOnClickListener(mClickListener);
         setColorStateList(btnDeu2, ContextCompat.getColor(this, R.color.deu_dark), btnDeu2.getCurrentTextColor());
         setColorStateList(btnDeu3, ContextCompat.getColor(this, R.color.deu_dark), btnDeu3.getCurrentTextColor());
         setColorStateList(btnDeu4, ContextCompat.getColor(this, R.color.deu_dark), btnDeu4.getCurrentTextColor());
@@ -159,6 +160,7 @@ public class Lang101Deu extends AppCompatActivity {
         llDeu13 = (LinearLayout) findViewById(R.id.llDeu13);
         llDeu14 = (LinearLayout) findViewById(R.id.llDeu14);
         llDeu15 = (LinearLayout) findViewById(R.id.llDeu15);
+        llDeu16 = (LinearLayout) findViewById(R.id.llDeu16);
         aniLl1 = AnimationUtils.loadAnimation(Lang101Deu.this, R.anim.fadein);
         aniLl1.setStartOffset(200);
         aniLl2 = AnimationUtils.loadAnimation(Lang101Deu.this, R.anim.fadein);
@@ -189,6 +191,8 @@ public class Lang101Deu extends AppCompatActivity {
         aniLl14.setStartOffset(2100);
         aniLl15 = AnimationUtils.loadAnimation(Lang101Deu.this, R.anim.fadein);
         aniLl15.setStartOffset(2200);
+        aniLl16 = AnimationUtils.loadAnimation(Lang101Deu.this, R.anim.fadein);
+        aniLl16.setStartOffset(2300);
         llDeu1.startAnimation(aniLl1);
         llDeu2.startAnimation(aniLl2);
         llDeu3.startAnimation(aniLl3);
@@ -204,6 +208,7 @@ public class Lang101Deu extends AppCompatActivity {
         llDeu13.startAnimation(aniLl13);
         llDeu14.startAnimation(aniLl14);
         llDeu15.startAnimation(aniLl15);
+        llDeu16.startAnimation(aniLl16);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -312,6 +317,9 @@ public class Lang101Deu extends AppCompatActivity {
                     break;
                 case R.id.btnDeu15:
                     btnDeu15.startAnimation(aniTouch);
+                    break;
+                case R.id.btnDeu16:
+                    btnDeu16.startAnimation(aniTouch);
                     break;
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);

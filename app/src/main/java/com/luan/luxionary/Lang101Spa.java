@@ -26,16 +26,16 @@ public class Lang101Spa extends AppCompatActivity {
 
     TextView tvTitle1, tvTitle2;
     Button btnSpa1, btnSpa2, btnSpa3, btnSpa4, btnSpa5, btnSpa6, btnSpa7, btnSpa8;
-    Button btnSpa9, btnSpa10, btnSpa11, btnSpa12, btnSpa13, btnSpa14, btnSpa15;
+    Button btnSpa9, btnSpa10, btnSpa11, btnSpa12, btnSpa13, btnSpa14, btnSpa15, btnSpa16;
     LinearLayout layoutProfile;
     LinearLayout llSpa1, llSpa2, llSpa3, llSpa4, llSpa5, llSpa6, llSpa7, llSpa8;
-    LinearLayout llSpa9, llSpa10, llSpa11, llSpa12, llSpa13, llSpa14, llSpa15;
+    LinearLayout llSpa9, llSpa10, llSpa11, llSpa12, llSpa13, llSpa14, llSpa15, llSpa16;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2;
     Animation aniLayoutProfile;
     Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
-    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15;
+    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15, aniLl16;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -112,6 +112,7 @@ public class Lang101Spa extends AppCompatActivity {
         btnSpa13 = (Button) findViewById(R.id.btnSpa13);
         btnSpa14 = (Button) findViewById(R.id.btnSpa14);
         btnSpa15 = (Button) findViewById(R.id.btnSpa15);
+        btnSpa16 = (Button) findViewById(R.id.btnSpa16);
         btnSpa1.setOnClickListener(mClickListener);
         btnSpa2.setOnClickListener(mClickListener);
         btnSpa3.setOnClickListener(mClickListener);
@@ -127,7 +128,7 @@ public class Lang101Spa extends AppCompatActivity {
         btnSpa13.setOnClickListener(mClickListener);
         btnSpa14.setOnClickListener(mClickListener);
         btnSpa15.setOnClickListener(mClickListener);
-        setColorStateList(btnSpa1, ContextCompat.getColor(this, R.color.spa_dark), btnSpa1.getCurrentTextColor());
+        btnSpa16.setOnClickListener(mClickListener);
         setColorStateList(btnSpa2, ContextCompat.getColor(this, R.color.spa_dark), btnSpa2.getCurrentTextColor());
         setColorStateList(btnSpa3, ContextCompat.getColor(this, R.color.spa_dark), btnSpa3.getCurrentTextColor());
         setColorStateList(btnSpa4, ContextCompat.getColor(this, R.color.spa_dark), btnSpa4.getCurrentTextColor());
@@ -159,6 +160,7 @@ public class Lang101Spa extends AppCompatActivity {
         llSpa13 = (LinearLayout) findViewById(R.id.llSpa13);
         llSpa14 = (LinearLayout) findViewById(R.id.llSpa14);
         llSpa15 = (LinearLayout) findViewById(R.id.llSpa15);
+        llSpa16 = (LinearLayout) findViewById(R.id.llSpa16);
         aniLl1 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
         aniLl1.setStartOffset(200);
         aniLl2 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
@@ -189,6 +191,8 @@ public class Lang101Spa extends AppCompatActivity {
         aniLl14.setStartOffset(2100);
         aniLl15 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
         aniLl15.setStartOffset(2200);
+        aniLl16 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
+        aniLl16.setStartOffset(2300);
         llSpa1.startAnimation(aniLl1);
         llSpa2.startAnimation(aniLl2);
         llSpa3.startAnimation(aniLl3);
@@ -196,14 +200,15 @@ public class Lang101Spa extends AppCompatActivity {
         llSpa5.startAnimation(aniLl5);
         llSpa6.startAnimation(aniLl6);
         llSpa7.startAnimation(aniLl7);
-        llSpa8.startAnimation(aniLl7);
-        llSpa9.startAnimation(aniLl7);
-        llSpa10.startAnimation(aniLl7);
-        llSpa11.startAnimation(aniLl7);
-        llSpa12.startAnimation(aniLl7);
-        llSpa13.startAnimation(aniLl7);
-        llSpa14.startAnimation(aniLl7);
-        llSpa15.startAnimation(aniLl7);
+        llSpa8.startAnimation(aniLl8);
+        llSpa9.startAnimation(aniLl9);
+        llSpa10.startAnimation(aniLl10);
+        llSpa11.startAnimation(aniLl11);
+        llSpa12.startAnimation(aniLl12);
+        llSpa13.startAnimation(aniLl13);
+        llSpa14.startAnimation(aniLl14);
+        llSpa15.startAnimation(aniLl15);
+        llSpa16.startAnimation(aniLl16);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -312,6 +317,9 @@ public class Lang101Spa extends AppCompatActivity {
                     break;
                 case R.id.btnSpa15:
                     btnSpa15.startAnimation(aniTouch);
+                    break;
+                case R.id.btnSpa16:
+                    btnSpa16.startAnimation(aniTouch);
                     break;
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);

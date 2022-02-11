@@ -26,16 +26,16 @@ public class Lang101Fra extends AppCompatActivity {
 
     TextView tvTitle1, tvTitle2;
     Button btnFra1, btnFra2, btnFra3, btnFra4, btnFra5, btnFra6, btnFra7, btnFra8;
-    Button btnFra9, btnFra10, btnFra11, btnFra12, btnFra13, btnFra14, btnFra15;
+    Button btnFra9, btnFra10, btnFra11, btnFra12, btnFra13, btnFra14, btnFra15, btnFra16;
     LinearLayout layoutProfile;
     LinearLayout llFra1, llFra2, llFra3, llFra4, llFra5, llFra6, llFra7, llFra8;
-    LinearLayout llFra9, llFra10, llFra11, llFra12, llFra13, llFra14, llFra15;
+    LinearLayout llFra9, llFra10, llFra11, llFra12, llFra13, llFra14, llFra15, llFra16;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2;
     Animation aniLayoutProfile;
     Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
-    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15;
+    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15, aniLl16;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -112,6 +112,7 @@ public class Lang101Fra extends AppCompatActivity {
         btnFra13 = (Button) findViewById(R.id.btnFra13);
         btnFra14 = (Button) findViewById(R.id.btnFra14);
         btnFra15 = (Button) findViewById(R.id.btnFra15);
+        btnFra16 = (Button) findViewById(R.id.btnFra16);
         btnFra1.setOnClickListener(mClickListener);
         btnFra2.setOnClickListener(mClickListener);
         btnFra3.setOnClickListener(mClickListener);
@@ -127,7 +128,7 @@ public class Lang101Fra extends AppCompatActivity {
         btnFra13.setOnClickListener(mClickListener);
         btnFra14.setOnClickListener(mClickListener);
         btnFra15.setOnClickListener(mClickListener);
-        setColorStateList(btnFra1, ContextCompat.getColor(this, R.color.fra_dark), btnFra1.getCurrentTextColor());
+        btnFra16.setOnClickListener(mClickListener);
         setColorStateList(btnFra2, ContextCompat.getColor(this, R.color.fra_dark), btnFra2.getCurrentTextColor());
         setColorStateList(btnFra3, ContextCompat.getColor(this, R.color.fra_dark), btnFra3.getCurrentTextColor());
         setColorStateList(btnFra4, ContextCompat.getColor(this, R.color.fra_dark), btnFra4.getCurrentTextColor());
@@ -159,6 +160,7 @@ public class Lang101Fra extends AppCompatActivity {
         llFra13 = (LinearLayout) findViewById(R.id.llFra13);
         llFra14 = (LinearLayout) findViewById(R.id.llFra14);
         llFra15 = (LinearLayout) findViewById(R.id.llFra15);
+        llFra16 = (LinearLayout) findViewById(R.id.llFra16);
         aniLl1 = AnimationUtils.loadAnimation(Lang101Fra.this, R.anim.fadein);
         aniLl1.setStartOffset(200);
         aniLl2 = AnimationUtils.loadAnimation(Lang101Fra.this, R.anim.fadein);
@@ -189,6 +191,8 @@ public class Lang101Fra extends AppCompatActivity {
         aniLl14.setStartOffset(2100);
         aniLl15 = AnimationUtils.loadAnimation(Lang101Fra.this, R.anim.fadein);
         aniLl15.setStartOffset(2200);
+        aniLl16 = AnimationUtils.loadAnimation(Lang101Fra.this, R.anim.fadein);
+        aniLl16.setStartOffset(2300);
         llFra1.startAnimation(aniLl1);
         llFra2.startAnimation(aniLl2);
         llFra3.startAnimation(aniLl3);
@@ -204,6 +208,7 @@ public class Lang101Fra extends AppCompatActivity {
         llFra13.startAnimation(aniLl13);
         llFra14.startAnimation(aniLl14);
         llFra15.startAnimation(aniLl15);
+        llFra16.startAnimation(aniLl16);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -312,6 +317,9 @@ public class Lang101Fra extends AppCompatActivity {
                     break;
                 case R.id.btnFra15:
                     btnFra15.startAnimation(aniTouch);
+                    break;
+                case R.id.btnFra16:
+                    btnFra16.startAnimation(aniTouch);
                     break;
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);

@@ -26,16 +26,16 @@ public class Lang101Ita extends AppCompatActivity {
 
     TextView tvTitle1, tvTitle2;
     Button btnIta1, btnIta2, btnIta3, btnIta4, btnIta5, btnIta6, btnIta7, btnIta8;
-    Button btnIta9, btnIta10, btnIta11, btnIta12, btnIta13, btnIta14, btnIta15;
+    Button btnIta9, btnIta10, btnIta11, btnIta12, btnIta13, btnIta14, btnIta15, btnIta16;
     LinearLayout layoutProfile;
     LinearLayout llIta1, llIta2, llIta3, llIta4, llIta5, llIta6, llIta7, llIta8;
-    LinearLayout llIta9, llIta10, llIta11, llIta12, llIta13, llIta14, llIta15;
+    LinearLayout llIta9, llIta10, llIta11, llIta12, llIta13, llIta14, llIta15, llIta16;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2;
     Animation aniLayoutProfile;
     Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
-    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15;
+    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15, aniLl16;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -112,6 +112,7 @@ public class Lang101Ita extends AppCompatActivity {
         btnIta13 = (Button) findViewById(R.id.btnIta13);
         btnIta14 = (Button) findViewById(R.id.btnIta14);
         btnIta15 = (Button) findViewById(R.id.btnIta15);
+        btnIta16 = (Button) findViewById(R.id.btnIta16);
         btnIta1.setOnClickListener(mClickListener);
         btnIta2.setOnClickListener(mClickListener);
         btnIta3.setOnClickListener(mClickListener);
@@ -127,7 +128,7 @@ public class Lang101Ita extends AppCompatActivity {
         btnIta13.setOnClickListener(mClickListener);
         btnIta14.setOnClickListener(mClickListener);
         btnIta15.setOnClickListener(mClickListener);
-        setColorStateList(btnIta1, ContextCompat.getColor(this, R.color.ita_dark), btnIta1.getCurrentTextColor());
+        btnIta16.setOnClickListener(mClickListener);
         setColorStateList(btnIta2, ContextCompat.getColor(this, R.color.ita_dark), btnIta2.getCurrentTextColor());
         setColorStateList(btnIta3, ContextCompat.getColor(this, R.color.ita_dark), btnIta3.getCurrentTextColor());
         setColorStateList(btnIta4, ContextCompat.getColor(this, R.color.ita_dark), btnIta4.getCurrentTextColor());
@@ -159,6 +160,7 @@ public class Lang101Ita extends AppCompatActivity {
         llIta13 = (LinearLayout) findViewById(R.id.llIta13);
         llIta14 = (LinearLayout) findViewById(R.id.llIta14);
         llIta15 = (LinearLayout) findViewById(R.id.llIta15);
+        llIta16 = (LinearLayout) findViewById(R.id.llIta16);
         aniLl1 = AnimationUtils.loadAnimation(Lang101Ita.this, R.anim.fadein);
         aniLl1.setStartOffset(200);
         aniLl2 = AnimationUtils.loadAnimation(Lang101Ita.this, R.anim.fadein);
@@ -189,6 +191,8 @@ public class Lang101Ita extends AppCompatActivity {
         aniLl14.setStartOffset(2100);
         aniLl15 = AnimationUtils.loadAnimation(Lang101Ita.this, R.anim.fadein);
         aniLl15.setStartOffset(2200);
+        aniLl16 = AnimationUtils.loadAnimation(Lang101Ita.this, R.anim.fadein);
+        aniLl16.setStartOffset(2300);
         llIta1.startAnimation(aniLl1);
         llIta2.startAnimation(aniLl2);
         llIta3.startAnimation(aniLl3);
@@ -196,14 +200,15 @@ public class Lang101Ita extends AppCompatActivity {
         llIta5.startAnimation(aniLl5);
         llIta6.startAnimation(aniLl6);
         llIta7.startAnimation(aniLl7);
-        llIta8.startAnimation(aniLl7);
-        llIta9.startAnimation(aniLl7);
-        llIta10.startAnimation(aniLl7);
-        llIta11.startAnimation(aniLl7);
-        llIta12.startAnimation(aniLl7);
-        llIta13.startAnimation(aniLl7);
-        llIta14.startAnimation(aniLl7);
-        llIta15.startAnimation(aniLl7);
+        llIta8.startAnimation(aniLl8);
+        llIta9.startAnimation(aniLl9);
+        llIta10.startAnimation(aniLl10);
+        llIta11.startAnimation(aniLl11);
+        llIta12.startAnimation(aniLl12);
+        llIta13.startAnimation(aniLl13);
+        llIta14.startAnimation(aniLl14);
+        llIta15.startAnimation(aniLl15);
+        llIta16.startAnimation(aniLl16);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -312,6 +317,9 @@ public class Lang101Ita extends AppCompatActivity {
                     break;
                 case R.id.btnIta15:
                     btnIta15.startAnimation(aniTouch);
+                    break;
+                case R.id.btnIta16:
+                    btnIta16.startAnimation(aniTouch);
                     break;
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);

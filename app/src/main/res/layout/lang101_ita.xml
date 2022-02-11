@@ -17,106 +17,103 @@
         <LinearLayout
             android:id="@+id/layoutProfile"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="140dp"
             android:background="@drawable/top_white"
-            android:elevation="3dp"
-            android:orientation="vertical">
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@drawable/main_ita_bg2">
+                android:layout_weight="1"
+                android:orientation="vertical">
 
+                <!-- Profile Section -->
                 <LinearLayout
+                    android:id="@+id/llProfile"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="140dp"
                     android:orientation="horizontal">
-
-                    <Space
-                        android:layout_width="30dp"
-                        android:layout_height="match_parent" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="7"
                         android:layout_marginBottom="20dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/custom_underline"
-                        android:orientation="horizontal"
-                        android:paddingBottom="10dp">
+                        android:orientation="vertical">
 
-                        <!-- Title -->
                         <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="160dp"
-                            android:layout_weight="7"
-                            android:orientation="vertical">
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
 
-                            <LinearLayout
+                            <TextView
+                                android:id="@+id/tvTitle1"
                                 android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="8">
-
-                                <TextView
-                                    android:id="@+id/tvTitle1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/pretendard_800"
-                                    android:gravity="bottom"
-                                    android:text="Italiano"
-                                    android:textColor="@color/ita_main"
-                                    android:textSize="40dp"></TextView>
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="2">
-
-                                <TextView
-                                    android:id="@+id/tvTitle2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="@font/pretendard_800"
-                                    android:gravity="bottom"
-                                    android:paddingBottom="10dp"
-                                    android:text="이탈리아어"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp"></TextView>
-
-                            </LinearLayout>
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="bottom"
+                                android:text="ITALIANO 101"
+                                android:textColor="@color/ita_background"
+                                android:textSize="32dp"></TextView>
 
                         </LinearLayout>
 
-                        <!-- Avatar -->
                         <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="160dp"
-                            android:layout_weight="3"
-                            android:orientation="vertical">
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:id="@+id/tvTitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/pretendard_700"
+                                android:text="이탈리아어 첫걸음"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/llAvatar"
+                            android:layout_width="250px"
+                            android:layout_height="250px"
+                            android:background="@drawable/custom_main">
 
                             <ImageView
                                 android:id="@+id/imgAvatar"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="65dp"
-                                android:padding="5dp"
+                                android:padding="10dp"
+                                android:scaleType="fitCenter"
                                 android:src="@drawable/avt_male1"></ImageView>
 
                         </LinearLayout>
 
                     </LinearLayout>
 
-                    <Space
-                        android:layout_width="30dp"
-                        android:layout_height="match_parent" />
-
                 </LinearLayout>
 
             </LinearLayout>
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
 
         </LinearLayout>
 
@@ -148,12 +145,12 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="9"
+                        android:layout_weight="1"
                         android:orientation="vertical">
 
                         <Space
                             android:layout_width="match_parent"
-                            android:layout_height="20dp"/>
+                            android:layout_height="20dp" />
 
                         <!-- 1 -->
                         <LinearLayout
@@ -167,13 +164,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
+                                android:background="@drawable/pastel_ripple_ita_full"
                                 android:elevation="2dp"
-                                android:background="@drawable/pastel_ripple_ita"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="L'ALFABETO"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_white"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -182,9 +179,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="1. 알파벳과 발음"
+                                android:text="알파벳과 발음"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -201,12 +198,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="IL SALUTO"
+                                android:text="1. IL SALUTO"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -216,9 +213,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="2. 인사말"
+                                android:text="인사말"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -235,12 +232,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="I NUMERI"
+                                android:text="2. I NUMERI"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -250,9 +247,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="3. 숫자"
+                                android:text="숫자"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -269,12 +266,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LA DATA E L'ORA"
+                                android:text="3. LA DATA E L'ORA"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -284,9 +281,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="4. 날짜와 시간"
+                                android:text="날짜와 시간"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -303,12 +300,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="IL CORPO"
+                                android:text="4. LA FAMIGLIA"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -318,9 +315,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="5. 신체"
+                                android:text="가족"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -337,12 +334,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LA FAMIGLIA"
+                                android:text="5. IL CORPO"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -352,9 +349,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="6. 가족"
+                                android:text="신체"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -371,12 +368,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="I CIBI"
+                                android:text="6. MANGIARE FUORI"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -386,9 +383,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="7. 음식"
+                                android:text="외식"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -405,12 +402,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="GLI AGGETTIVI"
+                                android:text="7. I CIBI"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -420,9 +417,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="8. 형용사"
+                                android:text="음식"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -439,12 +436,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="I POSTI"
+                                android:text="8. GLI AGGETTIVI"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -454,7 +451,7 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="9. 장소"
+                                android:text="형용사"
                                 android:textColor="@color/main_text"
                                 android:textSize="15dp"></TextView>
 
@@ -473,12 +470,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LE PREPOSIZIONI"
+                                android:text="9. I POSTI"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -488,9 +485,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="10. 전치사"
+                                android:text="장소"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -507,14 +504,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LA FRUTTA E VERDURA"
+                                android:text="10. LE PREPOSIZIONI"
                                 android:textColor="@color/ita_background"
-                                android:textSize="22dp"></Button>
+                                android:textSize="25dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvIta11"
@@ -522,9 +519,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="11. 과일과 채소"
+                                android:text="전치사"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -541,12 +538,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="IL CUCINARE"
+                                android:text="11. IL CUCINARE"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -556,9 +553,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="12. 요리"
+                                android:text="요리"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -575,12 +572,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="LO SHOPPING"
+                                android:text="12. LO SHOPPING"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -590,9 +587,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="13. 쇼핑"
+                                android:text="쇼핑"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -609,12 +606,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="I PAESI"
+                                android:text="13. I PAESI"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -624,9 +621,9 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="14. 국가"
+                                android:text="국가"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
@@ -636,7 +633,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
-                            android:layout_marginBottom="20dp"
                             android:orientation="vertical">
 
                             <Button
@@ -644,12 +640,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:elevation="2dp"
                                 android:background="@drawable/pastel_ripple_ita"
+                                android:elevation="2dp"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="IL VIAGGIO"
+                                android:text="14. IL VIAGGIO"
                                 android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
@@ -659,9 +655,44 @@
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="15. 여행"
+                                android:text="여행"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- 16 -->
+                        <LinearLayout
+                            android:id="@+id/llIta16"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btnIta16"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/pastel_ripple_ita_full"
+                                android:elevation="2dp"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="VERBI DI BASE"
+                                android:textColor="@color/main_white"
+                                android:textSize="25dp"></Button>
+
+                            <TextView
+                                android:id="@+id/tvIta16"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/pretendard_700"
+                                android:gravity="center"
+                                android:text="기초 동사"
+                                android:textColor="@color/main_text"
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 

@@ -26,16 +26,16 @@ public class Lang101Eng extends AppCompatActivity {
     TextView tvTitle1, tvTitle2;
     ImageView imgAvatar;
     Button btnEng1, btnEng2, btnEng3, btnEng4, btnEng5, btnEng6, btnEng7, btnEng8;
-    Button btnEng9, btnEng10, btnEng11, btnEng12, btnEng13, btnEng14, btnEng15;
+    Button btnEng9, btnEng10, btnEng11, btnEng12, btnEng13, btnEng14, btnEng15, btnEng16;
     LinearLayout layoutProfile;
     LinearLayout llEng1, llEng2, llEng3, llEng4, llEng5, llEng6, llEng7, llEng8;
-    LinearLayout llEng9, llEng10, llEng11, llEng12, llEng13, llEng14, llEng15;
+    LinearLayout llEng9, llEng10, llEng11, llEng12, llEng13, llEng14, llEng15, llEng16;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2, aniAvatar;
     Animation aniLayoutProfile;
     Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
-    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15;
+    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15, aniLl16;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -149,6 +149,7 @@ public class Lang101Eng extends AppCompatActivity {
         btnEng13 = (Button) findViewById(R.id.btnEng13);
         btnEng14 = (Button) findViewById(R.id.btnEng14);
         btnEng15 = (Button) findViewById(R.id.btnEng15);
+        btnEng16 = (Button) findViewById(R.id.btnEng16);
         btnEng1.setOnClickListener(mClickListener);
         btnEng2.setOnClickListener(mClickListener);
         btnEng3.setOnClickListener(mClickListener);
@@ -164,7 +165,7 @@ public class Lang101Eng extends AppCompatActivity {
         btnEng13.setOnClickListener(mClickListener);
         btnEng14.setOnClickListener(mClickListener);
         btnEng15.setOnClickListener(mClickListener);
-        setColorStateList(btnEng1, ContextCompat.getColor(this, R.color.eng_dark), btnEng1.getCurrentTextColor());
+        btnEng16.setOnClickListener(mClickListener);
         setColorStateList(btnEng2, ContextCompat.getColor(this, R.color.eng_dark), btnEng2.getCurrentTextColor());
         setColorStateList(btnEng3, ContextCompat.getColor(this, R.color.eng_dark), btnEng3.getCurrentTextColor());
         setColorStateList(btnEng4, ContextCompat.getColor(this, R.color.eng_dark), btnEng4.getCurrentTextColor());
@@ -196,6 +197,7 @@ public class Lang101Eng extends AppCompatActivity {
         llEng13 = (LinearLayout) findViewById(R.id.llEng13);
         llEng14 = (LinearLayout) findViewById(R.id.llEng14);
         llEng15 = (LinearLayout) findViewById(R.id.llEng15);
+        llEng16 = (LinearLayout) findViewById(R.id.llEng16);
         aniLl1 = AnimationUtils.loadAnimation(Lang101Eng.this, R.anim.fadein);
         aniLl1.setStartOffset(200);
         aniLl2 = AnimationUtils.loadAnimation(Lang101Eng.this, R.anim.fadein);
@@ -226,6 +228,8 @@ public class Lang101Eng extends AppCompatActivity {
         aniLl14.setStartOffset(2100);
         aniLl15 = AnimationUtils.loadAnimation(Lang101Eng.this, R.anim.fadein);
         aniLl15.setStartOffset(2200);
+        aniLl16 = AnimationUtils.loadAnimation(Lang101Eng.this, R.anim.fadein);
+        aniLl16.setStartOffset(2300);
         llEng1.startAnimation(aniLl1);
         llEng2.startAnimation(aniLl2);
         llEng3.startAnimation(aniLl3);
@@ -241,6 +245,7 @@ public class Lang101Eng extends AppCompatActivity {
         llEng13.startAnimation(aniLl13);
         llEng14.startAnimation(aniLl14);
         llEng15.startAnimation(aniLl15);
+        llEng16.startAnimation(aniLl16);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -356,6 +361,9 @@ public class Lang101Eng extends AppCompatActivity {
                     break;
                 case R.id.btnEng15:
                     btnEng15.startAnimation(aniTouch);
+                    break;
+                case R.id.btnEng16:
+                    btnEng16.startAnimation(aniTouch);
                     break;
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);

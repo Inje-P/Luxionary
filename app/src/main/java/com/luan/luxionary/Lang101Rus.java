@@ -26,16 +26,16 @@ public class Lang101Rus extends AppCompatActivity {
 
     TextView tvTitle1, tvTitle2;
     Button btnRus1, btnRus2, btnRus3, btnRus4, btnRus5, btnRus6, btnRus7, btnRus8;
-    Button btnRus9, btnRus10, btnRus11, btnRus12, btnRus13, btnRus14, btnRus15;
+    Button btnRus9, btnRus10, btnRus11, btnRus12, btnRus13, btnRus14, btnRus15, btnRus16;
     LinearLayout layoutProfile;
     LinearLayout llRus1, llRus2, llRus3, llRus4, llRus5, llRus6, llRus7, llRus8;
-    LinearLayout llRus9, llRus10, llRus11, llRus12, llRus13, llRus14, llRus15;
+    LinearLayout llRus9, llRus10, llRus11, llRus12, llRus13, llRus14, llRus15, llRus16;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2;
     Animation aniLayoutProfile;
     Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
-    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15;
+    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15, aniLl16;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -112,6 +112,7 @@ public class Lang101Rus extends AppCompatActivity {
         btnRus13 = (Button) findViewById(R.id.btnRus13);
         btnRus14 = (Button) findViewById(R.id.btnRus14);
         btnRus15 = (Button) findViewById(R.id.btnRus15);
+        btnRus16 = (Button) findViewById(R.id.btnRus16);
         btnRus1.setOnClickListener(mClickListener);
         btnRus2.setOnClickListener(mClickListener);
         btnRus3.setOnClickListener(mClickListener);
@@ -127,7 +128,7 @@ public class Lang101Rus extends AppCompatActivity {
         btnRus13.setOnClickListener(mClickListener);
         btnRus14.setOnClickListener(mClickListener);
         btnRus15.setOnClickListener(mClickListener);
-        setColorStateList(btnRus1, ContextCompat.getColor(this, R.color.rus_dark), btnRus1.getCurrentTextColor());
+        btnRus16.setOnClickListener(mClickListener);
         setColorStateList(btnRus2, ContextCompat.getColor(this, R.color.rus_dark), btnRus2.getCurrentTextColor());
         setColorStateList(btnRus3, ContextCompat.getColor(this, R.color.rus_dark), btnRus3.getCurrentTextColor());
         setColorStateList(btnRus4, ContextCompat.getColor(this, R.color.rus_dark), btnRus4.getCurrentTextColor());
@@ -159,6 +160,7 @@ public class Lang101Rus extends AppCompatActivity {
         llRus13 = (LinearLayout) findViewById(R.id.llRus13);
         llRus14 = (LinearLayout) findViewById(R.id.llRus14);
         llRus15 = (LinearLayout) findViewById(R.id.llRus15);
+        llRus16 = (LinearLayout) findViewById(R.id.llRus16);
         aniLl1 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl1.setStartOffset(200);
         aniLl2 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
@@ -189,6 +191,8 @@ public class Lang101Rus extends AppCompatActivity {
         aniLl14.setStartOffset(2100);
         aniLl15 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
         aniLl15.setStartOffset(2200);
+        aniLl16 = AnimationUtils.loadAnimation(Lang101Rus.this, R.anim.fadein);
+        aniLl16.setStartOffset(2300);
         llRus1.startAnimation(aniLl1);
         llRus2.startAnimation(aniLl2);
         llRus3.startAnimation(aniLl3);
@@ -196,14 +200,15 @@ public class Lang101Rus extends AppCompatActivity {
         llRus5.startAnimation(aniLl5);
         llRus6.startAnimation(aniLl6);
         llRus7.startAnimation(aniLl7);
-        llRus8.startAnimation(aniLl7);
-        llRus9.startAnimation(aniLl7);
-        llRus10.startAnimation(aniLl7);
-        llRus11.startAnimation(aniLl7);
-        llRus12.startAnimation(aniLl7);
-        llRus13.startAnimation(aniLl7);
-        llRus14.startAnimation(aniLl7);
-        llRus15.startAnimation(aniLl7);
+        llRus8.startAnimation(aniLl8);
+        llRus9.startAnimation(aniLl9);
+        llRus10.startAnimation(aniLl10);
+        llRus11.startAnimation(aniLl11);
+        llRus12.startAnimation(aniLl12);
+        llRus13.startAnimation(aniLl13);
+        llRus14.startAnimation(aniLl14);
+        llRus15.startAnimation(aniLl15);
+        llRus16.startAnimation(aniLl16);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -312,6 +317,9 @@ public class Lang101Rus extends AppCompatActivity {
                     break;
                 case R.id.btnRus15:
                     btnRus15.startAnimation(aniTouch);
+                    break;
+                case R.id.btnRus16:
+                    btnRus16.startAnimation(aniTouch);
                     break;
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);
