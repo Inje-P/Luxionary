@@ -101,7 +101,6 @@ public class AccountActivity extends AppCompatActivity {
         imgProfile = (ImageView) findViewById(R.id.imgProfile);
         etUsername = (EditText) findViewById(R.id.etUsername);
         etEmail = (EditText) findViewById(R.id.etEmail);
-        imgProfile = (ImageView) findViewById(R.id.imgProfile);
         if (profile == null) {
             Glide.with(this).load(R.drawable.avt_male1).into(imgProfile);
         } else {

@@ -141,15 +141,18 @@
                             <LinearLayout
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
                                 android:background="@android:color/transparent"
                                 android:orientation="horizontal">
 
-                                <ImageView
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
                                     android:id="@+id/imgProfile"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@android:color/transparent"
-                                    android:src="@drawable/avt_female1" />
+                                    android:src="@drawable/avt_female1"
+                                    app:civ_border_width="1dp"
+                                    app:civ_border_color="@color/main_text"/>
 
                             </LinearLayout>
 

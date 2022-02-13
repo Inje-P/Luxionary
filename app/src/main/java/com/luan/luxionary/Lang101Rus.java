@@ -342,7 +342,7 @@ public class Lang101Rus extends AppCompatActivity {
     };
 
     public void page01() {
-        Intent intent01 = new Intent(Lang101Rus.this, Lang101Rus_01_0.class);
+        Intent intent01 = new Intent(Lang101Rus.this, Lang101Rus_01_1.class);
         intent01.putExtra("nick", strNick);
         intent01.putExtra("pw", strPw);
         intent01.putExtra("name", strName);
