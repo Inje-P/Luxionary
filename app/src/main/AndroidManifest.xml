@@ -65,30 +65,35 @@
         <activity android:name=".Lang101Fra_01_1"></activity>
         <activity android:name=".Lang101Fra_01_2"></activity>
         <activity android:name=".Lang101Fra_01_3"></activity>
+        <activity android:name=".Lang101Fra_02_1"></activity>
 
         <!-- Language 101 (German)-->
         <activity android:name=".Lang101Deu"></activity>
         <activity android:name=".Lang101Deu_01_1"></activity>
         <activity android:name=".Lang101Deu_01_2"></activity>
         <activity android:name=".Lang101Deu_01_3"></activity>
+        <activity android:name=".Lang101Deu_02_1"></activity>
 
         <!-- Language 101 (Italian)-->
         <activity android:name=".Lang101Ita"></activity>
         <activity android:name=".Lang101Ita_01_1"></activity>
         <activity android:name=".Lang101Ita_01_2"></activity>
         <activity android:name=".Lang101Ita_01_3"></activity>
+        <activity android:name=".Lang101Ita_02_1"></activity>
 
         <!-- Language 101 (Spanish)-->
         <activity android:name=".Lang101Spa"></activity>
         <activity android:name=".Lang101Spa_01_1"></activity>
         <activity android:name=".Lang101Spa_01_2"></activity>
         <activity android:name=".Lang101Spa_01_3"></activity>
+        <activity android:name=".Lang101Spa_02_1"></activity>
 
         <!-- Language 101 (Russian)-->
         <activity android:name=".Lang101Rus"></activity>
         <activity android:name=".Lang101Rus_01_1"></activity>
         <activity android:name=".Lang101Rus_01_2"></activity>
         <activity android:name=".Lang101Rus_01_3"></activity>
+        <activity android:name=".Lang101Rus_02_1"></activity>
 
     </application>
 </manifest>

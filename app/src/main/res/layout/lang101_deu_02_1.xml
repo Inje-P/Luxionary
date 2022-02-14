@@ -49,7 +49,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/pretendard_800"
                     android:gravity="center"
-                    android:text="1. Greeting"
+                    android:text="1. Die Begrüßung"
                     android:textColor="@color/main_text"
                     android:textSize="16dp"></TextView>
 
@@ -114,12 +114,13 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@drawable/pastel_ripple_eng_sqr"
+                            android:background="@drawable/pastel_ripple_deu_sqr"
                             android:fontFamily="@font/playfairdisplay_800"
                             android:gravity="center"
                             android:paddingBottom="5dp"
                             android:stateListAnimator="@null"
-                            android:text="GREETING"
+                            android:textAllCaps="false"
+                            android:text="DIE BEGRÜßUNG"
                             android:textColor="@color/main_text"
                             android:textSize="35dp" />
 
@@ -161,11 +162,11 @@
                                     android:id="@+id/btnText1_1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:background="@drawable/pastel_ripple_deu_sqr"
                                     android:fontFamily="@font/playfairdisplay_700"
                                     android:gravity="left|center"
                                     android:stateListAnimator="@null"
-                                    android:text="Good Morning!"
+                                    android:text="Guten Morgen!"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
                                     android:textSize="20dp" />
@@ -181,11 +182,11 @@
                                     android:id="@+id/btnText1_2"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:background="@drawable/pastel_ripple_deu_sqr"
                                     android:fontFamily="@font/playfairdisplay_700"
                                     android:gravity="left|center"
                                     android:stateListAnimator="@null"
-                                    android:text="Good Afternoon!"
+                                    android:text="Guten Tag!"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
                                     android:textSize="20dp" />
@@ -201,11 +202,11 @@
                                     android:id="@+id/btnText1_3"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:background="@drawable/pastel_ripple_deu_sqr"
                                     android:fontFamily="@font/playfairdisplay_700"
                                     android:gravity="left|center"
                                     android:stateListAnimator="@null"
-                                    android:text="Good Evening!"
+                                    android:text="Guten Abend!"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
                                     android:textSize="20dp" />
@@ -221,11 +222,11 @@
                                     android:id="@+id/btnText1_4"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:background="@drawable/pastel_ripple_deu_sqr"
                                     android:fontFamily="@font/playfairdisplay_700"
                                     android:gravity="left|center"
                                     android:stateListAnimator="@null"
-                                    android:text="Good Night!"
+                                    android:text="Gute Nacht!"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
                                     android:textSize="20dp" />
@@ -262,7 +263,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="100dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp">
 
@@ -281,11 +282,11 @@
                                     android:id="@+id/btnText2_1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:background="@drawable/pastel_ripple_deu_sqr"
                                     android:fontFamily="@font/playfairdisplay_700"
                                     android:gravity="left|center"
                                     android:stateListAnimator="@null"
-                                    android:text="Hi!"
+                                    android:text="Hallo!"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
                                     android:textSize="20dp" />
@@ -301,31 +302,11 @@
                                     android:id="@+id/btnText2_2"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:background="@drawable/pastel_ripple_deu_sqr"
                                     android:fontFamily="@font/playfairdisplay_700"
                                     android:gravity="left|center"
                                     android:stateListAnimator="@null"
-                                    android:text="Hello!"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="20dp" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:orientation="horizontal">
-
-                                <Button
-                                    android:id="@+id/btnText2_3"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:background="@drawable/pastel_ripple_eng_sqr"
-                                    android:fontFamily="@font/playfairdisplay_700"
-                                    android:gravity="left|center"
-                                    android:stateListAnimator="@null"
-                                    android:text="Nice to meet you."
+                                    android:text="Schön, dich kennenzulernen."
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
                                     android:textSize="20dp" />
@@ -383,11 +364,11 @@
                                     android:id="@+id/btnText3_1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:background="@drawable/pastel_ripple_deu_sqr"
                                     android:fontFamily="@font/playfairdisplay_700"
                                     android:gravity="left|center"
                                     android:stateListAnimator="@null"
-                                    android:text="Hello,"
+                                    android:text="Guten Tag,"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
                                     android:textSize="20dp" />
@@ -403,11 +384,11 @@
                                     android:id="@+id/btnText3_2"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:background="@drawable/pastel_ripple_deu_sqr"
                                     android:fontFamily="@font/playfairdisplay_700"
                                     android:gravity="left|center"
                                     android:stateListAnimator="@null"
-                                    android:text="my name is Noah."
+                                    android:text="ich heiße Florian."
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
                                     android:textSize="20dp" />
@@ -423,14 +404,14 @@
                                     android:id="@+id/btnText3_3"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:background="@drawable/pastel_ripple_deu_sqr"
                                     android:fontFamily="@font/playfairdisplay_700"
                                     android:gravity="left|center"
                                     android:stateListAnimator="@null"
-                                    android:text="Glad to meet you."
+                                    android:text="Freut mich, Sie kennenzulernen."
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="20dp" />
+                                    android:textSize="19dp" />
 
                             </LinearLayout>
 

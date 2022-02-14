@@ -278,6 +278,7 @@ public class Lang101Spa extends AppCompatActivity {
                     break;
                 case R.id.btnSpa2:
                     btnSpa2.startAnimation(aniTouch);
+                    page02();
                     break;
                 case R.id.btnSpa3:
                     btnSpa3.startAnimation(aniTouch);
@@ -349,6 +350,18 @@ public class Lang101Spa extends AppCompatActivity {
         intent01.putExtra("email", strEmail);
         intent01.putExtra("avatar", strAvatar);
         startActivity(intent01);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
+    }
+
+    public void page02() {
+        Intent intent02 = new Intent(Lang101Spa.this, Lang101Spa_02_1.class);
+        intent02.putExtra("nick", strNick);
+        intent02.putExtra("pw", strPw);
+        intent02.putExtra("name", strName);
+        intent02.putExtra("email", strEmail);
+        intent02.putExtra("avatar", strAvatar);
+        startActivity(intent02);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
     }
