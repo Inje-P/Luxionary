@@ -96,7 +96,6 @@
 
                 <!-- Main Layout -->
                 <LinearLayout
-                    android:id="@+id/layoutMain"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -105,38 +104,342 @@
                     <!-- Title -->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
+                        android:layout_height="80dp"
                         android:layout_marginTop="10dp"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/tvTitle"
-                            android:layout_width="match_parent"
+                        <Button
+                            android:id="@+id/btnTitle"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:fontFamily="@font/playfairdisplay_900"
-                            android:gravity="center|left"
+                            android:layout_weight="1"
+                            android:background="@drawable/pastel_ripple_eng_sqr"
+                            android:fontFamily="@font/playfairdisplay_800"
+                            android:paddingBottom="5dp"
+                            android:gravity="center"
                             android:stateListAnimator="@null"
                             android:text="GREETING"
                             android:textColor="@color/main_text"
-                            android:textSize="40dp"></TextView>
+                            android:textSize="50dp" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="vertical">
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/tv1a"
+                        <ImageView
+                            android:id="@+id/imgHorizontal1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="@font/playfairdisplay_900"
-                            android:gravity="center|left"
-                            android:stateListAnimator="@null"
-                            android:text="Greeting"
-                            android:textColor="@color/main_text"
-                            android:textSize="30dp"></TextView>
+                            android:src="@drawable/horizontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnText1_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:fontFamily="@font/playfairdisplay_700"
+                                    android:gravity="left|center"
+                                    android:stateListAnimator="@null"
+                                    android:text="Good Morning!"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnText1_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:fontFamily="@font/playfairdisplay_700"
+                                    android:gravity="left|center"
+                                    android:stateListAnimator="@null"
+                                    android:text="Good Afternoon!"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnText1_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:fontFamily="@font/playfairdisplay_700"
+                                    android:gravity="left|center"
+                                    android:stateListAnimator="@null"
+                                    android:text="Good Evening!"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnText1_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:fontFamily="@font/playfairdisplay_700"
+                                    android:gravity="left|center"
+                                    android:stateListAnimator="@null"
+                                    android:text="Good Night!"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/btnCircle1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/custom_ripple_transparent"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="20dp"
+                            android:paddingRight="10dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_circle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgHorizontal2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/horizontal_rev" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnText2_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:fontFamily="@font/playfairdisplay_700"
+                                    android:gravity="left|center"
+                                    android:stateListAnimator="@null"
+                                    android:text="Hi!"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnText2_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:fontFamily="@font/playfairdisplay_700"
+                                    android:gravity="left|center"
+                                    android:stateListAnimator="@null"
+                                    android:text="Hello!"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnText2_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:fontFamily="@font/playfairdisplay_700"
+                                    android:gravity="left|center"
+                                    android:stateListAnimator="@null"
+                                    android:text="Nice to meet you."
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/btnCircle2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/custom_ripple_transparent"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="20dp"
+                            android:paddingRight="10dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_circle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgHorizontal3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/horizontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnText3_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:fontFamily="@font/playfairdisplay_700"
+                                    android:gravity="left|center"
+                                    android:stateListAnimator="@null"
+                                    android:text="Hello,"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnText3_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:fontFamily="@font/playfairdisplay_700"
+                                    android:gravity="left|center"
+                                    android:stateListAnimator="@null"
+                                    android:text="my name is Noah."
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnText3_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/pastel_ripple_eng_sqr"
+                                    android:fontFamily="@font/playfairdisplay_700"
+                                    android:gravity="left|center"
+                                    android:stateListAnimator="@null"
+                                    android:text="Glad to meet you."
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/btnEnd"
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/custom_ripple_transparent"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="20dp"
+                            android:paddingRight="10dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_next" />
 
                     </LinearLayout>
 
