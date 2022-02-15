@@ -2,6 +2,7 @@ package com.luan.luxionary;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -12,7 +13,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,11 +24,15 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.google.android.material.snackbar.Snackbar;
+import com.muddzdev.styleabletoast.StyleableToast;
+
 public class Lang101Rus_02_1 extends AppCompatActivity {
 
     // Data from DB
     String strNick, strPw, strName, strEmail, strAvatar;
 
+    LinearLayout layoutContainer;
     ImageButton btnPrev, btnNext;
 
     // Main
@@ -325,6 +332,36 @@ public class Lang101Rus_02_1 extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
+                case R.id.btnText1_1:
+                    showSnackbar("안녕하세요! (아침)");
+                    break;
+                case R.id.btnText1_2:
+                    showSnackbar("안녕하세요! (점심)");
+                    break;
+                case R.id.btnText1_3:
+                    showSnackbar("안녕하세요! (저녁)");
+                    break;
+                case R.id.btnText1_4:
+                    showSnackbar("안녕히 주무세요! (밤)");
+                    break;
+                case R.id.btnText2_1:
+                    showSnackbar("안녕!");
+                    break;
+                case R.id.btnText2_2:
+                    showSnackbar("안녕하세요!");
+                    break;
+                case R.id.btnText2_3:
+                    showSnackbar("만나서 반가워요.");
+                    break;
+                case R.id.btnText3_1:
+                    showSnackbar("안녕하세요,");
+                    break;
+                case R.id.btnText3_2:
+                    showSnackbar("제 이름은 예고르에요.");
+                    break;
+                case R.id.btnText3_3:
+                    showSnackbar("만나서 반갑습니다.");
+                    break;
                 // Prev & Next Buttons
                 case R.id.btnPrev:
                     Intent intentPrev = new Intent(Lang101Rus_02_1.this, Lang101Rus.class);
@@ -369,6 +406,25 @@ public class Lang101Rus_02_1 extends AppCompatActivity {
         }
     };
 
+    // Snackbar
+    public void showSnackbar(String str) {
+        layoutContainer = findViewById(R.id.layoutContainer);
+        Snackbar snackbar = Snackbar.make(layoutContainer, "", Snackbar.LENGTH_SHORT);
+        View custom = getLayoutInflater().inflate(R.layout.snackbar_rus, null);
+        snackbar.getView().setBackgroundColor(Color.TRANSPARENT);
+
+        TextView tvText = (TextView) custom.findViewById(R.id.tvText);
+        tvText.setText(str);
+        tvText.setTextColor(ContextCompat.getColor(this, R.color.main_white));
+        tvText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+
+        Snackbar.SnackbarLayout snackbarLayout = (Snackbar.SnackbarLayout) snackbar.getView();
+        snackbarLayout.setPadding(0, 0, 0, 0);
+        snackbarLayout.addView(custom, 0);
+        snackbar.show();
+    }
+
+    // Text Color
     public void setColorStateList(View view, int selectedColor, int defaultColor) {
         int[][] states = new int[][]{
                 new int[]{

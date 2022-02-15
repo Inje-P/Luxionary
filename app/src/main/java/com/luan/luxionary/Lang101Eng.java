@@ -166,20 +166,20 @@ public class Lang101Eng extends AppCompatActivity {
         btnEng14.setOnClickListener(mClickListener);
         btnEng15.setOnClickListener(mClickListener);
         btnEng16.setOnClickListener(mClickListener);
-        setColorStateList(btnEng2, ContextCompat.getColor(this, R.color.eng_dark), btnEng2.getCurrentTextColor());
-        setColorStateList(btnEng3, ContextCompat.getColor(this, R.color.eng_dark), btnEng3.getCurrentTextColor());
-        setColorStateList(btnEng4, ContextCompat.getColor(this, R.color.eng_dark), btnEng4.getCurrentTextColor());
-        setColorStateList(btnEng5, ContextCompat.getColor(this, R.color.eng_dark), btnEng5.getCurrentTextColor());
-        setColorStateList(btnEng6, ContextCompat.getColor(this, R.color.eng_dark), btnEng6.getCurrentTextColor());
-        setColorStateList(btnEng7, ContextCompat.getColor(this, R.color.eng_dark), btnEng7.getCurrentTextColor());
-        setColorStateList(btnEng8, ContextCompat.getColor(this, R.color.eng_dark), btnEng8.getCurrentTextColor());
-        setColorStateList(btnEng9, ContextCompat.getColor(this, R.color.eng_dark), btnEng9.getCurrentTextColor());
-        setColorStateList(btnEng10, ContextCompat.getColor(this, R.color.eng_dark), btnEng10.getCurrentTextColor());
-        setColorStateList(btnEng11, ContextCompat.getColor(this, R.color.eng_dark), btnEng11.getCurrentTextColor());
-        setColorStateList(btnEng12, ContextCompat.getColor(this, R.color.eng_dark), btnEng12.getCurrentTextColor());
-        setColorStateList(btnEng13, ContextCompat.getColor(this, R.color.eng_dark), btnEng13.getCurrentTextColor());
-        setColorStateList(btnEng14, ContextCompat.getColor(this, R.color.eng_dark), btnEng14.getCurrentTextColor());
-        setColorStateList(btnEng15, ContextCompat.getColor(this, R.color.eng_dark), btnEng15.getCurrentTextColor());
+        setColorStateList(btnEng2, ContextCompat.getColor(this, R.color.eng_background), btnEng2.getCurrentTextColor());
+        setColorStateList(btnEng3, ContextCompat.getColor(this, R.color.eng_background), btnEng3.getCurrentTextColor());
+        setColorStateList(btnEng4, ContextCompat.getColor(this, R.color.eng_background), btnEng4.getCurrentTextColor());
+        setColorStateList(btnEng5, ContextCompat.getColor(this, R.color.eng_background), btnEng5.getCurrentTextColor());
+        setColorStateList(btnEng6, ContextCompat.getColor(this, R.color.eng_background), btnEng6.getCurrentTextColor());
+        setColorStateList(btnEng7, ContextCompat.getColor(this, R.color.eng_background), btnEng7.getCurrentTextColor());
+        setColorStateList(btnEng8, ContextCompat.getColor(this, R.color.eng_background), btnEng8.getCurrentTextColor());
+        setColorStateList(btnEng9, ContextCompat.getColor(this, R.color.eng_background), btnEng9.getCurrentTextColor());
+        setColorStateList(btnEng10, ContextCompat.getColor(this, R.color.eng_background), btnEng10.getCurrentTextColor());
+        setColorStateList(btnEng11, ContextCompat.getColor(this, R.color.eng_background), btnEng11.getCurrentTextColor());
+        setColorStateList(btnEng12, ContextCompat.getColor(this, R.color.eng_background), btnEng12.getCurrentTextColor());
+        setColorStateList(btnEng13, ContextCompat.getColor(this, R.color.eng_background), btnEng13.getCurrentTextColor());
+        setColorStateList(btnEng14, ContextCompat.getColor(this, R.color.eng_background), btnEng14.getCurrentTextColor());
+        setColorStateList(btnEng15, ContextCompat.getColor(this, R.color.eng_background), btnEng15.getCurrentTextColor());
 
         // Animation
         llEng1 = (LinearLayout) findViewById(R.id.llEng1);

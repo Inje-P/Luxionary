@@ -50,6 +50,7 @@ dependencies {
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation "com.airbnb.android:lottie:4.2.2"
+    implementation 'com.muddzdev:styleabletoast:2.2.3'
 
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 

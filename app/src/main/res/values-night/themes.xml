@@ -27,4 +27,64 @@
         <item name="android:windowMinWidthMinor">100%</item>
     </style>
 
+    <style name="toastEng">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/main_white</item>
+        <item name="stTextSize">16dp</item>
+        <item name="stColorBackground">@color/eng_background</item>
+        <item name="stStrokeWidth">0dp</item>
+        <item name="stIconStart">@drawable/ic_toast</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+    <style name="toastFra">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/main_white</item>
+        <item name="stTextSize">16dp</item>
+        <item name="stColorBackground">@color/fra_background</item>
+        <item name="stStrokeWidth">0dp</item>
+        <item name="stIconStart">@drawable/ic_toast</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+    <style name="toastDeu">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/main_white</item>
+        <item name="stTextSize">16dp</item>
+        <item name="stColorBackground">@color/deu_background</item>
+        <item name="stStrokeWidth">0dp</item>
+        <item name="stIconStart">@drawable/ic_toast</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+    <style name="toastIta">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/main_white</item>
+        <item name="stTextSize">16dp</item>
+        <item name="stColorBackground">@color/ita_background</item>
+        <item name="stStrokeWidth">0dp</item>
+        <item name="stIconStart">@drawable/ic_toast</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+    <style name="toastSpa">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/main_white</item>
+        <item name="stTextSize">16dp</item>
+        <item name="stColorBackground">@color/spa_background</item>
+        <item name="stStrokeWidth">0dp</item>
+        <item name="stIconStart">@drawable/ic_toast</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+    <style name="toastRus">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/main_white</item>
+        <item name="stTextSize">16dp</item>
+        <item name="stColorBackground">@color/rus_background</item>
+        <item name="stStrokeWidth">0dp</item>
+        <item name="stIconStart">@drawable/ic_toast</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
 </resources>
