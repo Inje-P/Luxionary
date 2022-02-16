@@ -242,7 +242,7 @@
                             android:layout_gravity="bottom"
                             android:background="@drawable/custom_ripple_transparent"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/btn_circle" />
+                            android:src="@drawable/btn_down" />
 
                     </LinearLayout>
 
@@ -322,7 +322,7 @@
                             android:layout_gravity="bottom"
                             android:background="@drawable/custom_ripple_transparent"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/btn_circle" />
+                            android:src="@drawable/btn_down" />
 
                     </LinearLayout>
 

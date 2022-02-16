@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_white"
+        android:orientation="vertical">
+
+        <!-- Menu Bar (Top) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/top_white"
+            android:elevation="3dp"
+            android:orientation="horizontal">
+
+            <!-- Prev -->
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnPrev"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:contentDescription="Prev Button"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_chevron_left"></ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/pretendard_800"
+                    android:gravity="center"
+                    android:text="1. Greeting"
+                    android:textColor="@color/main_text"
+                    android:textSize="16dp"></TextView>
+
+            </LinearLayout>
+
+            <!-- Next -->
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:contentDescription="Next Button"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_chevron_right"></ImageButton>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ScrollView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+
+            <!-- Container -->
+            <LinearLayout
+                android:id="@+id/layoutContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Main Layout -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Q1 -->
+                    <LinearLayout
+                        android:id="@+id/llQ1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnQ1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/pastel_ripple_black"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/playfairdisplay_800"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:stateListAnimator="@null"
+                            android:text="I am Noah."
+                            android:textAllCaps="false"
+                            android:textColor="@color/main_white"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <!-- Button1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/btnDown1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/custom_ripple_transparent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_down" />
+
+                    </LinearLayout>
+
+                    <!-- A1 -->
+                    <LinearLayout
+                        android:id="@+id/llA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnA1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="&quot;I'm Noah.&quot;"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnYes1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="Yes"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnNo1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="No"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Horizontal Line 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgHorizontal1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/horizontal" />
+
+                    </LinearLayout>
+
+                    <!-- Q2 -->
+                    <LinearLayout
+                        android:id="@+id/llQ2"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnQ2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/pastel_ripple_black"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/playfairdisplay_800"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:stateListAnimator="@null"
+                            android:text="You are Lily."
+                            android:textAllCaps="false"
+                            android:textColor="@color/main_white"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <!-- Button2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/btnDown2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/custom_ripple_transparent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_down" />
+
+                    </LinearLayout>
+
+                    <!-- A2 -->
+                    <LinearLayout
+                        android:id="@+id/llA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnA2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="&quot;You're Ashley.&quot;"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnYes2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="Yes"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnNo2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="No"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Horizontal Line 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgHorizontal2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/horizontal" />
+
+                    </LinearLayout>
+
+                    <!-- Q3 -->
+                    <LinearLayout
+                        android:id="@+id/llQ3"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnQ3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/pastel_ripple_black"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/playfairdisplay_800"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:stateListAnimator="@null"
+                            android:text="He is Henry."
+                            android:textAllCaps="false"
+                            android:textColor="@color/main_white"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <!-- Button3 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/btnDown3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/custom_ripple_transparent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_down" />
+
+                    </LinearLayout>
+
+                    <!-- A3 -->
+                    <LinearLayout
+                        android:id="@+id/llA3"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnA3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="&quot;He's Oliver.&quot;"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnYes3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="Yes"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnNo3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="No"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Horizontal Line 3 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgHorizontal3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/horizontal" />
+
+                    </LinearLayout>
+
+                    <!-- Q4 -->
+                    <LinearLayout
+                        android:id="@+id/llQ4"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnQ4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/pastel_ripple_black"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/playfairdisplay_800"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:stateListAnimator="@null"
+                            android:text="She is Olivia."
+                            android:textAllCaps="false"
+                            android:textColor="@color/main_white"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <!-- Button4 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/btnDown4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/custom_ripple_transparent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_down" />
+
+                    </LinearLayout>
+
+                    <!-- A4 -->
+                    <LinearLayout
+                        android:id="@+id/llA4"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnA4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="&quot;She isn't Evelyn.&quot;"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnYes4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="Yes"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnNo4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="No"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Horizontal Line 4 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgHorizontal4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/horizontal" />
+
+                    </LinearLayout>
+
+                    <!-- Q5 -->
+                    <LinearLayout
+                        android:id="@+id/llQ5"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnQ5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/pastel_ripple_black"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/playfairdisplay_800"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:stateListAnimator="@null"
+                            android:text="We are family."
+                            android:textAllCaps="false"
+                            android:textColor="@color/main_white"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <!-- Button5 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/btnDown5"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/custom_ripple_transparent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_down" />
+
+                    </LinearLayout>
+
+                    <!-- A5 -->
+                    <LinearLayout
+                        android:id="@+id/llA5"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnA5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="&quot;We aren't family.&quot;"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnYes5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="Yes"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnNo5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="No"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Horizontal Line 5 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgHorizontal5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/horizontal" />
+
+                    </LinearLayout>
+
+                    <!-- Q6 -->
+                    <LinearLayout
+                        android:id="@+id/llQ6"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnQ6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/pastel_ripple_black"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/playfairdisplay_800"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:stateListAnimator="@null"
+                            android:text="You are friends."
+                            android:textAllCaps="false"
+                            android:textColor="@color/main_white"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <!-- Button6 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/btnDown6"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/custom_ripple_transparent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_down" />
+
+                    </LinearLayout>
+
+                    <!-- A6 -->
+                    <LinearLayout
+                        android:id="@+id/llA6"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnA6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="&quot;You are friends.&quot;"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnYes6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="Yes"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnNo6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="No"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Horizontal Line 6 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgHorizontal6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/horizontal" />
+
+                    </LinearLayout>
+
+                    <!-- Q7 -->
+                    <LinearLayout
+                        android:id="@+id/llQ7"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnQ7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/pastel_ripple_black"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/playfairdisplay_800"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:stateListAnimator="@null"
+                            android:text="They are collegues."
+                            android:textAllCaps="false"
+                            android:textColor="@color/main_white"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <!-- Button7 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/btnDown7"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/custom_ripple_transparent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_down" />
+
+                    </LinearLayout>
+
+                    <!-- A7 -->
+                    <LinearLayout
+                        android:id="@+id/llA7"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnA7"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="&quot;They aren't collegues.&quot;"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="25dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnYes7"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="Yes"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnNo7"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/pastel_ripple_white"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/playfairdisplay_800"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:stateListAnimator="@null"
+                                android:text="No"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Menu Bar (Bottom) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_menubar2"
+            android:elevation="3dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+            <!-- Sidebar -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnSidebar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:contentDescription="Sidebar Button"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_sidebar"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- Home -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:contentDescription="Home Button"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_home"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- Update -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:contentDescription="Update Button"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_update"></ImageButton>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

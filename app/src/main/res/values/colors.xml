@@ -5,6 +5,8 @@
     <color name="main_text">#292929</color>
     <color name="main_gray">#9B9B9B</color>
     <color name="main_lightgray">#E8E5E5</color>
+    <color name="main_yes">#38B6FF</color>
+    <color name="main_no">#FF5757</color>
 
     <color name="eng_light">#FF93AD</color>
     <color name="eng_background">#FF6388</color>

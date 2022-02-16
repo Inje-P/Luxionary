@@ -119,7 +119,8 @@
                             android:gravity="center"
                             android:paddingBottom="5dp"
                             android:stateListAnimator="@null"
-                            android:text="GREETING"
+                            android:textAllCaps="false"
+                            android:text="Greeting"
                             android:textColor="@color/main_text"
                             android:textSize="35dp" />
 
@@ -235,13 +236,13 @@
                         </LinearLayout>
 
                         <ImageButton
-                            android:id="@+id/btnCircle1"
+                            android:id="@+id/btnDown1"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="bottom"
                             android:background="@drawable/custom_ripple_transparent"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/btn_circle" />
+                            android:src="@drawable/btn_down" />
 
                     </LinearLayout>
 
@@ -335,13 +336,13 @@
                         </LinearLayout>
 
                         <ImageButton
-                            android:id="@+id/btnCircle2"
+                            android:id="@+id/btnDown2"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="bottom"
                             android:background="@drawable/custom_ripple_transparent"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/btn_circle" />
+                            android:src="@drawable/btn_down" />
 
                     </LinearLayout>
 

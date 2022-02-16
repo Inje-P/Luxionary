@@ -15,7 +15,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,7 +25,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.snackbar.Snackbar;
 
-public class Lang101Fra_02_1 extends AppCompatActivity {
+public class Lang101Eng_02_2 extends AppCompatActivity {
 
     // Data from DB
     String strNick, strPw, strName, strEmail, strAvatar;
@@ -36,18 +35,19 @@ public class Lang101Fra_02_1 extends AppCompatActivity {
 
     // Main
     Button btnTitle;
-    ImageButton btnCircle1, btnCircle2;
+    ImageButton btnDown1, btnDown2;
     ImageButton btnEnd;
-    Button btnText1_1, btnText1_2, btnText1_3;
-    Button btnText2_1, btnText2_2, btnText2_3;
-    Button btnText3_1, btnText3_2, btnText3_3;
+    Button btnText1_1, btnText1_2, btnText1_3, btnText1_4, btnText1_5, btnText1_6;
+    Button btnText2_1, btnText2_2, btnText2_3, btnText2_4, btnText2_5, btnText2_6;
+    Button btnText3_1, btnText3_2, btnText3_3, btnText3_4, btnText3_5, btnText3_6, btnText3_7;
     ImageView imgHorizontal1, imgHorizontal2, imgHorizontal3;
+    ImageView imgVertical1, imgVertical2;
 
     // Animation
-    Animation ani1_1, ani1_2, ani1_3;
-    Animation ani2_1, ani2_2, ani2_3;
-    Animation ani3_1, ani3_2, ani3_3;
-    Animation aniTitle, aniBtnCircle1, aniBtnCircle2, aniBtnEnd;
+    Animation ani1_1, ani1_2, ani1_3, ani1_4, ani1_5, ani1_6;
+    Animation ani2_1, ani2_2, ani2_3, ani2_4, ani2_5, ani2_6;
+    Animation ani3_1, ani3_2, ani3_3, ani3_4, ani3_5, ani3_6, ani3_7;
+    Animation aniTitle, aniBtnDown1, aniBtnDown2, aniBtnEnd;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -61,7 +61,7 @@ public class Lang101Fra_02_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lang101_fra_02_1);
+        setContentView(R.layout.lang101_eng_02_2);
 
         // Data from SQLite
         Intent getData = getIntent();
@@ -98,17 +98,17 @@ public class Lang101Fra_02_1 extends AppCompatActivity {
         btnNext.setOnClickListener(mClickListener);
 
         /*
-        * Main
-        * */
+         * Main
+         * */
         // Title
         btnTitle = (Button) findViewById(R.id.btnTitle);
-        setColorStateList(btnTitle, ContextCompat.getColor(this, R.color.fra_background), btnTitle.getCurrentTextColor());
+        setColorStateList(btnTitle, ContextCompat.getColor(this, R.color.eng_background), btnTitle.getCurrentTextColor());
 
         // Buttons & Lines
-        btnCircle1 = (ImageButton) findViewById(R.id.btnCircle1);
-        btnCircle1.setVisibility(View.INVISIBLE);
-        btnCircle2 = (ImageButton) findViewById(R.id.btnCircle2);
-        btnCircle2.setVisibility(View.INVISIBLE);
+        btnDown1 = (ImageButton) findViewById(R.id.btnDown1);
+        btnDown1.setVisibility(View.INVISIBLE);
+        btnDown2 = (ImageButton) findViewById(R.id.btnDown2);
+        btnDown2.setVisibility(View.INVISIBLE);
         btnEnd = (ImageButton) findViewById(R.id.btnEnd);
         btnEnd.setVisibility(View.INVISIBLE);
 
@@ -119,63 +119,128 @@ public class Lang101Fra_02_1 extends AppCompatActivity {
         imgHorizontal3 = (ImageView) findViewById(R.id.imgHorizontal3);
         imgHorizontal3.setVisibility(View.INVISIBLE);
 
+        imgVertical1 = (ImageView) findViewById(R.id.imgVertical1);
+        imgVertical1.setVisibility(View.INVISIBLE);
+        imgVertical2 = (ImageView) findViewById(R.id.imgVertical2);
+        imgVertical2.setVisibility(View.INVISIBLE);
+
         // 1st Section
         btnText1_1 = (Button) findViewById(R.id.btnText1_1);
         btnText1_2 = (Button) findViewById(R.id.btnText1_2);
         btnText1_3 = (Button) findViewById(R.id.btnText1_3);
-        setColorStateList(btnText1_1, ContextCompat.getColor(this, R.color.fra_background), btnText1_1.getCurrentTextColor());
-        setColorStateList(btnText1_2, ContextCompat.getColor(this, R.color.fra_background), btnText1_2.getCurrentTextColor());
-        setColorStateList(btnText1_3, ContextCompat.getColor(this, R.color.fra_background), btnText1_3.getCurrentTextColor());
+        btnText1_4 = (Button) findViewById(R.id.btnText1_4);
+        btnText1_5 = (Button) findViewById(R.id.btnText1_5);
+        btnText1_6 = (Button) findViewById(R.id.btnText1_6);
+        setColorStateList(btnText1_1, ContextCompat.getColor(this, R.color.eng_background), btnText1_1.getCurrentTextColor());
+        setColorStateList(btnText1_2, ContextCompat.getColor(this, R.color.eng_background), btnText1_2.getCurrentTextColor());
+        setColorStateList(btnText1_3, ContextCompat.getColor(this, R.color.eng_background), btnText1_3.getCurrentTextColor());
+        setColorStateList(btnText1_4, ContextCompat.getColor(this, R.color.eng_background), btnText1_4.getCurrentTextColor());
+        setColorStateList(btnText1_5, ContextCompat.getColor(this, R.color.eng_background), btnText1_5.getCurrentTextColor());
+        setColorStateList(btnText1_6, ContextCompat.getColor(this, R.color.eng_background), btnText1_6.getCurrentTextColor());
         btnText1_1.setVisibility(View.INVISIBLE);
         btnText1_2.setVisibility(View.INVISIBLE);
         btnText1_3.setVisibility(View.INVISIBLE);
-        ani1_1 = AnimationUtils.loadAnimation(Lang101Fra_02_1.this, R.anim.ascend_fast);
-        ani1_2 = AnimationUtils.loadAnimation(Lang101Fra_02_1.this, R.anim.ascend_fast);
+        btnText1_4.setVisibility(View.INVISIBLE);
+        btnText1_5.setVisibility(View.INVISIBLE);
+        btnText1_6.setVisibility(View.INVISIBLE);
+        ani1_1 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani1_2 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
         ani1_2.setStartOffset(200);
-        ani1_3 = AnimationUtils.loadAnimation(Lang101Fra_02_1.this, R.anim.ascend_fast);
+        ani1_3 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
         ani1_3.setStartOffset(400);
+        ani1_4 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani1_4.setStartOffset(600);
+        ani1_5 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani1_5.setStartOffset(800);
+        ani1_6 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani1_6.setStartOffset(1000);
 
         // 2nd Section
         btnText2_1 = (Button) findViewById(R.id.btnText2_1);
         btnText2_2 = (Button) findViewById(R.id.btnText2_2);
         btnText2_3 = (Button) findViewById(R.id.btnText2_3);
-        setColorStateList(btnText2_1, ContextCompat.getColor(this, R.color.fra_background), btnText2_1.getCurrentTextColor());
-        setColorStateList(btnText2_2, ContextCompat.getColor(this, R.color.fra_background), btnText2_2.getCurrentTextColor());
-        setColorStateList(btnText2_3, ContextCompat.getColor(this, R.color.fra_background), btnText2_3.getCurrentTextColor());
+        btnText2_4 = (Button) findViewById(R.id.btnText2_4);
+        btnText2_5 = (Button) findViewById(R.id.btnText2_5);
+        btnText2_6 = (Button) findViewById(R.id.btnText2_6);
+        setColorStateList(btnText2_1, ContextCompat.getColor(this, R.color.eng_background), btnText2_1.getCurrentTextColor());
+        setColorStateList(btnText2_2, ContextCompat.getColor(this, R.color.eng_background), btnText2_2.getCurrentTextColor());
+        setColorStateList(btnText2_3, ContextCompat.getColor(this, R.color.eng_background), btnText2_3.getCurrentTextColor());
+        setColorStateList(btnText2_4, ContextCompat.getColor(this, R.color.eng_background), btnText2_4.getCurrentTextColor());
+        setColorStateList(btnText2_5, ContextCompat.getColor(this, R.color.eng_background), btnText2_5.getCurrentTextColor());
+        setColorStateList(btnText2_6, ContextCompat.getColor(this, R.color.eng_background), btnText2_6.getCurrentTextColor());
         btnText2_1.setVisibility(View.INVISIBLE);
         btnText2_2.setVisibility(View.INVISIBLE);
         btnText2_3.setVisibility(View.INVISIBLE);
-        ani2_1 = AnimationUtils.loadAnimation(Lang101Fra_02_1.this, R.anim.ascend_fast);
-        ani2_2 = AnimationUtils.loadAnimation(Lang101Fra_02_1.this, R.anim.ascend_fast);
+        btnText2_4.setVisibility(View.INVISIBLE);
+        btnText2_5.setVisibility(View.INVISIBLE);
+        btnText2_6.setVisibility(View.INVISIBLE);
+        ani2_1 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani2_2 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
         ani2_2.setStartOffset(200);
-        ani2_3 = AnimationUtils.loadAnimation(Lang101Fra_02_1.this, R.anim.ascend_fast);
+        ani2_3 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
         ani2_3.setStartOffset(400);
+        ani2_4 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani2_4.setStartOffset(600);
+        ani2_5 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani2_5.setStartOffset(800);
+        ani2_6 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani2_6.setStartOffset(1000);
 
         // 3rd Section
         btnText3_1 = (Button) findViewById(R.id.btnText3_1);
         btnText3_2 = (Button) findViewById(R.id.btnText3_2);
         btnText3_3 = (Button) findViewById(R.id.btnText3_3);
-        setColorStateList(btnText3_1, ContextCompat.getColor(this, R.color.fra_background), btnText3_1.getCurrentTextColor());
-        setColorStateList(btnText3_2, ContextCompat.getColor(this, R.color.fra_background), btnText3_2.getCurrentTextColor());
-        setColorStateList(btnText3_3, ContextCompat.getColor(this, R.color.fra_background), btnText3_3.getCurrentTextColor());
+        btnText3_4 = (Button) findViewById(R.id.btnText3_4);
+        btnText3_5 = (Button) findViewById(R.id.btnText3_5);
+        btnText3_6 = (Button) findViewById(R.id.btnText3_6);
+        btnText3_7 = (Button) findViewById(R.id.btnText3_7);
+        setColorStateList(btnText3_1, ContextCompat.getColor(this, R.color.eng_background), btnText3_1.getCurrentTextColor());
+        setColorStateList(btnText3_2, ContextCompat.getColor(this, R.color.eng_background), btnText3_2.getCurrentTextColor());
+        setColorStateList(btnText3_3, ContextCompat.getColor(this, R.color.eng_background), btnText3_3.getCurrentTextColor());
+        setColorStateList(btnText3_4, ContextCompat.getColor(this, R.color.eng_background), btnText3_4.getCurrentTextColor());
+        setColorStateList(btnText3_5, ContextCompat.getColor(this, R.color.eng_background), btnText3_5.getCurrentTextColor());
+        setColorStateList(btnText3_6, ContextCompat.getColor(this, R.color.eng_background), btnText3_6.getCurrentTextColor());
+        setColorStateList(btnText3_7, ContextCompat.getColor(this, R.color.eng_background), btnText3_7.getCurrentTextColor());
         btnText3_1.setVisibility(View.INVISIBLE);
         btnText3_2.setVisibility(View.INVISIBLE);
         btnText3_3.setVisibility(View.INVISIBLE);
-        ani3_1 = AnimationUtils.loadAnimation(Lang101Fra_02_1.this, R.anim.ascend_fast);
-        ani3_2 = AnimationUtils.loadAnimation(Lang101Fra_02_1.this, R.anim.ascend_fast);
+        btnText3_4.setVisibility(View.INVISIBLE);
+        btnText3_5.setVisibility(View.INVISIBLE);
+        btnText3_6.setVisibility(View.INVISIBLE);
+        btnText3_7.setVisibility(View.INVISIBLE);
+        ani3_1 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani3_2 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
         ani3_2.setStartOffset(200);
-        ani3_3 = AnimationUtils.loadAnimation(Lang101Fra_02_1.this, R.anim.ascend_fast);
+        ani3_3 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
         ani3_3.setStartOffset(400);
+        ani3_4 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani3_4.setStartOffset(600);
+        ani3_5 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani3_5.setStartOffset(800);
+        ani3_6 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani3_6.setStartOffset(1000);
+        ani3_7 = AnimationUtils.loadAnimation(Lang101Eng_02_2.this, R.anim.ascend_fast);
+        ani3_7.setStartOffset(1200);
 
         btnText1_1.setOnClickListener(mClickListener);
         btnText1_2.setOnClickListener(mClickListener);
         btnText1_3.setOnClickListener(mClickListener);
+        btnText1_4.setOnClickListener(mClickListener);
+        btnText1_5.setOnClickListener(mClickListener);
+        btnText1_6.setOnClickListener(mClickListener);
         btnText2_1.setOnClickListener(mClickListener);
         btnText2_2.setOnClickListener(mClickListener);
         btnText2_3.setOnClickListener(mClickListener);
+        btnText2_4.setOnClickListener(mClickListener);
+        btnText2_5.setOnClickListener(mClickListener);
+        btnText2_6.setOnClickListener(mClickListener);
         btnText3_1.setOnClickListener(mClickListener);
         btnText3_2.setOnClickListener(mClickListener);
         btnText3_3.setOnClickListener(mClickListener);
+        btnText3_4.setOnClickListener(mClickListener);
+        btnText3_5.setOnClickListener(mClickListener);
+        btnText3_6.setOnClickListener(mClickListener);
+        btnText3_7.setOnClickListener(mClickListener);
 
         // Start
         aniTitle = new AlphaAnimation(0.0f, 1.0f);
@@ -193,55 +258,75 @@ public class Lang101Fra_02_1 extends AppCompatActivity {
                 AnimatedVectorDrawable drawable1 = (AnimatedVectorDrawable) imgHorizontal1.getDrawable();
                 drawable1.start();
 
+                imgVertical1.setVisibility(View.VISIBLE);
+                AnimatedVectorDrawable drawable1v = (AnimatedVectorDrawable) imgVertical1.getDrawable();
+                drawable1v.start();
+
                 btnText1_1.setVisibility(View.VISIBLE);
                 btnText1_2.setVisibility(View.VISIBLE);
                 btnText1_3.setVisibility(View.VISIBLE);
+                btnText1_4.setVisibility(View.VISIBLE);
+                btnText1_5.setVisibility(View.VISIBLE);
+                btnText1_6.setVisibility(View.VISIBLE);
                 btnText1_1.startAnimation(ani1_1);
                 btnText1_2.startAnimation(ani1_2);
                 btnText1_3.startAnimation(ani1_3);
+                btnText1_4.startAnimation(ani1_4);
+                btnText1_5.startAnimation(ani1_5);
+                btnText1_6.startAnimation(ani1_6);
 
-                btnCircle1.setVisibility(View.VISIBLE);
-                aniBtnCircle1 = new AlphaAnimation(0.0f, 1.0f);
-                aniBtnCircle1.setDuration(200);
-                aniBtnCircle1.setStartOffset(400);
-                aniBtnCircle1.setRepeatMode(Animation.REVERSE);
-                aniBtnCircle1.setRepeatCount(Animation.INFINITE);
-                btnCircle1.startAnimation(aniBtnCircle1);
+                btnDown1.setVisibility(View.VISIBLE);
+                aniBtnDown1 = new AlphaAnimation(0.0f, 1.0f);
+                aniBtnDown1.setDuration(200);
+                aniBtnDown1.setStartOffset(400);
+                aniBtnDown1.setRepeatMode(Animation.REVERSE);
+                aniBtnDown1.setRepeatCount(Animation.INFINITE);
+                btnDown1.startAnimation(aniBtnDown1);
             }
         });
 
-        btnCircle1.setOnClickListener(new View.OnClickListener() {
+        btnDown1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btnCircle1.clearAnimation();
-                btnCircle1.setVisibility(View.INVISIBLE);
+                btnDown1.clearAnimation();
+                btnDown1.setVisibility(View.INVISIBLE);
 
                 imgHorizontal2.setVisibility(View.VISIBLE);
                 AnimatedVectorDrawable drawable2 = (AnimatedVectorDrawable) imgHorizontal2.getDrawable();
                 drawable2.start();
 
+                imgVertical2.setVisibility(View.VISIBLE);
+                AnimatedVectorDrawable drawable2v = (AnimatedVectorDrawable) imgVertical2.getDrawable();
+                drawable2v.start();
+
                 btnText2_1.setVisibility(View.VISIBLE);
                 btnText2_2.setVisibility(View.VISIBLE);
                 btnText2_3.setVisibility(View.VISIBLE);
+                btnText2_4.setVisibility(View.VISIBLE);
+                btnText2_5.setVisibility(View.VISIBLE);
+                btnText2_6.setVisibility(View.VISIBLE);
                 btnText2_1.startAnimation(ani2_1);
                 btnText2_2.startAnimation(ani2_2);
                 btnText2_3.startAnimation(ani2_3);
+                btnText2_4.startAnimation(ani2_4);
+                btnText2_5.startAnimation(ani2_5);
+                btnText2_6.startAnimation(ani2_6);
 
-                btnCircle2.setVisibility(View.VISIBLE);
-                aniBtnCircle2 = new AlphaAnimation(0.0f, 1.0f);
-                aniBtnCircle2.setDuration(200);
-                aniBtnCircle2.setStartOffset(400);
-                aniBtnCircle2.setRepeatMode(Animation.REVERSE);
-                aniBtnCircle2.setRepeatCount(Animation.INFINITE);
-                btnCircle2.startAnimation(aniBtnCircle2);
+                btnDown2.setVisibility(View.VISIBLE);
+                aniBtnDown2 = new AlphaAnimation(0.0f, 1.0f);
+                aniBtnDown2.setDuration(200);
+                aniBtnDown2.setStartOffset(400);
+                aniBtnDown2.setRepeatMode(Animation.REVERSE);
+                aniBtnDown2.setRepeatCount(Animation.INFINITE);
+                btnDown2.startAnimation(aniBtnDown2);
             }
         });
 
-        btnCircle2.setOnClickListener(new View.OnClickListener() {
+        btnDown2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btnCircle2.clearAnimation();
-                btnCircle2.setVisibility(View.INVISIBLE);
+                btnDown2.clearAnimation();
+                btnDown2.setVisibility(View.INVISIBLE);
 
                 imgHorizontal3.setVisibility(View.VISIBLE);
                 AnimatedVectorDrawable drawable3 = (AnimatedVectorDrawable) imgHorizontal3.getDrawable();
@@ -250,9 +335,17 @@ public class Lang101Fra_02_1 extends AppCompatActivity {
                 btnText3_1.setVisibility(View.VISIBLE);
                 btnText3_2.setVisibility(View.VISIBLE);
                 btnText3_3.setVisibility(View.VISIBLE);
+                btnText3_4.setVisibility(View.VISIBLE);
+                btnText3_5.setVisibility(View.VISIBLE);
+                btnText3_6.setVisibility(View.VISIBLE);
+                btnText3_7.setVisibility(View.VISIBLE);
                 btnText3_1.startAnimation(ani3_1);
                 btnText3_2.startAnimation(ani3_2);
                 btnText3_3.startAnimation(ani3_3);
+                btnText3_4.startAnimation(ani3_3);
+                btnText3_5.startAnimation(ani3_3);
+                btnText3_6.startAnimation(ani3_3);
+                btnText3_7.startAnimation(ani3_3);
 
                 btnEnd.setVisibility(View.VISIBLE);
                 aniBtnEnd = new AlphaAnimation(0.0f, 1.0f);
@@ -285,7 +378,7 @@ public class Lang101Fra_02_1 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intentBack = new Intent(Lang101Fra_02_1.this, Lang101Fra.class);
+        Intent intentBack = new Intent(Lang101Eng_02_2.this, Lang101Eng_02_1.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intentBack.putExtra("nick", strNick);
         intentBack.putExtra("pw", strPw);
@@ -335,35 +428,65 @@ public class Lang101Fra_02_1 extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btnText1_1:
-                    showSnackbar("안녕하세요! (아침, 점심)");
+                    showSnackbar("나 (1인칭 단수)");
                     break;
                 case R.id.btnText1_2:
-                    showSnackbar("안녕하세요! (저녁)");
+                    showSnackbar("너 (2인칭 단수)");
                     break;
                 case R.id.btnText1_3:
-                    showSnackbar("안녕히 주무세요! (밤)");
+                    showSnackbar("그, 그녀, 그것 (3인칭 단수)");
+                    break;
+                case R.id.btnText1_4:
+                    showSnackbar("우리 (1인칭 복수)");
+                    break;
+                case R.id.btnText1_5:
+                    showSnackbar("너희 (2인칭 복수)");
+                    break;
+                case R.id.btnText1_6:
+                    showSnackbar("그들 (3인칭 복수)");
                     break;
                 case R.id.btnText2_1:
-                    showSnackbar("안녕!");
+                    showSnackbar("나는 -이다.");
                     break;
                 case R.id.btnText2_2:
-                    showSnackbar("안녕하세요!");
+                    showSnackbar("너는 -이다.");
                     break;
                 case R.id.btnText2_3:
-                    showSnackbar("만나서 반가워요.");
+                    showSnackbar("그/그녀/그것은 -이다.");
+                    break;
+                case R.id.btnText2_4:
+                    showSnackbar("우리는 -이다.");
+                    break;
+                case R.id.btnText2_5:
+                    showSnackbar("너희는 -이다.");
+                    break;
+                case R.id.btnText2_6:
+                    showSnackbar("그들은 -이다.");
                     break;
                 case R.id.btnText3_1:
-                    showSnackbar("안녕하세요,");
+                    showSnackbar("나는 Noah다.");
                     break;
                 case R.id.btnText3_2:
-                    showSnackbar("제 이름은 루이에요.");
+                    showSnackbar("너는 Lily다.");
                     break;
                 case R.id.btnText3_3:
-                    showSnackbar("만나서 반갑습니다.");
+                    showSnackbar("그는 Henry다.");
+                    break;
+                case R.id.btnText3_4:
+                    showSnackbar("그녀는 Olivia다.");
+                    break;
+                case R.id.btnText3_5:
+                    showSnackbar("우리는 가족이다.");
+                    break;
+                case R.id.btnText3_6:
+                    showSnackbar("너희는 친구들이다.");
+                    break;
+                case R.id.btnText3_7:
+                    showSnackbar("그들은 동료들이다.");
                     break;
                 // Prev & Next Buttons
                 case R.id.btnPrev:
-                    Intent intentPrev = new Intent(Lang101Fra_02_1.this, Lang101Fra.class);
+                    Intent intentPrev = new Intent(Lang101Eng_02_2.this, Lang101Eng.class);
                     intentPrev.putExtra("nick", strNick);
                     intentPrev.putExtra("pw", strPw);
                     intentPrev.putExtra("name", strName);
@@ -374,7 +497,7 @@ public class Lang101Fra_02_1 extends AppCompatActivity {
                     finish();
                     break;
                 case R.id.btnNext:
-                    Intent intentNext = new Intent(Lang101Fra_02_1.this, Lang101Fra_01_2.class);
+                    Intent intentNext = new Intent(Lang101Eng_02_2.this, Lang101Eng.class);
                     intentNext.putExtra("nick", strNick);
                     intentNext.putExtra("pw", strPw);
                     intentNext.putExtra("name", strName);
@@ -389,7 +512,7 @@ public class Lang101Fra_02_1 extends AppCompatActivity {
                     drawerLayout.openDrawer(drawerView);
                     break;
                 case R.id.btnHome:
-                    Intent intentHome = new Intent(Lang101Fra_02_1.this, MainActivity.class);
+                    Intent intentHome = new Intent(Lang101Eng_02_2.this, MainActivity.class);
                     intentHome.putExtra("nick", strNick);
                     intentHome.putExtra("pw", strPw);
                     intentHome.putExtra("name", strName);
@@ -409,7 +532,7 @@ public class Lang101Fra_02_1 extends AppCompatActivity {
     public void showSnackbar(String str) {
         layoutContainer = findViewById(R.id.layoutContainer);
         Snackbar snackbar = Snackbar.make(layoutContainer, "", Snackbar.LENGTH_SHORT);
-        View custom = getLayoutInflater().inflate(R.layout.snackbar_fra, null);
+        View custom = getLayoutInflater().inflate(R.layout.snackbar_eng, null);
         snackbar.getView().setBackgroundColor(Color.TRANSPARENT);
 
         TextView tvText = (TextView) custom.findViewById(R.id.tvText);

@@ -31,9 +31,6 @@ import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.muddzdev.styleabletoast.StyleableToast;
-
-import org.w3c.dom.Text;
 
 public class Lang101Eng_02_1 extends AppCompatActivity {
 
@@ -45,7 +42,7 @@ public class Lang101Eng_02_1 extends AppCompatActivity {
 
     // Main
     Button btnTitle;
-    ImageButton btnCircle1, btnCircle2;
+    ImageButton btnDown1, btnDown2;
     ImageButton btnEnd;
     Button btnText1_1, btnText1_2, btnText1_3, btnText1_4;
     Button btnText2_1, btnText2_2, btnText2_3;
@@ -56,7 +53,7 @@ public class Lang101Eng_02_1 extends AppCompatActivity {
     Animation ani1_1, ani1_2, ani1_3, ani1_4;
     Animation ani2_1, ani2_2, ani2_3;
     Animation ani3_1, ani3_2, ani3_3;
-    Animation aniTitle, aniBtnCircle1, aniBtnCircle2, aniBtnEnd;
+    Animation aniTitle, aniBtnDown1, aniBtnDown2, aniBtnEnd;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -114,10 +111,10 @@ public class Lang101Eng_02_1 extends AppCompatActivity {
         setColorStateList(btnTitle, ContextCompat.getColor(this, R.color.eng_background), btnTitle.getCurrentTextColor());
 
         // Buttons & Lines
-        btnCircle1 = (ImageButton) findViewById(R.id.btnCircle1);
-        btnCircle1.setVisibility(View.INVISIBLE);
-        btnCircle2 = (ImageButton) findViewById(R.id.btnCircle2);
-        btnCircle2.setVisibility(View.INVISIBLE);
+        btnDown1 = (ImageButton) findViewById(R.id.btnDown1);
+        btnDown1.setVisibility(View.INVISIBLE);
+        btnDown2 = (ImageButton) findViewById(R.id.btnDown2);
+        btnDown2.setVisibility(View.INVISIBLE);
         btnEnd = (ImageButton) findViewById(R.id.btnEnd);
         btnEnd.setVisibility(View.INVISIBLE);
 
@@ -217,21 +214,21 @@ public class Lang101Eng_02_1 extends AppCompatActivity {
                 btnText1_3.startAnimation(ani1_3);
                 btnText1_4.startAnimation(ani1_4);
 
-                btnCircle1.setVisibility(View.VISIBLE);
-                aniBtnCircle1 = new AlphaAnimation(0.0f, 1.0f);
-                aniBtnCircle1.setDuration(200);
-                aniBtnCircle1.setStartOffset(400);
-                aniBtnCircle1.setRepeatMode(Animation.REVERSE);
-                aniBtnCircle1.setRepeatCount(Animation.INFINITE);
-                btnCircle1.startAnimation(aniBtnCircle1);
+                btnDown1.setVisibility(View.VISIBLE);
+                aniBtnDown1 = new AlphaAnimation(0.0f, 1.0f);
+                aniBtnDown1.setDuration(200);
+                aniBtnDown1.setStartOffset(400);
+                aniBtnDown1.setRepeatMode(Animation.REVERSE);
+                aniBtnDown1.setRepeatCount(Animation.INFINITE);
+                btnDown1.startAnimation(aniBtnDown1);
             }
         });
 
-        btnCircle1.setOnClickListener(new View.OnClickListener() {
+        btnDown1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btnCircle1.clearAnimation();
-                btnCircle1.setVisibility(View.INVISIBLE);
+                btnDown1.clearAnimation();
+                btnDown1.setVisibility(View.INVISIBLE);
 
                 imgHorizontal2.setVisibility(View.VISIBLE);
                 AnimatedVectorDrawable drawable2 = (AnimatedVectorDrawable) imgHorizontal2.getDrawable();
@@ -244,21 +241,21 @@ public class Lang101Eng_02_1 extends AppCompatActivity {
                 btnText2_2.startAnimation(ani2_2);
                 btnText2_3.startAnimation(ani2_3);
 
-                btnCircle2.setVisibility(View.VISIBLE);
-                aniBtnCircle2 = new AlphaAnimation(0.0f, 1.0f);
-                aniBtnCircle2.setDuration(200);
-                aniBtnCircle2.setStartOffset(400);
-                aniBtnCircle2.setRepeatMode(Animation.REVERSE);
-                aniBtnCircle2.setRepeatCount(Animation.INFINITE);
-                btnCircle2.startAnimation(aniBtnCircle2);
+                btnDown2.setVisibility(View.VISIBLE);
+                aniBtnDown2 = new AlphaAnimation(0.0f, 1.0f);
+                aniBtnDown2.setDuration(200);
+                aniBtnDown2.setStartOffset(400);
+                aniBtnDown2.setRepeatMode(Animation.REVERSE);
+                aniBtnDown2.setRepeatCount(Animation.INFINITE);
+                btnDown2.startAnimation(aniBtnDown2);
             }
         });
 
-        btnCircle2.setOnClickListener(new View.OnClickListener() {
+        btnDown2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btnCircle2.clearAnimation();
-                btnCircle2.setVisibility(View.INVISIBLE);
+                btnDown2.clearAnimation();
+                btnDown2.setVisibility(View.INVISIBLE);
 
                 imgHorizontal3.setVisibility(View.VISIBLE);
                 AnimatedVectorDrawable drawable3 = (AnimatedVectorDrawable) imgHorizontal3.getDrawable();
@@ -284,7 +281,15 @@ public class Lang101Eng_02_1 extends AppCompatActivity {
         btnEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intentEnd = new Intent(Lang101Eng_02_1.this, Lang101Eng_02_2.class);
+                intentEnd.putExtra("nick", strNick);
+                intentEnd.putExtra("pw", strPw);
+                intentEnd.putExtra("name", strName);
+                intentEnd.putExtra("email", strEmail);
+                intentEnd.putExtra("avatar", strAvatar);
+                startActivity(intentEnd);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
             }
         });
 
@@ -394,7 +399,7 @@ public class Lang101Eng_02_1 extends AppCompatActivity {
                     finish();
                     break;
                 case R.id.btnNext:
-                    Intent intentNext = new Intent(Lang101Eng_02_1.this, Lang101Eng_01_2.class);
+                    Intent intentNext = new Intent(Lang101Eng_02_1.this, Lang101Eng_02_2.class);
                     intentNext.putExtra("nick", strNick);
                     intentNext.putExtra("pw", strPw);
                     intentNext.putExtra("name", strName);

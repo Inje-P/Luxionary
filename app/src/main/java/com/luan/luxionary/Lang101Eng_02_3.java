@@ -1,0 +1,469 @@
+package com.luan.luxionary;
+
+import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.graphics.drawable.AnimatedVectorDrawable;
+import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.content.ContextCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.snackbar.Snackbar;
+
+public class Lang101Eng_02_3 extends AppCompatActivity {
+
+    // Data from DB
+    String strNick, strPw, strName, strEmail, strAvatar;
+
+    LinearLayout layoutContainer;
+    ImageButton btnPrev, btnNext;
+
+    // Main
+    LinearLayout llQ1, llQ2, llQ3, llQ4, llQ5, llQ6, llQ7;
+    Button btnQ1, btnQ2, btnQ3, btnQ4, btnQ5, btnQ6, btnQ7;
+    ImageButton btnDown1, btnDown2, btnDown3, btnDown4, btnDown5, btnDown6, btnDown7;
+    LinearLayout llA1, llA2, llA3, llA4, llA5, llA6, llA7;
+    Button btnA1, btnA2, btnA3, btnA4, btnA5, btnA6, btnA7;
+    Button btnYes1, btnYes2, btnYes3, btnYes4, btnYes5, btnYes6, btnYes7;
+    Button btnNo1, btnNo2, btnNo3, btnNo4, btnNo5, btnNo6, btnNo7;
+    ImageView imgHorizontal1, imgHorizontal2, imgHorizontal3, imgHorizontal4, imgHorizontal5, imgHorizontal6;
+
+    // Animation
+    Animation aniLlQ1, aniLlQ2, aniLlQ3, aniLlQ4, aniLlQ5, aniLlQ6, aniLlQ7;
+    Animation aniBtnDown1, aniBtnDown2, aniBtnDown3, aniBtnDown4, aniBtnDown5, aniBtnDown6, aniBtnDown7;
+    Animation aniLlA1, aniLlA2, aniLlA3, aniLlA4, aniLlA5, aniLlA6, aniLlA7;
+
+    // Sidebar
+    private DrawerLayout drawerLayout;
+    private View drawerView;
+    TextView tvNickname, tvEmail;
+    ImageView btnClose;
+
+    // Footer
+    ImageButton btnSidebar, btnHome, btnUpdate;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.lang101_eng_02_2);
+
+        // Data from SQLite
+        Intent getData = getIntent();
+        strNick = getData.getStringExtra("nick");
+        strPw = getData.getStringExtra("pw");
+        strName = getData.getStringExtra("name");
+        strEmail = getData.getStringExtra("email");
+        strAvatar = getData.getStringExtra("avatar");
+
+        // Sidebar
+        tvNickname = (TextView) findViewById(R.id.tvNickname);
+        tvEmail = (TextView) findViewById(R.id.tvEmail);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawerView = (View) findViewById(R.id.drawer);
+        drawerLayout.setDrawerListener(drawerListener);
+        drawerView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return true;
+            }
+        });
+        btnClose = (ImageView) findViewById(R.id.btnClose);
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.closeDrawers();
+            }
+        });
+
+        // Prev & Next Buttons
+        btnPrev = (ImageButton) findViewById(R.id.btnPrev);
+        btnNext = (ImageButton) findViewById(R.id.btnNext);
+        btnPrev.setOnClickListener(mClickListener);
+        btnNext.setOnClickListener(mClickListener);
+
+        /*
+         * Main
+         * */
+        imgHorizontal1 = (ImageView) findViewById(R.id.imgHorizontal1);
+        imgHorizontal1.setVisibility(View.INVISIBLE);
+        imgHorizontal2 = (ImageView) findViewById(R.id.imgHorizontal2);
+        imgHorizontal2.setVisibility(View.INVISIBLE);
+        imgHorizontal3 = (ImageView) findViewById(R.id.imgHorizontal3);
+        imgHorizontal3.setVisibility(View.INVISIBLE);
+        imgHorizontal4 = (ImageView) findViewById(R.id.imgHorizontal4);
+        imgHorizontal4.setVisibility(View.INVISIBLE);
+        imgHorizontal5 = (ImageView) findViewById(R.id.imgHorizontal5);
+        imgHorizontal5.setVisibility(View.INVISIBLE);
+        imgHorizontal6 = (ImageView) findViewById(R.id.imgHorizontal6);
+        imgHorizontal6.setVisibility(View.INVISIBLE);
+
+        // 1st Section
+        llQ1 = (LinearLayout) findViewById(R.id.llQ1);
+        btnQ1 = (Button) findViewById(R.id.btnQ1);
+        btnDown1 = (ImageButton) findViewById(R.id.btnDown1);
+        llA1 = (LinearLayout) findViewById(R.id.llA1);
+        btnA1 = (Button) findViewById(R.id.btnA1);
+        btnYes1 = (Button) findViewById(R.id.btnYes1);
+        btnNo1 = (Button) findViewById(R.id.btnNo1);
+        // anim
+        aniLlQ1 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
+        aniBtnDown1 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
+        aniBtnDown1.setStartOffset(400);
+        aniLlA1 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
+        aniLlA1.setStartOffset(800);
+
+        // 2nd Section
+        llQ2 = (LinearLayout) findViewById(R.id.llQ2);
+        llQ2.setVisibility(View.INVISIBLE);
+        btnQ2 = (Button) findViewById(R.id.btnQ2);
+        btnDown2 = (ImageButton) findViewById(R.id.btnDown2);
+        btnDown2.setVisibility(View.INVISIBLE);
+        llA2 = (LinearLayout) findViewById(R.id.llA2);
+        llA2.setVisibility(View.INVISIBLE);
+        btnA2 = (Button) findViewById(R.id.btnA2);
+        btnYes2 = (Button) findViewById(R.id.btnYes2);
+        btnNo2 = (Button) findViewById(R.id.btnNo2);
+        // anim
+        aniLlQ2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
+        aniBtnDown2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
+        aniBtnDown2.setStartOffset(400);
+        aniLlA2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
+        aniLlA2.setStartOffset(800);
+
+        // 3rd Section
+        llQ3 = (LinearLayout) findViewById(R.id.llQ3);
+        llQ3.setVisibility(View.INVISIBLE);
+        btnQ3 = (Button) findViewById(R.id.btnQ3);
+        btnDown3 = (ImageButton) findViewById(R.id.btnDown3);
+        btnDown3.setVisibility(View.INVISIBLE);
+        llA3 = (LinearLayout) findViewById(R.id.llA3);
+        llA3.setVisibility(View.INVISIBLE);
+        btnA3 = (Button) findViewById(R.id.btnA3);
+        btnYes3 = (Button) findViewById(R.id.btnYes3);
+        btnNo3 = (Button) findViewById(R.id.btnNo3);
+        // anim
+        aniLlQ3 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
+        aniBtnDown3 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
+        aniBtnDown3.setStartOffset(400);
+        aniLlA3 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
+        aniLlA3.setStartOffset(800);
+
+        // 4th Section
+        llQ4 = (LinearLayout) findViewById(R.id.llQ4);
+        llQ4.setVisibility(View.INVISIBLE);
+        btnQ4 = (Button) findViewById(R.id.btnQ4);
+        btnDown4 = (ImageButton) findViewById(R.id.btnDown4);
+        btnDown4.setVisibility(View.INVISIBLE);
+        llA4 = (LinearLayout) findViewById(R.id.llA4);
+        llA4.setVisibility(View.INVISIBLE);
+        btnA4 = (Button) findViewById(R.id.btnA4);
+        btnYes4 = (Button) findViewById(R.id.btnYes4);
+        btnNo4 = (Button) findViewById(R.id.btnNo4);
+        // anim
+        aniLlQ2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
+        aniBtnDown2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
+        aniBtnDown2.setStartOffset(400);
+        aniLlA2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
+        aniLlA2.setStartOffset(800);
+
+        // 5th Section
+        llQ5 = (LinearLayout) findViewById(R.id.llQ5);
+        llQ5.setVisibility(View.INVISIBLE);
+        btnQ5 = (Button) findViewById(R.id.btnQ5);
+        btnDown5 = (ImageButton) findViewById(R.id.btnDown5);
+        btnDown5.setVisibility(View.INVISIBLE);
+        llA5 = (LinearLayout) findViewById(R.id.llA5);
+        llA5.setVisibility(View.INVISIBLE);
+        btnA5 = (Button) findViewById(R.id.btnA5);
+        btnYes5 = (Button) findViewById(R.id.btnYes5);
+        btnNo5 = (Button) findViewById(R.id.btnNo5);
+        // anim
+        aniLlQ5 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
+        aniBtnDown5 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
+        aniBtnDown5.setStartOffset(400);
+        aniLlA5 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
+        aniLlA5.setStartOffset(800);
+
+        // 6th Section
+        llQ6 = (LinearLayout) findViewById(R.id.llQ6);
+        llQ6.setVisibility(View.INVISIBLE);
+        btnQ6 = (Button) findViewById(R.id.btnQ6);
+        btnDown6 = (ImageButton) findViewById(R.id.btnDown6);
+        btnDown6.setVisibility(View.INVISIBLE);
+        llA6 = (LinearLayout) findViewById(R.id.llA6);
+        llA6.setVisibility(View.INVISIBLE);
+        btnA6 = (Button) findViewById(R.id.btnA6);
+        btnYes6 = (Button) findViewById(R.id.btnYes6);
+        btnNo6 = (Button) findViewById(R.id.btnNo6);
+        // anim
+        aniLlQ6 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
+        aniBtnDown6 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
+        aniBtnDown6.setStartOffset(400);
+        aniLlA6 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
+        aniLlA6.setStartOffset(800);
+
+        // 7th Section
+        llQ7 = (LinearLayout) findViewById(R.id.llQ7);
+        llQ7.setVisibility(View.INVISIBLE);
+        btnQ7 = (Button) findViewById(R.id.btnQ7);
+        btnDown7 = (ImageButton) findViewById(R.id.btnDown7);
+        btnDown7.setVisibility(View.INVISIBLE);
+        llA7 = (LinearLayout) findViewById(R.id.llA7);
+        llA7.setVisibility(View.INVISIBLE);
+        btnA7 = (Button) findViewById(R.id.btnA7);
+        btnYes7 = (Button) findViewById(R.id.btnYes7);
+        btnNo7 = (Button) findViewById(R.id.btnNo7);
+        // anim
+        aniLlQ7 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
+        aniBtnDown7 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
+        aniBtnDown7.setStartOffset(400);
+        aniLlA7 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
+        aniLlA7.setStartOffset(800);
+
+        // Start
+//        aniTitle = new AlphaAnimation(0.0f, 1.0f);
+//        aniTitle.setDuration(300);
+//        aniTitle.setStartOffset(400);
+//        aniTitle.setRepeatMode(Animation.REVERSE);
+//        aniTitle.setRepeatCount(Animation.INFINITE);
+//        btnTitle.startAnimation(aniTitle);
+//        btnTitle.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                btnTitle.clearAnimation();
+//
+//                imgHorizontal1.setVisibility(View.VISIBLE);
+//                AnimatedVectorDrawable drawable1 = (AnimatedVectorDrawable) imgHorizontal1.getDrawable();
+//                drawable1.start();
+//
+//                imgVertical1.setVisibility(View.VISIBLE);
+//                AnimatedVectorDrawable drawable1v = (AnimatedVectorDrawable) imgVertical1.getDrawable();
+//                drawable1v.start();
+//
+//                btnText1_1.setVisibility(View.VISIBLE);
+//                btnText1_2.setVisibility(View.VISIBLE);
+//                btnText1_3.setVisibility(View.VISIBLE);
+//                btnText1_4.setVisibility(View.VISIBLE);
+//                btnText1_5.setVisibility(View.VISIBLE);
+//                btnText1_6.setVisibility(View.VISIBLE);
+//                btnText1_1.startAnimation(ani1_1);
+//                btnText1_2.startAnimation(ani1_2);
+//                btnText1_3.startAnimation(ani1_3);
+//                btnText1_4.startAnimation(ani1_4);
+//                btnText1_5.startAnimation(ani1_5);
+//                btnText1_6.startAnimation(ani1_6);
+//
+//                btnDown1.setVisibility(View.VISIBLE);
+//                aniBtnDown1 = new AlphaAnimation(0.0f, 1.0f);
+//                aniBtnDown1.setDuration(200);
+//                aniBtnDown1.setStartOffset(400);
+//                aniBtnDown1.setRepeatMode(Animation.REVERSE);
+//                aniBtnDown1.setRepeatCount(Animation.INFINITE);
+//                btnDown1.startAnimation(aniBtnDown1);
+//            }
+//        });
+
+//        btnDown1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                btnDown1.clearAnimation();
+//                btnDown1.setVisibility(View.INVISIBLE);
+//
+//                imgHorizontal2.setVisibility(View.VISIBLE);
+//                AnimatedVectorDrawable drawable2 = (AnimatedVectorDrawable) imgHorizontal2.getDrawable();
+//                drawable2.start();
+//
+//                imgVertical2.setVisibility(View.VISIBLE);
+//                AnimatedVectorDrawable drawable2v = (AnimatedVectorDrawable) imgVertical2.getDrawable();
+//                drawable2v.start();
+//
+//                btnText2_1.setVisibility(View.VISIBLE);
+//                btnText2_2.setVisibility(View.VISIBLE);
+//                btnText2_3.setVisibility(View.VISIBLE);
+//                btnText2_4.setVisibility(View.VISIBLE);
+//                btnText2_5.setVisibility(View.VISIBLE);
+//                btnText2_6.setVisibility(View.VISIBLE);
+//                btnText2_1.startAnimation(ani2_1);
+//                btnText2_2.startAnimation(ani2_2);
+//                btnText2_3.startAnimation(ani2_3);
+//                btnText2_4.startAnimation(ani2_4);
+//                btnText2_5.startAnimation(ani2_5);
+//                btnText2_6.startAnimation(ani2_6);
+//
+//                btnDown2.setVisibility(View.VISIBLE);
+//                aniBtnDown2 = new AlphaAnimation(0.0f, 1.0f);
+//                aniBtnDown2.setDuration(200);
+//                aniBtnDown2.setStartOffset(400);
+//                aniBtnDown2.setRepeatMode(Animation.REVERSE);
+//                aniBtnDown2.setRepeatCount(Animation.INFINITE);
+//                btnDown2.startAnimation(aniBtnDown2);
+//            }
+//        });
+
+//        btnEnd.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
+
+        // Footer
+        btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
+        btnHome = (ImageButton) findViewById(R.id.btnHome);
+        btnUpdate = (ImageButton) findViewById(R.id.btnUpdate);
+        btnSidebar.setOnClickListener(mClickListener);
+        btnHome.setOnClickListener(mClickListener);
+        btnUpdate.setOnClickListener(mClickListener);
+
+    }
+
+    // Back Button
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intentBack = new Intent(Lang101Eng_02_3.this, Lang101Eng_02_1.class);
+        intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intentBack.putExtra("nick", strNick);
+        intentBack.putExtra("pw", strPw);
+        intentBack.putExtra("name", strName);
+        intentBack.putExtra("email", strEmail);
+        intentBack.putExtra("avatar", strAvatar);
+        startActivity(intentBack);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
+    }
+
+    // Sidebar
+    DrawerLayout.DrawerListener drawerListener = new DrawerLayout.DrawerListener() {
+        @Override
+        public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+
+        }
+
+        @Override
+        public void onDrawerOpened(@NonNull View drawerView) {
+            if (strNick == null) {
+                tvNickname.setText("제이슨");
+            } else {
+                tvNickname.setText(strNick);
+            }
+            if (strEmail == null) {
+                tvEmail.setText("luxionary@gmail.com");
+            } else {
+                tvEmail.setText(strEmail);
+            }
+        }
+
+        @Override
+        public void onDrawerClosed(@NonNull View drawerView) {
+
+        }
+
+        @Override
+        public void onDrawerStateChanged(int newState) {
+
+        }
+    };
+
+    // Main Layout
+    View.OnClickListener mClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()) {
+                case R.id.btnPrev:
+                    Intent intentPrev = new Intent(Lang101Eng_02_3.this, Lang101Eng.class);
+                    intentPrev.putExtra("nick", strNick);
+                    intentPrev.putExtra("pw", strPw);
+                    intentPrev.putExtra("name", strName);
+                    intentPrev.putExtra("email", strEmail);
+                    intentPrev.putExtra("avatar", strAvatar);
+                    startActivity(intentPrev);
+                    overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
+                    finish();
+                    break;
+                case R.id.btnNext:
+                    Intent intentNext = new Intent(Lang101Eng_02_3.this, Lang101Eng.class);
+                    intentNext.putExtra("nick", strNick);
+                    intentNext.putExtra("pw", strPw);
+                    intentNext.putExtra("name", strName);
+                    intentNext.putExtra("email", strEmail);
+                    intentNext.putExtra("avatar", strAvatar);
+                    startActivity(intentNext);
+                    overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
+                    finish();
+                    break;
+                // Footer
+                case R.id.btnSidebar:
+                    drawerLayout.openDrawer(drawerView);
+                    break;
+                case R.id.btnHome:
+                    Intent intentHome = new Intent(Lang101Eng_02_3.this, MainActivity.class);
+                    intentHome.putExtra("nick", strNick);
+                    intentHome.putExtra("pw", strPw);
+                    intentHome.putExtra("name", strName);
+                    intentHome.putExtra("email", strEmail);
+                    intentHome.putExtra("avatar", strAvatar);
+                    startActivity(intentHome);
+                    overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
+                    finish();
+                    break;
+                case R.id.btnUpdate:
+                    break;
+            }
+        }
+    };
+
+    // Snackbar : Incorrect
+    public void sbIncorrect() {
+        layoutContainer = findViewById(R.id.layoutContainer);
+        Snackbar snackbar = Snackbar.make(layoutContainer, "", Snackbar.LENGTH_SHORT);
+        View custom = getLayoutInflater().inflate(R.layout.snackbar_incorrect, null);
+        snackbar.getView().setBackgroundColor(Color.TRANSPARENT);
+
+        Snackbar.SnackbarLayout snackbarLayout = (Snackbar.SnackbarLayout) snackbar.getView();
+        snackbarLayout.setPadding(0, 0, 0, 0);
+        snackbarLayout.addView(custom, 0);
+        snackbar.show();
+    }
+
+    // Text Color
+    public void setColorStateList(View view, int selectedColor, int defaultColor) {
+        int[][] states = new int[][]{
+                new int[]{
+                        android.R.attr.state_pressed,
+                        android.R.attr.state_selected
+                }, // pressed, selected, focused
+                new int[]{} // default
+        };
+
+        int[] colors = new int[]{
+                selectedColor,
+                defaultColor
+        };
+
+        ColorStateList textColorList = new ColorStateList(states, colors);
+        if (view instanceof TextView || view instanceof AppCompatTextView) { // TextView
+            ((TextView) view).setTextColor(textColorList);
+            view.setClickable(true);
+        } else if (view instanceof Button || view instanceof AppCompatButton) { // Button
+            ((Button) view).setTextColor(textColorList);
+        }
+        view.setSelected(true);
+    }
+
+}

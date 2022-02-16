@@ -168,6 +168,16 @@ public class Lang101Deu_02_1 extends AppCompatActivity {
         ani3_3 = AnimationUtils.loadAnimation(Lang101Deu_02_1.this, R.anim.ascend_fast);
         ani3_3.setStartOffset(400);
 
+        btnText1_1.setOnClickListener(mClickListener);
+        btnText1_2.setOnClickListener(mClickListener);
+        btnText1_3.setOnClickListener(mClickListener);
+        btnText1_4.setOnClickListener(mClickListener);
+        btnText2_1.setOnClickListener(mClickListener);
+        btnText2_2.setOnClickListener(mClickListener);
+        btnText3_1.setOnClickListener(mClickListener);
+        btnText3_2.setOnClickListener(mClickListener);
+        btnText3_3.setOnClickListener(mClickListener);
+
         // Start
         aniTitle = new AlphaAnimation(0.0f, 1.0f);
         aniTitle.setDuration(300);
