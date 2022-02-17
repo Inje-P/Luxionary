@@ -12,20 +12,20 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
         </activity>
         <activity
             android:name=".IntroActivity"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
         </activity>
         <activity android:name=".StartActivity"></activity>
         <activity android:name=".SigninActivity"></activity>
@@ -60,15 +60,7 @@
         <activity android:name=".Lang101Eng_01_3"></activity>
         <activity android:name=".Lang101Eng_02_1"></activity>
         <activity android:name=".Lang101Eng_02_2"></activity>
-        <activity
-            android:name=".Lang101Eng_02_3"
-            android:exported="true">
-<!--                <intent-filter>-->
-<!--                        <action android:name="android.intent.action.MAIN" />-->
-
-<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
-<!--                </intent-filter>-->
-        </activity>
+        <activity android:name=".Lang101Eng_02_3"></activity>
 
         <!-- Language 101 (French)-->
         <activity android:name=".Lang101Fra"></activity>

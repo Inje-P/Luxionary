@@ -1,5 +1,6 @@
 package com.luan.luxionary;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -468,6 +469,7 @@ public class Lang101Eng_02_3 extends AppCompatActivity {
 
                 btnDown7.clearAnimation();
 
+                dialogEnd();
             }
         });
 
@@ -611,6 +613,33 @@ public class Lang101Eng_02_3 extends AppCompatActivity {
         snackbarLayout.setPadding(0, 0, 0, 0);
         snackbarLayout.addView(custom, 0);
         snackbar.show();
+    }
+
+    // End Dialog
+    private void dialogEnd() {
+        Dialog dialog = new Dialog(this, R.style.DialogStyle2);
+        dialog.setContentView(R.layout.lang101_eng_end);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.random_window);
+        dialog.setCancelable(false);
+
+        Button btnOk = dialog.findViewById(R.id.btn_ok);
+        btnOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                Intent intentEnd = new Intent(Lang101Eng_02_3.this, Lang101Eng.class);
+                intentEnd.putExtra("nick", strNick);
+                intentEnd.putExtra("pw", strPw);
+                intentEnd.putExtra("name", strName);
+                intentEnd.putExtra("email", strEmail);
+                intentEnd.putExtra("avatar", strAvatar);
+                startActivity(intentEnd);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+
+        dialog.show();
     }
 
     // Text Color

@@ -422,7 +422,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             Random random = new Random();
-                            randomChoice = random.nextInt(6) + 1;
+                            randomChoice = random.nextInt(7) + 1;
                             switch (randomChoice) {
                                 case 1:
                                     dialogEng();
@@ -442,9 +442,12 @@ public class MainActivity extends AppCompatActivity {
                                 case 6:
                                     dialogRus();
                                     break;
+                                case 7:
+                                    dialogTur();
+                                    break;
                             }
                         }
-                    }, 1200);
+                    }, 1400);
                     break;
                 case R.id.btnEng:
                     pageEng();
@@ -496,6 +499,7 @@ public class MainActivity extends AppCompatActivity {
         Integer ita = Color.parseColor("#0EDFA9");
         Integer spa = Color.parseColor("#FF9450");
         Integer rus = Color.parseColor("#9A89FF");
+        Integer tur = Color.parseColor("#FF5757");
 
         ValueAnimator colorAni1 = ValueAnimator.ofObject(new ArgbEvaluator(), white, eng);
         colorAni1.setDuration(200);
@@ -556,10 +560,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ValueAnimator colorAni7 = ValueAnimator.ofObject(new ArgbEvaluator(), rus, white);
+        ValueAnimator colorAni7 = ValueAnimator.ofObject(new ArgbEvaluator(), rus, tur);
         colorAni7.setDuration(200);
         colorAni7.setStartDelay(1200);
         colorAni7.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animator) {
+                btnRandom.setTextColor((Integer) animator.getAnimatedValue());
+            }
+        });
+
+        ValueAnimator colorAni8 = ValueAnimator.ofObject(new ArgbEvaluator(), tur, white);
+        colorAni8.setDuration(200);
+        colorAni8.setStartDelay(1400);
+        colorAni8.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
                 btnRandom.setTextColor((Integer) animator.getAnimatedValue());
@@ -573,6 +587,7 @@ public class MainActivity extends AppCompatActivity {
         colorAni5.start();
         colorAni6.start();
         colorAni7.start();
+        colorAni8.start();
     }
 
     // Random Dialog (English)

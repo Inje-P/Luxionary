@@ -89,7 +89,9 @@
                     android:textColor="@color/main_white"
                     android:textSize="18dp" />
             </LinearLayout>
+
         </LinearLayout>
+
     </RelativeLayout>
 
 </RelativeLayout>
