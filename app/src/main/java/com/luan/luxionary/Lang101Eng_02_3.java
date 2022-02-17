@@ -60,7 +60,7 @@ public class Lang101Eng_02_3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lang101_eng_02_2);
+        setContentView(R.layout.lang101_eng_02_3);
 
         // Data from SQLite
         Intent getData = getIntent();
@@ -123,9 +123,9 @@ public class Lang101Eng_02_3 extends AppCompatActivity {
         // anim
         aniLlQ1 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
         aniBtnDown1 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
-        aniBtnDown1.setStartOffset(400);
+        aniBtnDown1.setStartOffset(300);
         aniLlA1 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
-        aniLlA1.setStartOffset(800);
+        aniLlA1.setStartOffset(600);
 
         // 2nd Section
         llQ2 = (LinearLayout) findViewById(R.id.llQ2);
@@ -141,9 +141,9 @@ public class Lang101Eng_02_3 extends AppCompatActivity {
         // anim
         aniLlQ2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
         aniBtnDown2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
-        aniBtnDown2.setStartOffset(400);
+        aniBtnDown2.setStartOffset(300);
         aniLlA2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
-        aniLlA2.setStartOffset(800);
+        aniLlA2.setStartOffset(600);
 
         // 3rd Section
         llQ3 = (LinearLayout) findViewById(R.id.llQ3);
@@ -159,9 +159,9 @@ public class Lang101Eng_02_3 extends AppCompatActivity {
         // anim
         aniLlQ3 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
         aniBtnDown3 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
-        aniBtnDown3.setStartOffset(400);
+        aniBtnDown3.setStartOffset(300);
         aniLlA3 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
-        aniLlA3.setStartOffset(800);
+        aniLlA3.setStartOffset(600);
 
         // 4th Section
         llQ4 = (LinearLayout) findViewById(R.id.llQ4);
@@ -175,11 +175,11 @@ public class Lang101Eng_02_3 extends AppCompatActivity {
         btnYes4 = (Button) findViewById(R.id.btnYes4);
         btnNo4 = (Button) findViewById(R.id.btnNo4);
         // anim
-        aniLlQ2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
-        aniBtnDown2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
-        aniBtnDown2.setStartOffset(400);
-        aniLlA2 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
-        aniLlA2.setStartOffset(800);
+        aniLlQ4 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
+        aniBtnDown4 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
+        aniBtnDown4.setStartOffset(300);
+        aniLlA4 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
+        aniLlA4.setStartOffset(600);
 
         // 5th Section
         llQ5 = (LinearLayout) findViewById(R.id.llQ5);
@@ -195,9 +195,9 @@ public class Lang101Eng_02_3 extends AppCompatActivity {
         // anim
         aniLlQ5 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
         aniBtnDown5 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
-        aniBtnDown5.setStartOffset(400);
+        aniBtnDown5.setStartOffset(300);
         aniLlA5 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
-        aniLlA5.setStartOffset(800);
+        aniLlA5.setStartOffset(600);
 
         // 6th Section
         llQ6 = (LinearLayout) findViewById(R.id.llQ6);
@@ -213,9 +213,9 @@ public class Lang101Eng_02_3 extends AppCompatActivity {
         // anim
         aniLlQ6 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
         aniBtnDown6 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
-        aniBtnDown6.setStartOffset(400);
+        aniBtnDown6.setStartOffset(300);
         aniLlA6 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
-        aniLlA6.setStartOffset(800);
+        aniLlA6.setStartOffset(600);
 
         // 7th Section
         llQ7 = (LinearLayout) findViewById(R.id.llQ7);
@@ -231,96 +231,245 @@ public class Lang101Eng_02_3 extends AppCompatActivity {
         // anim
         aniLlQ7 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.descend_fast);
         aniBtnDown7 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.fadein);
-        aniBtnDown7.setStartOffset(400);
+        aniBtnDown7.setStartOffset(300);
         aniLlA7 = AnimationUtils.loadAnimation(Lang101Eng_02_3.this, R.anim.ascend_fast);
-        aniLlA7.setStartOffset(800);
+        aniLlA7.setStartOffset(600);
 
-        // Start
-//        aniTitle = new AlphaAnimation(0.0f, 1.0f);
-//        aniTitle.setDuration(300);
-//        aniTitle.setStartOffset(400);
-//        aniTitle.setRepeatMode(Animation.REVERSE);
-//        aniTitle.setRepeatCount(Animation.INFINITE);
-//        btnTitle.startAnimation(aniTitle);
-//        btnTitle.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                btnTitle.clearAnimation();
-//
-//                imgHorizontal1.setVisibility(View.VISIBLE);
-//                AnimatedVectorDrawable drawable1 = (AnimatedVectorDrawable) imgHorizontal1.getDrawable();
-//                drawable1.start();
-//
-//                imgVertical1.setVisibility(View.VISIBLE);
-//                AnimatedVectorDrawable drawable1v = (AnimatedVectorDrawable) imgVertical1.getDrawable();
-//                drawable1v.start();
-//
-//                btnText1_1.setVisibility(View.VISIBLE);
-//                btnText1_2.setVisibility(View.VISIBLE);
-//                btnText1_3.setVisibility(View.VISIBLE);
-//                btnText1_4.setVisibility(View.VISIBLE);
-//                btnText1_5.setVisibility(View.VISIBLE);
-//                btnText1_6.setVisibility(View.VISIBLE);
-//                btnText1_1.startAnimation(ani1_1);
-//                btnText1_2.startAnimation(ani1_2);
-//                btnText1_3.startAnimation(ani1_3);
-//                btnText1_4.startAnimation(ani1_4);
-//                btnText1_5.startAnimation(ani1_5);
-//                btnText1_6.startAnimation(ani1_6);
-//
-//                btnDown1.setVisibility(View.VISIBLE);
-//                aniBtnDown1 = new AlphaAnimation(0.0f, 1.0f);
-//                aniBtnDown1.setDuration(200);
-//                aniBtnDown1.setStartOffset(400);
-//                aniBtnDown1.setRepeatMode(Animation.REVERSE);
-//                aniBtnDown1.setRepeatCount(Animation.INFINITE);
-//                btnDown1.startAnimation(aniBtnDown1);
-//            }
-//        });
+        // Question 1
+        llQ1.startAnimation(aniLlQ1);
+        btnDown1.startAnimation(aniBtnDown1);
+        llA1.startAnimation(aniLlA1);
+        aniBtnDown1 = new AlphaAnimation(0.0f, 1.0f);
+        aniBtnDown1.setDuration(300);
+        aniBtnDown1.setStartOffset(400);
+        aniBtnDown1.setRepeatMode(Animation.REVERSE);
+        aniBtnDown1.setRepeatCount(Animation.INFINITE);
+        btnDown1.startAnimation(aniBtnDown1);
+        btnYes1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCorrect("정답입니다.");
 
-//        btnDown1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                btnDown1.clearAnimation();
-//                btnDown1.setVisibility(View.INVISIBLE);
-//
-//                imgHorizontal2.setVisibility(View.VISIBLE);
-//                AnimatedVectorDrawable drawable2 = (AnimatedVectorDrawable) imgHorizontal2.getDrawable();
-//                drawable2.start();
-//
-//                imgVertical2.setVisibility(View.VISIBLE);
-//                AnimatedVectorDrawable drawable2v = (AnimatedVectorDrawable) imgVertical2.getDrawable();
-//                drawable2v.start();
-//
-//                btnText2_1.setVisibility(View.VISIBLE);
-//                btnText2_2.setVisibility(View.VISIBLE);
-//                btnText2_3.setVisibility(View.VISIBLE);
-//                btnText2_4.setVisibility(View.VISIBLE);
-//                btnText2_5.setVisibility(View.VISIBLE);
-//                btnText2_6.setVisibility(View.VISIBLE);
-//                btnText2_1.startAnimation(ani2_1);
-//                btnText2_2.startAnimation(ani2_2);
-//                btnText2_3.startAnimation(ani2_3);
-//                btnText2_4.startAnimation(ani2_4);
-//                btnText2_5.startAnimation(ani2_5);
-//                btnText2_6.startAnimation(ani2_6);
-//
-//                btnDown2.setVisibility(View.VISIBLE);
-//                aniBtnDown2 = new AlphaAnimation(0.0f, 1.0f);
-//                aniBtnDown2.setDuration(200);
-//                aniBtnDown2.setStartOffset(400);
-//                aniBtnDown2.setRepeatMode(Animation.REVERSE);
-//                aniBtnDown2.setRepeatCount(Animation.INFINITE);
-//                btnDown2.startAnimation(aniBtnDown2);
-//            }
-//        });
+                btnDown1.clearAnimation();
 
-//        btnEnd.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
+                imgHorizontal1.setVisibility(View.VISIBLE);
+                AnimatedVectorDrawable drawable1 = (AnimatedVectorDrawable) imgHorizontal1.getDrawable();
+                drawable1.start();
+
+                llQ2.setVisibility(View.VISIBLE);
+                btnDown2.setVisibility(View.VISIBLE);
+                llA2.setVisibility(View.VISIBLE);
+
+                llQ2.startAnimation(aniLlQ2);
+                btnDown2.startAnimation(aniBtnDown2);
+                llA2.startAnimation(aniLlA2);
+
+                aniBtnDown2 = new AlphaAnimation(0.0f, 1.0f);
+                aniBtnDown2.setDuration(300);
+                aniBtnDown2.setStartOffset(400);
+                aniBtnDown2.setRepeatMode(Animation.REVERSE);
+                aniBtnDown2.setRepeatCount(Animation.INFINITE);
+                btnDown2.startAnimation(aniBtnDown2);
+            }
+        });
+        btnNo1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showIncorrect("틀렸습니다.");
+            }
+        });
+
+        // Question 2
+        btnYes2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showIncorrect("틀렸습니다.");
+            }
+        });
+        btnNo2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCorrect("정답입니다.");
+
+                btnDown2.clearAnimation();
+
+                imgHorizontal2.setVisibility(View.VISIBLE);
+                AnimatedVectorDrawable drawable2 = (AnimatedVectorDrawable) imgHorizontal2.getDrawable();
+                drawable2.start();
+
+                llQ3.setVisibility(View.VISIBLE);
+                btnDown3.setVisibility(View.VISIBLE);
+                llA3.setVisibility(View.VISIBLE);
+
+                llQ3.startAnimation(aniLlQ3);
+                btnDown3.startAnimation(aniBtnDown3);
+                llA3.startAnimation(aniLlA3);
+
+                aniBtnDown3 = new AlphaAnimation(0.0f, 1.0f);
+                aniBtnDown3.setDuration(300);
+                aniBtnDown3.setStartOffset(400);
+                aniBtnDown3.setRepeatMode(Animation.REVERSE);
+                aniBtnDown3.setRepeatCount(Animation.INFINITE);
+                btnDown3.startAnimation(aniBtnDown3);
+            }
+        });
+
+        // Question 3
+        btnYes3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showIncorrect("틀렸습니다.");
+            }
+        });
+        btnNo3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCorrect("정답입니다.");
+
+                btnDown3.clearAnimation();
+
+                imgHorizontal3.setVisibility(View.VISIBLE);
+                AnimatedVectorDrawable drawable3 = (AnimatedVectorDrawable) imgHorizontal3.getDrawable();
+                drawable3.start();
+
+                llQ4.setVisibility(View.VISIBLE);
+                btnDown4.setVisibility(View.VISIBLE);
+                llA4.setVisibility(View.VISIBLE);
+
+                llQ4.startAnimation(aniLlQ4);
+                btnDown4.startAnimation(aniBtnDown4);
+                llA4.startAnimation(aniLlA4);
+
+                aniBtnDown4 = new AlphaAnimation(0.0f, 1.0f);
+                aniBtnDown4.setDuration(300);
+                aniBtnDown4.setStartOffset(400);
+                aniBtnDown4.setRepeatMode(Animation.REVERSE);
+                aniBtnDown4.setRepeatCount(Animation.INFINITE);
+                btnDown4.startAnimation(aniBtnDown4);
+            }
+        });
+
+        // Question 4
+        btnYes4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCorrect("정답입니다.");
+
+                btnDown4.clearAnimation();
+
+                imgHorizontal4.setVisibility(View.VISIBLE);
+                AnimatedVectorDrawable drawable4 = (AnimatedVectorDrawable) imgHorizontal4.getDrawable();
+                drawable4.start();
+
+                llQ5.setVisibility(View.VISIBLE);
+                btnDown5.setVisibility(View.VISIBLE);
+                llA5.setVisibility(View.VISIBLE);
+
+                llQ5.startAnimation(aniLlQ5);
+                btnDown5.startAnimation(aniBtnDown5);
+                llA5.startAnimation(aniLlA5);
+
+                aniBtnDown5 = new AlphaAnimation(0.0f, 1.0f);
+                aniBtnDown5.setDuration(300);
+                aniBtnDown5.setStartOffset(400);
+                aniBtnDown5.setRepeatMode(Animation.REVERSE);
+                aniBtnDown5.setRepeatCount(Animation.INFINITE);
+                btnDown5.startAnimation(aniBtnDown5);
+            }
+        });
+        btnNo4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showIncorrect("틀렸습니다.");
+            }
+        });
+
+        // Question 5
+        btnYes5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showIncorrect("틀렸습니다.");
+            }
+        });
+        btnNo5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCorrect("정답입니다.");
+
+                btnDown5.clearAnimation();
+
+                imgHorizontal5.setVisibility(View.VISIBLE);
+                AnimatedVectorDrawable drawable5 = (AnimatedVectorDrawable) imgHorizontal5.getDrawable();
+                drawable5.start();
+
+                llQ6.setVisibility(View.VISIBLE);
+                btnDown6.setVisibility(View.VISIBLE);
+                llA6.setVisibility(View.VISIBLE);
+
+                llQ6.startAnimation(aniLlQ6);
+                btnDown6.startAnimation(aniBtnDown6);
+                llA6.startAnimation(aniLlA6);
+
+                aniBtnDown6 = new AlphaAnimation(0.0f, 1.0f);
+                aniBtnDown6.setDuration(300);
+                aniBtnDown6.setStartOffset(400);
+                aniBtnDown6.setRepeatMode(Animation.REVERSE);
+                aniBtnDown6.setRepeatCount(Animation.INFINITE);
+                btnDown6.startAnimation(aniBtnDown6);
+            }
+        });
+
+        // Question 6
+        btnYes6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCorrect("정답입니다.");
+
+                btnDown6.clearAnimation();
+
+                imgHorizontal6.setVisibility(View.VISIBLE);
+                AnimatedVectorDrawable drawable6 = (AnimatedVectorDrawable) imgHorizontal6.getDrawable();
+                drawable6.start();
+
+                llQ7.setVisibility(View.VISIBLE);
+                btnDown7.setVisibility(View.VISIBLE);
+                llA7.setVisibility(View.VISIBLE);
+
+                llQ7.startAnimation(aniLlQ7);
+                btnDown7.startAnimation(aniBtnDown7);
+                llA7.startAnimation(aniLlA7);
+
+                aniBtnDown7 = new AlphaAnimation(0.0f, 1.0f);
+                aniBtnDown7.setDuration(300);
+                aniBtnDown7.setStartOffset(400);
+                aniBtnDown7.setRepeatMode(Animation.REVERSE);
+                aniBtnDown7.setRepeatCount(Animation.INFINITE);
+                btnDown7.startAnimation(aniBtnDown7);
+            }
+        });
+        btnNo6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showIncorrect("틀렸습니다.");
+            }
+        });
+
+        // Question 7
+        btnYes7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showIncorrect("틀렸습니다.");
+            }
+        });
+        btnNo7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCorrect("정답입니다.");
+
+                btnDown7.clearAnimation();
+
+            }
+        });
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -428,12 +577,35 @@ public class Lang101Eng_02_3 extends AppCompatActivity {
         }
     };
 
+    // Snackbar : Correct
+    public void showCorrect(String str) {
+        layoutContainer = findViewById(R.id.layoutContainer);
+        Snackbar snackbar = Snackbar.make(layoutContainer, "", Snackbar.LENGTH_SHORT);
+        View custom = getLayoutInflater().inflate(R.layout.snackbar_correct, null);
+        snackbar.getView().setBackgroundColor(Color.TRANSPARENT);
+
+        TextView tvText = (TextView) custom.findViewById(R.id.tvText);
+        tvText.setText(str);
+        tvText.setTextColor(ContextCompat.getColor(this, R.color.main_white));
+        tvText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+
+        Snackbar.SnackbarLayout snackbarLayout = (Snackbar.SnackbarLayout) snackbar.getView();
+        snackbarLayout.setPadding(0, 0, 0, 0);
+        snackbarLayout.addView(custom, 0);
+        snackbar.show();
+    }
+
     // Snackbar : Incorrect
-    public void sbIncorrect() {
+    public void showIncorrect(String str) {
         layoutContainer = findViewById(R.id.layoutContainer);
         Snackbar snackbar = Snackbar.make(layoutContainer, "", Snackbar.LENGTH_SHORT);
         View custom = getLayoutInflater().inflate(R.layout.snackbar_incorrect, null);
         snackbar.getView().setBackgroundColor(Color.TRANSPARENT);
+
+        TextView tvText = (TextView) custom.findViewById(R.id.tvText);
+        tvText.setText(str);
+        tvText.setTextColor(ContextCompat.getColor(this, R.color.main_white));
+        tvText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
 
         Snackbar.SnackbarLayout snackbarLayout = (Snackbar.SnackbarLayout) snackbar.getView();
         snackbarLayout.setPadding(0, 0, 0, 0);

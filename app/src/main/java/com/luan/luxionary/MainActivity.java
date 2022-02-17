@@ -39,10 +39,10 @@ public class MainActivity extends AppCompatActivity {
     Button btnRandom;
     int randomChoice = 0;
 
-    LinearLayout llEngBox, llFraBox, llDeuBox, llItaBox, llSpaBox, llRusBox;
-    LinearLayout llEngImage, llFraImage, llDeuImage, llItaImage, llSpaImage, llRusImage;
-    ImageButton btnEng, btnFra, btnDeu, btnSpa, btnIta, btnRus;
-    TextView tvEng, tvFra, tvDeu, tvIta, tvSpa, tvRus;
+    LinearLayout llEngBox, llFraBox, llDeuBox, llItaBox, llSpaBox, llRusBox, llTurBox;
+    LinearLayout llEngImage, llFraImage, llDeuImage, llItaImage, llSpaImage, llRusImage, llTurImage;
+    ImageButton btnEng, btnFra, btnDeu, btnSpa, btnIta, btnRus, btnTur;
+    TextView tvEng, tvFra, tvDeu, tvIta, tvSpa, tvRus, tvTur;
 
     Animation aniTouch;
     Animation aniLlTop, aniLlProfile, aniTitle1, aniTitle2, aniLlAvatar, aniAvatar;
@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
     Animation aniLlBanner;
     Animation aniBanner1, aniBanner2, aniLlRandom, aniBtnRandom;
 
-    Animation aniLlEngBox, aniLlFraBox, aniLlDeuBox, aniLlSpaBox, aniLlItaBox, aniLlRusBox;
-    Animation aniLlEngImage, aniLlFraImage, aniLlDeuImage, aniLlSpaImage, aniLlItaImage, aniLlRusImage;
-    Animation aniBtnEng, aniBtnFra, aniBtnDeu, aniBtnSpa, aniBtnIta, aniBtnRus;
-    Animation aniTvEng, aniTvFra, aniTvDeu, aniTvSpa, aniTvIta, aniTvRus;
+    Animation aniLlEngBox, aniLlFraBox, aniLlDeuBox, aniLlSpaBox, aniLlItaBox, aniLlRusBox, aniLlTurBox;
+    Animation aniLlEngImage, aniLlFraImage, aniLlDeuImage, aniLlSpaImage, aniLlItaImage, aniLlRusImage, aniLlTurImage;
+    Animation aniBtnEng, aniBtnFra, aniBtnDeu, aniBtnSpa, aniBtnIta, aniBtnRus, aniBtnTur;
+    Animation aniTvEng, aniTvFra, aniTvDeu, aniTvSpa, aniTvIta, aniTvRus, aniTvTur;
 
     // Sound
     MediaPlayer soundEng, soundFra, soundDeu, soundIta, soundSpa, soundRus;
@@ -231,18 +231,21 @@ public class MainActivity extends AppCompatActivity {
         llItaBox = (LinearLayout) findViewById(R.id.llItaBox);
         llSpaBox = (LinearLayout) findViewById(R.id.llSpaBox);
         llRusBox = (LinearLayout) findViewById(R.id.llRusBox);
+        llTurBox = (LinearLayout) findViewById(R.id.llTurBox);
         llEngImage = (LinearLayout) findViewById(R.id.llEngImage);
         llFraImage = (LinearLayout) findViewById(R.id.llFraImage);
         llDeuImage = (LinearLayout) findViewById(R.id.llDeuImage);
         llItaImage = (LinearLayout) findViewById(R.id.llItaImage);
         llSpaImage = (LinearLayout) findViewById(R.id.llSpaImage);
         llRusImage = (LinearLayout) findViewById(R.id.llRusImage);
+        llTurImage = (LinearLayout) findViewById(R.id.llTurImage);
         tvEng = (TextView) findViewById(R.id.tvEng);
         tvFra = (TextView) findViewById(R.id.tvFra);
         tvDeu = (TextView) findViewById(R.id.tvDeu);
         tvIta = (TextView) findViewById(R.id.tvIta);
         tvSpa = (TextView) findViewById(R.id.tvSpa);
         tvRus = (TextView) findViewById(R.id.tvRus);
+        tvTur = (TextView) findViewById(R.id.tvTur);
 
         aniLlEngBox = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         aniLlFraBox = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
@@ -255,6 +258,8 @@ public class MainActivity extends AppCompatActivity {
         aniLlSpaBox.setStartOffset(800);
         aniLlRusBox = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         aniLlRusBox.setStartOffset(1000);
+        aniLlTurBox = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
+        aniLlTurBox.setStartOffset(1200);
         aniLlEngImage = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniLlFraImage = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniLlFraImage.setStartOffset(200);
@@ -266,6 +271,8 @@ public class MainActivity extends AppCompatActivity {
         aniLlSpaImage.setStartOffset(800);
         aniLlRusImage = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniLlRusImage.setStartOffset(1000);
+        aniLlTurImage = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
+        aniLlTurImage.setStartOffset(1200);
         aniTvEng = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniTvEng.setStartOffset(600);
         aniTvFra = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
@@ -278,6 +285,8 @@ public class MainActivity extends AppCompatActivity {
         aniTvSpa.setStartOffset(1400);
         aniTvRus = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniTvRus.setStartOffset(1600);
+        aniTvTur = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
+        aniTvTur.setStartOffset(1600);
 
         llEngBox.startAnimation(aniLlEngBox);
         llFraBox.startAnimation(aniLlFraBox);
@@ -285,18 +294,21 @@ public class MainActivity extends AppCompatActivity {
         llItaBox.startAnimation(aniLlItaBox);
         llSpaBox.startAnimation(aniLlSpaBox);
         llRusBox.startAnimation(aniLlRusBox);
+        llTurBox.startAnimation(aniLlTurBox);
         llEngImage.startAnimation(aniLlEngImage);
         llFraImage.startAnimation(aniLlFraImage);
         llDeuImage.startAnimation(aniLlDeuImage);
         llItaImage.startAnimation(aniLlItaImage);
         llSpaImage.startAnimation(aniLlSpaImage);
         llRusImage.startAnimation(aniLlRusImage);
+        llTurImage.startAnimation(aniLlTurImage);
         tvEng.startAnimation(aniTvEng);
         tvFra.startAnimation(aniTvFra);
         tvDeu.startAnimation(aniTvDeu);
         tvIta.startAnimation(aniTvIta);
         tvSpa.startAnimation(aniTvSpa);
         tvRus.startAnimation(aniTvRus);
+        tvTur.startAnimation(aniTvTur);
 
         // Button
         btnEng = (ImageButton) findViewById(R.id.btnEng);
@@ -305,6 +317,7 @@ public class MainActivity extends AppCompatActivity {
         btnSpa = (ImageButton) findViewById(R.id.btnSpa);
         btnIta = (ImageButton) findViewById(R.id.btnIta);
         btnRus = (ImageButton) findViewById(R.id.btnRus);
+        btnTur = (ImageButton) findViewById(R.id.btnTur);
         aniBtnEng = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniBtnEng.setStartOffset(600);
         aniBtnFra = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
@@ -317,18 +330,22 @@ public class MainActivity extends AppCompatActivity {
         aniBtnSpa.setStartOffset(1400);
         aniBtnRus = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniBtnRus.setStartOffset(1600);
+        aniBtnTur = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
+        aniBtnTur.setStartOffset(1800);
         btnEng.startAnimation(aniBtnEng);
         btnFra.startAnimation(aniBtnFra);
         btnDeu.startAnimation(aniBtnDeu);
         btnSpa.startAnimation(aniBtnSpa);
         btnIta.startAnimation(aniBtnIta);
         btnRus.startAnimation(aniBtnRus);
+        btnTur.startAnimation(aniBtnTur);
         btnEng.setOnClickListener(mClickListener);
         btnFra.setOnClickListener(mClickListener);
         btnDeu.setOnClickListener(mClickListener);
         btnSpa.setOnClickListener(mClickListener);
         btnIta.setOnClickListener(mClickListener);
         btnRus.setOnClickListener(mClickListener);
+        btnTur.setOnClickListener(mClickListener);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -446,6 +463,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btnRus:
                     pageRus();
+                    break;
+                case R.id.btnTur:
+//                    pageTur();
                     break;
                 // Footer
                 case R.id.btnSidebar:
@@ -717,6 +737,33 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
+    // Random Dialog (Turkish)
+    private void dialogTur() {
+        Dialog dialog = new Dialog(this, R.style.DialogStyle2);
+        dialog.setContentView(R.layout.dialog_tur);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.random_window);
+        dialog.setCancelable(false);
+
+        ImageView btnClose = dialog.findViewById(R.id.btn_close);
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        ImageView btnYes = dialog.findViewById(R.id.btn_yes);
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+//                pageTur();
+            }
+        });
+
+        dialog.show();
+    }
+
     // Avatar Dialog
     private void dialogAvatar() {
         Dialog dialog = new Dialog(this, R.style.DialogStyle);
@@ -825,6 +872,17 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
     }
+
+//    public void pageTur() {
+//        Intent intentTur = new Intent(MainActivity.this, IntroTur.class);
+//        intentTur.putExtra("username", username);
+//        intentTur.putExtra("email", email);
+//        intentTur.putExtra("profile", profile);
+//        intentTur.putExtra("avatar", avatar);
+//        startActivity(intentTur);
+//        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+//        finish();
+//    }
 
     public void setColorStateList(View view, int selectedColor, int defaultColor) {
         int[][] states = new int[][]{

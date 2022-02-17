@@ -360,6 +360,15 @@ public class Lang101Eng_02_2 extends AppCompatActivity {
         btnEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intentEnd = new Intent(Lang101Eng_02_2.this, Lang101Eng_02_3.class);
+                intentEnd.putExtra("nick", strNick);
+                intentEnd.putExtra("pw", strPw);
+                intentEnd.putExtra("name", strName);
+                intentEnd.putExtra("email", strEmail);
+                intentEnd.putExtra("avatar", strAvatar);
+                startActivity(intentEnd);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
 
             }
         });

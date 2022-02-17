@@ -172,7 +172,7 @@
                                 android:gravity="center"
                                 android:paddingBottom="5dp"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;I'm Noah.&quot;"
+                                android:text="&quot;Are you Noah?&quot;"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp" />
@@ -266,7 +266,7 @@
                             android:gravity="center"
                             android:paddingBottom="5dp"
                             android:stateListAnimator="@null"
-                            android:text="You are Lily."
+                            android:text="My name is Lily."
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -319,7 +319,7 @@
                                 android:gravity="center"
                                 android:paddingBottom="5dp"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;You're Ashley.&quot;"
+                                android:text="&quot;Is your name Ashley?&quot;"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp" />
@@ -466,7 +466,7 @@
                                 android:gravity="center"
                                 android:paddingBottom="5dp"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;He's Oliver.&quot;"
+                                android:text="&quot;Is he Oliver?&quot;"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp" />
@@ -560,7 +560,7 @@
                             android:gravity="center"
                             android:paddingBottom="5dp"
                             android:stateListAnimator="@null"
-                            android:text="She is Olivia."
+                            android:text="She's Evelyn."
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -613,7 +613,7 @@
                                 android:gravity="center"
                                 android:paddingBottom="5dp"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;She isn't Evelyn.&quot;"
+                                android:text="&quot;Is she Evelyn?&quot;"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp" />
@@ -707,7 +707,7 @@
                             android:gravity="center"
                             android:paddingBottom="5dp"
                             android:stateListAnimator="@null"
-                            android:text="We are family."
+                            android:text="We are satisfied."
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -760,7 +760,7 @@
                                 android:gravity="center"
                                 android:paddingBottom="5dp"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;We aren't family.&quot;"
+                                android:text="&quot;Are you disappointed?&quot;"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp" />
@@ -854,7 +854,7 @@
                             android:gravity="center"
                             android:paddingBottom="5dp"
                             android:stateListAnimator="@null"
-                            android:text="You are friends."
+                            android:text="I'm from America."
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -907,7 +907,7 @@
                                 android:gravity="center"
                                 android:paddingBottom="5dp"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;You are friends.&quot;"
+                                android:text="&quot;Are you an American?&quot;"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp" />
@@ -1001,7 +1001,7 @@
                             android:gravity="center"
                             android:paddingBottom="5dp"
                             android:stateListAnimator="@null"
-                            android:text="They are collegues."
+                            android:text="They aren't collegues."
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -1054,7 +1054,7 @@
                                 android:gravity="center"
                                 android:paddingBottom="5dp"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;They aren't collegues.&quot;"
+                                android:text="&quot;Are they collegues?&quot;"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp" />

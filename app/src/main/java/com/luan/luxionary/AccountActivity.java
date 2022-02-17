@@ -27,9 +27,9 @@ public class AccountActivity extends AppCompatActivity {
     ImageView imgProfile;
     EditText etUsername, etEmail;
     Button btnSave;
-    Pattern pattern = android.util.Patterns.EMAIL_ADDRESS;
     LinearLayout layoutTop, layoutPi, layoutBtn;
     Animation aniLayoutTop, aniLayoutPi, aniLayoutBtn;
+    TextView tvMyLux, tvGemEng, tvGemFra, tvGemDeu, tvGemIta, tvGemSpa, tvGemRus, tvGemTur;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -118,6 +118,22 @@ public class AccountActivity extends AppCompatActivity {
         } else {
             etEmail.setText(email);
         }
+
+        /*
+        * My Lux
+        * */
+        tvMyLux = (TextView) findViewById(R.id.tvMyLux);
+
+        /*
+         * My Gems
+         * */
+        tvGemEng = (TextView) findViewById(R.id.tvGemEng);
+        tvGemFra = (TextView) findViewById(R.id.tvGemFra);
+        tvGemDeu = (TextView) findViewById(R.id.tvGemDeu);
+        tvGemIta = (TextView) findViewById(R.id.tvGemIta);
+        tvGemSpa = (TextView) findViewById(R.id.tvGemSpa);
+        tvGemRus = (TextView) findViewById(R.id.tvGemRus);
+        tvGemTur = (TextView) findViewById(R.id.tvGemTur);
 
         // Buttons
         btnSave = (Button) findViewById(R.id.btnSave);
