@@ -29,7 +29,7 @@ public class AccountActivity extends AppCompatActivity {
     Button btnSave;
     LinearLayout layoutTop, layoutPi, layoutBtn;
     Animation aniLayoutTop, aniLayoutPi, aniLayoutBtn;
-    TextView tvMyLux, tvGemEng, tvGemFra, tvGemDeu, tvGemIta, tvGemSpa, tvGemRus, tvGemTur;
+    TextView tvMyLux, tvGemEng, tvGemFra, tvGemDeu, tvGemIta, tvGemSpa, tvGemRus;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -133,7 +133,6 @@ public class AccountActivity extends AppCompatActivity {
         tvGemIta = (TextView) findViewById(R.id.tvGemIta);
         tvGemSpa = (TextView) findViewById(R.id.tvGemSpa);
         tvGemRus = (TextView) findViewById(R.id.tvGemRus);
-        tvGemTur = (TextView) findViewById(R.id.tvGemTur);
 
         // Buttons
         btnSave = (Button) findViewById(R.id.btnSave);
@@ -147,6 +146,21 @@ public class AccountActivity extends AppCompatActivity {
         btnHome.setOnClickListener(mClickListener);
         btnUpdate.setOnClickListener(mClickListener);
 
+    }
+
+    // Back Button
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intentBack = new Intent(AccountActivity.this, MainActivity.class);
+        intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intentBack.putExtra("username", username);
+        intentBack.putExtra("email", email);
+        intentBack.putExtra("profile", profile);
+        intentBack.putExtra("avatar", avatar);
+        startActivity(intentBack);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
     }
 
     // Sidebar
