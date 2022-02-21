@@ -135,11 +135,11 @@
                                         android:id="@+id/tvTitle1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:fontFamily="@font/playfairdisplay_900"
+                                        android:fontFamily="@font/nunitosans_900"
                                         android:gravity="center_vertical"
                                         android:text="Aussprache Ⅰ"
                                         android:textColor="@color/main_text"
-                                        android:textSize="28dp"></TextView>
+                                        android:textSize="30dp"></TextView>
 
                                 </LinearLayout>
 
