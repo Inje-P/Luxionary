@@ -184,7 +184,7 @@
                                             android:layout_height="match_parent"
                                             android:layout_margin="10dp"
                                             android:layout_weight="6"
-                                            android:background="@drawable/pastel_ripple_white"
+                                            android:background="@drawable/ripple_white"
                                             android:elevation="3dp"
                                             android:fontFamily="@font/pretendard_800"
                                             android:gravity="center"
@@ -213,7 +213,7 @@
                                             android:layout_height="match_parent"
                                             android:layout_margin="10dp"
                                             android:layout_weight="6"
-                                            android:background="@drawable/pastel_ripple_white"
+                                            android:background="@drawable/ripple_white"
                                             android:elevation="3dp"
                                             android:fontFamily="@font/pretendard_800"
                                             android:gravity="center"
@@ -245,7 +245,7 @@
                                         android:text="FEELING LUXIONARY"
                                         android:textColor="@color/main_white"
                                         android:elevation="3dp"
-                                        android:background="@drawable/pastel_ripple_black"
+                                        android:background="@drawable/ripple_black"
                                         android:textSize="55dp"></Button>
 
                                 </LinearLayout>
@@ -260,7 +260,7 @@
                                     android:paddingBottom="20dp"
                                     android:paddingRight="20dp"
                                     android:paddingLeft="30dp"
-                                    android:background="@drawable/pastel_ripple_white"
+                                    android:background="@drawable/ripple_white"
                                     android:elevation="3dp"
                                     android:gravity="center_vertical"
                                     android:orientation="vertical">

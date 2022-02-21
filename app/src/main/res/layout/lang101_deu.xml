@@ -55,11 +55,11 @@
                                 android:id="@+id/tvTitle1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:fontFamily="@font/nunitosans_900"
-                                android:gravity="bottom"
-                                android:text="DEUTSCH 101"
-                                android:textColor="@color/deu_background"
-                                android:textSize="32dp"></TextView>
+                                android:fontFamily="@font/playfairdisplay_900"
+                                android:gravity="center|bottom"
+                                android:text="DEUTSCH IOI"
+                                android:textColor="@color/main_text"
+                                android:textSize="45dp"></TextView>
 
                         </LinearLayout>
 
@@ -72,36 +72,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/pretendard_700"
+                                android:gravity="center"
                                 android:text="독일어 첫걸음"
                                 android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:gravity="bottom"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingBottom="20dp">
-
-                        <LinearLayout
-                            android:id="@+id/llAvatar"
-                            android:layout_width="250px"
-                            android:layout_height="250px"
-                            android:background="@drawable/custom_main">
-
-                            <ImageView
-                                android:id="@+id/imgAvatar"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:padding="10dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/avt_male1"></ImageView>
+                                android:textSize="18dp"></TextView>
 
                         </LinearLayout>
 
@@ -165,13 +139,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu_full"
+                                android:background="@drawable/ripple_deu_full"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="DAS ALPHABET"
-                                android:textColor="@color/main_white"
+                                android:textColor="@color/deu_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -200,14 +174,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="1. DIE BEGRÜßUNG"
                                 android:textAllCaps="false"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -235,13 +209,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="2. DIE ZAHLEN"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -269,13 +243,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="3. DATUM UND UHRZEIT"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -303,13 +277,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="4. DIE FAMILIE"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -337,13 +311,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="5. DER KÖRPER"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -371,13 +345,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="6. AUSWÄRTS ESSEN"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -405,13 +379,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="7. DAS ESSEN"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -439,13 +413,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="8. DIE ADJEKTIVE"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -473,13 +447,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="9. DIE ORTE"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -507,13 +481,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="10. DIE PRÄPOSITIONEN"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -541,13 +515,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="11. DAS KOCHEN"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -575,13 +549,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="12. DAS EINKAUFEN"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -609,13 +583,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="13. DIE LÄNDER"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -643,13 +617,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu"
+                                android:background="@drawable/ripple_deu"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="14. DAS REISEN"
-                                android:textColor="@color/deu_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -678,14 +652,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_deu_full"
+                                android:background="@drawable/ripple_deu_full"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="GRUNDLEGENDE VERBEN"
-                                android:textColor="@color/main_white"
-                                android:textSize="25dp"></Button>
+                                android:textColor="@color/deu_background"
+                                android:textSize="23dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvDeu16"

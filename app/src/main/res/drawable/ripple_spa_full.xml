@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/main_white"> <!-- Ripple Effect 색상 -->
+    android:color="@color/spa_background"> <!-- Ripple Effect 색상 -->
 
     <!-- 배경색 -->
     <item android:id="@+id/pastel_ripple_spa_full">
         <shape android:shape="rectangle">
-            <solid android:color="@color/spa_background"/>
-            <corners android:radius="10dp"/>
+            <solid android:color="@color/main_white"/>
+            <stroke android:color="@color/spa_background" android:width="2dp"/>
+            <corners android:radius="3dp"/>
         </shape>
     </item>
 

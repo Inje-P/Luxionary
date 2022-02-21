@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:background="@color/main_white"
         android:orientation="vertical"
-        tools:context=".Lang101Rus">
+        tools:context=".Lang101Eng">
 
         <!-- Profile -->
         <LinearLayout
@@ -57,7 +57,7 @@
                                 android:layout_height="match_parent"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center|bottom"
-                                android:text="РУССКИЙ IOI"
+                                android:text="TÜRKÇE IOI"
                                 android:textColor="@color/main_text"
                                 android:textSize="45dp"></TextView>
 
@@ -73,7 +73,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="러시아어 첫걸음"
+                                android:text="터키어 첫걸음"
                                 android:textColor="@color/main_text"
                                 android:textSize="18dp"></TextView>
 
@@ -124,31 +124,31 @@
 
                         <Space
                             android:layout_width="match_parent"
-                            android:layout_height="20dp" />
+                            android:layout_height="20dp"/>
 
                         <!-- 1 -->
                         <LinearLayout
-                            android:id="@+id/llRus1"
+                            android:id="@+id/llTur1"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus1"
+                                android:id="@+id/btnTur1"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus_full"
-                                android:elevation="2dp"
+                                android:background="@drawable/ripple_tur_full"
+                                android:elevation="3dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="АЛФАВИТ"
-                                android:textColor="@color/rus_background"
+                                android:text="ALFABE"
+                                android:textColor="@color/tur_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus1"
+                                android:id="@+id/tvTur1"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -161,28 +161,28 @@
 
                         <!-- 2 -->
                         <LinearLayout
-                            android:id="@+id/llRus2"
+                            android:id="@+id/llTur2"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus2"
+                                android:id="@+id/btnTur2"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="1. ПРИВЕТСТВИЕ"
+                                android:text="1. SELAMLAMA"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus2"
+                                android:id="@+id/tvTur2"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -195,28 +195,28 @@
 
                         <!-- 3 -->
                         <LinearLayout
-                            android:id="@+id/llRus3"
+                            android:id="@+id/llTur3"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus3"
+                                android:id="@+id/btnTur3"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="2. ЧИСЛА"
+                                android:text="2. SAYILAR"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus3"
+                                android:id="@+id/tvTur3"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -229,28 +229,28 @@
 
                         <!-- 4 -->
                         <LinearLayout
-                            android:id="@+id/llRus4"
+                            android:id="@+id/llTur4"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus4"
+                                android:id="@+id/btnTur4"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="3. ДАТА И ВРЕМЯ"
+                                android:text="3. TARİH VE SAAT"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus4"
+                                android:id="@+id/tvTur4"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -263,28 +263,28 @@
 
                         <!-- 5 -->
                         <LinearLayout
-                            android:id="@+id/llRus5"
+                            android:id="@+id/llTur5"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus5"
+                                android:id="@+id/btnTur5"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="4. СЕМЬЯ"
+                                android:text="4. AİLE"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus5"
+                                android:id="@+id/tvTur5"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -297,28 +297,28 @@
 
                         <!-- 6 -->
                         <LinearLayout
-                            android:id="@+id/llRus6"
+                            android:id="@+id/llTur6"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus6"
+                                android:id="@+id/btnTur6"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="5. ТЕЛО"
+                                android:text="5. GÖVDE"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus6"
+                                android:id="@+id/tvTur6"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -331,28 +331,28 @@
 
                         <!-- 7 -->
                         <LinearLayout
-                            android:id="@+id/llRus7"
+                            android:id="@+id/llTur7"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus7"
+                                android:id="@+id/btnTur7"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="6. ПИТАНИЕ ВНЕ ДОМА"
+                                android:text="6. DIŞARIDA YEMEK"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus7"
+                                android:id="@+id/tvTur7"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -365,28 +365,28 @@
 
                         <!-- 8 -->
                         <LinearLayout
-                            android:id="@+id/llRus8"
+                            android:id="@+id/llTur8"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus8"
+                                android:id="@+id/btnTur8"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="7. ЕДЫ"
+                                android:text="7. GIDALAR"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus8"
+                                android:id="@+id/tvTur8"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -399,62 +399,62 @@
 
                         <!-- 9 -->
                         <LinearLayout
-                            android:id="@+id/llRus9"
+                            android:id="@+id/llTur9"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus9"
+                                android:id="@+id/btnTur9"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="8. ПРИЛАГАТЕЛЬНЫЕ"
+                                android:text="8. SIFATLAR"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus9"
+                                android:id="@+id/tvTur9"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
                                 android:text="형용사"
                                 android:textColor="@color/main_text"
-                                android:textSize="15dp"></TextView>
+                                android:textSize="16dp"></TextView>
 
                         </LinearLayout>
 
                         <!-- 10 -->
                         <LinearLayout
-                            android:id="@+id/llRus10"
+                            android:id="@+id/llTur10"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus10"
+                                android:id="@+id/btnTur10"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="9. МЕСТА"
+                                android:text="9. YERLER"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus10"
+                                android:id="@+id/tvTur10"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -467,28 +467,28 @@
 
                         <!-- 11 -->
                         <LinearLayout
-                            android:id="@+id/llRus11"
+                            android:id="@+id/llTur11"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus11"
+                                android:id="@+id/btnTur11"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="10. ПРЕДЛОГИ"
+                                android:text="10. EDATLAR"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus11"
+                                android:id="@+id/tvTur11"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -501,28 +501,28 @@
 
                         <!-- 12 -->
                         <LinearLayout
-                            android:id="@+id/llRus12"
+                            android:id="@+id/llTur12"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus12"
+                                android:id="@+id/btnTur12"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="11. ГОТОВКА"
+                                android:text="11. YEMEK PİŞİRME"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus12"
+                                android:id="@+id/tvTur12"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -535,28 +535,28 @@
 
                         <!-- 13 -->
                         <LinearLayout
-                            android:id="@+id/llRus13"
+                            android:id="@+id/llTur13"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus13"
+                                android:id="@+id/btnTur13"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="12. ШОППИНГ"
+                                android:text="12. ALIŞVERİŞ"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus13"
+                                android:id="@+id/tvTur13"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -569,28 +569,28 @@
 
                         <!-- 14 -->
                         <LinearLayout
-                            android:id="@+id/llRus14"
+                            android:id="@+id/llTur14"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus14"
+                                android:id="@+id/btnTur14"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="13. СТРАНЫ"
+                                android:text="13. ÜLKELER"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus14"
+                                android:id="@+id/tvTur14"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -603,28 +603,28 @@
 
                         <!-- 15 -->
                         <LinearLayout
-                            android:id="@+id/llRus15"
+                            android:id="@+id/llTur15"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus15"
+                                android:id="@+id/btnTur15"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus"
+                                android:background="@drawable/ripple_tur"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="14. ПУТЕШЕСТВИЕ"
+                                android:text="14. SEYAHAT"
                                 android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus15"
+                                android:id="@+id/tvTur15"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -637,7 +637,7 @@
 
                         <!-- 16 -->
                         <LinearLayout
-                            android:id="@+id/llRus16"
+                            android:id="@+id/llTur16"
                             android:layout_width="match_parent"
                             android:layout_height="110dp"
                             android:layout_marginTop="20dp"
@@ -645,21 +645,21 @@
                             android:orientation="vertical">
 
                             <Button
-                                android:id="@+id/btnRus16"
+                                android:id="@+id/btnTur16"
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/ripple_rus_full"
+                                android:background="@drawable/ripple_tur_full"
                                 android:elevation="2dp"
                                 android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="ОСНОВНЫЕ ГЛАГОЛЫ"
-                                android:textColor="@color/rus_background"
+                                android:text="TEMEL FIILLER"
+                                android:textColor="@color/tur_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
-                                android:id="@+id/tvRus16"
+                                android:id="@+id/tvTur16"
                                 android:layout_width="match_parent"
                                 android:layout_height="30dp"
                                 android:fontFamily="@font/pretendard_700"
@@ -687,8 +687,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/custom_menubar2"
-            android:elevation="3dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:elevation="3dp">
 
             <Space
                 android:layout_width="0dp"

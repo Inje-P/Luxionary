@@ -55,11 +55,11 @@
                                 android:id="@+id/tvTitle1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:fontFamily="@font/nunitosans_900"
-                                android:gravity="bottom"
-                                android:text="ITALIANO 101"
-                                android:textColor="@color/ita_background"
-                                android:textSize="32dp"></TextView>
+                                android:fontFamily="@font/playfairdisplay_900"
+                                android:gravity="center|bottom"
+                                android:text="ITALIANO IOI"
+                                android:textColor="@color/main_text"
+                                android:textSize="45dp"></TextView>
 
                         </LinearLayout>
 
@@ -72,36 +72,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/pretendard_700"
+                                android:gravity="center"
                                 android:text="이탈리아어 첫걸음"
                                 android:textColor="@color/main_text"
-                                android:textSize="16dp"></TextView>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:gravity="bottom"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingBottom="20dp">
-
-                        <LinearLayout
-                            android:id="@+id/llAvatar"
-                            android:layout_width="250px"
-                            android:layout_height="250px"
-                            android:background="@drawable/custom_main">
-
-                            <ImageView
-                                android:id="@+id/imgAvatar"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:padding="10dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/avt_male1"></ImageView>
+                                android:textSize="18dp"></TextView>
 
                         </LinearLayout>
 
@@ -164,13 +138,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita_full"
+                                android:background="@drawable/ripple_ita_full"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="L'ALFABETO"
-                                android:textColor="@color/main_white"
+                                android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -198,13 +172,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="1. IL SALUTO"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -232,13 +206,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="2. I NUMERI"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -266,13 +240,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="3. LA DATA E L'ORA"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -300,13 +274,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="4. LA FAMIGLIA"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -334,13 +308,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="5. IL CORPO"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -368,13 +342,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="6. MANGIARE FUORI"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -402,13 +376,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="7. I CIBI"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -436,13 +410,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="8. GLI AGGETTIVI"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -470,13 +444,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="9. I POSTI"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -504,13 +478,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="10. LE PREPOSIZIONI"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -538,13 +512,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="11. IL CUCINARE"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -572,13 +546,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="12. LO SHOPPING"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -606,13 +580,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="13. I PAESI"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -640,13 +614,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita"
+                                android:background="@drawable/ripple_ita"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="14. IL VIAGGIO"
-                                android:textColor="@color/ita_background"
+                                android:textColor="@color/main_text"
                                 android:textSize="25dp"></Button>
 
                             <TextView
@@ -675,13 +649,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="60dp"
                                 android:layout_margin="10dp"
-                                android:background="@drawable/pastel_ripple_ita_full"
+                                android:background="@drawable/ripple_ita_full"
                                 android:elevation="2dp"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/playfairdisplay_900"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
                                 android:text="VERBI DI BASE"
-                                android:textColor="@color/main_white"
+                                android:textColor="@color/ita_background"
                                 android:textSize="25dp"></Button>
 
                             <TextView

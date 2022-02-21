@@ -72,7 +72,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@drawable/pastel_ripple_black"
+                android:background="@drawable/ripple_black"
                 android:orientation="horizontal">
 
                 <Button

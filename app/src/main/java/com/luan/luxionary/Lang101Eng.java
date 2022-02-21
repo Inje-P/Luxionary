@@ -24,7 +24,6 @@ public class Lang101Eng extends AppCompatActivity {
     String strNick, strPw, strName, strEmail, strAvatar;
 
     TextView tvTitle1, tvTitle2;
-    ImageView imgAvatar;
     Button btnEng1, btnEng2, btnEng3, btnEng4, btnEng5, btnEng6, btnEng7, btnEng8;
     Button btnEng9, btnEng10, btnEng11, btnEng12, btnEng13, btnEng14, btnEng15, btnEng16;
     LinearLayout layoutProfile;
@@ -32,7 +31,7 @@ public class Lang101Eng extends AppCompatActivity {
     LinearLayout llEng9, llEng10, llEng11, llEng12, llEng13, llEng14, llEng15, llEng16;
 
     Animation aniTouch;
-    Animation aniTitle1, aniTitle2, aniAvatar;
+    Animation aniTitle1, aniTitle2;
     Animation aniLayoutProfile;
     Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
     Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15, aniLl16;
@@ -92,43 +91,6 @@ public class Lang101Eng extends AppCompatActivity {
         aniTitle2.setStartOffset(800);
         tvTitle1.startAnimation(aniTitle1);
         tvTitle2.startAnimation(aniTitle2);
-
-        // Avatar
-        imgAvatar = (ImageView) findViewById(R.id.imgAvatar);
-        if (strAvatar == null) {
-            imgAvatar.setImageResource(R.drawable.avt_male1);
-        } else {
-            switch (strAvatar) {
-                case "male1":
-                    imgAvatar.setImageResource(R.drawable.avt_male1);
-                    break;
-                case "male2":
-                    imgAvatar.setImageResource(R.drawable.avt_male2);
-                    break;
-                case "male3":
-                    imgAvatar.setImageResource(R.drawable.avt_male3);
-                    break;
-                case "male4":
-                    imgAvatar.setImageResource(R.drawable.avt_male4);
-                    break;
-                case "female1":
-                    imgAvatar.setImageResource(R.drawable.avt_female1);
-                    break;
-                case "female2":
-                    imgAvatar.setImageResource(R.drawable.avt_female2);
-                    break;
-                case "female3":
-                    imgAvatar.setImageResource(R.drawable.avt_female3);
-                    break;
-                case "female4":
-                    imgAvatar.setImageResource(R.drawable.avt_female4);
-                    break;
-            }
-        }
-        aniAvatar = AnimationUtils.loadAnimation(Lang101Eng.this, R.anim.fadein);
-        aniAvatar.setStartOffset(800);
-        imgAvatar.startAnimation(aniAvatar);
-        imgAvatar.setOnClickListener(mClickListener);
 
         // Touch Animation
         aniTouch = AnimationUtils.loadAnimation(Lang101Eng.this, R.anim.scale);
@@ -312,9 +274,6 @@ public class Lang101Eng extends AppCompatActivity {
                 // Title Animation
                 case R.id.tvTitle1:
                     engTitle();
-                    break;
-                case R.id.imgAvatar:
-                    imgAvatar.startAnimation(aniTouch);
                     break;
                 case R.id.btnEng1:
                     btnEng1.startAnimation(aniTouch);
