@@ -21,11 +21,11 @@
         <activity
             android:name=".IntroActivity"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
         </activity>
         <activity android:name=".StartActivity"></activity>
         <activity android:name=".SigninActivity"></activity>
@@ -41,6 +41,7 @@
         <activity android:name=".IntroIta"></activity>
         <activity android:name=".IntroSpa"></activity>
         <activity android:name=".IntroRus"></activity>
+        <activity android:name=".IntroTur"></activity>
 
         <activity android:name=".DateActivity"></activity>
         <activity android:name=".WelcomeActivity"></activity>
@@ -52,6 +53,7 @@
         <activity android:name=".MainIta"></activity>
         <activity android:name=".MainSpa"></activity>
         <activity android:name=".MainRus"></activity>
+        <activity android:name=".MainTur"></activity>
 
         <!-- Language 101 (English)-->
         <activity android:name=".Lang101Eng"></activity>
@@ -96,6 +98,30 @@
         <activity android:name=".Lang101Rus_01_2"></activity>
         <activity android:name=".Lang101Rus_01_3"></activity>
         <activity android:name=".Lang101Rus_02_1"></activity>
+
+        <!-- Language 101 (Turkish)-->
+        <activity android:name=".Lang101Tur"></activity>
+
+        <!-- Voca (English)-->
+        <activity android:name=".VocaEng"></activity>
+
+        <!-- Voca (French)-->
+        <activity android:name=".VocaFra"></activity>
+
+        <!-- Voca (German)-->
+        <activity android:name=".VocaDeu"></activity>
+
+        <!-- Voca (Italian)-->
+        <activity android:name=".VocaIta"></activity>
+
+        <!-- Voca (Spanish)-->
+        <activity android:name=".VocaSpa"></activity>
+
+        <!-- Voca (Russian)-->
+        <activity android:name=".VocaRus"></activity>
+
+        <!-- Voca (Russian)-->
+        <activity android:name=".VocaTur"></activity>
 
     </application>
 </manifest>

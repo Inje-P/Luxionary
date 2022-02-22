@@ -28,10 +28,12 @@ public class MainEng extends AppCompatActivity {
     TextView tvTitle1, tvTitle2;
     ImageView imgAvatar;
     LinearLayout layoutProfile;
+    RelativeLayout layoutMain;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2, aniAvatar;
     Animation aniLayoutProfile;
+    Animation aniLayoutMain;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -156,6 +158,12 @@ public class MainEng extends AppCompatActivity {
             }
         });
 
+        // Main Layout
+        layoutMain = (RelativeLayout) findViewById(R.id.layoutMain);
+        aniLayoutMain = AnimationUtils.loadAnimation(MainEng.this, R.anim.fadein);
+        aniLayoutMain.setStartOffset(400);
+        layoutMain.startAnimation(aniLayoutMain);
+
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
         btnHome = (ImageButton) findViewById(R.id.btnHome);
@@ -187,15 +195,15 @@ public class MainEng extends AppCompatActivity {
                 3,
                 R.drawable.banner_grammar));
         modelArrayList.add(new MyModel(
-                "Verbs",
-                "핵심 동사",
+                "Conjugation",
+                "동사변화",
                 4,
                 R.drawable.banner_verbs));
         modelArrayList.add(new MyModel(
                 "Global Citizen",
                 "United States",
                 5,
-                R.drawable.banner_globalcitizen));
+                R.drawable.banner_gc_eng));
 
         // set up adapter
         myAdapter = new MyAdapter(this, modelArrayList);
@@ -261,6 +269,7 @@ public class MainEng extends AppCompatActivity {
                             pageLang101();
                             break;
                         case 2:
+                            pageVoca();
                             break;
                         case 3:
                             break;
@@ -346,9 +355,6 @@ public class MainEng extends AppCompatActivity {
                 case R.id.tvTitle1:
                     engTitle();
                     break;
-                case R.id.imgAvatar:
-                    imgAvatar.startAnimation(aniTouch);
-                    break;
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);
                     break;
@@ -368,18 +374,6 @@ public class MainEng extends AppCompatActivity {
             }
         }
     };
-
-    public void pageMono() {
-        Intent intentLang101 = new Intent(MainEng.this, Lang101Eng.class);
-        intentLang101.putExtra("nick", strNick);
-        intentLang101.putExtra("pw", strPw);
-        intentLang101.putExtra("name", strName);
-        intentLang101.putExtra("email", strEmail);
-        intentLang101.putExtra("avatar", strAvatar);
-        startActivity(intentLang101);
-        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
-        finish();
-    }
 
     // Title Animation
     private void engTitle() {
@@ -440,6 +434,18 @@ public class MainEng extends AppCompatActivity {
         intentLang101.putExtra("email", strEmail);
         intentLang101.putExtra("avatar", strAvatar);
         startActivity(intentLang101);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
+    }
+
+    public void pageVoca() {
+        Intent intentVoca = new Intent(MainEng.this, VocaEng.class);
+        intentVoca.putExtra("nick", strNick);
+        intentVoca.putExtra("pw", strPw);
+        intentVoca.putExtra("name", strName);
+        intentVoca.putExtra("email", strEmail);
+        intentVoca.putExtra("avatar", strAvatar);
+        startActivity(intentVoca);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
     }

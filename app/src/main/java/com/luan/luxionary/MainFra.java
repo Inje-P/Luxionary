@@ -9,11 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,10 +26,12 @@ public class MainFra extends AppCompatActivity {
     TextView tvTitle1, tvTitle2;
     ImageView imgAvatar;
     LinearLayout layoutProfile;
+    RelativeLayout layoutMain;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2, aniAvatar;
     Animation aniLayoutProfile;
+    Animation aniLayoutMain;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -158,6 +156,12 @@ public class MainFra extends AppCompatActivity {
             }
         });
 
+        // Main Layout
+        layoutMain = (RelativeLayout) findViewById(R.id.layoutMain);
+        aniLayoutMain = AnimationUtils.loadAnimation(MainFra.this, R.anim.fadein);
+        aniLayoutMain.setStartOffset(400);
+        layoutMain.startAnimation(aniLayoutMain);
+
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
         btnHome = (ImageButton) findViewById(R.id.btnHome);
@@ -179,25 +183,25 @@ public class MainFra extends AppCompatActivity {
                 1,
                 R.drawable.banner_lang101));
         modelArrayList.add(new MyModel(
-                "Vocabulary",
+                "Vocabulaire",
                 "테마별 어휘",
                 2,
                 R.drawable.banner_vocabulary));
         modelArrayList.add(new MyModel(
-                "Grammar",
+                "Grammaire",
                 "종합 문법",
                 3,
                 R.drawable.banner_grammar));
         modelArrayList.add(new MyModel(
-                "Verbs",
-                "핵심 동사",
+                "Conjugaison",
+                "동사변화",
                 4,
                 R.drawable.banner_verbs));
         modelArrayList.add(new MyModel(
                 "Global Citizen",
                 "France",
                 5,
-                R.drawable.banner_globalcitizen));
+                R.drawable.banner_gc_fra));
 
         // set up adapter
         myAdapter = new MyAdapter(this, modelArrayList);
@@ -263,6 +267,7 @@ public class MainFra extends AppCompatActivity {
                             pageLang101();
                             break;
                         case 2:
+                            pageVoca();
                             break;
                         case 3:
                             break;
@@ -375,6 +380,18 @@ public class MainFra extends AppCompatActivity {
         intentLang101.putExtra("email", strEmail);
         intentLang101.putExtra("avatar", strAvatar);
         startActivity(intentLang101);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
+    }
+
+    public void pageVoca() {
+        Intent intentVoca = new Intent(MainFra.this, VocaFra.class);
+        intentVoca.putExtra("nick", strNick);
+        intentVoca.putExtra("pw", strPw);
+        intentVoca.putExtra("name", strName);
+        intentVoca.putExtra("email", strEmail);
+        intentVoca.putExtra("avatar", strAvatar);
+        startActivity(intentVoca);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
     }

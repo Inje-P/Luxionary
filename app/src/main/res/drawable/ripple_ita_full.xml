@@ -3,7 +3,7 @@
     android:color="@color/ita_background"> <!-- Ripple Effect 색상 -->
 
     <!-- 배경색 -->
-    <item android:id="@+id/pastel_ripple_ita_full">
+    <item android:id="@+id/ripple_ita_full">
         <shape android:shape="rectangle">
             <solid android:color="@color/main_white"/>
             <stroke android:color="@color/ita_background" android:width="2dp"/>

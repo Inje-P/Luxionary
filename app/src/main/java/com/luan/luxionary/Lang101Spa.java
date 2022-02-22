@@ -28,14 +28,12 @@ public class Lang101Spa extends AppCompatActivity {
     Button btnSpa1, btnSpa2, btnSpa3, btnSpa4, btnSpa5, btnSpa6, btnSpa7, btnSpa8;
     Button btnSpa9, btnSpa10, btnSpa11, btnSpa12, btnSpa13, btnSpa14, btnSpa15, btnSpa16;
     LinearLayout layoutProfile;
-    LinearLayout llSpa1, llSpa2, llSpa3, llSpa4, llSpa5, llSpa6, llSpa7, llSpa8;
-    LinearLayout llSpa9, llSpa10, llSpa11, llSpa12, llSpa13, llSpa14, llSpa15, llSpa16;
+    LinearLayout layoutMain;
 
     Animation aniTouch;
     Animation aniTitle1, aniTitle2;
     Animation aniLayoutProfile;
-    Animation aniLl1, aniLl2, aniLl3, aniLl4, aniLl5, aniLl6, aniLl7, aniLl8;
-    Animation aniLl9, aniLl10, aniLl11, aniLl12, aniLl13, aniLl14, aniLl15, aniLl16;
+    Animation aniLayoutMain;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -96,6 +94,12 @@ public class Lang101Spa extends AppCompatActivity {
         // Touch Animation
         aniTouch = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.scale);
 
+        // Main Layout
+        layoutMain = (LinearLayout) findViewById(R.id.layoutMain);
+        aniLayoutMain = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
+        aniLayoutMain.setStartOffset(400);
+        layoutMain.startAnimation(aniLayoutMain);
+
         // Buttons & TextViews
         btnSpa1 = (Button) findViewById(R.id.btnSpa1);
         btnSpa2 = (Button) findViewById(R.id.btnSpa2);
@@ -143,72 +147,6 @@ public class Lang101Spa extends AppCompatActivity {
         setColorStateList(btnSpa13, ContextCompat.getColor(this, R.color.spa_dark), btnSpa13.getCurrentTextColor());
         setColorStateList(btnSpa14, ContextCompat.getColor(this, R.color.spa_dark), btnSpa14.getCurrentTextColor());
         setColorStateList(btnSpa15, ContextCompat.getColor(this, R.color.spa_dark), btnSpa15.getCurrentTextColor());
-
-        // Animation
-        llSpa1 = (LinearLayout) findViewById(R.id.llSpa1);
-        llSpa2 = (LinearLayout) findViewById(R.id.llSpa2);
-        llSpa3 = (LinearLayout) findViewById(R.id.llSpa3);
-        llSpa4 = (LinearLayout) findViewById(R.id.llSpa4);
-        llSpa5 = (LinearLayout) findViewById(R.id.llSpa5);
-        llSpa6 = (LinearLayout) findViewById(R.id.llSpa6);
-        llSpa7 = (LinearLayout) findViewById(R.id.llSpa7);
-        llSpa8 = (LinearLayout) findViewById(R.id.llSpa8);
-        llSpa9 = (LinearLayout) findViewById(R.id.llSpa9);
-        llSpa10 = (LinearLayout) findViewById(R.id.llSpa10);
-        llSpa11 = (LinearLayout) findViewById(R.id.llSpa11);
-        llSpa12 = (LinearLayout) findViewById(R.id.llSpa12);
-        llSpa13 = (LinearLayout) findViewById(R.id.llSpa13);
-        llSpa14 = (LinearLayout) findViewById(R.id.llSpa14);
-        llSpa15 = (LinearLayout) findViewById(R.id.llSpa15);
-        llSpa16 = (LinearLayout) findViewById(R.id.llSpa16);
-        aniLl1 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl1.setStartOffset(200);
-        aniLl2 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl2.setStartOffset(400);
-        aniLl3 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl3.setStartOffset(600);
-        aniLl4 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl4.setStartOffset(800);
-        aniLl5 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl5.setStartOffset(1000);
-        aniLl6 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl6.setStartOffset(1200);
-        aniLl7 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl7.setStartOffset(1400);
-        aniLl8 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl8.setStartOffset(1500);
-        aniLl9 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl9.setStartOffset(1600);
-        aniLl10 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl10.setStartOffset(1700);
-        aniLl11 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl11.setStartOffset(1800);
-        aniLl12 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl12.setStartOffset(1900);
-        aniLl13 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl13.setStartOffset(2000);
-        aniLl14 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl14.setStartOffset(2100);
-        aniLl15 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl15.setStartOffset(2200);
-        aniLl16 = AnimationUtils.loadAnimation(Lang101Spa.this, R.anim.fadein);
-        aniLl16.setStartOffset(2300);
-        llSpa1.startAnimation(aniLl1);
-        llSpa2.startAnimation(aniLl2);
-        llSpa3.startAnimation(aniLl3);
-        llSpa4.startAnimation(aniLl4);
-        llSpa5.startAnimation(aniLl5);
-        llSpa6.startAnimation(aniLl6);
-        llSpa7.startAnimation(aniLl7);
-        llSpa8.startAnimation(aniLl8);
-        llSpa9.startAnimation(aniLl9);
-        llSpa10.startAnimation(aniLl10);
-        llSpa11.startAnimation(aniLl11);
-        llSpa12.startAnimation(aniLl12);
-        llSpa13.startAnimation(aniLl13);
-        llSpa14.startAnimation(aniLl14);
-        llSpa15.startAnimation(aniLl15);
-        llSpa16.startAnimation(aniLl16);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
