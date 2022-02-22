@@ -56,7 +56,7 @@
                                 android:layout_height="match_parent"
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center|bottom"
-                                android:text="GRAMMAR"
+                                android:text="CONJUGATION"
                                 android:textColor="@color/main_text"
                                 android:textSize="40dp"></TextView>
 
@@ -72,7 +72,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/pretendard_700"
                                 android:gravity="center"
-                                android:text="종합 문법"
+                                android:text="동사변화"
                                 android:textColor="@color/main_text"
                                 android:textSize="18dp"></TextView>
 
@@ -130,14 +130,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:background="@drawable/ripple_eng_box"
                             android:elevation="3dp"
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="1. FACE"
+                            android:text="1. BE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="20dp"></Button>
 
                         <Button
                             android:id="@+id/btn2"

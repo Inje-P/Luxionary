@@ -10,46 +10,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        app:cardCornerRadius="22dp">
+        app:cardCornerRadius="15dp">
 
         <LinearLayout
+            android:id="@+id/llCard"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/main_white"
+            android:layout_height="100dp"
+            android:background="@color/main_text"
             android:elevation="3dp"
+            android:gravity="center"
             android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/ivBanner"
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/banner_lang101" />
 
             <TextView
                 android:id="@+id/tvTitle"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/pretendard_800"
-                android:paddingLeft="15dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="5dp"
-                android:text="The Title"
-                android:textColor="#000"
-                android:textSize="25dp" />
-
-            <TextView
-                android:id="@+id/tvDescription"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/pretendard_500"
-                android:maxLines="3"
-                android:minLines="3"
-                android:text="Description"
-                android:textColor="@color/main_text"
-                android:textSize="18dp" />
+                android:text="Grammar"
+                android:textColor="@color/main_white"
+                android:textSize="24dp" />
 
         </LinearLayout>
 
