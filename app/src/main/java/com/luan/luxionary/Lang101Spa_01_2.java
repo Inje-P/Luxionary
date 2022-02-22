@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
@@ -26,6 +27,8 @@ public class Lang101Spa_01_2 extends AppCompatActivity {
     LinearLayout layoutTitle, layoutMain;
     ImageButton btnPlay;
     Animation aniLayoutTitle, aniLayoutMain;
+    ImageButton btnEnd;
+    Animation aniBtnEnd;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -87,6 +90,29 @@ public class Lang101Spa_01_2 extends AppCompatActivity {
         // Play Button
         btnPlay = (ImageButton) findViewById(R.id.btnPlay);
         btnPlay.setOnClickListener(mClickListener);
+
+        // End Button
+        btnEnd = (ImageButton) findViewById(R.id.btnEnd);
+        aniBtnEnd = new AlphaAnimation(0.0f, 1.0f);
+        aniBtnEnd.setDuration(200);
+        aniBtnEnd.setStartOffset(400);
+        aniBtnEnd.setRepeatMode(Animation.REVERSE);
+        aniBtnEnd.setRepeatCount(Animation.INFINITE);
+        btnEnd.startAnimation(aniBtnEnd);
+        btnEnd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentEnd = new Intent(Lang101Spa_01_2.this, Lang101Spa_01_3.class);
+                intentEnd.putExtra("nick", strNick);
+                intentEnd.putExtra("pw", strPw);
+                intentEnd.putExtra("name", strName);
+                intentEnd.putExtra("email", strEmail);
+                intentEnd.putExtra("avatar", strAvatar);
+                startActivity(intentEnd);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);

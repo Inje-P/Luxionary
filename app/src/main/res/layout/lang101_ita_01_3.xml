@@ -947,7 +947,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginTop="10dp"
-                            android:layout_marginBottom="20dp"
                             android:orientation="horizontal">
 
                             <TextView
@@ -987,6 +986,27 @@
                                 android:text="famiglia"
                                 android:textColor="@color/main_text"
                                 android:textSize="16dp"></TextView>
+
+                        </LinearLayout>
+
+                        <!-- End Button -->
+                        <LinearLayout
+                            android:id="@+id/llEnd"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/btnEnd"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="bottom"
+                                android:background="@drawable/custom_ripple_transparent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/btn_next" />
 
                         </LinearLayout>
 

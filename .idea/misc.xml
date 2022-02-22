@@ -161,6 +161,7 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/dialog_spa.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/dialog_tur.xml" value="0.34791666666666665" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/grammar_eng.xml" value="0.34791666666666665" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/grammer_eng.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/intro_deu.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/intro_eng.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/intro_fra.xml" value="0.33" />
@@ -216,6 +217,9 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_spa_02_2.xml" value="0.34791666666666665" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_spa_end.xml" value="0.34791666666666665" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_tur.xml" value="0.33" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_tur_01_1.xml" value="0.25" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_tur_01_2.xml" value="0.33" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_tur_01_3.xml" value="0.25" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_tur_end.xml" value="0.34791666666666665" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_voca.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/main_deu.xml" value="0.33" />

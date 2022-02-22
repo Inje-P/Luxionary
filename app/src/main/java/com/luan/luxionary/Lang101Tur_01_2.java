@@ -1,5 +1,6 @@
 package com.luan.luxionary;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -16,7 +18,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-public class Lang101Fra_01_1 extends AppCompatActivity {
+public class Lang101Tur_01_2 extends AppCompatActivity {
 
     // Data from DB
     String strNick, strPw, strName, strEmail, strAvatar;
@@ -42,7 +44,7 @@ public class Lang101Fra_01_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lang101_fra_01_1);
+        setContentView(R.layout.lang101_tur_01_2);
 
         // Data from SQLite
         Intent getData = getIntent();
@@ -81,8 +83,8 @@ public class Lang101Fra_01_1 extends AppCompatActivity {
         // Layouts
         layoutTitle = (LinearLayout) findViewById(R.id.layoutTitle);
         layoutMain = (LinearLayout) findViewById(R.id.layoutMain);
-        aniLayoutTitle = AnimationUtils.loadAnimation(Lang101Fra_01_1.this, R.anim.descend_fast);
-        aniLayoutMain = AnimationUtils.loadAnimation(Lang101Fra_01_1.this, R.anim.fadein);
+        aniLayoutTitle = AnimationUtils.loadAnimation(Lang101Tur_01_2.this, R.anim.descend_fast);
+        aniLayoutMain = AnimationUtils.loadAnimation(Lang101Tur_01_2.this, R.anim.fadein);
         aniLayoutMain.setStartOffset(400);
         layoutTitle.startAnimation(aniLayoutTitle);
         layoutMain.startAnimation(aniLayoutMain);
@@ -102,15 +104,8 @@ public class Lang101Fra_01_1 extends AppCompatActivity {
         btnEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentEnd = new Intent(Lang101Fra_01_1.this, Lang101Fra_01_2.class);
-                intentEnd.putExtra("nick", strNick);
-                intentEnd.putExtra("pw", strPw);
-                intentEnd.putExtra("name", strName);
-                intentEnd.putExtra("email", strEmail);
-                intentEnd.putExtra("avatar", strAvatar);
-                startActivity(intentEnd);
-                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
-                finish();
+                btnEnd.clearAnimation();
+                dialogTur();
             }
         });
 
@@ -128,7 +123,7 @@ public class Lang101Fra_01_1 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intentBack = new Intent(Lang101Fra_01_1.this, Lang101Fra.class);
+        Intent intentBack = new Intent(Lang101Tur_01_2.this, Lang101Eng_01_1.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intentBack.putExtra("nick", strNick);
         intentBack.putExtra("pw", strPw);
@@ -179,7 +174,7 @@ public class Lang101Fra_01_1 extends AppCompatActivity {
             switch (v.getId()) {
                 // Prev & Next Buttons
                 case R.id.btnPrev:
-                    Intent intentPrev = new Intent(Lang101Fra_01_1.this, Lang101Fra.class);
+                    Intent intentPrev = new Intent(Lang101Tur_01_2.this, Lang101Tur_01_1.class);
                     intentPrev.putExtra("nick", strNick);
                     intentPrev.putExtra("pw", strPw);
                     intentPrev.putExtra("name", strName);
@@ -190,7 +185,7 @@ public class Lang101Fra_01_1 extends AppCompatActivity {
                     finish();
                     break;
                 case R.id.btnNext:
-                    Intent intentNext = new Intent(Lang101Fra_01_1.this, Lang101Fra_01_2.class);
+                    Intent intentNext = new Intent(Lang101Tur_01_2.this, Lang101Tur.class);
                     intentNext.putExtra("nick", strNick);
                     intentNext.putExtra("pw", strPw);
                     intentNext.putExtra("name", strName);
@@ -208,7 +203,7 @@ public class Lang101Fra_01_1 extends AppCompatActivity {
                     drawerLayout.openDrawer(drawerView);
                     break;
                 case R.id.btnHome:
-                    Intent intentHome = new Intent(Lang101Fra_01_1.this, MainActivity.class);
+                    Intent intentHome = new Intent(Lang101Tur_01_2.this, MainActivity.class);
                     intentHome.putExtra("nick", strNick);
                     intentHome.putExtra("pw", strPw);
                     intentHome.putExtra("name", strName);
@@ -223,5 +218,32 @@ public class Lang101Fra_01_1 extends AppCompatActivity {
             }
         }
     };
+
+    // End Dialog
+    private void dialogTur() {
+        Dialog dialog = new Dialog(this, R.style.DialogStyle2);
+        dialog.setContentView(R.layout.lang101_tur_end);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.random_window);
+        dialog.setCancelable(false);
+
+        Button btnOk = dialog.findViewById(R.id.btn_ok);
+        btnOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                Intent intentEnd = new Intent(Lang101Tur_01_2.this, Lang101Tur.class);
+                intentEnd.putExtra("nick", strNick);
+                intentEnd.putExtra("pw", strPw);
+                intentEnd.putExtra("name", strName);
+                intentEnd.putExtra("email", strEmail);
+                intentEnd.putExtra("avatar", strAvatar);
+                startActivity(intentEnd);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+
+        dialog.show();
+    }
 
 }

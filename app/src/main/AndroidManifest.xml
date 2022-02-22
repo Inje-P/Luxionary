@@ -101,6 +101,8 @@
 
         <!-- Language 101 (Turkish)-->
         <activity android:name=".Lang101Tur"></activity>
+        <activity android:name=".Lang101Tur_01_1"></activity>
+        <activity android:name=".Lang101Tur_01_2"></activity>
 
         <!-- Voca (English)-->
         <activity android:name=".VocaEng"></activity>

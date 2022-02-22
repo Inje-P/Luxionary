@@ -1,11 +1,14 @@
 package com.luan.luxionary;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -26,6 +29,8 @@ public class Lang101Ita_01_3 extends AppCompatActivity {
     LinearLayout layoutTitle, layoutMain;
     ImageButton btnPlay;
     Animation aniLayoutTitle, aniLayoutMain;
+    ImageButton btnEnd;
+    Animation aniBtnEnd;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -87,6 +92,22 @@ public class Lang101Ita_01_3 extends AppCompatActivity {
         // Play Button
         btnPlay = (ImageButton) findViewById(R.id.btnPlay);
         btnPlay.setOnClickListener(mClickListener);
+
+        // End Button
+        btnEnd = (ImageButton) findViewById(R.id.btnEnd);
+        aniBtnEnd = new AlphaAnimation(0.0f, 1.0f);
+        aniBtnEnd.setDuration(200);
+        aniBtnEnd.setStartOffset(400);
+        aniBtnEnd.setRepeatMode(Animation.REVERSE);
+        aniBtnEnd.setRepeatCount(Animation.INFINITE);
+        btnEnd.startAnimation(aniBtnEnd);
+        btnEnd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnEnd.clearAnimation();
+                dialogIta();
+            }
+        });
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -197,5 +218,32 @@ public class Lang101Ita_01_3 extends AppCompatActivity {
             }
         }
     };
+
+    // End Dialog
+    private void dialogIta() {
+        Dialog dialog = new Dialog(this, R.style.DialogStyle2);
+        dialog.setContentView(R.layout.lang101_ita_end);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.random_window);
+        dialog.setCancelable(false);
+
+        Button btnOk = dialog.findViewById(R.id.btn_ok);
+        btnOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                Intent intentEnd = new Intent(Lang101Ita_01_3.this, Lang101Ita.class);
+                intentEnd.putExtra("nick", strNick);
+                intentEnd.putExtra("pw", strPw);
+                intentEnd.putExtra("name", strName);
+                intentEnd.putExtra("email", strEmail);
+                intentEnd.putExtra("avatar", strAvatar);
+                startActivity(intentEnd);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+
+        dialog.show();
+    }
 
 }
