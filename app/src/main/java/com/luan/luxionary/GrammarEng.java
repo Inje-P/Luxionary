@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -50,7 +51,12 @@ public class GrammarEng extends AppCompatActivity {
     RelativeLayout container1, container2, container3, container4, container5, container6;
     private ViewPager viewPager1, viewPager2, viewPager3, viewPager4, viewPager5, viewPager6;
     private ArrayList<MyModel2> modelArrayList;
-    private MyAdapter myAdapter;
+    private MyAdapter1 myAdapter1;
+    private MyAdapter2 myAdapter2;
+    private MyAdapter3 myAdapter3;
+    private MyAdapter4 myAdapter4;
+    private MyAdapter5 myAdapter5;
+    private MyAdapter6 myAdapter6;
 
     // Footer
     ImageButton btnSidebar, btnHome, btnUpdate;
@@ -108,9 +114,99 @@ public class GrammarEng extends AppCompatActivity {
         // init UI Views
         viewPager1 = findViewById(R.id.viewPager1);
         loadCards1();
+        viewPager2 = findViewById(R.id.viewPager2);
+        loadCards2();
+        viewPager3 = findViewById(R.id.viewPager3);
+        loadCards3();
+        viewPager4 = findViewById(R.id.viewPager4);
+        loadCards4();
+        viewPager5 = findViewById(R.id.viewPager5);
+        loadCards5();
+        viewPager6 = findViewById(R.id.viewPager6);
+        loadCards6();
 
         // set viewpager change listener
         viewPager1.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+        viewPager2.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+        viewPager3.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+        viewPager4.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+        viewPager5.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+        viewPager6.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
@@ -142,46 +238,270 @@ public class GrammarEng extends AppCompatActivity {
         btnUpdate.setOnClickListener(mClickListener);
     }
 
-    // LoadCards Method
+    // LoadCards 1
     private void loadCards1() {
         // init list
         modelArrayList = new ArrayList<>();
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Plural Nouns",
+                "Types of Nouns",
+                "명사의 종류",
                 1));
         modelArrayList.add(new MyModel2(
-                "Collective Nouns",
+                "Countable & Uncountable",
+                "셀 수 있는/없는 명사",
                 2));
         modelArrayList.add(new MyModel2(
-                "Possessive Nouns",
+                "Indefinite Articles",
+                "부정관사",
                 3));
         modelArrayList.add(new MyModel2(
-                "Indefinite Articles",
+                "Definite Articles",
+                "정관사",
                 4));
         modelArrayList.add(new MyModel2(
-                "Definite Articles",
+                "Plural",
+                "복수형",
                 5));
 
-        // set up adapter
-        myAdapter = new MyAdapter(this, modelArrayList);
-
-        // set adapter to view pager
-        viewPager1.setAdapter(myAdapter);
-
-        // set default padding from left/right
+        myAdapter1 = new MyAdapter1(this, modelArrayList);
+        viewPager1.setAdapter(myAdapter1);
         viewPager1.setPadding(100, 0, 100, 0);
     }
 
-    // ViewPager Adapter
-    class MyAdapter extends PagerAdapter {
+    // LoadCards 2
+    private void loadCards2() {
+        // init list
+        modelArrayList = new ArrayList<>();
+
+        // add items to list
+        modelArrayList.add(new MyModel2(
+                "Gender, Number, Case",
+                "성, 수, 격",
+                1));
+        modelArrayList.add(new MyModel2(
+                "Personal Pronouns",
+                "인칭 대명사",
+                2));
+        modelArrayList.add(new MyModel2(
+                "Demonstrative Pronouns",
+                "지시 대명사",
+                3));
+        modelArrayList.add(new MyModel2(
+                "Possessive Pronouns",
+                "소유 대명사",
+                4));
+        modelArrayList.add(new MyModel2(
+                "Interrogative Pronouns",
+                "의문 대명사",
+                5));
+        modelArrayList.add(new MyModel2(
+                "Reflextive Pronouns",
+                "재귀 대명사",
+                6));
+        modelArrayList.add(new MyModel2(
+                "Indefinite Pronouns",
+                "부정 대명사",
+                7));
+        modelArrayList.add(new MyModel2(
+                "Relative Pronouns",
+                "관계 대명사",
+                8));
+        modelArrayList.add(new MyModel2(
+                "Reciprocal Pronouns",
+                "상호 대명사",
+                9));
+
+        myAdapter2 = new MyAdapter2(this, modelArrayList);
+        viewPager2.setAdapter(myAdapter2);
+        viewPager2.setPadding(100, 0, 100, 0);
+    }
+
+    // LoadCards 3
+    private void loadCards3() {
+        // init list
+        modelArrayList = new ArrayList<>();
+
+        // add items to list
+        modelArrayList.add(new MyModel2(
+                "Adjective Formation",
+                "형용사의 형태",
+                1));
+        modelArrayList.add(new MyModel2(
+                "Comparative Adjectives",
+                "비교급",
+                2));
+        modelArrayList.add(new MyModel2(
+                "Superlative Adjectives",
+                "최상급",
+                3));
+
+        myAdapter3 = new MyAdapter3(this, modelArrayList);
+        viewPager3.setAdapter(myAdapter3);
+        viewPager3.setPadding(100, 0, 100, 0);
+    }
+
+    // LoadCards 4
+    private void loadCards4() {
+        // init list
+        modelArrayList = new ArrayList<>();
+
+        // add items to list
+        modelArrayList.add(new MyModel2(
+                "Auxiliary Verbs",
+                "조동사",
+                1));
+        modelArrayList.add(new MyModel2(
+                "Modal Verbs",
+                "법조동사",
+                2));
+        modelArrayList.add(new MyModel2(
+                "Stative Verbs",
+                "상태동사",
+                3));
+        modelArrayList.add(new MyModel2(
+                "Infinitive & Gerund",
+                "동사원형 & 동명사",
+                4));
+        modelArrayList.add(new MyModel2(
+                "Participles",
+                "분사",
+                5));
+        modelArrayList.add(new MyModel2(
+                "Phrasal Verbs",
+                "구동사",
+                6));
+        modelArrayList.add(new MyModel2(
+                "Passive Voice",
+                "수동태",
+                7));
+        modelArrayList.add(new MyModel2(
+                "Imperative Mood",
+                "명령법",
+                8));
+        modelArrayList.add(new MyModel2(
+                "Conditional Mood",
+                "조건법",
+                9));
+        modelArrayList.add(new MyModel2(
+                "Subjunctive Mood",
+                "가정법",
+                10));
+
+        myAdapter4 = new MyAdapter4(this, modelArrayList);
+        viewPager4.setAdapter(myAdapter4);
+        viewPager4.setPadding(100, 0, 100, 0);
+    }
+
+    // LoadCards 5
+    private void loadCards5() {
+        // init list
+        modelArrayList = new ArrayList<>();
+
+        // add items to list
+        modelArrayList.add(new MyModel2(
+                "Simple Present",
+                "단순 현재 시제",
+                1));
+        modelArrayList.add(new MyModel2(
+                "Simple Past",
+                "단순 과거 시제",
+                2));
+        modelArrayList.add(new MyModel2(
+                "Simple Future",
+                "단순 미래 시제",
+                3));
+        modelArrayList.add(new MyModel2(
+                "Present Perfect",
+                "현재 완료 시제",
+                4));
+        modelArrayList.add(new MyModel2(
+                "Past Perfect",
+                "과거 완료 시제",
+                5));
+        modelArrayList.add(new MyModel2(
+                "Future Perfect",
+                "미래 완료 시제",
+                6));
+        modelArrayList.add(new MyModel2(
+                "Present Continuous",
+                "현재 진행 시제",
+                7));
+        modelArrayList.add(new MyModel2(
+                "Past Continuous",
+                "과거 진행 시제",
+                8));
+        modelArrayList.add(new MyModel2(
+                "Future Continuous",
+                "미래 진행 시제",
+                9));
+        modelArrayList.add(new MyModel2(
+                "Present Perfect Continuous",
+                "현재 완료 진행 시제",
+                10));
+        modelArrayList.add(new MyModel2(
+                "Past Perfect Continuous",
+                "과거 완료 진행 시제",
+                11));
+        modelArrayList.add(new MyModel2(
+                "Future Perfect Continuous",
+                "미래 완료 진행 시제",
+                12));
+
+        myAdapter5 = new MyAdapter5(this, modelArrayList);
+        viewPager5.setAdapter(myAdapter5);
+        viewPager5.setPadding(100, 0, 100, 0);
+    }
+
+    // LoadCards 6
+    private void loadCards6() {
+        // init list
+        modelArrayList = new ArrayList<>();
+
+        // add items to list
+        modelArrayList.add(new MyModel2(
+                "Preposition Rules",
+                "전치사 사용법",
+                1));
+        modelArrayList.add(new MyModel2(
+                "Prepositions of Place",
+                "장소와 관련된 전치사",
+                2));
+        modelArrayList.add(new MyModel2(
+                "Prepositions of Time",
+                "시간과 관련된 전치사",
+                3));
+        modelArrayList.add(new MyModel2(
+                "Adverb Formation",
+                "부사의 형태",
+                4));
+        modelArrayList.add(new MyModel2(
+                "Adverbs of Frequency",
+                "빈도부사",
+                5));
+        modelArrayList.add(new MyModel2(
+                "Adverb Position",
+                "부사의 어순",
+                6));
+        modelArrayList.add(new MyModel2(
+                "Comparative Adverbs",
+                "부사의 비교급",
+                7));
+
+        myAdapter6 = new MyAdapter6(this, modelArrayList);
+        viewPager6.setAdapter(myAdapter6);
+        viewPager6.setPadding(100, 0, 100, 0);
+    }
+
+    // ViewPager Adapter 1
+    class MyAdapter1 extends PagerAdapter {
 
         private Context context;
         private ArrayList<MyModel2> modelArrayList;
 
         // Constructor
-        public MyAdapter(Context context, ArrayList<MyModel2> modelArrayList) {
+        public MyAdapter1(Context context, ArrayList<MyModel2> modelArrayList) {
             this.context = context;
             this.modelArrayList = modelArrayList;
         }
@@ -204,16 +524,19 @@ public class GrammarEng extends AppCompatActivity {
 
             // init uid views from card_item.xml
             TextView tvTitle = view.findViewById(R.id.tvTitle);
+            TextView tvSub = view.findViewById(R.id.tvSub);
             LinearLayout llCard = view.findViewById(R.id.llCard);
-            llCard.setBackgroundResource(R.color.eng_background);
+            llCard.setBackgroundResource(R.drawable.cards_eng);
 
             // get data
             MyModel2 model = modelArrayList.get(position);
             String title = model.getTitle();
+            String sub = model.getSub();
             int idx = model.getIdx();
 
             // set data
             tvTitle.setText(title);
+            tvSub.setText(sub);
 
             // handle card click
             view.setOnClickListener(new View.OnClickListener() {
@@ -235,8 +558,446 @@ public class GrammarEng extends AppCompatActivity {
             });
 
             // add view to container
+            // ViewPager가 가지고 있는 자녀의 수가 position 값 보다 큰 지를 판별
             try {
-                container.addView(view, position - 1);
+                container.addView(view, container.getChildCount() > position ? position : container.getChildCount());
+            } catch (IndexOutOfBoundsException e) {
+                e.printStackTrace();
+            }
+
+            return view;
+        }
+
+        @Override
+        public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+            container.removeView((View) object);
+        }
+
+    }
+
+    // ViewPager Adapter 2
+    class MyAdapter2 extends PagerAdapter {
+
+        private Context context;
+        private ArrayList<MyModel2> modelArrayList;
+
+        // Constructor
+        public MyAdapter2(Context context, ArrayList<MyModel2> modelArrayList) {
+            this.context = context;
+            this.modelArrayList = modelArrayList;
+        }
+
+        @Override
+        public int getCount() {
+            return modelArrayList.size(); // returns size of items in list
+        }
+
+        @Override
+        public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
+            return view.equals(object);
+        }
+
+        @NonNull
+        @Override
+        public Object instantiateItem(@NonNull ViewGroup container, int position) {
+            // inflate layout card_item.xml
+            View view = LayoutInflater.from(context).inflate(R.layout.card_item_medium, container, false);
+
+            // init uid views from card_item.xml
+            TextView tvTitle = view.findViewById(R.id.tvTitle);
+            TextView tvSub = view.findViewById(R.id.tvSub);
+            LinearLayout llCard = view.findViewById(R.id.llCard);
+            llCard.setBackgroundResource(R.drawable.cards_eng);
+
+            // get data
+            MyModel2 model = modelArrayList.get(position);
+            String title = model.getTitle();
+            String sub = model.getSub();
+            int idx = model.getIdx();
+
+            // set data
+            tvTitle.setText(title);
+            tvSub.setText(sub);
+
+            // handle card click
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    switch (idx) {
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        case 5:
+                            break;
+                        case 6:
+                            break;
+                        case 7:
+                            break;
+                        case 8:
+                            break;
+                        case 9:
+                            break;
+                    }
+                }
+            });
+
+            // add view to container
+            // ViewPager가 가지고 있는 자녀의 수가 position 값 보다 큰 지를 판별
+            try {
+                container.addView(view, container.getChildCount() > position ? position : container.getChildCount());
+            } catch (IndexOutOfBoundsException e) {
+                e.printStackTrace();
+            }
+
+            return view;
+        }
+
+        @Override
+        public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+            container.removeView((View) object);
+        }
+
+    }
+
+    // ViewPager Adapter 3
+    class MyAdapter3 extends PagerAdapter {
+
+        private Context context;
+        private ArrayList<MyModel2> modelArrayList;
+
+        // Constructor
+        public MyAdapter3(Context context, ArrayList<MyModel2> modelArrayList) {
+            this.context = context;
+            this.modelArrayList = modelArrayList;
+        }
+
+        @Override
+        public int getCount() {
+            return modelArrayList.size(); // returns size of items in list
+        }
+
+        @Override
+        public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
+            return view.equals(object);
+        }
+
+        @NonNull
+        @Override
+        public Object instantiateItem(@NonNull ViewGroup container, int position) {
+            // inflate layout card_item.xml
+            View view = LayoutInflater.from(context).inflate(R.layout.card_item_medium, container, false);
+
+            // init uid views from card_item.xml
+            TextView tvTitle = view.findViewById(R.id.tvTitle);
+            TextView tvSub = view.findViewById(R.id.tvSub);
+            LinearLayout llCard = view.findViewById(R.id.llCard);
+            llCard.setBackgroundResource(R.drawable.cards_eng);
+
+            // get data
+            MyModel2 model = modelArrayList.get(position);
+            String title = model.getTitle();
+            String sub = model.getSub();
+            int idx = model.getIdx();
+
+            // set data
+            tvTitle.setText(title);
+            tvSub.setText(sub);
+
+            // handle card click
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    switch (idx) {
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                    }
+                }
+            });
+
+            // add view to container
+            // ViewPager가 가지고 있는 자녀의 수가 position 값 보다 큰 지를 판별
+            try {
+                container.addView(view, container.getChildCount() > position ? position : container.getChildCount());
+            } catch (IndexOutOfBoundsException e) {
+                e.printStackTrace();
+            }
+
+            return view;
+        }
+
+        @Override
+        public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+            container.removeView((View) object);
+        }
+
+    }
+
+    // ViewPager Adapter 4
+    class MyAdapter4 extends PagerAdapter {
+
+        private Context context;
+        private ArrayList<MyModel2> modelArrayList;
+
+        // Constructor
+        public MyAdapter4(Context context, ArrayList<MyModel2> modelArrayList) {
+            this.context = context;
+            this.modelArrayList = modelArrayList;
+        }
+
+        @Override
+        public int getCount() {
+            return modelArrayList.size(); // returns size of items in list
+        }
+
+        @Override
+        public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
+            return view.equals(object);
+        }
+
+        @NonNull
+        @Override
+        public Object instantiateItem(@NonNull ViewGroup container, int position) {
+            // inflate layout card_item.xml
+            View view = LayoutInflater.from(context).inflate(R.layout.card_item_medium, container, false);
+
+            // init uid views from card_item.xml
+            TextView tvTitle = view.findViewById(R.id.tvTitle);
+            TextView tvSub = view.findViewById(R.id.tvSub);
+            LinearLayout llCard = view.findViewById(R.id.llCard);
+            llCard.setBackgroundResource(R.drawable.cards_eng);
+
+            // get data
+            MyModel2 model = modelArrayList.get(position);
+            String title = model.getTitle();
+            String sub = model.getSub();
+            int idx = model.getIdx();
+
+            // set data
+            tvTitle.setText(title);
+            tvSub.setText(sub);
+
+            // handle card click
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    switch (idx) {
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        case 5:
+                            break;
+                        case 6:
+                            break;
+                        case 7:
+                            break;
+                        case 8:
+                            break;
+                        case 9:
+                            break;
+                        case 10:
+                            break;
+                    }
+                }
+            });
+
+            // add view to container
+            // ViewPager가 가지고 있는 자녀의 수가 position 값 보다 큰 지를 판별
+            try {
+                container.addView(view, container.getChildCount() > position ? position : container.getChildCount());
+            } catch (IndexOutOfBoundsException e) {
+                e.printStackTrace();
+            }
+
+            return view;
+        }
+
+        @Override
+        public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+            container.removeView((View) object);
+        }
+
+    }
+
+    // ViewPager Adapter 5
+    class MyAdapter5 extends PagerAdapter {
+
+        private Context context;
+        private ArrayList<MyModel2> modelArrayList;
+
+        // Constructor
+        public MyAdapter5(Context context, ArrayList<MyModel2> modelArrayList) {
+            this.context = context;
+            this.modelArrayList = modelArrayList;
+        }
+
+        @Override
+        public int getCount() {
+            return modelArrayList.size(); // returns size of items in list
+        }
+
+        @Override
+        public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
+            return view.equals(object);
+        }
+
+        @NonNull
+        @Override
+        public Object instantiateItem(@NonNull ViewGroup container, int position) {
+            // inflate layout card_item.xml
+            View view = LayoutInflater.from(context).inflate(R.layout.card_item_medium, container, false);
+
+            // init uid views from card_item.xml
+            TextView tvTitle = view.findViewById(R.id.tvTitle);
+            TextView tvSub = view.findViewById(R.id.tvSub);
+            LinearLayout llCard = view.findViewById(R.id.llCard);
+            llCard.setBackgroundResource(R.drawable.cards_eng);
+
+            // get data
+            MyModel2 model = modelArrayList.get(position);
+            String title = model.getTitle();
+            String sub = model.getSub();
+            int idx = model.getIdx();
+
+            // set data
+            tvTitle.setText(title);
+            tvSub.setText(sub);
+
+            // handle card click
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    switch (idx) {
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        case 5:
+                            break;
+                        case 6:
+                            break;
+                        case 7:
+                            break;
+                        case 8:
+                            break;
+                        case 9:
+                            break;
+                        case 10:
+                            break;
+                        case 11:
+                            break;
+                        case 12:
+                            break;
+                    }
+                }
+            });
+
+            // add view to container
+            // ViewPager가 가지고 있는 자녀의 수가 position 값 보다 큰 지를 판별
+            try {
+                container.addView(view, container.getChildCount() > position ? position : container.getChildCount());
+            } catch (IndexOutOfBoundsException e) {
+                e.printStackTrace();
+            }
+
+            return view;
+        }
+
+        @Override
+        public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+            container.removeView((View) object);
+        }
+
+    }
+
+    // ViewPager Adapter 6
+    class MyAdapter6 extends PagerAdapter {
+
+        private Context context;
+        private ArrayList<MyModel2> modelArrayList;
+
+        // Constructor
+        public MyAdapter6(Context context, ArrayList<MyModel2> modelArrayList) {
+            this.context = context;
+            this.modelArrayList = modelArrayList;
+        }
+
+        @Override
+        public int getCount() {
+            return modelArrayList.size(); // returns size of items in list
+        }
+
+        @Override
+        public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
+            return view.equals(object);
+        }
+
+        @NonNull
+        @Override
+        public Object instantiateItem(@NonNull ViewGroup container, int position) {
+            // inflate layout card_item.xml
+            View view = LayoutInflater.from(context).inflate(R.layout.card_item_medium, container, false);
+
+            // init uid views from card_item.xml
+            TextView tvTitle = view.findViewById(R.id.tvTitle);
+            TextView tvSub = view.findViewById(R.id.tvSub);
+            LinearLayout llCard = view.findViewById(R.id.llCard);
+            llCard.setBackgroundResource(R.drawable.cards_eng);
+
+            // get data
+            MyModel2 model = modelArrayList.get(position);
+            String title = model.getTitle();
+            String sub = model.getSub();
+            int idx = model.getIdx();
+
+            // set data
+            tvTitle.setText(title);
+            tvSub.setText(sub);
+
+            // handle card click
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    switch (idx) {
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        case 5:
+                            break;
+                        case 6:
+                            break;
+                        case 7:
+                            break;
+                    }
+                }
+            });
+
+            // add view to container
+            // ViewPager가 가지고 있는 자녀의 수가 position 값 보다 큰 지를 판별
+            try {
+                container.addView(view, container.getChildCount() > position ? position : container.getChildCount());
             } catch (IndexOutOfBoundsException e) {
                 e.printStackTrace();
             }

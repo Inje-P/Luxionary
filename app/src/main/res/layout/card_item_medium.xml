@@ -16,7 +16,7 @@
             android:id="@+id/llCard"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@color/main_text"
+            android:background="@color/main_white"
             android:elevation="3dp"
             android:gravity="center"
             android:orientation="vertical">
@@ -25,10 +25,19 @@
                 android:id="@+id/tvTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/pretendard_800"
+                android:fontFamily="@font/nunitosans_900"
                 android:text="Grammar"
-                android:textColor="@color/main_white"
-                android:textSize="24dp" />
+                android:textColor="@color/main_text"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tvSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pretendard_600"
+                android:text="문법예시"
+                android:textColor="@color/main_gray"
+                android:textSize="16dp" />
 
         </LinearLayout>
 

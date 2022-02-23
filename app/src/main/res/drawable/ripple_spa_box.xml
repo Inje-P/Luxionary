@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/main_white"> <!-- Ripple Effect 색상 -->
+
+    <!-- 배경색 -->
+    <item android:id="@+id/ripple_spa_box">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/spa_background"
+                android:endColor="@color/spa_light"/>
+            <stroke android:width="2dp" android:color="@color/spa_light"/>
+        </shape>
+    </item>
+
+</ripple>

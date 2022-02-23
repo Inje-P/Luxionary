@@ -19,8 +19,6 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.loopeer.cardstack.CardStackView;
-
 public class ConjEng extends AppCompatActivity {
     // Data from DB
     String strNick, strPw, strName, strEmail, strAvatar;
