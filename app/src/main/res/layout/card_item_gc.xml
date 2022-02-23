@@ -10,36 +10,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        app:cardCornerRadius="15dp">
+        app:cardCornerRadius="22dp">
 
-        <LinearLayout
-            android:id="@+id/llCard"
+        <RelativeLayout
+            android:id="@+id/rlCard"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@android:color/transparent"
+            android:layout_height="200dp"
+            android:background="@drawable/banner_eng"
             android:elevation="3dp"
             android:gravity="center"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tvTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/nunitosans_900"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="130dp"
+                android:fontFamily="@font/nunitosans_800"
+                android:gravity="center"
                 android:text="Grammar"
-                android:textColor="@color/main_text"
-                android:textSize="22dp" />
+                android:textAlignment="center"
+                android:textColor="@color/main_white"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/tvSub"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="150dp"
                 android:fontFamily="@font/pretendard_600"
+                android:gravity="center"
                 android:text="문법예시"
-                android:textColor="@color/main_gray"
+                android:textAlignment="center"
+                android:textColor="@color/main_white"
                 android:textSize="16dp" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
 

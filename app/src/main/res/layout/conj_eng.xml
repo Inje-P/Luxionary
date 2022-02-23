@@ -137,7 +137,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="1. be"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -152,7 +152,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="2. have"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -167,7 +167,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="3. do"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -182,7 +182,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="4. make"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -197,7 +197,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="5. get"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -212,7 +212,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="6. use"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -227,7 +227,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="7. say"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -242,7 +242,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="8. go"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -257,7 +257,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="9. take"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -272,7 +272,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="10. see"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -287,7 +287,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="11. know"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -302,7 +302,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="12. find"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -317,7 +317,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="13. think"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -332,7 +332,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="14. work"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -347,7 +347,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="15. come"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -362,7 +362,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="16. want"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -377,7 +377,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="17. need"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -392,7 +392,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="18. give"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -407,7 +407,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="19. include"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -422,7 +422,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="20. help"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -437,7 +437,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="21. provide"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -452,7 +452,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="22. look"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -467,7 +467,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="23. start"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -482,7 +482,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="24. create"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -497,7 +497,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="25. try"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -512,7 +512,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="26. become"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -527,7 +527,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="27. keep"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -542,7 +542,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="28. write"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -557,7 +557,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="29. read"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -572,7 +572,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="30. call"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -587,7 +587,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="31. feel"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -602,7 +602,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="32. follow"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -617,7 +617,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="33. tell"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -632,7 +632,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="34. learn"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -647,7 +647,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="35. show"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -662,7 +662,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="36. ask"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -677,7 +677,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="37. add"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -692,7 +692,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="38. put"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -707,7 +707,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="39. offer"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -722,7 +722,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="40. mean"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -737,7 +737,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="41. allow"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -752,7 +752,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="42. leave"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -767,7 +767,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="43. like"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -782,7 +782,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="44. run"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -797,7 +797,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="45. pay"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -812,7 +812,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="46. bring"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -827,7 +827,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="47. seem"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -842,7 +842,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="48. build"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -857,7 +857,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="49. live"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                         <Button
@@ -872,7 +872,7 @@
                             android:stateListAnimator="@null"
                             android:textAllCaps="true"
                             android:text="50. let"
-                            android:textColor="@color/eng_background"
+                            android:textColor="@color/main_white"
                             android:textSize="18dp"></Button>
 
                     </LinearLayout>

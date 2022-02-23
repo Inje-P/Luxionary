@@ -278,6 +278,7 @@ public class MainEng extends AppCompatActivity {
                             pageConj();
                             break;
                         case 5:
+                            pageGlobal();
                             break;
                     }
                 }
@@ -472,6 +473,18 @@ public class MainEng extends AppCompatActivity {
         intentConj.putExtra("email", strEmail);
         intentConj.putExtra("avatar", strAvatar);
         startActivity(intentConj);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
+    }
+
+    public void pageGlobal() {
+        Intent intentGlobal = new Intent(MainEng.this, GlobalEng.class);
+        intentGlobal.putExtra("nick", strNick);
+        intentGlobal.putExtra("pw", strPw);
+        intentGlobal.putExtra("name", strName);
+        intentGlobal.putExtra("email", strEmail);
+        intentGlobal.putExtra("avatar", strAvatar);
+        startActivity(intentGlobal);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
     }

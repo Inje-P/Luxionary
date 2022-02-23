@@ -36,6 +36,13 @@
     <color name="tur_background">#FF5757</color>
     <color name="tur_dark">#AF2929</color>
 
+    // Global Citizen
+    <color name="gc_eng_1">#524A4E</color>
+    <color name="gc_eng_2">#FDEFF4</color>
+    <color name="gc_eng_3">#FFC0D3</color>
+    <color name="gc_eng_4">#FF5C8D</color>
+
+
     // Default
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
