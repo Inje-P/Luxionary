@@ -272,8 +272,10 @@ public class MainEng extends AppCompatActivity {
                             pageVoca();
                             break;
                         case 3:
+                            pageGram();
                             break;
                         case 4:
+                            pageConj();
                             break;
                         case 5:
                             break;
@@ -446,6 +448,30 @@ public class MainEng extends AppCompatActivity {
         intentVoca.putExtra("email", strEmail);
         intentVoca.putExtra("avatar", strAvatar);
         startActivity(intentVoca);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
+    }
+
+    public void pageGram() {
+        Intent intentGram = new Intent(MainEng.this, GrammarEng.class);
+        intentGram.putExtra("nick", strNick);
+        intentGram.putExtra("pw", strPw);
+        intentGram.putExtra("name", strName);
+        intentGram.putExtra("email", strEmail);
+        intentGram.putExtra("avatar", strAvatar);
+        startActivity(intentGram);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
+    }
+
+    public void pageConj() {
+        Intent intentConj = new Intent(MainEng.this, ConjEng.class);
+        intentConj.putExtra("nick", strNick);
+        intentConj.putExtra("pw", strPw);
+        intentConj.putExtra("name", strName);
+        intentConj.putExtra("email", strEmail);
+        intentConj.putExtra("avatar", strAvatar);
+        startActivity(intentConj);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
     }

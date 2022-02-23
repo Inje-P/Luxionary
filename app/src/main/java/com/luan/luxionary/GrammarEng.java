@@ -1016,7 +1016,7 @@ public class GrammarEng extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intentBack = new Intent(GrammarEng.this, MainActivity.class);
+        Intent intentBack = new Intent(GrammarEng.this, MainEng.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intentBack.putExtra("nick", strNick);
         intentBack.putExtra("pw", strPw);

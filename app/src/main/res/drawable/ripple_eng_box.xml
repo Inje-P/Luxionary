@@ -3,13 +3,11 @@
     android:color="@color/eng_background"> <!-- Ripple Effect 색상 -->
 
     <!-- 배경색 -->
-    <item android:id="@+id/ripple_eng_box"
-        android:top="-4dp"
-        android:left="-4dp"
-        android:right="-4dp">
+    <item android:id="@+id/ripple_eng_box">
         <shape android:shape="rectangle">
             <solid android:color="@color/main_white"/>
-            <stroke android:width="3dp" android:color="@color/eng_background"/>
+            <corners android:radius="25dp"/>
+            <stroke android:color="@color/main_text" android:width="2dp"/>
         </shape>
     </item>
 

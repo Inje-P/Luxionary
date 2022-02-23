@@ -8,7 +8,6 @@
             <gradient android:startColor="@color/fra_background"
                 android:endColor="@color/fra_light"/>
             <stroke android:width="2dp" android:color="@color/fra_light"/>
-
         </shape>
     </item>
 

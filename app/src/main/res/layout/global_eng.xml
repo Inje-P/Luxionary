@@ -16,8 +16,8 @@
         <LinearLayout
             android:id="@+id/layoutProfile"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:background="@drawable/top_white"
+            android:layout_height="100dp"
+            android:background="@drawable/top_black"
             android:elevation="5dp"
             android:orientation="horizontal">
 
@@ -35,46 +35,29 @@
                 <LinearLayout
                     android:id="@+id/llProfile"
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
+                    android:layout_height="100dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="10dp"
                         android:layout_weight="7"
                         android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1">
+                            android:layout_height="match_parent">
 
                             <TextView
-                                android:id="@+id/tvTitle1"
+                                android:id="@+id/tvTitle"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/bebas_neue"
                                 android:gravity="center|bottom"
-                                android:text="GRAMMAR"
-                                android:textColor="@color/main_text"
-                                android:textSize="40dp"></TextView>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp">
-
-                            <TextView
-                                android:id="@+id/tvTitle2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/pretendard_700"
-                                android:gravity="center"
-                                android:text="종합 문법"
-                                android:textColor="@color/main_text"
-                                android:textSize="18dp"></TextView>
+                                android:text="GLOBAL CITIZEN"
+                                android:textColor="@color/main_white"
+                                android:textSize="70dp"></TextView>
 
                         </LinearLayout>
 
@@ -104,9 +87,9 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="20dp" />
+                    android:layout_height="20dp"/>
 
-                <!-- 1. Nouns & Articles -->
+                <!-- 1. 국가 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -116,13 +99,13 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tvGrammer1"
+                        android:id="@+id/tvGlobal1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_700"
+                        android:fontFamily="@font/pretendard_800"
                         android:gravity="left|center"
-                        android:text="Nouns &amp; Articles"
+                        android:layout_marginLeft="10dp"
+                        android:text="국가"
                         android:textColor="@color/main_text"
                         android:textSize="22dp"></TextView>
 
@@ -146,7 +129,7 @@
 
                 </RelativeLayout>
 
-                <!-- 2. Pronouns -->
+                <!-- 2. 역사 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -156,13 +139,13 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tvGrammer2"
+                        android:id="@+id/tvGlobal2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_700"
+                        android:fontFamily="@font/pretendard_800"
                         android:gravity="left|center"
-                        android:text="Pronouns"
+                        android:layout_marginLeft="10dp"
+                        android:text="역사"
                         android:textColor="@color/main_text"
                         android:textSize="22dp"></TextView>
 
@@ -186,7 +169,7 @@
 
                 </RelativeLayout>
 
-                <!-- 3. Adjectives -->
+                <!-- 3. 정치 & 행정 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -196,13 +179,13 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tvGrammer3"
+                        android:id="@+id/tvGlobal3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_700"
+                        android:fontFamily="@font/pretendard_800"
                         android:gravity="left|center"
-                        android:text="Adjectives"
+                        android:layout_marginLeft="10dp"
+                        android:text="정치 &amp; 행정"
                         android:textColor="@color/main_text"
                         android:textSize="22dp"></TextView>
 
@@ -226,7 +209,7 @@
 
                 </RelativeLayout>
 
-                <!-- 4. Verbs -->
+                <!-- 4. 경제 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -236,13 +219,13 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tvGrammer4"
+                        android:id="@+id/tvGlobal4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_700"
+                        android:fontFamily="@font/pretendard_800"
                         android:gravity="left|center"
-                        android:text="Verbs"
+                        android:layout_marginLeft="10dp"
+                        android:text="경제"
                         android:textColor="@color/main_text"
                         android:textSize="22dp"></TextView>
 
@@ -266,7 +249,7 @@
 
                 </RelativeLayout>
 
-                <!-- 5. Tenses -->
+                <!-- 5. 문화 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -276,13 +259,13 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tvGrammer5"
+                        android:id="@+id/tvGlobal5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_700"
+                        android:fontFamily="@font/pretendard_800"
                         android:gravity="left|center"
-                        android:text="Tenses"
+                        android:layout_marginLeft="10dp"
+                        android:text="문화"
                         android:textColor="@color/main_text"
                         android:textSize="22dp"></TextView>
 
@@ -306,7 +289,7 @@
 
                 </RelativeLayout>
 
-                <!-- 6. Prepositions & Adverbs -->
+                <!-- 6. 미디어 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -316,13 +299,13 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tvGrammer6"
+                        android:id="@+id/tvGlobal6"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_700"
+                        android:fontFamily="@font/pretendard_800"
                         android:gravity="left|center"
-                        android:text="Prepositions &amp; Adverbs"
+                        android:layout_marginLeft="10dp"
+                        android:text="미디어"
                         android:textColor="@color/main_text"
                         android:textSize="22dp"></TextView>
 
@@ -346,9 +329,49 @@
 
                 </RelativeLayout>
 
+                <!-- 7. 교통 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/black_underline"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvGlobal7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/pretendard_800"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="10dp"
+                        android:text="교통"
+                        android:textColor="@color/main_text"
+                        android:textSize="22dp"></TextView>
+
+                </LinearLayout>
+
+                <!-- Container 7 -->
+                <RelativeLayout
+                    android:id="@+id/container7"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/main_white">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:clipToPadding="false"
+                        android:foregroundGravity="center"
+                        android:overScrollMode="never" />
+
+                </RelativeLayout>
+
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="20dp" />
+                    android:layout_height="20dp"/>
 
             </LinearLayout>
 
