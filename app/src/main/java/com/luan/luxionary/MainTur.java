@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -24,8 +25,9 @@ import androidx.viewpager.widget.ViewPager;
 import java.util.ArrayList;
 
 public class MainTur extends AppCompatActivity {
+
     // Data from DB
-    String strNick, strPw, strName, strEmail, strAvatar;
+    String username, email, profile, avatar;
 
     TextView tvTitle1, tvTitle2;
     ImageView imgAvatar;
@@ -42,6 +44,7 @@ public class MainTur extends AppCompatActivity {
     private View drawerView;
     TextView tvNickname, tvEmail;
     ImageView btnClose;
+    Button btnAccount, btnCharge, btnSupport;
 
     // ViewPager
     private ViewPager viewPager;
@@ -56,13 +59,12 @@ public class MainTur extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_tur);
 
-        // Data from SQLite
+        // Data from Firebase
         Intent getData = getIntent();
-        strNick = getData.getStringExtra("nick");
-        strPw = getData.getStringExtra("pw");
-        strName = getData.getStringExtra("name");
-        strEmail = getData.getStringExtra("email");
-        strAvatar = getData.getStringExtra("avatar");
+        username = getData.getStringExtra("username");
+        email = getData.getStringExtra("email");
+        profile = getData.getStringExtra("profile");
+        avatar = getData.getStringExtra("avatar");
 
         // Sidebar
         tvNickname = (TextView) findViewById(R.id.tvNickname);
@@ -83,6 +85,48 @@ public class MainTur extends AppCompatActivity {
                 drawerLayout.closeDrawers();
             }
         });
+        btnAccount = (Button) findViewById(R.id.btnAccount);
+        btnAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAccount = new Intent(MainTur.this, AccountActivity.class);
+                intentAccount.putExtra("username", username);
+                intentAccount.putExtra("email", email);
+                intentAccount.putExtra("profile", profile);
+                intentAccount.putExtra("avatar", avatar);
+                startActivity(intentAccount);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnCharge = (Button) findViewById(R.id.btnCharge);
+        btnCharge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentCharge = new Intent(MainTur.this, ChargeActivity.class);
+                intentCharge.putExtra("username", username);
+                intentCharge.putExtra("email", email);
+                intentCharge.putExtra("profile", profile);
+                intentCharge.putExtra("avatar", avatar);
+                startActivity(intentCharge);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnSupport = (Button) findViewById(R.id.btnSupport);
+        btnSupport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentSupport = new Intent(MainTur.this, SupportActivity.class);
+                intentSupport.putExtra("username", username);
+                intentSupport.putExtra("email", email);
+                intentSupport.putExtra("profile", profile);
+                intentSupport.putExtra("avatar", avatar);
+                startActivity(intentSupport);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
 
         // Title
         layoutProfile = (LinearLayout) findViewById(R.id.layoutProfile);
@@ -100,10 +144,11 @@ public class MainTur extends AppCompatActivity {
 
         // Avatar
         imgAvatar = (ImageView) findViewById(R.id.imgAvatar);
-        if (strAvatar == null) {
+        if (avatar == null) {
             imgAvatar.setImageResource(R.drawable.avt_male1);
+            avatar = "male1";
         } else {
-            switch (strAvatar) {
+            switch (avatar) {
                 case "male1":
                     imgAvatar.setImageResource(R.drawable.avt_male1);
                     break;
@@ -306,11 +351,10 @@ public class MainTur extends AppCompatActivity {
         super.onBackPressed();
         Intent intentBack = new Intent(MainTur.this, MainActivity.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intentBack.putExtra("nick", strNick);
-        intentBack.putExtra("pw", strPw);
-        intentBack.putExtra("name", strName);
-        intentBack.putExtra("email", strEmail);
-        intentBack.putExtra("avatar", strAvatar);
+        intentBack.putExtra("username", username);
+        intentBack.putExtra("email", email);
+        intentBack.putExtra("profile", profile);
+        intentBack.putExtra("avatar", avatar);
         startActivity(intentBack);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -325,15 +369,15 @@ public class MainTur extends AppCompatActivity {
 
         @Override
         public void onDrawerOpened(@NonNull View drawerView) {
-            if (strNick == null) {
-                tvNickname.setText("제이슨");
+            if (username == null) {
+                tvNickname.setText("해리슨");
             } else {
-                tvNickname.setText(strNick);
+                tvNickname.setText(username);
             }
-            if (strEmail == null) {
+            if (email == null) {
                 tvEmail.setText("luxionary@gmail.com");
             } else {
-                tvEmail.setText(strEmail);
+                tvEmail.setText(email);
             }
         }
 
@@ -361,11 +405,10 @@ public class MainTur extends AppCompatActivity {
                     break;
                 case R.id.btnHome:
                     Intent intentHome = new Intent(MainTur.this, MainActivity.class);
-                    intentHome.putExtra("nick", strNick);
-                    intentHome.putExtra("pw", strPw);
-                    intentHome.putExtra("name", strName);
-                    intentHome.putExtra("email", strEmail);
-                    intentHome.putExtra("avatar", strAvatar);
+                    intentHome.putExtra("username", username);
+                    intentHome.putExtra("email", email);
+                    intentHome.putExtra("profile", profile);
+                    intentHome.putExtra("avatar", avatar);
                     startActivity(intentHome);
                     overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                     finish();
@@ -378,11 +421,10 @@ public class MainTur extends AppCompatActivity {
 
     public void pageLang101() {
         Intent intentLang101 = new Intent(MainTur.this, Lang101Tur.class);
-        intentLang101.putExtra("nick", strNick);
-        intentLang101.putExtra("pw", strPw);
-        intentLang101.putExtra("name", strName);
-        intentLang101.putExtra("email", strEmail);
-        intentLang101.putExtra("avatar", strAvatar);
+        intentLang101.putExtra("username", username);
+        intentLang101.putExtra("email", email);
+        intentLang101.putExtra("profile", profile);
+        intentLang101.putExtra("avatar", avatar);
         startActivity(intentLang101);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -390,12 +432,44 @@ public class MainTur extends AppCompatActivity {
 
     public void pageVoca() {
         Intent intentVoca = new Intent(MainTur.this, VocaTur.class);
-        intentVoca.putExtra("nick", strNick);
-        intentVoca.putExtra("pw", strPw);
-        intentVoca.putExtra("name", strName);
-        intentVoca.putExtra("email", strEmail);
-        intentVoca.putExtra("avatar", strAvatar);
+        intentVoca.putExtra("username", username);
+        intentVoca.putExtra("email", email);
+        intentVoca.putExtra("profile", profile);
+        intentVoca.putExtra("avatar", avatar);
         startActivity(intentVoca);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
+    }
+
+    public void pageGram() {
+        Intent intentGram = new Intent(MainTur.this, GrammarEng.class);
+        intentGram.putExtra("username", username);
+        intentGram.putExtra("email", email);
+        intentGram.putExtra("profile", profile);
+        intentGram.putExtra("avatar", avatar);
+        startActivity(intentGram);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
+    }
+
+    public void pageConj() {
+        Intent intentConj = new Intent(MainTur.this, ConjEng.class);
+        intentConj.putExtra("username", username);
+        intentConj.putExtra("email", email);
+        intentConj.putExtra("profile", profile);
+        intentConj.putExtra("avatar", avatar);
+        startActivity(intentConj);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        finish();
+    }
+
+    public void pageGlobal() {
+        Intent intentGlobal = new Intent(MainTur.this, GlobalEng.class);
+        intentGlobal.putExtra("username", username);
+        intentGlobal.putExtra("email", email);
+        intentGlobal.putExtra("profile", profile);
+        intentGlobal.putExtra("avatar", avatar);
+        startActivity(intentGlobal);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
     }

@@ -21,6 +21,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SignupActivity extends AppCompatActivity {
+
     // DB
     String strNick, strPw, strPwCheck, strName, strEmail;
 

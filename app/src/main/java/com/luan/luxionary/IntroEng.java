@@ -15,8 +15,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class IntroEng extends AppCompatActivity {
+
     // Data from DB
-    String strNick, strPw, strName, strEmail, strAvatar;
+    String username, email, profile, avatar;
 
     LinearLayout llIntroTitle;
     TextView tvIntroTitle;
@@ -28,12 +29,12 @@ public class IntroEng extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.intro_eng);
 
+        // Data from Firebase
         Intent getData = getIntent();
-        strNick = getData.getStringExtra("nick");
-        strPw = getData.getStringExtra("pw");
-        strName = getData.getStringExtra("name");
-        strEmail = getData.getStringExtra("email");
-        strAvatar = getData.getStringExtra("avatar");
+        username = getData.getStringExtra("username");
+        email = getData.getStringExtra("email");
+        profile = getData.getStringExtra("profile");
+        avatar = getData.getStringExtra("avatar");
 
         llIntroTitle = (LinearLayout) findViewById(R.id.llIntroTitle);
         aniDrawable = (AnimationDrawable) llIntroTitle.getBackground();
@@ -51,11 +52,10 @@ public class IntroEng extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent(IntroEng.this, MainEng.class);
-                intent.putExtra("nick", strNick);
-                intent.putExtra("pw", strPw);
-                intent.putExtra("name", strName);
-                intent.putExtra("email", strEmail);
-                intent.putExtra("avatar", strAvatar);
+                intent.putExtra("username", username);
+                intent.putExtra("email", email);
+                intent.putExtra("profile", profile);
+                intent.putExtra("avatar", avatar);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                 finish();
@@ -69,11 +69,10 @@ public class IntroEng extends AppCompatActivity {
         super.onBackPressed();
         Intent intentBack = new Intent(IntroEng.this, MainActivity.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intentBack.putExtra("nick", strNick);
-        intentBack.putExtra("pw", strPw);
-        intentBack.putExtra("name", strName);
-        intentBack.putExtra("email", strEmail);
-        intentBack.putExtra("avatar", strAvatar);
+        intentBack.putExtra("username", username);
+        intentBack.putExtra("email", email);
+        intentBack.putExtra("profile", profile);
+        intentBack.putExtra("avatar", avatar);
         startActivity(intentBack);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();

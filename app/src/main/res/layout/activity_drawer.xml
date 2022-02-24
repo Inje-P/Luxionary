@@ -195,7 +195,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imgCharging"
+                        android:id="@+id/imgCharge"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="8dp"
@@ -220,7 +220,7 @@
                         android:fontFamily="@font/pretendard_700"
                         android:gravity="left|center"
                         android:stateListAnimator="@null"
-                        android:text="럭스 충전소"
+                        android:text="럭슬럼 충전소"
                         android:textColor="@color/main_text"
                         android:textSize="18dp" />
 
@@ -269,54 +269,6 @@
                         android:gravity="left|center"
                         android:stateListAnimator="@null"
                         android:text="고객센터"
-                        android:textColor="@color/main_text"
-                        android:textSize="18dp" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <!-- Setting -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="20dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="45dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="15dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imgSetting"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="8dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_setting"
-                        android:stateListAnimator="@null" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_weight="1">
-
-                    <Button
-                        android:id="@+id/btnSetting"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/ripple_black_underline2"
-                        android:fontFamily="@font/pretendard_700"
-                        android:gravity="left|center"
-                        android:stateListAnimator="@null"
-                        android:text="설정"
                         android:textColor="@color/main_text"
                         android:textSize="18dp" />
 

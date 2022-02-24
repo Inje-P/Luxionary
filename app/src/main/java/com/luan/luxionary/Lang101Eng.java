@@ -20,8 +20,9 @@ import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 public class Lang101Eng extends AppCompatActivity {
+
     // Data from DB
-    String strNick, strPw, strName, strEmail, strAvatar;
+    String username, email, profile, avatar;
 
     TextView tvTitle1, tvTitle2;
     Button btnEng1, btnEng2, btnEng3, btnEng4, btnEng5, btnEng6, btnEng7, btnEng8;
@@ -39,6 +40,7 @@ public class Lang101Eng extends AppCompatActivity {
     private View drawerView;
     TextView tvNickname, tvEmail;
     ImageView btnClose;
+    Button btnAccount, btnCharge, btnSupport;
 
     // Footer
     ImageButton btnSidebar, btnHome, btnUpdate;
@@ -48,13 +50,12 @@ public class Lang101Eng extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lang101_eng);
 
-        // Data from SQLite
+        // Data from Firebase
         Intent getData = getIntent();
-        strNick = getData.getStringExtra("nick");
-        strPw = getData.getStringExtra("pw");
-        strName = getData.getStringExtra("name");
-        strEmail = getData.getStringExtra("email");
-        strAvatar = getData.getStringExtra("avatar");
+        username = getData.getStringExtra("username");
+        email = getData.getStringExtra("email");
+        profile = getData.getStringExtra("profile");
+        avatar = getData.getStringExtra("avatar");
 
         // Sidebar
         tvNickname = (TextView) findViewById(R.id.tvNickname);
@@ -73,6 +74,48 @@ public class Lang101Eng extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 drawerLayout.closeDrawers();
+            }
+        });
+        btnAccount = (Button) findViewById(R.id.btnAccount);
+        btnAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAccount = new Intent(Lang101Eng.this, AccountActivity.class);
+                intentAccount.putExtra("username", username);
+                intentAccount.putExtra("email", email);
+                intentAccount.putExtra("profile", profile);
+                intentAccount.putExtra("avatar", avatar);
+                startActivity(intentAccount);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnCharge = (Button) findViewById(R.id.btnCharge);
+        btnCharge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentCharge = new Intent(Lang101Eng.this, ChargeActivity.class);
+                intentCharge.putExtra("username", username);
+                intentCharge.putExtra("email", email);
+                intentCharge.putExtra("profile", profile);
+                intentCharge.putExtra("avatar", avatar);
+                startActivity(intentCharge);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnSupport = (Button) findViewById(R.id.btnSupport);
+        btnSupport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentSupport = new Intent(Lang101Eng.this, SupportActivity.class);
+                intentSupport.putExtra("username", username);
+                intentSupport.putExtra("email", email);
+                intentSupport.putExtra("profile", profile);
+                intentSupport.putExtra("avatar", avatar);
+                startActivity(intentSupport);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
             }
         });
 
@@ -162,11 +205,10 @@ public class Lang101Eng extends AppCompatActivity {
         super.onBackPressed();
         Intent intentBack = new Intent(Lang101Eng.this, MainEng.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intentBack.putExtra("nick", strNick);
-        intentBack.putExtra("pw", strPw);
-        intentBack.putExtra("name", strName);
-        intentBack.putExtra("email", strEmail);
-        intentBack.putExtra("avatar", strAvatar);
+        intentBack.putExtra("username", username);
+        intentBack.putExtra("email", email);
+        intentBack.putExtra("profile", profile);
+        intentBack.putExtra("avatar", avatar);
         startActivity(intentBack);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -181,15 +223,15 @@ public class Lang101Eng extends AppCompatActivity {
 
         @Override
         public void onDrawerOpened(@NonNull View drawerView) {
-            if (strNick == null) {
-                tvNickname.setText("제이슨");
+            if (username == null) {
+                tvNickname.setText("해리슨");
             } else {
-                tvNickname.setText(strNick);
+                tvNickname.setText(username);
             }
-            if (strEmail == null) {
+            if (email == null) {
                 tvEmail.setText("luxionary@gmail.com");
             } else {
-                tvEmail.setText(strEmail);
+                tvEmail.setText(email);
             }
         }
 
@@ -268,11 +310,10 @@ public class Lang101Eng extends AppCompatActivity {
                     break;
                 case R.id.btnHome:
                     Intent intentHome = new Intent(Lang101Eng.this, MainActivity.class);
-                    intentHome.putExtra("nick", strNick);
-                    intentHome.putExtra("pw", strPw);
-                    intentHome.putExtra("name", strName);
-                    intentHome.putExtra("email", strEmail);
-                    intentHome.putExtra("avatar", strAvatar);
+                    intentHome.putExtra("username", username);
+                    intentHome.putExtra("email", email);
+                    intentHome.putExtra("profile", profile);
+                    intentHome.putExtra("avatar", avatar);
                     startActivity(intentHome);
                     overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                     finish();
@@ -285,11 +326,10 @@ public class Lang101Eng extends AppCompatActivity {
 
     public void page01() {
         Intent intent01 = new Intent(Lang101Eng.this, Lang101Eng_01_1.class);
-        intent01.putExtra("nick", strNick);
-        intent01.putExtra("pw", strPw);
-        intent01.putExtra("name", strName);
-        intent01.putExtra("email", strEmail);
-        intent01.putExtra("avatar", strAvatar);
+        intent01.putExtra("username", username);
+        intent01.putExtra("email", email);
+        intent01.putExtra("profile", profile);
+        intent01.putExtra("avatar", avatar);
         startActivity(intent01);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -297,11 +337,10 @@ public class Lang101Eng extends AppCompatActivity {
 
     public void page02() {
         Intent intent02 = new Intent(Lang101Eng.this, Lang101Eng_02_1.class);
-        intent02.putExtra("nick", strNick);
-        intent02.putExtra("pw", strPw);
-        intent02.putExtra("name", strName);
-        intent02.putExtra("email", strEmail);
-        intent02.putExtra("avatar", strAvatar);
+        intent02.putExtra("username", username);
+        intent02.putExtra("email", email);
+        intent02.putExtra("profile", profile);
+        intent02.putExtra("avatar", avatar);
         startActivity(intent02);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -318,7 +357,7 @@ public class Lang101Eng extends AppCompatActivity {
         colorAni1.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                tvTitle1.setTextColor((Integer)animator.getAnimatedValue());
+                tvTitle1.setTextColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -328,7 +367,7 @@ public class Lang101Eng extends AppCompatActivity {
         colorAni2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                tvTitle1.setTextColor((Integer)animator.getAnimatedValue());
+                tvTitle1.setTextColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -338,7 +377,7 @@ public class Lang101Eng extends AppCompatActivity {
         colorAni3.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                tvTitle1.setTextColor((Integer)animator.getAnimatedValue());
+                tvTitle1.setTextColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -348,7 +387,7 @@ public class Lang101Eng extends AppCompatActivity {
         colorAni4.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                tvTitle1.setTextColor((Integer)animator.getAnimatedValue());
+                tvTitle1.setTextColor((Integer) animator.getAnimatedValue());
             }
         });
 
@@ -359,25 +398,25 @@ public class Lang101Eng extends AppCompatActivity {
     }
 
     public void setColorStateList(View view, int selectedColor, int defaultColor) {
-        int[][] states = new int[][] {
-                new int[] {
+        int[][] states = new int[][]{
+                new int[]{
                         android.R.attr.state_pressed,
                         android.R.attr.state_selected
                 }, // pressed, selected, focused
-                new int[] {} // default
+                new int[]{} // default
         };
 
-        int[] colors = new int[] {
+        int[] colors = new int[]{
                 selectedColor,
                 defaultColor
         };
 
         ColorStateList textColorList = new ColorStateList(states, colors);
         if (view instanceof TextView || view instanceof AppCompatTextView) { // TextView
-            ((TextView)view).setTextColor(textColorList);
+            ((TextView) view).setTextColor(textColorList);
             view.setClickable(true);
         } else if (view instanceof Button || view instanceof AppCompatButton) { // Button
-            ((Button)view).setTextColor(textColorList);
+            ((Button) view).setTextColor(textColorList);
         }
         view.setSelected(true);
     }

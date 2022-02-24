@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvBanner1, tvBanner2;
     LinearLayout llTop, llProfile, llAvatar, llBanner;
     ImageView imgAvatar;
-    Button btnDate, btnTasks;
+    Button btnDate;
 
     // Random Choice
     LinearLayout llRandom;
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     Animation aniTouch;
     Animation aniLlTop, aniLlProfile, aniTitle1, aniTitle2, aniLlAvatar, aniAvatar;
-    Animation aniBtnDate, aniBtnTasks;
+    Animation aniBtnDate;
     Animation aniLlBanner;
     Animation aniBanner1, aniBanner2, aniLlRandom, aniBtnRandom;
 
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     private View drawerView;
     TextView tvNickname, tvEmail;
     ImageView btnClose;
-    Button btnAccount, btnSupport, btnSetting;
+    Button btnAccount, btnCharge, btnSupport;
 
     // Footer
     ImageButton btnSidebar, btnHome, btnUpdate;
@@ -109,6 +109,34 @@ public class MainActivity extends AppCompatActivity {
                 intentAccount.putExtra("profile", profile);
                 intentAccount.putExtra("avatar", avatar);
                 startActivity(intentAccount);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnCharge = (Button) findViewById(R.id.btnCharge);
+        btnCharge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentCharge = new Intent(MainActivity.this, ChargeActivity.class);
+                intentCharge.putExtra("username", username);
+                intentCharge.putExtra("email", email);
+                intentCharge.putExtra("profile", profile);
+                intentCharge.putExtra("avatar", avatar);
+                startActivity(intentCharge);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnSupport = (Button) findViewById(R.id.btnSupport);
+        btnSupport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentSupport = new Intent(MainActivity.this, SupportActivity.class);
+                intentSupport.putExtra("username", username);
+                intentSupport.putExtra("email", email);
+                intentSupport.putExtra("profile", profile);
+                intentSupport.putExtra("avatar", avatar);
+                startActivity(intentSupport);
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout);
                 finish();
             }
@@ -181,15 +209,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Date & Tasks Section
         btnDate = (Button) findViewById(R.id.btnDate);
-        btnTasks = (Button) findViewById(R.id.btnTasks);
         aniBtnDate = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend_fast);
-        aniBtnTasks = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend_fast);
         aniBtnDate.setStartOffset(400);
-        aniBtnTasks.setStartOffset(600);
         btnDate.startAnimation(aniBtnDate);
-        btnTasks.startAnimation(aniBtnTasks);
         btnDate.setOnClickListener(mClickListener);
-        btnTasks.setOnClickListener(mClickListener);
 
         // Center Image
         llRandom = (LinearLayout) findViewById(R.id.llRandom);
@@ -412,8 +435,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intentDate);
                     overridePendingTransition(R.anim.fadein, R.anim.fadeout);
                     finish();
-                    break;
-                case R.id.btnTasks:
                     break;
                 case R.id.btnRandom:
                     rainbow();

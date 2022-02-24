@@ -1,35 +1,39 @@
 package com.luan.luxionary;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-public class Lang101Ita_01_2 extends AppCompatActivity {
+import com.bumptech.glide.Glide;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class ChargeActivity extends AppCompatActivity {
 
     // Data from DB
     String username, email, profile, avatar;
 
-    ImageButton btnPrev, btnNext;
+    LinearLayout layoutTop;
+    Animation aniLayoutTop;
 
-    // Main
-    LinearLayout layoutTitle, layoutMain;
-    ImageButton btnPlay;
-    Animation aniLayoutTitle, aniLayoutMain;
-    ImageButton btnEnd;
-    Animation aniBtnEnd;
+    Button btnLux220, btnLux330, btnLux550, btnLux770, btnLux1000, btnFree;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -44,9 +48,8 @@ public class Lang101Ita_01_2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lang101_ita_01_2);
+        setContentView(R.layout.activity_charge);
 
-        // Data from Firebase
         Intent getData = getIntent();
         username = getData.getStringExtra("username");
         email = getData.getStringExtra("email");
@@ -76,7 +79,7 @@ public class Lang101Ita_01_2 extends AppCompatActivity {
         btnAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentAccount = new Intent(Lang101Ita_01_2.this, AccountActivity.class);
+                Intent intentAccount = new Intent(ChargeActivity.this, AccountActivity.class);
                 intentAccount.putExtra("username", username);
                 intentAccount.putExtra("email", email);
                 intentAccount.putExtra("profile", profile);
@@ -90,7 +93,7 @@ public class Lang101Ita_01_2 extends AppCompatActivity {
         btnCharge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentCharge = new Intent(Lang101Ita_01_2.this, ChargeActivity.class);
+                Intent intentCharge = new Intent(ChargeActivity.this, ChargeActivity.class);
                 intentCharge.putExtra("username", username);
                 intentCharge.putExtra("email", email);
                 intentCharge.putExtra("profile", profile);
@@ -104,7 +107,7 @@ public class Lang101Ita_01_2 extends AppCompatActivity {
         btnSupport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentSupport = new Intent(Lang101Ita_01_2.this, SupportActivity.class);
+                Intent intentSupport = new Intent(ChargeActivity.this, SupportActivity.class);
                 intentSupport.putExtra("username", username);
                 intentSupport.putExtra("email", email);
                 intentSupport.putExtra("profile", profile);
@@ -115,46 +118,25 @@ public class Lang101Ita_01_2 extends AppCompatActivity {
             }
         });
 
-        // Prev & Next Buttons
-        btnPrev = (ImageButton) findViewById(R.id.btnPrev);
-        btnNext = (ImageButton) findViewById(R.id.btnNext);
-        btnPrev.setOnClickListener(mClickListener);
-        btnNext.setOnClickListener(mClickListener);
+        // Layout Animation
+        layoutTop = (LinearLayout) findViewById(R.id.layoutTop);
+        aniLayoutTop = AnimationUtils.loadAnimation(ChargeActivity.this, R.anim.descend);
+        layoutTop.startAnimation(aniLayoutTop);
 
-        // Layouts
-        layoutTitle = (LinearLayout) findViewById(R.id.layoutTitle);
-        layoutMain = (LinearLayout) findViewById(R.id.layoutMain);
-        aniLayoutTitle = AnimationUtils.loadAnimation(Lang101Ita_01_2.this, R.anim.descend_fast);
-        aniLayoutMain = AnimationUtils.loadAnimation(Lang101Ita_01_2.this, R.anim.fadein);
-        aniLayoutMain.setStartOffset(400);
-        layoutTitle.startAnimation(aniLayoutTitle);
-        layoutMain.startAnimation(aniLayoutMain);
+        /*
+         * Buying Buttons
+         * */
+        btnLux220 = (Button) findViewById(R.id.btnLux220);
+        btnLux330 = (Button) findViewById(R.id.btnLux330);
+        btnLux550 = (Button) findViewById(R.id.btnLux550);
+        btnLux770 = (Button) findViewById(R.id.btnLux770);
+        btnLux1000 = (Button) findViewById(R.id.btnLux1000);
 
-        // Play Button
-        btnPlay = (ImageButton) findViewById(R.id.btnPlay);
-        btnPlay.setOnClickListener(mClickListener);
-
-        // End Button
-        btnEnd = (ImageButton) findViewById(R.id.btnEnd);
-        aniBtnEnd = new AlphaAnimation(0.0f, 1.0f);
-        aniBtnEnd.setDuration(200);
-        aniBtnEnd.setStartOffset(400);
-        aniBtnEnd.setRepeatMode(Animation.REVERSE);
-        aniBtnEnd.setRepeatCount(Animation.INFINITE);
-        btnEnd.startAnimation(aniBtnEnd);
-        btnEnd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentEnd = new Intent(Lang101Ita_01_2.this, Lang101Ita_01_3.class);
-                intentEnd.putExtra("username", username);
-                intentEnd.putExtra("email", email);
-                intentEnd.putExtra("profile", profile);
-                intentEnd.putExtra("avatar", avatar);
-                startActivity(intentEnd);
-                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
-                finish();
-            }
-        });
+        /*
+         * Luxlum For Free
+         * */
+        btnFree = (Button) findViewById(R.id.btnFree);
+        btnFree.setOnClickListener(mClickListener);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -170,7 +152,7 @@ public class Lang101Ita_01_2 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intentBack = new Intent(Lang101Ita_01_2.this, Lang101Ita_01_1.class);
+        Intent intentBack = new Intent(ChargeActivity.this, MainActivity.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intentBack.putExtra("username", username);
         intentBack.putExtra("email", email);
@@ -213,47 +195,22 @@ public class Lang101Ita_01_2 extends AppCompatActivity {
         }
     };
 
-    // Main Layout
     View.OnClickListener mClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
-                // Prev & Next Buttons
-                case R.id.btnPrev:
-                    Intent intentPrev = new Intent(Lang101Ita_01_2.this, Lang101Ita_01_1.class);
-                    intentPrev.putExtra("username", username);
-                    intentPrev.putExtra("email", email);
-                    intentPrev.putExtra("profile", profile);
-                    intentPrev.putExtra("avatar", avatar);
-                    startActivity(intentPrev);
-                    overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
-                    finish();
-                    break;
-                case R.id.btnNext:
-                    Intent intentNext = new Intent(Lang101Ita_01_2.this, Lang101Ita_01_3.class);
-                    intentNext.putExtra("username", username);
-                    intentNext.putExtra("email", email);
-                    intentNext.putExtra("profile", profile);
-                    intentNext.putExtra("avatar", avatar);
-                    startActivity(intentNext);
-                    overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
-                    finish();
-                    break;
-                // Play Button
-                case R.id.btnPlay:
-                    break;
                 // Footer
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);
                     break;
                 case R.id.btnHome:
-                    Intent intentHome = new Intent(Lang101Ita_01_2.this, MainActivity.class);
+                    Intent intentHome = new Intent(ChargeActivity.this, MainActivity.class);
                     intentHome.putExtra("username", username);
                     intentHome.putExtra("email", email);
                     intentHome.putExtra("profile", profile);
                     intentHome.putExtra("avatar", avatar);
                     startActivity(intentHome);
-                    overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
+                    overridePendingTransition(R.anim.fadein, R.anim.fadeout);
                     finish();
                     break;
                 case R.id.btnUpdate:

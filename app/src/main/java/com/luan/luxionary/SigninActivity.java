@@ -12,6 +12,7 @@ import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SigninActivity extends AppCompatActivity {
+
     // DB
     String strNick, strPw, strName, strEmail;
 

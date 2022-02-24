@@ -13,8 +13,6 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 public class IntroActivity extends AppCompatActivity {
-    // DB
-    String strNick, strPw, strName, strEmail;
 
     ImageButton imgIntro;
     Animation ani;
@@ -23,12 +21,6 @@ public class IntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-
-        Intent getData = getIntent();
-        strNick = getData.getStringExtra("nick");
-        strPw = getData.getStringExtra("pw");
-        strName = getData.getStringExtra("name");
-        strEmail = getData.getStringExtra("email");
 
         imgIntro = (ImageButton) findViewById(R.id.imgIntro);
         ani = AnimationUtils.loadAnimation(IntroActivity.this, R.anim.ascend);
@@ -41,10 +33,6 @@ public class IntroActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent(IntroActivity.this, StartActivity.class);
-                intent.putExtra("nick", strNick);
-                intent.putExtra("pw", strPw);
-                intent.putExtra("name", strName);
-                intent.putExtra("email", strEmail);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                 finish();

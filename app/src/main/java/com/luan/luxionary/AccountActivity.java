@@ -36,7 +36,7 @@ public class AccountActivity extends AppCompatActivity {
     private View drawerView;
     TextView tvNickname, tvEmail;
     ImageView btnClose;
-    Button btnAccount, btnSupport, btnSetting;
+    Button btnAccount, btnCharge, btnSupport;
 
     // Footer
     ImageButton btnSidebar, btnHome, btnUpdate;
@@ -81,6 +81,34 @@ public class AccountActivity extends AppCompatActivity {
                 intentAccount.putExtra("profile", profile);
                 intentAccount.putExtra("avatar", avatar);
                 startActivity(intentAccount);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnCharge = (Button) findViewById(R.id.btnCharge);
+        btnCharge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentCharge = new Intent(AccountActivity.this, ChargeActivity.class);
+                intentCharge.putExtra("username", username);
+                intentCharge.putExtra("email", email);
+                intentCharge.putExtra("profile", profile);
+                intentCharge.putExtra("avatar", avatar);
+                startActivity(intentCharge);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnSupport = (Button) findViewById(R.id.btnSupport);
+        btnSupport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentSupport = new Intent(AccountActivity.this, SupportActivity.class);
+                intentSupport.putExtra("username", username);
+                intentSupport.putExtra("email", email);
+                intentSupport.putExtra("profile", profile);
+                intentSupport.putExtra("avatar", avatar);
+                startActivity(intentSupport);
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout);
                 finish();
             }

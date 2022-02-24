@@ -59,7 +59,7 @@
                                     android:layout_height="match_parent"
                                     android:fontFamily="@font/pretendard_800"
                                     android:gravity="center|bottom"
-                                    android:text="럭스 충전소"
+                                    android:text="럭슬럼 충전소"
                                     android:textColor="@color/main_text"
                                     android:textSize="35dp"></TextView>
 
@@ -75,7 +75,7 @@
                                     android:layout_height="match_parent"
                                     android:fontFamily="@font/pretendard_600"
                                     android:gravity="center_horizontal"
-                                    android:text="럭스를 통해서 멤버십을 이용할 수 있어요"
+                                    android:text="럭슬럼을 통해서 멤버십을 이용할 수 있어요"
                                     android:textColor="@color/main_gray"
                                     android:textSize="18dp"></TextView>
 
@@ -95,9 +95,7 @@
 
         </LinearLayout>
 
-        <!-- Personal Information -->
         <LinearLayout
-            android:id="@+id/layoutPi"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="20dp"
@@ -121,7 +119,6 @@
                     android:layout_weight="7"
                     android:orientation="vertical">
 
-                    <!-- Profile -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -135,6 +132,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="20dp" />
 
+                        <!-- Paying -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
@@ -485,7 +483,7 @@
 
                     </LinearLayout>
 
-                    <!-- My Gems -->
+                    <!-- Luxlum For Free -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -509,118 +507,29 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_weight="1.5"
-                                android:orientation="horizontal">
+                                android:layout_weight="1"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
 
-                                <Space
-                                    android:layout_width="15dp"
-                                    android:layout_height="match_parent" />
+                                <TextView
+                                    android:id="@+id/tvBanner1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/pretendard_800"
+                                    android:text="광고 영상을 보고"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp"></TextView>
 
-                                <!-- Gem : Eng -->
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:id="@+id/imgGemEng"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_margin="8dp"
-                                        android:scaleType="fitCenter"
-                                        android:src="@drawable/gem_eng" />
-
-                                </LinearLayout>
-
-                                <!-- Gem : Fra -->
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:id="@+id/imgGemFra"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_margin="8dp"
-                                        android:scaleType="fitCenter"
-                                        android:src="@drawable/gem_fra" />
-
-                                </LinearLayout>
-
-                                <!-- Gem : Deu -->
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:id="@+id/imgGemDeu"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_margin="8dp"
-                                        android:scaleType="fitCenter"
-                                        android:src="@drawable/gem_deu" />
-
-                                </LinearLayout>
-
-                                <!-- Gem : Ita -->
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:id="@+id/imgGemIta"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_margin="8dp"
-                                        android:scaleType="fitCenter"
-                                        android:src="@drawable/gem_ita" />
-
-                                </LinearLayout>
-
-                                <!-- Gem : Spa -->
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:id="@+id/imgGemSpa"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_margin="8dp"
-                                        android:scaleType="fitCenter"
-                                        android:src="@drawable/gem_spa" />
-
-                                </LinearLayout>
-
-                                <!-- Gem : Rus -->
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:id="@+id/imgGemRus"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_margin="8dp"
-                                        android:scaleType="fitCenter"
-                                        android:src="@drawable/gem_rus" />
-
-                                </LinearLayout>
-
-                                <Space
-                                    android:layout_width="15dp"
-                                    android:layout_height="match_parent" />
+                                <TextView
+                                    android:id="@+id/tvBanner2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/pretendard_800"
+                                    android:text="5럭슬럼을 무료로 충전하세요!"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="25dp"></TextView>
 
                             </LinearLayout>
 
@@ -631,119 +540,26 @@
                                 android:orientation="horizontal">
 
                                 <Space
-                                    android:layout_width="15dp"
+                                    android:layout_width="20dp"
                                     android:layout_height="match_parent" />
 
-                                <LinearLayout
+                                <Button
+                                    android:id="@+id/btnFree"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:id="@+id/tvGemEng"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:fontFamily="@font/nunitosans_800"
-                                        android:gravity="center"
-                                        android:text="0000"
-                                        android:textColor="@color/main_text"
-                                        android:textSize="16dp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:id="@+id/tvGemFra"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:fontFamily="@font/nunitosans_800"
-                                        android:gravity="center"
-                                        android:text="0000"
-                                        android:textColor="@color/main_text"
-                                        android:textSize="16dp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:id="@+id/tvGemDeu"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:fontFamily="@font/nunitosans_800"
-                                        android:gravity="center"
-                                        android:text="0000"
-                                        android:textColor="@color/main_text"
-                                        android:textSize="16dp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:id="@+id/tvGemIta"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:fontFamily="@font/nunitosans_800"
-                                        android:gravity="center"
-                                        android:text="0000"
-                                        android:textColor="@color/main_text"
-                                        android:textSize="16dp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:id="@+id/tvGemSpa"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:fontFamily="@font/nunitosans_800"
-                                        android:gravity="center"
-                                        android:text="0000"
-                                        android:textColor="@color/main_text"
-                                        android:textSize="16dp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:id="@+id/tvGemRus"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:fontFamily="@font/nunitosans_800"
-                                        android:gravity="center"
-                                        android:text="0000"
-                                        android:textColor="@color/main_text"
-                                        android:textSize="16dp" />
-
-                                </LinearLayout>
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/bebas_neue"
+                                    android:gravity="center"
+                                    android:text="LUXLUM FOR FREE"
+                                    android:textColor="@color/main_white"
+                                    android:elevation="3dp"
+                                    android:background="@drawable/ripple_black"
+                                    android:textSize="45dp"></Button>
 
                                 <Space
-                                    android:layout_width="15dp"
+                                    android:layout_width="20dp"
                                     android:layout_height="match_parent" />
 
                             </LinearLayout>

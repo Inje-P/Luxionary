@@ -21,8 +21,9 @@ import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 public class VocaFra extends AppCompatActivity {
+
     // Data from DB
-    String strNick, strPw, strName, strEmail, strAvatar;
+    String username, email, profile, avatar;
 
     TextView tvTitle1, tvTitle2;
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10;
@@ -49,6 +50,7 @@ public class VocaFra extends AppCompatActivity {
     private View drawerView;
     TextView tvNickname, tvEmail;
     ImageView btnClose;
+    Button btnAccount, btnCharge, btnSupport;
 
     // Footer
     ImageButton btnSidebar, btnHome, btnUpdate;
@@ -58,13 +60,12 @@ public class VocaFra extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.voca_fra);
 
-        // Data from SQLite
+        // Data from Firebase
         Intent getData = getIntent();
-        strNick = getData.getStringExtra("nick");
-        strPw = getData.getStringExtra("pw");
-        strName = getData.getStringExtra("name");
-        strEmail = getData.getStringExtra("email");
-        strAvatar = getData.getStringExtra("avatar");
+        username = getData.getStringExtra("username");
+        email = getData.getStringExtra("email");
+        profile = getData.getStringExtra("profile");
+        avatar = getData.getStringExtra("avatar");
 
         // Sidebar
         tvNickname = (TextView) findViewById(R.id.tvNickname);
@@ -83,6 +84,48 @@ public class VocaFra extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 drawerLayout.closeDrawers();
+            }
+        });
+        btnAccount = (Button) findViewById(R.id.btnAccount);
+        btnAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAccount = new Intent(VocaFra.this, AccountActivity.class);
+                intentAccount.putExtra("username", username);
+                intentAccount.putExtra("email", email);
+                intentAccount.putExtra("profile", profile);
+                intentAccount.putExtra("avatar", avatar);
+                startActivity(intentAccount);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnCharge = (Button) findViewById(R.id.btnCharge);
+        btnCharge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentCharge = new Intent(VocaFra.this, ChargeActivity.class);
+                intentCharge.putExtra("username", username);
+                intentCharge.putExtra("email", email);
+                intentCharge.putExtra("profile", profile);
+                intentCharge.putExtra("avatar", avatar);
+                startActivity(intentCharge);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnSupport = (Button) findViewById(R.id.btnSupport);
+        btnSupport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentSupport = new Intent(VocaFra.this, SupportActivity.class);
+                intentSupport.putExtra("username", username);
+                intentSupport.putExtra("email", email);
+                intentSupport.putExtra("profile", profile);
+                intentSupport.putExtra("avatar", avatar);
+                startActivity(intentSupport);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
             }
         });
 
@@ -473,11 +516,10 @@ public class VocaFra extends AppCompatActivity {
         super.onBackPressed();
         Intent intentBack = new Intent(VocaFra.this, MainFra.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intentBack.putExtra("nick", strNick);
-        intentBack.putExtra("pw", strPw);
-        intentBack.putExtra("name", strName);
-        intentBack.putExtra("email", strEmail);
-        intentBack.putExtra("avatar", strAvatar);
+        intentBack.putExtra("username", username);
+        intentBack.putExtra("email", email);
+        intentBack.putExtra("profile", profile);
+        intentBack.putExtra("avatar", avatar);
         startActivity(intentBack);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -492,15 +534,15 @@ public class VocaFra extends AppCompatActivity {
 
         @Override
         public void onDrawerOpened(@NonNull View drawerView) {
-            if (strNick == null) {
-                tvNickname.setText("제이슨");
+            if (username == null) {
+                tvNickname.setText("해리슨");
             } else {
-                tvNickname.setText(strNick);
+                tvNickname.setText(username);
             }
-            if (strEmail == null) {
+            if (email == null) {
                 tvEmail.setText("luxionary@gmail.com");
             } else {
-                tvEmail.setText(strEmail);
+                tvEmail.setText(email);
             }
         }
 
@@ -863,11 +905,10 @@ public class VocaFra extends AppCompatActivity {
                     break;
                 case R.id.btnHome:
                     Intent intentHome = new Intent(VocaFra.this, MainActivity.class);
-                    intentHome.putExtra("nick", strNick);
-                    intentHome.putExtra("pw", strPw);
-                    intentHome.putExtra("name", strName);
-                    intentHome.putExtra("email", strEmail);
-                    intentHome.putExtra("avatar", strAvatar);
+                    intentHome.putExtra("username", username);
+                    intentHome.putExtra("email", email);
+                    intentHome.putExtra("profile", profile);
+                    intentHome.putExtra("avatar", avatar);
                     startActivity(intentHome);
                     overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                     finish();
@@ -879,13 +920,12 @@ public class VocaFra extends AppCompatActivity {
     };
 
     public void page001() {
-        Intent intent01 = new Intent(VocaFra.this, Lang101Fra_01_1.class);
-        intent01.putExtra("nick", strNick);
-        intent01.putExtra("pw", strPw);
-        intent01.putExtra("name", strName);
-        intent01.putExtra("email", strEmail);
-        intent01.putExtra("avatar", strAvatar);
-        startActivity(intent01);
+        Intent intent001 = new Intent(VocaFra.this, Lang101Fra_01_1.class);
+        intent001.putExtra("username", username);
+        intent001.putExtra("email", email);
+        intent001.putExtra("profile", profile);
+        intent001.putExtra("avatar", avatar);
+        startActivity(intent001);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
     }

@@ -11,8 +11,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class WelcomeActivity extends AppCompatActivity {
+
     // Data from DB
-    String strNick, strPw, strName, strEmail;
+    String username, email, profile, avatar;
 
     TextView tvTitle1, tvTitle2;
     Animation ani1, ani2;
@@ -22,11 +23,12 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
+        // Data from Firebase
         Intent getData = getIntent();
-        strNick = getData.getStringExtra("nick");
-        strPw = getData.getStringExtra("pw");
-        strName = getData.getStringExtra("name");
-        strEmail = getData.getStringExtra("email");
+        username = getData.getStringExtra("username");
+        email = getData.getStringExtra("email");
+        profile = getData.getStringExtra("profile");
+        avatar = getData.getStringExtra("avatar");
 
         tvTitle1 = (TextView) findViewById(R.id.tvTitle1);
         tvTitle2 = (TextView) findViewById(R.id.tvTitle2);
@@ -42,12 +44,12 @@ public class WelcomeActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intentAccount = new Intent(WelcomeActivity.this, MainActivity.class);
-                intentAccount.putExtra("nick", strNick);
-                intentAccount.putExtra("pw", strPw);
-                intentAccount.putExtra("name", strName);
-                intentAccount.putExtra("email", strEmail);
-                startActivity(intentAccount);
+                Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+                intent.putExtra("username", username);
+                intent.putExtra("email", email);
+                intent.putExtra("profile", profile);
+                intent.putExtra("avatar", avatar);
+                startActivity(intent);
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                 finish();
             }

@@ -115,12 +115,13 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_drawer.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_intro.xml" value="0.1691995947315096" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_main.xml" value="0.22134387351778656" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_password.xml" value="0.33" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_password.xml" value="0.264" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_signin.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_signup.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_signupok.xml" value="0.264" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_start.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_startOk.xml" value="0.23333333333333334" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_support.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_welcome.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/card_item_gc_eng.xml" value="0.264" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/card_item_large.xml" value="0.264" />
@@ -182,6 +183,7 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_spa_01_3.xml" value="0.34791666666666665" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_spa_02_1.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_tur.xml" value="0.264" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_tur_01_1.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/main_deu.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/main_eng.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/main_fra.xml" value="0.33" />

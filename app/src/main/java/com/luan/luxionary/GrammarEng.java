@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -28,8 +29,9 @@ import androidx.viewpager.widget.ViewPager;
 import java.util.ArrayList;
 
 public class GrammarEng extends AppCompatActivity {
+
     // Data from DB
-    String strNick, strPw, strName, strEmail, strAvatar;
+    String username, email, profile, avatar;
 
     TextView tvTitle1, tvTitle2;
     LinearLayout layoutProfile;
@@ -46,6 +48,7 @@ public class GrammarEng extends AppCompatActivity {
     private View drawerView;
     TextView tvNickname, tvEmail;
     ImageView btnClose;
+    Button btnAccount, btnCharge, btnSupport;
 
     // ViewPager
     RelativeLayout container1, container2, container3, container4, container5, container6;
@@ -66,13 +69,12 @@ public class GrammarEng extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gram_eng);
 
-        // Data from SQLite
+        // Data from Firebase
         Intent getData = getIntent();
-        strNick = getData.getStringExtra("nick");
-        strPw = getData.getStringExtra("pw");
-        strName = getData.getStringExtra("name");
-        strEmail = getData.getStringExtra("email");
-        strAvatar = getData.getStringExtra("avatar");
+        username = getData.getStringExtra("username");
+        email = getData.getStringExtra("email");
+        profile = getData.getStringExtra("profile");
+        avatar = getData.getStringExtra("avatar");
 
         // Sidebar
         tvNickname = (TextView) findViewById(R.id.tvNickname);
@@ -91,6 +93,48 @@ public class GrammarEng extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 drawerLayout.closeDrawers();
+            }
+        });
+        btnAccount = (Button) findViewById(R.id.btnAccount);
+        btnAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAccount = new Intent(GrammarEng.this, AccountActivity.class);
+                intentAccount.putExtra("username", username);
+                intentAccount.putExtra("email", email);
+                intentAccount.putExtra("profile", profile);
+                intentAccount.putExtra("avatar", avatar);
+                startActivity(intentAccount);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnCharge = (Button) findViewById(R.id.btnCharge);
+        btnCharge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentCharge = new Intent(GrammarEng.this, ChargeActivity.class);
+                intentCharge.putExtra("username", username);
+                intentCharge.putExtra("email", email);
+                intentCharge.putExtra("profile", profile);
+                intentCharge.putExtra("avatar", avatar);
+                startActivity(intentCharge);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
+            }
+        });
+        btnSupport = (Button) findViewById(R.id.btnSupport);
+        btnSupport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentSupport = new Intent(GrammarEng.this, SupportActivity.class);
+                intentSupport.putExtra("username", username);
+                intentSupport.putExtra("email", email);
+                intentSupport.putExtra("profile", profile);
+                intentSupport.putExtra("avatar", avatar);
+                startActivity(intentSupport);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+                finish();
             }
         });
 
@@ -1018,11 +1062,10 @@ public class GrammarEng extends AppCompatActivity {
         super.onBackPressed();
         Intent intentBack = new Intent(GrammarEng.this, MainEng.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intentBack.putExtra("nick", strNick);
-        intentBack.putExtra("pw", strPw);
-        intentBack.putExtra("name", strName);
-        intentBack.putExtra("email", strEmail);
-        intentBack.putExtra("avatar", strAvatar);
+        intentBack.putExtra("username", username);
+        intentBack.putExtra("email", email);
+        intentBack.putExtra("profile", profile);
+        intentBack.putExtra("avatar", avatar);
         startActivity(intentBack);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
@@ -1037,15 +1080,15 @@ public class GrammarEng extends AppCompatActivity {
 
         @Override
         public void onDrawerOpened(@NonNull View drawerView) {
-            if (strNick == null) {
-                tvNickname.setText("제이슨");
+            if (username== null) {
+                tvNickname.setText("해리슨");
             } else {
-                tvNickname.setText(strNick);
+                tvNickname.setText(username);
             }
-            if (strEmail == null) {
+            if (email == null) {
                 tvEmail.setText("luxionary@gmail.com");
             } else {
-                tvEmail.setText(strEmail);
+                tvEmail.setText(email);
             }
         }
 
@@ -1074,11 +1117,10 @@ public class GrammarEng extends AppCompatActivity {
                     break;
                 case R.id.btnHome:
                     Intent intentHome = new Intent(GrammarEng.this, MainActivity.class);
-                    intentHome.putExtra("nick", strNick);
-                    intentHome.putExtra("pw", strPw);
-                    intentHome.putExtra("name", strName);
-                    intentHome.putExtra("email", strEmail);
-                    intentHome.putExtra("avatar", strAvatar);
+                    intentHome.putExtra("username", username);
+                    intentHome.putExtra("email", email);
+                    intentHome.putExtra("profile", profile);
+                    intentHome.putExtra("avatar", avatar);
                     startActivity(intentHome);
                     overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                     finish();
@@ -1138,18 +1180,6 @@ public class GrammarEng extends AppCompatActivity {
         colorAni2.start();
         colorAni3.start();
         colorAni4.start();
-    }
-
-    public void pageLang101() {
-        Intent intentLang101 = new Intent(GrammarEng.this, Lang101Eng.class);
-        intentLang101.putExtra("nick", strNick);
-        intentLang101.putExtra("pw", strPw);
-        intentLang101.putExtra("name", strName);
-        intentLang101.putExtra("email", strEmail);
-        intentLang101.putExtra("avatar", strAvatar);
-        startActivity(intentLang101);
-        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
-        finish();
     }
 
 }

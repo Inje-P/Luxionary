@@ -113,7 +113,7 @@ public class StartActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(StartActivity.this, "Welcome, " + account.getDisplayName(), Toast.LENGTH_SHORT).show();
                             Log.d("Login", "Success");
-                            Intent intent = new Intent(StartActivity.this, MainActivity.class);
+                            Intent intent = new Intent(StartActivity.this, WelcomeActivity.class);
                             intent.putExtra("username", account.getDisplayName());
                             intent.putExtra("email", account.getEmail());
                             intent.putExtra("profile", String.valueOf(account.getPhotoUrl()));
