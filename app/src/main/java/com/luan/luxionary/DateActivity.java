@@ -786,7 +786,7 @@ public class DateActivity extends AppCompatActivity {
 
         @Override
         public void onDrawerOpened(@NonNull View drawerView) {
-            if (username== null) {
+            if (username == null) {
                 tvNickname.setText("해리슨");
             } else {
                 tvNickname.setText(username);

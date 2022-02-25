@@ -12,20 +12,20 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".IntroActivity"
             android:exported="true">
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
+<!--                <intent-filter>-->
+<!--                        <action android:name="android.intent.action.MAIN" />-->
 
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
+<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                </intent-filter>-->
         </activity>
         <activity android:name=".StartActivity"></activity>
         <activity android:name=".SigninActivity"></activity>
@@ -79,6 +79,8 @@
         <activity android:name=".Lang101Deu_01_2"></activity>
         <activity android:name=".Lang101Deu_01_3"></activity>
         <activity android:name=".Lang101Deu_02_1"></activity>
+        <activity android:name=".Lang101Deu_02_2"></activity>
+        <activity android:name=".Lang101Deu_02_3"></activity>
 
         <!-- Language 101 (Italian)-->
         <activity android:name=".Lang101Ita"></activity>
@@ -120,6 +122,7 @@
 
         <!-- Voca (Spanish)-->
         <activity android:name=".VocaSpa"></activity>
+        <activity android:name=".VocaSpa_001_1"></activity>
 
         <!-- Voca (Russian)-->
         <activity android:name=".VocaRus"></activity>

@@ -920,7 +920,7 @@ public class VocaSpa extends AppCompatActivity {
     };
 
     public void page001() {
-        Intent intent001 = new Intent(VocaSpa.this, Lang101Spa_01_1.class);
+        Intent intent001 = new Intent(VocaSpa.this, VocaSpa_001_1.class);
         intent001.putExtra("username", username);
         intent001.putExtra("email", email);
         intent001.putExtra("profile", profile);

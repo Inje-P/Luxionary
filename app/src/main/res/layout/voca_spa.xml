@@ -135,7 +135,7 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="1. FACE"
+                            android:text="1. LA CARA"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -149,7 +149,7 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="2. BODY"
+                            android:text="2. EL CUERPO"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -163,7 +163,7 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="3. HAND &amp; FOOT"
+                            android:text="3. LA MANO &amp; EL PIE"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -177,7 +177,7 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="4. SKELETON &amp; MUSCLES"
+                            android:text="4. EL ESQUELETO &amp; EL MÚSCULO"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -191,7 +191,7 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="5. ORGANS"
+                            android:text="5. LOS ORGANOS"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -205,9 +205,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="6. LIFE EVENTS"
+                            android:text="6. LOS ACONTECIMIENTOS DE LA VIDA"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn7"
@@ -219,7 +219,7 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="7. NUMBERS"
+                            android:text="7. LOS NÚMEROS"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -233,7 +233,7 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="8. FAMILY"
+                            android:text="8. LA FAMILIA"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 

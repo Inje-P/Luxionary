@@ -42,7 +42,7 @@
                     android:text=""
                     android:fontFamily="@font/nunitosans_800"
                     android:textSize="16dp"
-                    android:textColor="@color/main_white"/>
+                    android:textColor="@color/main_text"/>
 
             </LinearLayout>
 
