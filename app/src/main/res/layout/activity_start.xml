@@ -70,8 +70,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_margin="8dp"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
+                android:elevation="3dp"
                 android:background="@drawable/ripple_black"
                 android:orientation="horizontal">
 
@@ -81,7 +82,7 @@
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/pretendard_500"
-                    android:text="이메일로 시작하기"
+                    android:text="바로 시작하기"
                     android:textColor="@color/main_white"
                     android:textSize="16dp" />
 

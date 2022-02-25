@@ -132,7 +132,7 @@ public class StartActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btnEmail:
-                    Intent intentEmail = new Intent(StartActivity.this, SigninActivity.class);
+                    Intent intentEmail = new Intent(StartActivity.this, MainActivity.class);
                     startActivity(intentEmail);
                     overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
                     finish();

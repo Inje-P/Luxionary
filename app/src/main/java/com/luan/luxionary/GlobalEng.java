@@ -321,25 +321,21 @@ public class GlobalEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Types of Nouns",
-                "명사의 종류",
+                "National symbol",
+                "국가 상징",
                 1));
         modelArrayList.add(new MyModel2(
-                "Countable & Uncountable",
-                "셀 수 있는/없는 명사",
+                "Administrative districts",
+                "행정구역",
                 2));
         modelArrayList.add(new MyModel2(
-                "Indefinite Articles",
-                "부정관사",
+                "Major cities",
+                "주요 도시",
                 3));
         modelArrayList.add(new MyModel2(
-                "Definite Articles",
-                "정관사",
+                "Natural environment",
+                "자연환경",
                 4));
-        modelArrayList.add(new MyModel2(
-                "Plural",
-                "복수형",
-                5));
 
         myAdapter1 = new MyAdapter1(this, modelArrayList);
         viewPager1.setAdapter(myAdapter1);
@@ -353,40 +349,40 @@ public class GlobalEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Gender, Number, Case",
-                "성, 수, 격",
+                "Native Americans",
+                "아메리카 원주민",
                 1));
         modelArrayList.add(new MyModel2(
-                "Personal Pronouns",
-                "인칭 대명사",
+                "European settlements",
+                "유럽의 식민지화",
                 2));
         modelArrayList.add(new MyModel2(
-                "Demonstrative Pronouns",
-                "지시 대명사",
+                "Independence & Expansion",
+                "독립과 영토 확장",
                 3));
         modelArrayList.add(new MyModel2(
-                "Possessive Pronouns",
-                "소유 대명사",
+                "Civil war & Reconstruction era",
+                "내전과 재건",
                 4));
         modelArrayList.add(new MyModel2(
-                "Interrogative Pronouns",
-                "의문 대명사",
+                "Industrialization",
+                "산업화",
                 5));
         modelArrayList.add(new MyModel2(
-                "Reflextive Pronouns",
-                "재귀 대명사",
+                "WWⅠ & Great Depression",
+                "제1차 세계 대전과 대공황",
                 6));
         modelArrayList.add(new MyModel2(
-                "Indefinite Pronouns",
-                "부정 대명사",
+                "WWⅡ",
+                "제2차 세계 대전",
                 7));
         modelArrayList.add(new MyModel2(
-                "Relative Pronouns",
-                "관계 대명사",
+                "Cold war",
+                "냉전",
                 8));
         modelArrayList.add(new MyModel2(
-                "Reciprocal Pronouns",
-                "상호 대명사",
+                "America in the 21st century",
+                "21세기의 미국",
                 9));
 
         myAdapter2 = new MyAdapter2(this, modelArrayList);
@@ -401,17 +397,25 @@ public class GlobalEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Adjective Formation",
-                "형용사의 형태",
+                "Head of state",
+                "국가 수장",
                 1));
         modelArrayList.add(new MyModel2(
-                "Comparative Adjectives",
-                "비교급",
+                "Government",
+                "정부",
                 2));
         modelArrayList.add(new MyModel2(
-                "Superlative Adjectives",
-                "최상급",
+                "Political party",
+                "정당",
                 3));
+        modelArrayList.add(new MyModel2(
+                "Legislative branch",
+                "입법부",
+                4));
+        modelArrayList.add(new MyModel2(
+                "Judicial branch",
+                "사법부",
+                5));
 
         myAdapter3 = new MyAdapter3(this, modelArrayList);
         viewPager3.setAdapter(myAdapter3);
@@ -425,45 +429,33 @@ public class GlobalEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Auxiliary Verbs",
-                "조동사",
+                "Economy",
+                "경제",
                 1));
         modelArrayList.add(new MyModel2(
-                "Modal Verbs",
-                "법조동사",
+                "Business administration",
+                "경영",
                 2));
         modelArrayList.add(new MyModel2(
-                "Stative Verbs",
-                "상태동사",
+                "Bank",
+                "은행",
                 3));
         modelArrayList.add(new MyModel2(
-                "Infinitive & Gerund",
-                "동사원형 & 동명사",
+                "Stock exchange",
+                "증권거래소",
                 4));
         modelArrayList.add(new MyModel2(
-                "Participles",
-                "분사",
+                "Conglomerate",
+                "대기업",
                 5));
         modelArrayList.add(new MyModel2(
-                "Phrasal Verbs",
-                "구동사",
+                "Business entity",
+                "사업체",
                 6));
         modelArrayList.add(new MyModel2(
-                "Passive Voice",
-                "수동태",
+                "Tax",
+                "세금",
                 7));
-        modelArrayList.add(new MyModel2(
-                "Imperative Mood",
-                "명령법",
-                8));
-        modelArrayList.add(new MyModel2(
-                "Conditional Mood",
-                "조건법",
-                9));
-        modelArrayList.add(new MyModel2(
-                "Subjunctive Mood",
-                "가정법",
-                10));
 
         myAdapter4 = new MyAdapter4(this, modelArrayList);
         viewPager4.setAdapter(myAdapter4);
@@ -477,53 +469,25 @@ public class GlobalEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Simple Present",
-                "단순 현재 시제",
+                "Public holidays",
+                "공휴일",
                 1));
         modelArrayList.add(new MyModel2(
-                "Simple Past",
-                "단순 과거 시제",
+                "Cuisines",
+                "요리",
                 2));
         modelArrayList.add(new MyModel2(
-                "Simple Future",
-                "단순 미래 시제",
+                "Sports",
+                "스포츠",
                 3));
         modelArrayList.add(new MyModel2(
-                "Present Perfect",
-                "현재 완료 시제",
+                "Tourism",
+                "관광",
                 4));
         modelArrayList.add(new MyModel2(
-                "Past Perfect",
-                "과거 완료 시제",
+                "Education",
+                "교육",
                 5));
-        modelArrayList.add(new MyModel2(
-                "Future Perfect",
-                "미래 완료 시제",
-                6));
-        modelArrayList.add(new MyModel2(
-                "Present Continuous",
-                "현재 진행 시제",
-                7));
-        modelArrayList.add(new MyModel2(
-                "Past Continuous",
-                "과거 진행 시제",
-                8));
-        modelArrayList.add(new MyModel2(
-                "Future Continuous",
-                "미래 진행 시제",
-                9));
-        modelArrayList.add(new MyModel2(
-                "Present Perfect Continuous",
-                "현재 완료 진행 시제",
-                10));
-        modelArrayList.add(new MyModel2(
-                "Past Perfect Continuous",
-                "과거 완료 진행 시제",
-                11));
-        modelArrayList.add(new MyModel2(
-                "Future Perfect Continuous",
-                "미래 완료 진행 시제",
-                12));
 
         myAdapter5 = new MyAdapter5(this, modelArrayList);
         viewPager5.setAdapter(myAdapter5);
@@ -537,33 +501,25 @@ public class GlobalEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Preposition Rules",
-                "전치사 사용법",
+                "Broadcasting",
+                "방송",
                 1));
         modelArrayList.add(new MyModel2(
-                "Prepositions of Place",
-                "장소와 관련된 전치사",
+                "Newspaper",
+                "신문",
                 2));
         modelArrayList.add(new MyModel2(
-                "Prepositions of Time",
-                "시간과 관련된 전치사",
+                "Magazine",
+                "잡지",
                 3));
         modelArrayList.add(new MyModel2(
-                "Adverb Formation",
-                "부사의 형태",
+                "Music",
+                "음악",
                 4));
         modelArrayList.add(new MyModel2(
-                "Adverbs of Frequency",
-                "빈도부사",
+                "Movie",
+                "영화",
                 5));
-        modelArrayList.add(new MyModel2(
-                "Adverb Position",
-                "부사의 어순",
-                6));
-        modelArrayList.add(new MyModel2(
-                "Comparative Adverbs",
-                "부사의 비교급",
-                7));
 
         myAdapter6 = new MyAdapter6(this, modelArrayList);
         viewPager6.setAdapter(myAdapter6);
@@ -577,33 +533,25 @@ public class GlobalEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Preposition Rules",
-                "전치사 사용법",
+                "Driving",
+                "운전",
                 1));
         modelArrayList.add(new MyModel2(
-                "Prepositions of Place",
-                "장소와 관련된 전치사",
+                "Public transportation",
+                "대중교통",
                 2));
         modelArrayList.add(new MyModel2(
-                "Prepositions of Time",
-                "시간과 관련된 전치사",
+                "Air transportation",
+                "항공교통",
                 3));
         modelArrayList.add(new MyModel2(
-                "Adverb Formation",
-                "부사의 형태",
+                "Railway transportation",
+                "철도교통",
                 4));
         modelArrayList.add(new MyModel2(
-                "Adverbs of Frequency",
-                "빈도부사",
+                "Water transportation",
+                "수상교통",
                 5));
-        modelArrayList.add(new MyModel2(
-                "Adverb Position",
-                "부사의 어순",
-                6));
-        modelArrayList.add(new MyModel2(
-                "Comparative Adverbs",
-                "부사의 비교급",
-                7));
 
         myAdapter7 = new MyAdapter7(this, modelArrayList);
         viewPager7.setAdapter(myAdapter7);
@@ -617,32 +565,32 @@ public class GlobalEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Preposition Rules",
-                "전치사 사용법",
+                "International Organization",
+                "국제기구",
                 1));
         modelArrayList.add(new MyModel2(
-                "Prepositions of Place",
-                "장소와 관련된 전치사",
+                "Treaty & Agreement",
+                "조약과 협약",
                 2));
         modelArrayList.add(new MyModel2(
-                "Prepositions of Time",
-                "시간과 관련된 전치사",
+                "Army",
+                "육군",
                 3));
         modelArrayList.add(new MyModel2(
-                "Adverb Formation",
-                "부사의 형태",
+                "Air Force",
+                "공군",
                 4));
         modelArrayList.add(new MyModel2(
-                "Adverbs of Frequency",
-                "빈도부사",
+                "Navy",
+                "해군",
                 5));
         modelArrayList.add(new MyModel2(
-                "Adverb Position",
-                "부사의 어순",
+                "Marines",
+                "해병대",
                 6));
         modelArrayList.add(new MyModel2(
-                "Comparative Adverbs",
-                "부사의 비교급",
+                "Intelligence agency",
+                "정보기관",
                 7));
 
         myAdapter8 = new MyAdapter8(this, modelArrayList);
