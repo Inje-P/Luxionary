@@ -8,6 +8,7 @@
             <gradient android:startColor="@color/spa_background"
                 android:endColor="@color/spa_light"/>
             <stroke android:width="2dp" android:color="@color/spa_light"/>
+            <corners android:radius="15dp"/>
         </shape>
     </item>
 

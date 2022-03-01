@@ -3,11 +3,9 @@
     android:color="@color/main_white"> <!-- Ripple Effect 색상 -->
 
     <!-- 배경색 -->
-    <item android:id="@+id/ripple_ita_box">
+    <item android:id="@+id/pastel_ripple_black">
         <shape android:shape="rectangle">
-            <gradient android:startColor="@color/ita_background"
-                android:endColor="@color/ita_light"/>
-            <stroke android:width="2dp" android:color="@color/ita_light"/>
+            <solid android:color="@color/spa_background"/>
             <corners android:radius="15dp"/>
         </shape>
     </item>

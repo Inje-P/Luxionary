@@ -113,12 +113,12 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/ripple_black"
+                            android:background="@drawable/ripple_spa_colored"
                             android:elevation="5dp"
                             android:fontFamily="@font/nunitosans_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="Ich bin Elias."
+                            android:text="Q1"
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -160,20 +160,36 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnA1"
+                                android:id="@+id/btnA1_1"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;Bist du Elias?&quot;"
+                                android:text="A1-1"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp" />
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnA1_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ripple_spa_full"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/nunitosans_800"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="A1-2"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
 
                         </LinearLayout>
 
@@ -183,39 +199,33 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnYes1"
+                                android:id="@+id/btnA1_3"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Ja"
+                                android:text="A1-3"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
 
                             <Button
-                                android:id="@+id/btnNo1"
+                                android:id="@+id/btnA1_4"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Nein"
+                                android:text="A1-4"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
@@ -256,12 +266,12 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/ripple_black"
+                            android:background="@drawable/ripple_spa_colored"
                             android:elevation="5dp"
                             android:fontFamily="@font/nunitosans_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="Ich bin Emilia."
+                            android:text="Q2"
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -303,20 +313,36 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnA2"
+                                android:id="@+id/btnA2_1"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;Bist du Julia?&quot;"
+                                android:text="A2-1"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp" />
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnA2_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ripple_spa_full"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/nunitosans_800"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="A2-2"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
 
                         </LinearLayout>
 
@@ -326,39 +352,33 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnYes2"
+                                android:id="@+id/btnA2_3"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Ja"
+                                android:text="A2-3"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
 
                             <Button
-                                android:id="@+id/btnNo2"
+                                android:id="@+id/btnA2_4"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Nein"
+                                android:text="A2-4"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
@@ -399,12 +419,12 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/ripple_black"
+                            android:background="@drawable/ripple_spa_colored"
                             android:elevation="5dp"
                             android:fontFamily="@font/nunitosans_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="Er ist Lukas."
+                            android:text="Q3"
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -446,20 +466,36 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnA3"
+                                android:id="@+id/btnA3_1"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;Ist er Niklas?&quot;"
+                                android:text="A3-1"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp" />
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnA3_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ripple_spa_full"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/nunitosans_800"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="A3-2"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
 
                         </LinearLayout>
 
@@ -469,39 +505,33 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnYes3"
+                                android:id="@+id/btnA3_3"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Ja"
+                                android:text="A3-3"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
 
                             <Button
-                                android:id="@+id/btnNo3"
+                                android:id="@+id/btnA3_4"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Nein"
+                                android:text="A3-4"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
@@ -542,12 +572,12 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/ripple_black"
+                            android:background="@drawable/ripple_spa_colored"
                             android:elevation="5dp"
                             android:fontFamily="@font/nunitosans_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="Sie ist Laura."
+                            android:text="Q4"
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -589,20 +619,36 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnA4"
+                                android:id="@+id/btnA4_1"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;Ist sie Laura?&quot;"
+                                android:text="A4-1"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp" />
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnA4_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ripple_spa_full"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/nunitosans_800"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="A4-2"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
 
                         </LinearLayout>
 
@@ -612,39 +658,33 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnYes4"
+                                android:id="@+id/btnA4_3"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Ja"
+                                android:text="A4-3"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
 
                             <Button
-                                android:id="@+id/btnNo4"
+                                android:id="@+id/btnA4_4"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Nein"
+                                android:text="A4-4"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
@@ -685,12 +725,12 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/ripple_black"
+                            android:background="@drawable/ripple_spa_colored"
                             android:elevation="5dp"
                             android:fontFamily="@font/nunitosans_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="Wir sind zufrieden."
+                            android:text="Q5"
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -732,20 +772,36 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnA5"
+                                android:id="@+id/btnA5_1"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;Seid ihr enttäuscht?&quot;"
+                                android:text="A5-1"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp" />
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnA5_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ripple_spa_full"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/nunitosans_800"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="A5-2"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
 
                         </LinearLayout>
 
@@ -755,39 +811,33 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnYes5"
+                                android:id="@+id/btnA5_3"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Ja"
+                                android:text="A5-3"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
 
                             <Button
-                                android:id="@+id/btnNo5"
+                                android:id="@+id/btnA5_4"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Nein"
+                                android:text="A5-4"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
@@ -828,12 +878,12 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/ripple_black"
+                            android:background="@drawable/ripple_spa_colored"
                             android:elevation="5dp"
                             android:fontFamily="@font/nunitosans_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="Ich bin Deutscher."
+                            android:text="Q6"
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -875,20 +925,36 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnA6"
+                                android:id="@+id/btnA6_1"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;Sind Sie Deutscher?&quot;"
+                                android:text="A6-1"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp" />
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnA6_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ripple_spa_full"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/nunitosans_800"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="A6-2"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
 
                         </LinearLayout>
 
@@ -898,39 +964,33 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnYes6"
+                                android:id="@+id/btnA6_3"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Ja"
+                                android:text="A6-3"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
 
                             <Button
-                                android:id="@+id/btnNo6"
+                                android:id="@+id/btnA6_4"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Nein"
+                                android:text="A6-4"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
@@ -971,12 +1031,12 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/ripple_black"
+                            android:background="@drawable/ripple_spa_colored"
                             android:elevation="5dp"
                             android:fontFamily="@font/nunitosans_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="Sie sind keine Kollegen."
+                            android:text="Q7"
                             android:textAllCaps="false"
                             android:textColor="@color/main_white"
                             android:textSize="25dp" />
@@ -1018,20 +1078,36 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnA7"
+                                android:id="@+id/btnA7_1"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="&quot;Sind sie Kollegen?&quot;"
+                                android:text="A7-1"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp" />
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/btnA7_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ripple_spa_full"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/nunitosans_800"
+                                android:gravity="center"
+                                android:stateListAnimator="@null"
+                                android:text="A7-2"
+                                android:textAllCaps="false"
+                                android:textColor="@color/main_text"
+                                android:textSize="20dp" />
 
                         </LinearLayout>
 
@@ -1041,39 +1117,33 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/btnYes7"
+                                android:id="@+id/btnA7_3"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Ja"
+                                android:text="A7-3"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />
 
                             <Button
-                                android:id="@+id/btnNo7"
+                                android:id="@+id/btnA7_4"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_marginLeft="40dp"
-                                android:layout_marginRight="40dp"
+                                android:layout_margin="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/ripple_white"
+                                android:background="@drawable/ripple_spa_full"
                                 android:elevation="5dp"
                                 android:fontFamily="@font/nunitosans_800"
                                 android:gravity="center"
                                 android:stateListAnimator="@null"
-                                android:text="Nein"
+                                android:text="A7-4"
                                 android:textAllCaps="false"
                                 android:textColor="@color/main_text"
                                 android:textSize="20dp" />

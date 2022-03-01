@@ -191,7 +191,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="5. ORGANS"
+                            android:text="5. INTERNAL ORGANS"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -303,7 +303,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="13. ZODIAC SIGN"
+                            android:text="13. ZODIAC SIGNS"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -933,7 +933,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="58. SHOPPING CENTER"
+                            android:text="58. DRUGSTORE"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -947,7 +947,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="59. DRUGSTORE"
+                            android:text="59. OTHER STORES"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -961,7 +961,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="60. FLORIST"
+                            android:text="60. CAFE"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -975,7 +975,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="61. NEWSSTAND"
+                            android:text="61. BAR"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -989,7 +989,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="62. OTHER STORES"
+                            android:text="62. RESTAURANT"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1003,7 +1003,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="63. CAFE"
+                            android:text="63. BREAKFAST &amp; DINNER"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1017,7 +1017,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="64. BAR"
+                            android:text="64. SCHOOL"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1031,7 +1031,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="65. RESTAURANT"
+                            android:text="65. COLLEGE"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1045,7 +1045,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="66. BREAKFAST"
+                            android:text="66. MATH"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1059,7 +1059,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="67. DINNER"
+                            android:text="67. SCIENCE"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1073,7 +1073,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="68. SCHOOL"
+                            android:text="68. ROADS"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1087,7 +1087,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="69. COLLEGE"
+                            android:text="69. CAR"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1101,7 +1101,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="70. MATH"
+                            android:text="70. BUS STATION"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1115,7 +1115,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="71. SCIENCE"
+                            android:text="71. TRAIN STATION"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1129,7 +1129,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="72. ROADS"
+                            android:text="72. PORT"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1143,7 +1143,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="73. CAR"
+                            android:text="73. AIRPORT"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1157,7 +1157,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="74. BUS STATION"
+                            android:text="74. WORLD"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1171,7 +1171,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="75. TRAIN STATION"
+                            android:text="75. EMERGENCY SERVICES"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1185,7 +1185,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="76. PORT"
+                            android:text="76. COMMUNICATION"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1199,7 +1199,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="77. AIRPORT"
+                            android:text="77. BANK"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1213,7 +1213,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="78. WORLD"
+                            android:text="78. OCCUPATION"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1227,7 +1227,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="79. EMERGENCY SERVICES"
+                            android:text="79. OFFICE"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1241,7 +1241,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="80. COMMUNICATION"
+                            android:text="80. BUSINESS"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1255,7 +1255,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="81. EMERGENCY SERVICES"
+                            android:text="81. COMPUTER"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1269,7 +1269,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="82. BANK"
+                            android:text="82. CONSTRUCTION"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1283,7 +1283,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="83. OCCUPATION"
+                            android:text="83. LAW"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1297,7 +1297,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="84. OFFICE"
+                            android:text="84. MEDIA"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1311,7 +1311,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="85. BUSINESS"
+                            android:text="85. SIGHTSEEING"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1325,7 +1325,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="86. COMPUTER"
+                            android:text="86. OUTDOOR ACTIVITIES"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1339,7 +1339,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="87. CONSTRUCTION"
+                            android:text="87. CONCERT"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1353,7 +1353,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="88. LAW"
+                            android:text="88. THEATER"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1367,7 +1367,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="89. MEDIA"
+                            android:text="89. ORCHESTRA"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1381,7 +1381,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="90. SIGHTSEEING"
+                            android:text="90. CAMPING"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1395,7 +1395,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="91. OUTDOOR ACTIVITIES"
+                            android:text="91. BEACH"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1409,7 +1409,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="92. CONCERT"
+                            android:text="92. PHOTOGRAPHY"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1423,7 +1423,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="93. THEATER"
+                            android:text="93. ARTS &amp; CRAFTS"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1437,7 +1437,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="94. ORCHESTRA"
+                            android:text="94. TECHNOLOGY"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1451,7 +1451,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="95. CAMPING"
+                            android:text="95. GAMES"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1465,7 +1465,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="96. BEACH"
+                            android:text="96. FITNESS"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1479,7 +1479,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="97. PHOTOGRAPHY"
+                            android:text="97. SOCCER"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1493,7 +1493,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="98. ARTS &amp; CRAFTS"
+                            android:text="98. BASEBALL"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1507,7 +1507,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="99. HOME ENTERTAINMENT"
+                            android:text="99. BASKETBALL"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1521,7 +1521,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="100. GAMES"
+                            android:text="100. GOLF"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1535,7 +1535,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="101. FITNESS"
+                            android:text="101. TENNIS"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1549,7 +1549,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="102. SOCCER"
+                            android:text="102. COMBAT SPORTS"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1563,7 +1563,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="103. BASEBALL"
+                            android:text="103. SWIMMING"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1577,7 +1577,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="104. BASKETBALL"
+                            android:text="104. SKIING"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
@@ -1591,77 +1591,7 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="105. GOLF"
-                            android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
-
-                        <Button
-                            android:id="@+id/btn106"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_round_full"
-                            android:elevation="3dp"
-                            android:fontFamily="@font/nunitosans_900"
-                            android:gravity="center"
-                            android:stateListAnimator="@null"
-                            android:text="106. TENNIS"
-                            android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
-
-                        <Button
-                            android:id="@+id/btn107"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_round_full"
-                            android:elevation="3dp"
-                            android:fontFamily="@font/nunitosans_900"
-                            android:gravity="center"
-                            android:stateListAnimator="@null"
-                            android:text="107. COMBAT SPORTS"
-                            android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
-
-                        <Button
-                            android:id="@+id/btn108"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_round_full"
-                            android:elevation="3dp"
-                            android:fontFamily="@font/nunitosans_900"
-                            android:gravity="center"
-                            android:stateListAnimator="@null"
-                            android:text="108. SWIMMING"
-                            android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
-
-                        <Button
-                            android:id="@+id/btn109"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_round_full"
-                            android:elevation="3dp"
-                            android:fontFamily="@font/nunitosans_900"
-                            android:gravity="center"
-                            android:stateListAnimator="@null"
-                            android:text="109. SKIING"
-                            android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
-
-                        <Button
-                            android:id="@+id/btn110"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_round_full"
-                            android:elevation="3dp"
-                            android:fontFamily="@font/nunitosans_900"
-                            android:gravity="center"
-                            android:stateListAnimator="@null"
-                            android:text="110. SAILING"
+                            android:text="105. SAILING"
                             android:textColor="@color/main_text"
                             android:textSize="18dp"></Button>
 
