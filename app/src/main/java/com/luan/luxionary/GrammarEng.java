@@ -325,37 +325,49 @@ public class GrammarEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Personal Pronouns",
+                "Personal pronouns",
                 "인칭 대명사",
                 1));
         modelArrayList.add(new MyModel2(
-                "Demonstrative Pronouns",
-                "지시 대명사",
+                "Demonstrative determiners",
+                "지시 한정사",
                 2));
         modelArrayList.add(new MyModel2(
-                "Possessive Pronouns",
-                "소유 대명사",
+                "Demonstrative pronouns",
+                "지시 대명사",
                 3));
         modelArrayList.add(new MyModel2(
-                "Interrogative Pronouns",
-                "의문 대명사",
+                "Possessive determiners",
+                "소유 한정사",
                 4));
         modelArrayList.add(new MyModel2(
-                "Reflexive Pronouns",
-                "재귀 대명사",
+                "Possessive pronouns",
+                "소유 대명사",
                 5));
         modelArrayList.add(new MyModel2(
-                "Indefinite Pronouns",
-                "부정 대명사",
+                "Interrogative determiners",
+                "의문 한정사",
                 6));
         modelArrayList.add(new MyModel2(
-                "Relative Pronouns",
-                "관계 대명사",
+                "Interrogative pronouns",
+                "의문 대명사",
                 7));
         modelArrayList.add(new MyModel2(
-                "Reciprocal Pronouns",
-                "상호 대명사",
+                "Reflexive pronouns",
+                "재귀 대명사",
                 8));
+        modelArrayList.add(new MyModel2(
+                "Indefinite pronouns",
+                "부정 대명사",
+                9));
+        modelArrayList.add(new MyModel2(
+                "Relative pronouns",
+                "관계 대명사",
+                10));
+        modelArrayList.add(new MyModel2(
+                "Reciprocal pronouns",
+                "상호 대명사",
+                11));
 
         myAdapter2 = new MyAdapter2(this, modelArrayList);
         viewPager2.setAdapter(myAdapter2);
@@ -369,17 +381,21 @@ public class GrammarEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Adjective Formation",
-                "형용사의 형태",
+                "Adjective",
+                "형용사",
                 1));
         modelArrayList.add(new MyModel2(
-                "Comparative Adjectives",
-                "비교급",
+                "Quantifiers",
+                "수량 형용사",
                 2));
         modelArrayList.add(new MyModel2(
-                "Superlative Adjectives",
-                "최상급",
+                "Comparative adjectives",
+                "비교급",
                 3));
+        modelArrayList.add(new MyModel2(
+                "Superlative adjectives",
+                "최상급",
+                4));
 
         myAdapter3 = new MyAdapter3(this, modelArrayList);
         viewPager3.setAdapter(myAdapter3);
@@ -393,19 +409,19 @@ public class GrammarEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Auxiliary Verbs",
+                "Auxiliary verbs",
                 "조동사",
                 1));
         modelArrayList.add(new MyModel2(
-                "Modal Verbs",
+                "Modal verbs",
                 "법조동사",
                 2));
         modelArrayList.add(new MyModel2(
-                "Stative Verbs",
+                "Stative verbs",
                 "상태동사",
                 3));
         modelArrayList.add(new MyModel2(
-                "Infinitive & Gerund",
+                "Infinitive & gerund",
                 "동사원형 & 동명사",
                 4));
         modelArrayList.add(new MyModel2(
@@ -413,23 +429,23 @@ public class GrammarEng extends AppCompatActivity {
                 "분사",
                 5));
         modelArrayList.add(new MyModel2(
-                "Phrasal Verbs",
+                "Phrasal verbs",
                 "구동사",
                 6));
         modelArrayList.add(new MyModel2(
-                "Passive Voice",
+                "Passive voice",
                 "수동태",
                 7));
         modelArrayList.add(new MyModel2(
-                "Imperative Mood",
+                "Imperative mood",
                 "명령법",
                 8));
         modelArrayList.add(new MyModel2(
-                "Conditional Mood",
+                "Conditional mood",
                 "조건법",
                 9));
         modelArrayList.add(new MyModel2(
-                "Subjunctive Mood",
+                "Subjunctive mood",
                 "가정법",
                 10));
 
@@ -445,52 +461,52 @@ public class GrammarEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Simple Present",
-                "단순 현재 시제",
+                "Simple present",
+                "단순현재",
                 1));
         modelArrayList.add(new MyModel2(
-                "Simple Past",
-                "단순 과거 시제",
+                "Simple past",
+                "단순과거",
                 2));
         modelArrayList.add(new MyModel2(
-                "Simple Future",
-                "단순 미래 시제",
+                "Simple future",
+                "단순미래",
                 3));
         modelArrayList.add(new MyModel2(
-                "Present Perfect",
-                "현재 완료 시제",
+                "Present perfect",
+                "현재완료",
                 4));
         modelArrayList.add(new MyModel2(
-                "Past Perfect",
-                "과거 완료 시제",
+                "Past perfect",
+                "과거완료",
                 5));
         modelArrayList.add(new MyModel2(
-                "Future Perfect",
-                "미래 완료 시제",
+                "Future perfect",
+                "미래완료",
                 6));
         modelArrayList.add(new MyModel2(
-                "Present Continuous",
-                "현재 진행 시제",
+                "Present continuous",
+                "현재진행",
                 7));
         modelArrayList.add(new MyModel2(
-                "Past Continuous",
-                "과거 진행 시제",
+                "Past continuous",
+                "과거진행",
                 8));
         modelArrayList.add(new MyModel2(
-                "Future Continuous",
-                "미래 진행 시제",
+                "Future continuous",
+                "미래진행",
                 9));
         modelArrayList.add(new MyModel2(
-                "Present Perfect Continuous",
-                "현재 완료 진행 시제",
+                "Present perfect continuous",
+                "현재완료진행",
                 10));
         modelArrayList.add(new MyModel2(
-                "Past Perfect Continuous",
-                "과거 완료 진행 시제",
+                "Past perfect continuous",
+                "과거완료진행",
                 11));
         modelArrayList.add(new MyModel2(
-                "Future Perfect Continuous",
-                "미래 완료 진행 시제",
+                "Future perfect continuous",
+                "미래완료진행",
                 12));
 
         myAdapter5 = new MyAdapter5(this, modelArrayList);
@@ -505,33 +521,37 @@ public class GrammarEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Preposition Rules",
-                "전치사 사용법",
+                "Preposition",
+                "전치사",
                 1));
         modelArrayList.add(new MyModel2(
-                "Prepositions of Place",
+                "Prepositions of place",
                 "장소와 관련된 전치사",
                 2));
         modelArrayList.add(new MyModel2(
-                "Prepositions of Time",
+                "Prepositions of time",
                 "시간과 관련된 전치사",
                 3));
         modelArrayList.add(new MyModel2(
-                "Adverb Formation",
-                "부사의 형태",
+                "Other prepositions",
+                "기타 전치사",
                 4));
         modelArrayList.add(new MyModel2(
-                "Adverbs of Frequency",
-                "빈도부사",
+                "Adverb",
+                "부사",
                 5));
         modelArrayList.add(new MyModel2(
-                "Adverb Position",
-                "부사의 어순",
+                "Adverbs of frequency",
+                "빈도부사",
                 6));
         modelArrayList.add(new MyModel2(
-                "Comparative Adverbs",
-                "부사의 비교급",
+                "Adverb position",
+                "부사의 어순",
                 7));
+        modelArrayList.add(new MyModel2(
+                "Comparative adverbs",
+                "부사의 비교급",
+                8));
 
         myAdapter6 = new MyAdapter6(this, modelArrayList);
         viewPager6.setAdapter(myAdapter6);
@@ -688,6 +708,10 @@ public class GrammarEng extends AppCompatActivity {
                             break;
                         case 9:
                             break;
+                        case 10:
+                            break;
+                        case 11:
+                            break;
                     }
                 }
             });
@@ -764,6 +788,8 @@ public class GrammarEng extends AppCompatActivity {
                         case 2:
                             break;
                         case 3:
+                            break;
+                        case 4:
                             break;
                     }
                 }
@@ -1035,6 +1061,8 @@ public class GrammarEng extends AppCompatActivity {
                         case 6:
                             break;
                         case 7:
+                            break;
+                        case 8:
                             break;
                     }
                 }

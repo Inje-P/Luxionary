@@ -162,7 +162,7 @@
                         android:layout_marginLeft="10dp"
                         android:fontFamily="@font/pretendard_700"
                         android:gravity="left|center"
-                        android:text="Pronouns"
+                        android:text="Pronouns &amp; Determiners"
                         android:textColor="@color/main_text"
                         android:textSize="22dp"></TextView>
 
