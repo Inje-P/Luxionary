@@ -12,20 +12,20 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".IntroActivity"
-            android:exported="true">
-<!--                <intent-filter>-->
-<!--                        <action android:name="android.intent.action.MAIN" />-->
-
-<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
-<!--                </intent-filter>-->
         </activity>
         <activity android:name=".StartActivity"></activity>
         <activity android:name=".SigninActivity"></activity>
@@ -135,6 +135,9 @@
 
         <!-- Conjugation (English)-->
         <activity android:name=".ConjEng"></activity>
+
+        <!-- Conjugation (Spanish)-->
+        <activity android:name=".ConjSpa"></activity>
 
         <!-- Global Citizen (English)-->
         <activity android:name=".GlobalEng"></activity>

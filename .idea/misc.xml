@@ -66,32 +66,28 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/pastel_ripple_white.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/random_window.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_all_black.xml" value="0.3640625" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_black.xml" value="0.24947916666666667" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_black_underline.xml" value="0.24947916666666667" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_deu.xml" value="0.24947916666666667" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_deu_box.xml" value="0.24895833333333334" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_deu_line.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_deu_underline.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_eng.xml" value="0.36822916666666666" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_eng_box.xml" value="0.24947916666666667" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_eng_full.xml" value="0.24947916666666667" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_eng_round.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_eng_line.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_eng_round_full.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_eng_sqr.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_eng_under.xml" value="0.24947916666666667" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_eng_underline.xml" value="0.24947916666666667" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_fra.xml" value="0.24947916666666667" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_fra_box.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_fra_line.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_ita.xml" value="0.24947916666666667" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_ita_box.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_ita_line.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_rus.xml" value="0.24947916666666667" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_rus_box.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_rus_line.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_spa.xml" value="0.24947916666666667" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_spa_box.xml" value="0.24947916666666667" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_spa_colored.xml" value="0.24947916666666667" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_spa_full.xml" value="0.24947916666666667" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_spa_round.xml" value="0.24947916666666667" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_spa_round_full.xml" value="0.24947916666666667" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_spa_sqr.xml" value="0.24947916666666667" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_tur_box.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_spa_line.xml" value="0.3640625" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_tur_line.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/ripple_white_underline.xml" value="0.3640625" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/selected_dot.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/drawable/sparkle_ripple_deu.xml" value="0.3640625" />
@@ -122,7 +118,7 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/font/font.xml" value="0.3776041666666667" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_account.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_avatar.xml" value="0.25" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_charge.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_charge.xml" value="0.264" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_date.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_drawer.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_intro.xml" value="0.1691995947315096" />
@@ -135,11 +131,13 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_startOk.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_support.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/activity_welcome.xml" value="0.23333333333333334" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/card_item_gc.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/card_item_gc_eng.xml" value="0.264" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/card_item_large.xml" value="0.264" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/card_item_medium.xml" value="0.264" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/complete_eng.xml" value="0.34791666666666665" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/conj_eng.xml" value="0.4" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/conj_eng.xml" value="0.30480072463768115" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/conj_spa.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/custom_dialog.xml" value="0.14537037037037037" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/dialog_accountsave.xml" value="0.25" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/dialog_avatar.xml" value="0.33" />
@@ -166,6 +164,8 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_deu_01_2.xml" value="0.34791666666666665" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_deu_01_3.xml" value="0.34791666666666665" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_deu_02_1.xml" value="0.33" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_deu_02_2.xml" value="0.3079710144927536" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_deu_02_3.xml" value="0.34791666666666665" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_eng.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_eng_01_1.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_eng_01_2.xml" value="0.33" />
@@ -191,9 +191,11 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_rus_02_1.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_rus_02_2.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_spa.xml" value="0.33" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_spa_01_1.xml" value="0.171225937183384" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_spa_01_2.xml" value="0.25" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_spa_01_3.xml" value="0.34791666666666665" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_spa_02_1.xml" value="0.33" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_spa_02_2.xml" value="0.171225937183384" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_tur.xml" value="0.264" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/lang101_tur_01_1.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/main_deu.xml" value="0.33" />
@@ -236,13 +238,13 @@
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/toast_custom.xml" value="0.171225937183384" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/toast_message.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_deu.xml" value="0.23333333333333334" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_eng.xml" value="0.23333333333333334" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_eng.xml" value="0.2" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_fra.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_ita.xml" value="0.23333333333333334" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_rus.xml" value="0.23333333333333334" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_spa.xml" value="0.2" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_spa_001_1.xml" value="0.23333333333333334" />
-        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_spa_001_2.xml" value="0.264" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_spa.xml" value="0.33" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_spa_001_1.xml" value="0.35208333333333336" />
+        <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_spa_001_2.xml" value="0.33" />
         <entry key="..\:/Android/Luxionary/app/src/main/res/layout/voca_tur.xml" value="0.22871376811594202" />
       </map>
     </option>

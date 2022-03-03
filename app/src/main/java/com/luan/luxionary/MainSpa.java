@@ -316,6 +316,7 @@ public class MainSpa extends AppCompatActivity {
                         case 3:
                             break;
                         case 4:
+                            pageConj();
                             break;
                         case 5:
                             break;
@@ -448,7 +449,7 @@ public class MainSpa extends AppCompatActivity {
     }
 
     public void pageConj() {
-        Intent intentConj = new Intent(MainSpa.this, ConjEng.class);
+        Intent intentConj = new Intent(MainSpa.this, ConjSpa.class);
         intentConj.putExtra("username", username);
         intentConj.putExtra("email", email);
         intentConj.putExtra("profile", profile);

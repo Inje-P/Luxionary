@@ -289,25 +289,29 @@ public class GrammarEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Types of Nouns",
+                "Types of nouns",
                 "명사의 종류",
                 1));
         modelArrayList.add(new MyModel2(
-                "Countable & Uncountable",
+                "Countable & uncountable",
                 "셀 수 있는/없는 명사",
                 2));
         modelArrayList.add(new MyModel2(
-                "Indefinite Articles",
+                "Indefinite articles",
                 "부정관사",
                 3));
         modelArrayList.add(new MyModel2(
-                "Definite Articles",
+                "Definite articles",
                 "정관사",
                 4));
         modelArrayList.add(new MyModel2(
                 "Plural",
                 "복수형",
                 5));
+        modelArrayList.add(new MyModel2(
+                "Gender, Number, Case",
+                "성, 수, 격",
+                6));
 
         myAdapter1 = new MyAdapter1(this, modelArrayList);
         viewPager1.setAdapter(myAdapter1);
@@ -321,41 +325,37 @@ public class GrammarEng extends AppCompatActivity {
 
         // add items to list
         modelArrayList.add(new MyModel2(
-                "Gender, Number, Case",
-                "성, 수, 격",
-                1));
-        modelArrayList.add(new MyModel2(
                 "Personal Pronouns",
                 "인칭 대명사",
-                2));
+                1));
         modelArrayList.add(new MyModel2(
                 "Demonstrative Pronouns",
                 "지시 대명사",
-                3));
+                2));
         modelArrayList.add(new MyModel2(
                 "Possessive Pronouns",
                 "소유 대명사",
-                4));
+                3));
         modelArrayList.add(new MyModel2(
                 "Interrogative Pronouns",
                 "의문 대명사",
-                5));
+                4));
         modelArrayList.add(new MyModel2(
-                "Reflextive Pronouns",
+                "Reflexive Pronouns",
                 "재귀 대명사",
-                6));
+                5));
         modelArrayList.add(new MyModel2(
                 "Indefinite Pronouns",
                 "부정 대명사",
-                7));
+                6));
         modelArrayList.add(new MyModel2(
                 "Relative Pronouns",
                 "관계 대명사",
-                8));
+                7));
         modelArrayList.add(new MyModel2(
                 "Reciprocal Pronouns",
                 "상호 대명사",
-                9));
+                8));
 
         myAdapter2 = new MyAdapter2(this, modelArrayList);
         viewPager2.setAdapter(myAdapter2);
@@ -596,6 +596,8 @@ public class GrammarEng extends AppCompatActivity {
                         case 4:
                             break;
                         case 5:
+                            break;
+                        case 6:
                             break;
                     }
                 }
