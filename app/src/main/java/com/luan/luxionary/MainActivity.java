@@ -255,6 +255,7 @@ public class MainActivity extends AppCompatActivity {
         llItaBox = (LinearLayout) findViewById(R.id.llItaBox);
         llRusBox = (LinearLayout) findViewById(R.id.llRusBox);
         llTurBox = (LinearLayout) findViewById(R.id.llTurBox);
+
         llEngImage = (LinearLayout) findViewById(R.id.llEngImage);
         llFraImage = (LinearLayout) findViewById(R.id.llFraImage);
         llSpaImage = (LinearLayout) findViewById(R.id.llSpaImage);
@@ -262,6 +263,7 @@ public class MainActivity extends AppCompatActivity {
         llItaImage = (LinearLayout) findViewById(R.id.llItaImage);
         llRusImage = (LinearLayout) findViewById(R.id.llRusImage);
         llTurImage = (LinearLayout) findViewById(R.id.llTurImage);
+
         tvEng = (TextView) findViewById(R.id.tvEng);
         tvFra = (TextView) findViewById(R.id.tvFra);
         tvSpa = (TextView) findViewById(R.id.tvSpa);
@@ -283,6 +285,7 @@ public class MainActivity extends AppCompatActivity {
         aniLlRusBox.setStartOffset(1000);
         aniLlTurBox = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         aniLlTurBox.setStartOffset(1200);
+
         aniLlEngImage = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniLlFraImage = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniLlFraImage.setStartOffset(200);
@@ -296,6 +299,7 @@ public class MainActivity extends AppCompatActivity {
         aniLlRusImage.setStartOffset(1000);
         aniLlTurImage = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniLlTurImage.setStartOffset(1200);
+
         aniTvEng = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniTvEng.setStartOffset(600);
         aniTvFra = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
@@ -318,6 +322,7 @@ public class MainActivity extends AppCompatActivity {
         llItaBox.startAnimation(aniLlItaBox);
         llRusBox.startAnimation(aniLlRusBox);
         llTurBox.startAnimation(aniLlTurBox);
+
         llEngImage.startAnimation(aniLlEngImage);
         llFraImage.startAnimation(aniLlFraImage);
         llSpaImage.startAnimation(aniLlSpaImage);
@@ -325,6 +330,7 @@ public class MainActivity extends AppCompatActivity {
         llItaImage.startAnimation(aniLlItaImage);
         llRusImage.startAnimation(aniLlRusImage);
         llTurImage.startAnimation(aniLlTurImage);
+
         tvEng.startAnimation(aniTvEng);
         tvFra.startAnimation(aniTvFra);
         tvSpa.startAnimation(aniTvSpa);
@@ -341,6 +347,7 @@ public class MainActivity extends AppCompatActivity {
         btnIta = (ImageButton) findViewById(R.id.btnIta);
         btnRus = (ImageButton) findViewById(R.id.btnRus);
         btnTur = (ImageButton) findViewById(R.id.btnTur);
+
         aniBtnEng = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniBtnEng.setStartOffset(600);
         aniBtnFra = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
@@ -355,6 +362,7 @@ public class MainActivity extends AppCompatActivity {
         aniBtnRus.setStartOffset(1600);
         aniBtnTur = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
         aniBtnTur.setStartOffset(1800);
+
         btnEng.startAnimation(aniBtnEng);
         btnFra.startAnimation(aniBtnFra);
         btnSpa.startAnimation(aniBtnSpa);
@@ -362,6 +370,7 @@ public class MainActivity extends AppCompatActivity {
         btnIta.startAnimation(aniBtnIta);
         btnRus.startAnimation(aniBtnRus);
         btnTur.startAnimation(aniBtnTur);
+
         btnEng.setOnClickListener(mClickListener);
         btnFra.setOnClickListener(mClickListener);
         btnSpa.setOnClickListener(mClickListener);

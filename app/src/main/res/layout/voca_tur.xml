@@ -135,9 +135,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="1. FACE"
+                            android:text="1. YÜZ"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn2"
@@ -149,9 +149,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="2. BODY"
+                            android:text="2. GÖVDE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn3"
@@ -163,9 +163,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="3. HAND &amp; FOOT"
+                            android:text="3. EL &amp; AYAK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn4"
@@ -177,9 +177,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="4. SKELETON &amp; MUSCLES"
+                            android:text="4. ISKELET &amp; KASLAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn5"
@@ -191,9 +191,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="5. ORGANS"
+                            android:text="5. İÇ ORGANLAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn6"
@@ -205,9 +205,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="6. LIFE EVENTS"
+                            android:text="6. YAŞAM OLAYLARI"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn7"
@@ -219,9 +219,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="7. NUMBERS"
+                            android:text="7. SAYILAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn8"
@@ -233,9 +233,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="8. FAMILY"
+                            android:text="8. AİLE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn9"
@@ -247,9 +247,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="9. EMOTIONS"
+                            android:text="9. DUYGULAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn10"
@@ -261,9 +261,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="10. RELATIONSHIPS"
+                            android:text="10. İLİŞKİLER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn11"
@@ -275,9 +275,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="11. TIME"
+                            android:text="11. ZAMAN"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn12"
@@ -289,9 +289,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="12. CALENDAR"
+                            android:text="12. TAKVİM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn13"
@@ -303,9 +303,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="13. ZODIAC SIGN"
+                            android:text="13. BURÇLAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn14"
@@ -317,9 +317,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="14. HOUSE"
+                            android:text="14. EV"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn15"
@@ -331,9 +331,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="15. LIVING ROOM"
+                            android:text="15. OTURMA ODASI"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn16"
@@ -345,9 +345,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="16. BEDROOM"
+                            android:text="16. YATAK ODASI"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn17"
@@ -359,9 +359,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="17. BATHROOM"
+                            android:text="17. BANYO"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn18"
@@ -373,9 +373,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="18. NURSERY"
+                            android:text="18. ÇOCUK ODASI"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn19"
@@ -387,9 +387,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="19. DINING ROOM"
+                            android:text="19. YEMEK ODASI"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn20"
@@ -401,9 +401,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="20. KITCHEN"
+                            android:text="20. MUTFAK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn21"
@@ -415,9 +415,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="21. KITCHENWARE"
+                            android:text="21. MUTFAK EŞYALARI"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn22"
@@ -429,9 +429,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="22. WEIGHTS &amp; MEASURES"
+                            android:text="22. AĞIRLIKLAR &amp; ÖLÇÜLER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn23"
@@ -443,9 +443,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="23. UTILITY ROOM"
+                            android:text="23. ÇOK AMAÇLI ODA"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn24"
@@ -457,9 +457,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="24. TOOLS"
+                            android:text="24. ARAÇLAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn25"
@@ -471,9 +471,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="25. GARDEN"
+                            android:text="25. BAHÇE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn26"
@@ -485,9 +485,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="26. WEATHER"
+                            android:text="26. HAVA DURUMU"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn27"
@@ -499,9 +499,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="27. LANDSCAPE"
+                            android:text="27. MANZARA"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn28"
@@ -513,9 +513,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="28. ROCKS &amp; MINERALS"
+                            android:text="28. KAYALAR &amp; MINERALLER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn29"
@@ -527,9 +527,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="29. ANIMALS"
+                            android:text="29. HAYVANLAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn30"
@@ -541,9 +541,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="30. PLANTS"
+                            android:text="30. BİTKİLER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn31"
@@ -555,9 +555,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="31. SPACE"
+                            android:text="31. EVREN"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn32"
@@ -569,9 +569,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="32. EARTH"
+                            android:text="32. TOPRAK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn33"
@@ -583,9 +583,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="33. MEN'S CLOTHING"
+                            android:text="33. ERKEK GİYİM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn34"
@@ -597,9 +597,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="34. WOMEN'S CLOTHING"
+                            android:text="34. BAYAN GİYİM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn35"
@@ -611,9 +611,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="35. HAIR"
+                            android:text="35. SAÇ"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn36"
@@ -625,9 +625,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="36. ACCESSORIES"
+                            android:text="36. AKSESUARLAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn37"
@@ -639,9 +639,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="37. BEAUTY"
+                            android:text="37. GÜZELLİK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn38"
@@ -653,9 +653,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="38. CHILDREN'S CLOTHING"
+                            android:text="38. ÇOCUK GİYİM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn39"
@@ -667,9 +667,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="39. VEGETABLES"
+                            android:text="39. SEBZELER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn40"
@@ -681,9 +681,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="40. FRUITS"
+                            android:text="40. MEYVELER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn41"
@@ -695,9 +695,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="41. MEAT"
+                            android:text="41. ET"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn42"
@@ -709,9 +709,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="42. FISH"
+                            android:text="42. BALIK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn43"
@@ -723,9 +723,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="43. DAIRY PRODUCTS"
+                            android:text="43. SÜT ÜRÜNLERİ"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn44"
@@ -737,9 +737,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="44. GRAINS &amp; LEGUMES"
+                            android:text="44. TAHILLAR &amp; FASULYE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn45"
@@ -751,9 +751,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="45. BREADS &amp; FLOURS"
+                            android:text="45. EKMEKLER &amp; UNLAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn46"
@@ -765,9 +765,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="46. CAKES &amp; DESSERTS"
+                            android:text="46. KEKLER &amp; TATLILAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn47"
@@ -779,9 +779,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="47. BOTTLED FOODS"
+                            android:text="47. ŞİŞELENMİŞ GIDALAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn48"
@@ -793,9 +793,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="48. DRINKS"
+                            android:text="48. İÇECEKLER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn49"
@@ -807,9 +807,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="49. DELICATESSEN"
+                            android:text="49. ŞARKÜTERİ"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn50"
@@ -821,9 +821,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="50. HERBS &amp; SPICES"
+                            android:text="50. OTLAR &amp; BAHARATLAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn51"
@@ -835,9 +835,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="51. HOSPITAL"
+                            android:text="51. HASTANE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn52"
@@ -849,9 +849,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="52. ILLNESS"
+                            android:text="52. HASTALIK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn53"
@@ -863,9 +863,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="53. INJURY"
+                            android:text="53. İNCİNME"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn54"
@@ -877,9 +877,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="54. FIRST AID"
+                            android:text="54. İLK YADIM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn55"
@@ -891,9 +891,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="55. CITY"
+                            android:text="55. ŞEHİR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn56"
@@ -905,9 +905,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="56. ARCHITECTURE"
+                            android:text="56. MİMARİ"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn57"
@@ -919,9 +919,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="57. DEPARTMENT STORE"
+                            android:text="57. BÜYÜK MAĞAZA"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn58"
@@ -933,9 +933,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="58. SHOPPING CENTER"
+                            android:text="58. ECZANE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn59"
@@ -947,9 +947,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="59. DRUGSTORE"
+                            android:text="59. DİĞER MAĞAZALAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn60"
@@ -961,9 +961,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="60. FLORIST"
+                            android:text="60. KAFE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn61"
@@ -975,9 +975,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="61. NEWSSTAND"
+                            android:text="61. BAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn62"
@@ -989,9 +989,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="62. OTHER STORES"
+                            android:text="62. RESTORAN"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn63"
@@ -1003,9 +1003,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="63. CAFE"
+                            android:text="63. KAHVALTI &amp; AKŞAM YEMEĞİ"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn64"
@@ -1017,9 +1017,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="64. BAR"
+                            android:text="64. OKUL"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn65"
@@ -1031,9 +1031,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="65. RESTAURANT"
+                            android:text="65. ÜNİVERSİTE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn66"
@@ -1045,9 +1045,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="66. BREAKFAST"
+                            android:text="66. MATEMATİK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn67"
@@ -1059,9 +1059,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="67. DINNER"
+                            android:text="67. BİLİM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn68"
@@ -1073,9 +1073,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="68. SCHOOL"
+                            android:text="68. YOLLAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn69"
@@ -1087,9 +1087,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="69. COLLEGE"
+                            android:text="69. ARABA"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn70"
@@ -1101,9 +1101,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="70. MATH"
+                            android:text="70. OTOBÜS DURAĞI"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn71"
@@ -1115,9 +1115,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="71. SCIENCE"
+                            android:text="71. TREN İSTASYONU"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn72"
@@ -1129,9 +1129,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="72. ROADS"
+                            android:text="72. LİMAN"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn73"
@@ -1143,9 +1143,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="73. CAR"
+                            android:text="73. HAVAALANI"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn74"
@@ -1157,9 +1157,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="74. BUS STATION"
+                            android:text="74. DÜNYA"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn75"
@@ -1171,9 +1171,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="75. TRAIN STATION"
+                            android:text="75. ACİL SERVİSLER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn76"
@@ -1185,9 +1185,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="76. PORT"
+                            android:text="76. İLETİŞİM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn77"
@@ -1199,9 +1199,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="77. AIRPORT"
+                            android:text="77. BANKA"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn78"
@@ -1213,9 +1213,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="78. WORLD"
+                            android:text="78. MESLEK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn79"
@@ -1227,9 +1227,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="79. EMERGENCY SERVICES"
+                            android:text="79. OFİS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn80"
@@ -1241,9 +1241,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="80. COMMUNICATION"
+                            android:text="80. İŞLETME"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn81"
@@ -1255,9 +1255,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="81. EMERGENCY SERVICES"
+                            android:text="81. BİLGİSAYAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn82"
@@ -1269,9 +1269,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="82. BANK"
+                            android:text="82. İNŞAAT"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn83"
@@ -1283,9 +1283,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="83. OCCUPATION"
+                            android:text="83. KANUN"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn84"
@@ -1297,9 +1297,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="84. OFFICE"
+                            android:text="84. MEDYA"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn85"
@@ -1311,9 +1311,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="85. BUSINESS"
+                            android:text="85. TURİZM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn86"
@@ -1325,9 +1325,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="86. COMPUTER"
+                            android:text="86. AÇIK HAVA ETKİNLİKLERİ"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn87"
@@ -1339,9 +1339,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="87. CONSTRUCTION"
+                            android:text="87. KONSER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn88"
@@ -1353,9 +1353,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="88. LAW"
+                            android:text="88. TİYATRO"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn89"
@@ -1367,9 +1367,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="89. MEDIA"
+                            android:text="89. ORKESTRA"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn90"
@@ -1381,9 +1381,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="90. SIGHTSEEING"
+                            android:text="90. KAMP YAPMAK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn91"
@@ -1395,9 +1395,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="91. OUTDOOR ACTIVITIES"
+                            android:text="91. PLAJ"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn92"
@@ -1409,9 +1409,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="92. CONCERT"
+                            android:text="92. FOTOĞRAFÇILIK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn93"
@@ -1423,9 +1423,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="93. THEATER"
+                            android:text="93. SANATLAR &amp; EL SANATLARI"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn94"
@@ -1437,9 +1437,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="94. ORCHESTRA"
+                            android:text="94. TEKNOLOJİ"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn95"
@@ -1451,9 +1451,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="95. CAMPING"
+                            android:text="95. OYUNLAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn96"
@@ -1465,9 +1465,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="96. BEACH"
+                            android:text="96. FİTNESS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn97"
@@ -1479,9 +1479,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="97. PHOTOGRAPHY"
+                            android:text="97. FUTBOL"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn98"
@@ -1493,9 +1493,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="98. ARTS &amp; CRAFTS"
+                            android:text="98. BEYZBOL"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn99"
@@ -1507,9 +1507,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="99. HOME ENTERTAINMENT"
+                            android:text="99. BASKETBOL"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn100"
@@ -1521,9 +1521,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="100. GAMES"
+                            android:text="100. GOLF"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn101"
@@ -1535,9 +1535,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="101. FITNESS"
+                            android:text="101. TENİS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn102"
@@ -1549,9 +1549,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="102. SOCCER"
+                            android:text="102. DÖVÜŞ SPORLARI"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn103"
@@ -1563,9 +1563,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="103. BASEBALL"
+                            android:text="103. YÜZME"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn104"
@@ -1577,9 +1577,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="104. BASKETBALL"
+                            android:text="104. KAYAKÇILIK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn105"
@@ -1591,79 +1591,9 @@
                             android:fontFamily="@font/pretendard_800"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="105. GOLF"
+                            android:text="105. YELKEN"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
-
-                        <Button
-                            android:id="@+id/btn106"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_margin="10dp"
-                            android:background="@drawable/ripple_tur_round_full"
-                            android:elevation="3dp"
-                            android:fontFamily="@font/pretendard_800"
-                            android:gravity="center"
-                            android:stateListAnimator="@null"
-                            android:text="106. TENNIS"
-                            android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
-
-                        <Button
-                            android:id="@+id/btn107"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_margin="10dp"
-                            android:background="@drawable/ripple_tur_round_full"
-                            android:elevation="3dp"
-                            android:fontFamily="@font/pretendard_800"
-                            android:gravity="center"
-                            android:stateListAnimator="@null"
-                            android:text="107. COMBAT SPORTS"
-                            android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
-
-                        <Button
-                            android:id="@+id/btn108"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_margin="10dp"
-                            android:background="@drawable/ripple_tur_round_full"
-                            android:elevation="3dp"
-                            android:fontFamily="@font/pretendard_800"
-                            android:gravity="center"
-                            android:stateListAnimator="@null"
-                            android:text="108. SWIMMING"
-                            android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
-
-                        <Button
-                            android:id="@+id/btn109"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_margin="10dp"
-                            android:background="@drawable/ripple_tur_round_full"
-                            android:elevation="3dp"
-                            android:fontFamily="@font/pretendard_800"
-                            android:gravity="center"
-                            android:stateListAnimator="@null"
-                            android:text="109. SKIING"
-                            android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
-
-                        <Button
-                            android:id="@+id/btn110"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_margin="10dp"
-                            android:background="@drawable/ripple_tur_round_full"
-                            android:elevation="3dp"
-                            android:fontFamily="@font/pretendard_800"
-                            android:gravity="center"
-                            android:stateListAnimator="@null"
-                            android:text="110. SAILING"
-                            android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                     </LinearLayout>
 

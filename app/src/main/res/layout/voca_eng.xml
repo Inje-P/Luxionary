@@ -137,7 +137,7 @@
                             android:stateListAnimator="@null"
                             android:text="1. FACE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn2"
@@ -151,7 +151,7 @@
                             android:stateListAnimator="@null"
                             android:text="2. BODY"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn3"
@@ -165,7 +165,7 @@
                             android:stateListAnimator="@null"
                             android:text="3. HAND &amp; FOOT"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn4"
@@ -179,7 +179,7 @@
                             android:stateListAnimator="@null"
                             android:text="4. SKELETON &amp; MUSCLES"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn5"
@@ -193,7 +193,7 @@
                             android:stateListAnimator="@null"
                             android:text="5. INTERNAL ORGANS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn6"
@@ -207,7 +207,7 @@
                             android:stateListAnimator="@null"
                             android:text="6. LIFE EVENTS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn7"
@@ -221,7 +221,7 @@
                             android:stateListAnimator="@null"
                             android:text="7. NUMBERS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn8"
@@ -235,7 +235,7 @@
                             android:stateListAnimator="@null"
                             android:text="8. FAMILY"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn9"
@@ -249,7 +249,7 @@
                             android:stateListAnimator="@null"
                             android:text="9. EMOTIONS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn10"
@@ -263,7 +263,7 @@
                             android:stateListAnimator="@null"
                             android:text="10. RELATIONSHIPS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn11"
@@ -277,7 +277,7 @@
                             android:stateListAnimator="@null"
                             android:text="11. TIME"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn12"
@@ -291,7 +291,7 @@
                             android:stateListAnimator="@null"
                             android:text="12. CALENDAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn13"
@@ -305,7 +305,7 @@
                             android:stateListAnimator="@null"
                             android:text="13. ZODIAC SIGNS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn14"
@@ -319,7 +319,7 @@
                             android:stateListAnimator="@null"
                             android:text="14. HOUSE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn15"
@@ -333,7 +333,7 @@
                             android:stateListAnimator="@null"
                             android:text="15. LIVING ROOM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn16"
@@ -347,7 +347,7 @@
                             android:stateListAnimator="@null"
                             android:text="16. BEDROOM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn17"
@@ -361,7 +361,7 @@
                             android:stateListAnimator="@null"
                             android:text="17. BATHROOM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn18"
@@ -375,7 +375,7 @@
                             android:stateListAnimator="@null"
                             android:text="18. NURSERY"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn19"
@@ -389,7 +389,7 @@
                             android:stateListAnimator="@null"
                             android:text="19. DINING ROOM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn20"
@@ -403,7 +403,7 @@
                             android:stateListAnimator="@null"
                             android:text="20. KITCHEN"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn21"
@@ -417,7 +417,7 @@
                             android:stateListAnimator="@null"
                             android:text="21. KITCHENWARE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn22"
@@ -431,7 +431,7 @@
                             android:stateListAnimator="@null"
                             android:text="22. WEIGHTS &amp; MEASURES"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn23"
@@ -445,7 +445,7 @@
                             android:stateListAnimator="@null"
                             android:text="23. UTILITY ROOM"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn24"
@@ -459,7 +459,7 @@
                             android:stateListAnimator="@null"
                             android:text="24. TOOLS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn25"
@@ -473,7 +473,7 @@
                             android:stateListAnimator="@null"
                             android:text="25. GARDEN"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn26"
@@ -487,7 +487,7 @@
                             android:stateListAnimator="@null"
                             android:text="26. WEATHER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn27"
@@ -501,7 +501,7 @@
                             android:stateListAnimator="@null"
                             android:text="27. LANDSCAPE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn28"
@@ -515,7 +515,7 @@
                             android:stateListAnimator="@null"
                             android:text="28. ROCKS &amp; MINERALS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn29"
@@ -529,7 +529,7 @@
                             android:stateListAnimator="@null"
                             android:text="29. ANIMALS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn30"
@@ -543,7 +543,7 @@
                             android:stateListAnimator="@null"
                             android:text="30. PLANTS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn31"
@@ -557,7 +557,7 @@
                             android:stateListAnimator="@null"
                             android:text="31. SPACE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn32"
@@ -571,7 +571,7 @@
                             android:stateListAnimator="@null"
                             android:text="32. EARTH"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn33"
@@ -585,7 +585,7 @@
                             android:stateListAnimator="@null"
                             android:text="33. MEN'S CLOTHING"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn34"
@@ -599,7 +599,7 @@
                             android:stateListAnimator="@null"
                             android:text="34. WOMEN'S CLOTHING"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn35"
@@ -613,7 +613,7 @@
                             android:stateListAnimator="@null"
                             android:text="35. HAIR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn36"
@@ -627,7 +627,7 @@
                             android:stateListAnimator="@null"
                             android:text="36. ACCESSORIES"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn37"
@@ -641,7 +641,7 @@
                             android:stateListAnimator="@null"
                             android:text="37. BEAUTY"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn38"
@@ -655,7 +655,7 @@
                             android:stateListAnimator="@null"
                             android:text="38. CHILDREN'S CLOTHING"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn39"
@@ -669,7 +669,7 @@
                             android:stateListAnimator="@null"
                             android:text="39. VEGETABLES"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn40"
@@ -683,7 +683,7 @@
                             android:stateListAnimator="@null"
                             android:text="40. FRUITS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn41"
@@ -697,7 +697,7 @@
                             android:stateListAnimator="@null"
                             android:text="41. MEAT"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn42"
@@ -711,7 +711,7 @@
                             android:stateListAnimator="@null"
                             android:text="42. FISH"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn43"
@@ -725,7 +725,7 @@
                             android:stateListAnimator="@null"
                             android:text="43. DAIRY PRODUCTS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn44"
@@ -739,7 +739,7 @@
                             android:stateListAnimator="@null"
                             android:text="44. GRAINS &amp; LEGUMES"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn45"
@@ -753,7 +753,7 @@
                             android:stateListAnimator="@null"
                             android:text="45. BREADS &amp; FLOURS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn46"
@@ -767,7 +767,7 @@
                             android:stateListAnimator="@null"
                             android:text="46. CAKES &amp; DESSERTS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn47"
@@ -781,7 +781,7 @@
                             android:stateListAnimator="@null"
                             android:text="47. BOTTLED FOODS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn48"
@@ -795,7 +795,7 @@
                             android:stateListAnimator="@null"
                             android:text="48. DRINKS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn49"
@@ -809,7 +809,7 @@
                             android:stateListAnimator="@null"
                             android:text="49. DELICATESSEN"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn50"
@@ -823,7 +823,7 @@
                             android:stateListAnimator="@null"
                             android:text="50. HERBS &amp; SPICES"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn51"
@@ -837,7 +837,7 @@
                             android:stateListAnimator="@null"
                             android:text="51. HOSPITAL"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn52"
@@ -851,7 +851,7 @@
                             android:stateListAnimator="@null"
                             android:text="52. ILLNESS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn53"
@@ -865,7 +865,7 @@
                             android:stateListAnimator="@null"
                             android:text="53. INJURY"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn54"
@@ -879,7 +879,7 @@
                             android:stateListAnimator="@null"
                             android:text="54. FIRST AID"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn55"
@@ -893,7 +893,7 @@
                             android:stateListAnimator="@null"
                             android:text="55. CITY"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn56"
@@ -907,7 +907,7 @@
                             android:stateListAnimator="@null"
                             android:text="56. ARCHITECTURE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn57"
@@ -921,7 +921,7 @@
                             android:stateListAnimator="@null"
                             android:text="57. DEPARTMENT STORE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn58"
@@ -935,7 +935,7 @@
                             android:stateListAnimator="@null"
                             android:text="58. DRUGSTORE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn59"
@@ -949,7 +949,7 @@
                             android:stateListAnimator="@null"
                             android:text="59. OTHER STORES"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn60"
@@ -963,7 +963,7 @@
                             android:stateListAnimator="@null"
                             android:text="60. CAFE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn61"
@@ -977,7 +977,7 @@
                             android:stateListAnimator="@null"
                             android:text="61. BAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn62"
@@ -991,7 +991,7 @@
                             android:stateListAnimator="@null"
                             android:text="62. RESTAURANT"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn63"
@@ -1005,7 +1005,7 @@
                             android:stateListAnimator="@null"
                             android:text="63. BREAKFAST &amp; DINNER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn64"
@@ -1019,7 +1019,7 @@
                             android:stateListAnimator="@null"
                             android:text="64. SCHOOL"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn65"
@@ -1031,9 +1031,9 @@
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
                             android:stateListAnimator="@null"
-                            android:text="65. COLLEGE"
+                            android:text="65. UNIVERSITY"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn66"
@@ -1047,7 +1047,7 @@
                             android:stateListAnimator="@null"
                             android:text="66. MATH"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn67"
@@ -1061,7 +1061,7 @@
                             android:stateListAnimator="@null"
                             android:text="67. SCIENCE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn68"
@@ -1075,7 +1075,7 @@
                             android:stateListAnimator="@null"
                             android:text="68. ROADS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn69"
@@ -1089,7 +1089,7 @@
                             android:stateListAnimator="@null"
                             android:text="69. CAR"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn70"
@@ -1103,7 +1103,7 @@
                             android:stateListAnimator="@null"
                             android:text="70. BUS STATION"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn71"
@@ -1117,7 +1117,7 @@
                             android:stateListAnimator="@null"
                             android:text="71. TRAIN STATION"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn72"
@@ -1131,7 +1131,7 @@
                             android:stateListAnimator="@null"
                             android:text="72. PORT"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn73"
@@ -1145,7 +1145,7 @@
                             android:stateListAnimator="@null"
                             android:text="73. AIRPORT"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn74"
@@ -1159,7 +1159,7 @@
                             android:stateListAnimator="@null"
                             android:text="74. WORLD"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn75"
@@ -1173,7 +1173,7 @@
                             android:stateListAnimator="@null"
                             android:text="75. EMERGENCY SERVICES"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn76"
@@ -1187,7 +1187,7 @@
                             android:stateListAnimator="@null"
                             android:text="76. COMMUNICATION"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn77"
@@ -1201,7 +1201,7 @@
                             android:stateListAnimator="@null"
                             android:text="77. BANK"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn78"
@@ -1215,7 +1215,7 @@
                             android:stateListAnimator="@null"
                             android:text="78. OCCUPATION"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn79"
@@ -1229,7 +1229,7 @@
                             android:stateListAnimator="@null"
                             android:text="79. OFFICE"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn80"
@@ -1243,7 +1243,7 @@
                             android:stateListAnimator="@null"
                             android:text="80. BUSINESS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn81"
@@ -1257,7 +1257,7 @@
                             android:stateListAnimator="@null"
                             android:text="81. COMPUTER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn82"
@@ -1271,7 +1271,7 @@
                             android:stateListAnimator="@null"
                             android:text="82. CONSTRUCTION"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn83"
@@ -1285,7 +1285,7 @@
                             android:stateListAnimator="@null"
                             android:text="83. LAW"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn84"
@@ -1299,7 +1299,7 @@
                             android:stateListAnimator="@null"
                             android:text="84. MEDIA"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn85"
@@ -1313,7 +1313,7 @@
                             android:stateListAnimator="@null"
                             android:text="85. SIGHTSEEING"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn86"
@@ -1327,7 +1327,7 @@
                             android:stateListAnimator="@null"
                             android:text="86. OUTDOOR ACTIVITIES"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn87"
@@ -1341,7 +1341,7 @@
                             android:stateListAnimator="@null"
                             android:text="87. CONCERT"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn88"
@@ -1355,7 +1355,7 @@
                             android:stateListAnimator="@null"
                             android:text="88. THEATER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn89"
@@ -1369,7 +1369,7 @@
                             android:stateListAnimator="@null"
                             android:text="89. ORCHESTRA"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn90"
@@ -1383,7 +1383,7 @@
                             android:stateListAnimator="@null"
                             android:text="90. CAMPING"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn91"
@@ -1397,7 +1397,7 @@
                             android:stateListAnimator="@null"
                             android:text="91. BEACH"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn92"
@@ -1411,7 +1411,7 @@
                             android:stateListAnimator="@null"
                             android:text="92. PHOTOGRAPHY"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn93"
@@ -1425,7 +1425,7 @@
                             android:stateListAnimator="@null"
                             android:text="93. ARTS &amp; CRAFTS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn94"
@@ -1439,7 +1439,7 @@
                             android:stateListAnimator="@null"
                             android:text="94. TECHNOLOGY"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn95"
@@ -1453,7 +1453,7 @@
                             android:stateListAnimator="@null"
                             android:text="95. GAMES"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn96"
@@ -1467,7 +1467,7 @@
                             android:stateListAnimator="@null"
                             android:text="96. FITNESS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn97"
@@ -1481,7 +1481,7 @@
                             android:stateListAnimator="@null"
                             android:text="97. SOCCER"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn98"
@@ -1495,7 +1495,7 @@
                             android:stateListAnimator="@null"
                             android:text="98. BASEBALL"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn99"
@@ -1509,7 +1509,7 @@
                             android:stateListAnimator="@null"
                             android:text="99. BASKETBALL"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn100"
@@ -1523,7 +1523,7 @@
                             android:stateListAnimator="@null"
                             android:text="100. GOLF"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn101"
@@ -1537,7 +1537,7 @@
                             android:stateListAnimator="@null"
                             android:text="101. TENNIS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn102"
@@ -1551,7 +1551,7 @@
                             android:stateListAnimator="@null"
                             android:text="102. COMBAT SPORTS"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn103"
@@ -1565,7 +1565,7 @@
                             android:stateListAnimator="@null"
                             android:text="103. SWIMMING"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn104"
@@ -1579,7 +1579,7 @@
                             android:stateListAnimator="@null"
                             android:text="104. SKIING"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn105"
@@ -1593,7 +1593,7 @@
                             android:stateListAnimator="@null"
                             android:text="105. SAILING"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                     </LinearLayout>
 
