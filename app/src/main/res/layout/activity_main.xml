@@ -359,54 +359,6 @@
 
                                 </LinearLayout>
 
-                                <!-- Spanish -->
-                                <LinearLayout
-                                    android:id="@+id/llSpa"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="280dp"
-                                    android:orientation="vertical">
-
-                                    <LinearLayout
-                                        android:id="@+id/llSpaBox"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="220dp"
-                                        android:elevation="5dp"
-                                        android:layout_margin="10dp"
-                                        android:background="@drawable/box_white">
-
-                                        <LinearLayout
-                                            android:id="@+id/llSpaImage"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="220dp"
-                                            android:background="@drawable/banner_spa"
-                                            android:orientation="vertical">
-
-                                            <ImageButton
-                                                android:id="@+id/btnSpa"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:background="@drawable/sparkle_ripple_spa"
-                                                android:fontFamily="@font/nunitosans_900"
-                                                android:scaleType="fitXY"
-                                                android:stateListAnimator="@null"
-                                                android:textColor="@color/main_white"></ImageButton>
-
-                                        </LinearLayout>
-
-                                    </LinearLayout>
-
-                                    <TextView
-                                        android:id="@+id/tvSpa"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="40dp"
-                                        android:fontFamily="@font/pretendard_800"
-                                        android:gravity="center"
-                                        android:text="ESPAÑOL"
-                                        android:textColor="@color/main_text"
-                                        android:textSize="25dp"></TextView>
-
-                                </LinearLayout>
-
                                 <!-- German -->
                                 <LinearLayout
                                     android:id="@+id/llDeu"
@@ -451,6 +403,54 @@
                                         android:fontFamily="@font/pretendard_800"
                                         android:gravity="center"
                                         android:text="DEUTSCH"
+                                        android:textColor="@color/main_text"
+                                        android:textSize="25dp"></TextView>
+
+                                </LinearLayout>
+
+                                <!-- Spanish -->
+                                <LinearLayout
+                                    android:id="@+id/llSpa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="280dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/llSpaBox"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="220dp"
+                                        android:elevation="5dp"
+                                        android:layout_margin="10dp"
+                                        android:background="@drawable/box_white">
+
+                                        <LinearLayout
+                                            android:id="@+id/llSpaImage"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="220dp"
+                                            android:background="@drawable/banner_spa"
+                                            android:orientation="vertical">
+
+                                            <ImageButton
+                                                android:id="@+id/btnSpa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@drawable/sparkle_ripple_spa"
+                                                android:fontFamily="@font/nunitosans_900"
+                                                android:scaleType="fitXY"
+                                                android:stateListAnimator="@null"
+                                                android:textColor="@color/main_white"></ImageButton>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/tvSpa"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:fontFamily="@font/pretendard_800"
+                                        android:gravity="center"
+                                        android:text="ESPAÑOL"
                                         android:textColor="@color/main_text"
                                         android:textSize="25dp"></TextView>
 

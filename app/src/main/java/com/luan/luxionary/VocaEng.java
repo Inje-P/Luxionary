@@ -39,7 +39,7 @@ public class VocaEng extends AppCompatActivity {
     Button btn71, btn72, btn73, btn74, btn75, btn76, btn77, btn78, btn79, btn80;
     Button btn81, btn82, btn83, btn84, btn85, btn86, btn87, btn88, btn89, btn90;
     Button btn91, btn92, btn93, btn94, btn95, btn96, btn97, btn98, btn99, btn100;
-    Button btn101, btn102, btn103, btn104, btn105, btn106, btn107, btn108, btn109, btn110;
+    Button btn101, btn102, btn103, btn104, btn105;
     LinearLayout layoutProfile;
     LinearLayout layoutMain;
 
@@ -266,11 +266,6 @@ public class VocaEng extends AppCompatActivity {
         btn103 = (Button) findViewById(R.id.btn103);
         btn104 = (Button) findViewById(R.id.btn104);
         btn105 = (Button) findViewById(R.id.btn105);
-        btn106 = (Button) findViewById(R.id.btn106);
-        btn107 = (Button) findViewById(R.id.btn107);
-        btn108 = (Button) findViewById(R.id.btn108);
-        btn109 = (Button) findViewById(R.id.btn109);
-        btn110 = (Button) findViewById(R.id.btn110);
 
         btn1.setOnClickListener(mClickListener);
         btn2.setOnClickListener(mClickListener);
@@ -382,11 +377,6 @@ public class VocaEng extends AppCompatActivity {
         btn103.setOnClickListener(mClickListener);
         btn104.setOnClickListener(mClickListener);
         btn105.setOnClickListener(mClickListener);
-        btn106.setOnClickListener(mClickListener);
-        btn107.setOnClickListener(mClickListener);
-        btn108.setOnClickListener(mClickListener);
-        btn109.setOnClickListener(mClickListener);
-        btn110.setOnClickListener(mClickListener);
 
         setColorStateList(btn1, ContextCompat.getColor(this, R.color.eng_background), btn1.getCurrentTextColor());
         setColorStateList(btn2, ContextCompat.getColor(this, R.color.eng_background), btn2.getCurrentTextColor());
@@ -498,11 +488,6 @@ public class VocaEng extends AppCompatActivity {
         setColorStateList(btn103, ContextCompat.getColor(this, R.color.eng_background), btn103.getCurrentTextColor());
         setColorStateList(btn104, ContextCompat.getColor(this, R.color.eng_background), btn104.getCurrentTextColor());
         setColorStateList(btn105, ContextCompat.getColor(this, R.color.eng_background), btn105.getCurrentTextColor());
-        setColorStateList(btn106, ContextCompat.getColor(this, R.color.eng_background), btn106.getCurrentTextColor());
-        setColorStateList(btn107, ContextCompat.getColor(this, R.color.eng_background), btn107.getCurrentTextColor());
-        setColorStateList(btn108, ContextCompat.getColor(this, R.color.eng_background), btn108.getCurrentTextColor());
-        setColorStateList(btn109, ContextCompat.getColor(this, R.color.eng_background), btn109.getCurrentTextColor());
-        setColorStateList(btn110, ContextCompat.getColor(this, R.color.eng_background), btn110.getCurrentTextColor());
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -886,21 +871,6 @@ public class VocaEng extends AppCompatActivity {
                     break;
                 case R.id.btn105:
                     btn105.startAnimation(aniTouch);
-                    break;
-                case R.id.btn106:
-                    btn106.startAnimation(aniTouch);
-                    break;
-                case R.id.btn107:
-                    btn107.startAnimation(aniTouch);
-                    break;
-                case R.id.btn108:
-                    btn108.startAnimation(aniTouch);
-                    break;
-                case R.id.btn109:
-                    btn109.startAnimation(aniTouch);
-                    break;
-                case R.id.btn110:
-                    btn110.startAnimation(aniTouch);
                     break;
                 // Bottom Menu
                 case R.id.btnSidebar:
