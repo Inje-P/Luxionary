@@ -15,7 +15,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,7 +24,6 @@ import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.muddzdev.styleabletoast.StyleableToast;
 
 public class Lang101Deu_02_1 extends AppCompatActivity {
 
