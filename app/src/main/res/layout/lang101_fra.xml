@@ -144,7 +144,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="L'ALPHABET"
                                 android:textColor="@color/fra_background"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra1"
@@ -178,7 +178,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="1. LA SALUTATION"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra2"
@@ -212,7 +212,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="2. LES NOMBRES"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra3"
@@ -246,7 +246,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="3. LA DATE ET L'HEURE"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra4"
@@ -280,7 +280,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="4. LA FAMILLE"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra5"
@@ -314,7 +314,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="5. LE CORPS"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra6"
@@ -348,7 +348,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="6. SORTIR MANGER"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra7"
@@ -382,7 +382,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="7. LES NOURRITURES"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra8"
@@ -416,7 +416,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="8. LES ADJECTIFS"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra9"
@@ -450,7 +450,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="9. LES PLACES"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra10"
@@ -484,7 +484,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="10. LES PRÉPOSITIONS"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra11"
@@ -518,7 +518,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="11. LA CUISINE"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra12"
@@ -552,7 +552,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="12. LE SHOPPING"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra13"
@@ -586,7 +586,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="13. LES PAYS"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra14"
@@ -620,7 +620,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="14. LE VOYAGE"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra15"
@@ -655,7 +655,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="VERBES DE BASE"
                                 android:textColor="@color/fra_background"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvFra16"

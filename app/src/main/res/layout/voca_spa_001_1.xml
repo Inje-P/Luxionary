@@ -154,7 +154,7 @@
                             <LinearLayout
                                 android:id="@+id/ll1"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -168,7 +168,7 @@
                                     android:id="@+id/btnTop1"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -176,7 +176,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot1"
@@ -189,15 +189,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll2"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -211,7 +211,7 @@
                                     android:id="@+id/btnTop2"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -219,7 +219,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot2"
@@ -232,15 +232,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll3"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -254,7 +254,7 @@
                                     android:id="@+id/btnTop3"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -262,7 +262,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot3"
@@ -275,15 +275,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll4"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -297,7 +297,7 @@
                                     android:id="@+id/btnTop4"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -305,7 +305,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot4"
@@ -318,15 +318,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll5"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -340,7 +340,7 @@
                                     android:id="@+id/btnTop5"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -348,7 +348,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot5"
@@ -361,15 +361,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll6"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -383,7 +383,7 @@
                                     android:id="@+id/btnTop6"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -391,7 +391,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot6"
@@ -404,15 +404,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll7"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -426,7 +426,7 @@
                                     android:id="@+id/btnTop7"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -434,7 +434,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot7"
@@ -447,15 +447,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll8"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -469,7 +469,7 @@
                                     android:id="@+id/btnTop8"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -477,7 +477,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot8"
@@ -490,15 +490,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll9"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -512,7 +512,7 @@
                                     android:id="@+id/btnTop9"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -520,7 +520,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot9"
@@ -533,15 +533,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll10"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -555,7 +555,7 @@
                                     android:id="@+id/btnTop10"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -563,7 +563,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot10"
@@ -576,8 +576,8 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
@@ -585,7 +585,7 @@
                             <LinearLayout
                                 android:id="@+id/ll11"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -599,7 +599,7 @@
                                     android:id="@+id/btnTop11"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -607,7 +607,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot11"
@@ -620,15 +620,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll12"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -642,7 +642,7 @@
                                     android:id="@+id/btnTop12"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -650,7 +650,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot12"
@@ -663,15 +663,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll13"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -685,7 +685,7 @@
                                     android:id="@+id/btnTop13"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -693,7 +693,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot13"
@@ -706,15 +706,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll14"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -728,7 +728,7 @@
                                     android:id="@+id/btnTop14"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -736,7 +736,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot14"
@@ -749,15 +749,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll15"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -771,7 +771,7 @@
                                     android:id="@+id/btnTop15"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -779,7 +779,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot15"
@@ -792,15 +792,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll16"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -814,7 +814,7 @@
                                     android:id="@+id/btnTop16"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -822,7 +822,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot16"
@@ -835,15 +835,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll17"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -857,7 +857,7 @@
                                     android:id="@+id/btnTop17"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -865,7 +865,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot17"
@@ -878,15 +878,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll18"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -900,7 +900,7 @@
                                     android:id="@+id/btnTop18"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -908,7 +908,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot18"
@@ -921,15 +921,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll19"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -943,7 +943,7 @@
                                     android:id="@+id/btnTop19"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -951,7 +951,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot19"
@@ -964,15 +964,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll20"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -986,7 +986,7 @@
                                     android:id="@+id/btnTop20"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -994,7 +994,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot20"
@@ -1007,8 +1007,8 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
@@ -1016,7 +1016,7 @@
                             <LinearLayout
                                 android:id="@+id/ll21"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -1030,7 +1030,7 @@
                                     android:id="@+id/btnTop21"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -1038,7 +1038,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot21"
@@ -1051,15 +1051,15 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:id="@+id/ll22"
                                 android:layout_width="match_parent"
-                                android:layout_height="100dp"
+                                android:layout_height="80dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="15dp"
@@ -1073,7 +1073,7 @@
                                     android:id="@+id/btnTop22"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="1.8"
+                                    android:layout_weight="1.4"
                                     android:background="@drawable/ripple_spa_sqr"
                                     android:fontFamily="@font/nunitosans_800"
                                     android:gravity="center"
@@ -1081,7 +1081,7 @@
                                     android:text="vocabulary"
                                     android:textAllCaps="false"
                                     android:textColor="@color/main_text"
-                                    android:textSize="24dp" />
+                                    android:textSize="20dp" />
 
                                 <Button
                                     android:id="@+id/btnBot22"
@@ -1094,8 +1094,8 @@
                                     android:stateListAnimator="@null"
                                     android:text="한국어번역"
                                     android:textAllCaps="false"
-                                    android:textColor="@color/main_text"
-                                    android:textSize="18dp" />
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="16dp" />
 
                             </LinearLayout>
 

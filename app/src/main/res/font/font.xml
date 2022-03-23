@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
     // Korean
     <font android:fontStyle="normal"
         android:fontWeight="100"
@@ -49,34 +50,49 @@
         android:fontWeight="900"
         android:font="@font/nunitosans_900"/>
 
-    // Playfair Display (International)
-    <font android:fontStyle="normal"
-        android:fontWeight="400"
-        android:font="@font/playfairdisplay_400"/>
-    <font android:fontStyle="italic"
-        android:fontWeight="400"
-        android:font="@font/playfairdisplay_400i"/>
-    <font android:fontStyle="normal"
-        android:fontWeight="500"
-        android:font="@font/playfairdisplay_500"/>
-    <font android:fontStyle="normal"
-        android:fontWeight="600"
-        android:font="@font/playfairdisplay_600"/>
-    <font android:fontStyle="normal"
-        android:fontWeight="700"
-        android:font="@font/playfairdisplay_700"/>
-    <font android:fontStyle="normal"
-        android:fontWeight="800"
-        android:font="@font/playfairdisplay_800"/>
-    <font android:fontStyle="italic"
-        android:fontWeight="800"
-        android:font="@font/playfairdisplay_800i"/>
-    <font android:fontStyle="normal"
-        android:fontWeight="900"
-        android:font="@font/playfairdisplay_900"/>
-
     // Bebas Neue
     <font android:fontStyle="normal"
         android:fontWeight="400"
         android:font="@font/bebas_neue"/>
+
+    // Noto Sans Japanese
+    <font android:fontStyle="normal"
+        android:fontWeight="100"
+        android:font="@font/notosansjp_100"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="300"
+        android:font="@font/notosansjp_300"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/notosansjp_400"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="500"
+        android:font="@font/notosansjp_500"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/notosansjp_700"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="900"
+        android:font="@font/notosansjp_900"/>
+
+    // Noto Sans Chinese
+    <font android:fontStyle="normal"
+        android:fontWeight="100"
+        android:font="@font/notosansjp_100"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="300"
+        android:font="@font/notosansjp_300"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/notosansjp_400"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="500"
+        android:font="@font/notosansjp_500"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/notosansjp_700"/>
+    <font android:fontStyle="normal"
+        android:fontWeight="900"
+        android:font="@font/notosansjp_900"/>
+
 </font-family>

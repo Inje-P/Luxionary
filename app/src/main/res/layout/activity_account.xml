@@ -330,23 +330,6 @@
 
                                 </LinearLayout>
 
-                                <!-- Gem : Ita -->
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:id="@+id/imgGemIta"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_margin="8dp"
-                                        android:src="@drawable/gem_ita"
-                                        android:scaleType="fitCenter"/>
-
-                                </LinearLayout>
-
                                 <!-- Gem : Spa -->
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -361,6 +344,23 @@
                                         android:layout_margin="8dp"
                                         android:src="@drawable/gem_spa"
                                         android:scaleType="fitCenter"/>
+
+                                </LinearLayout>
+
+                                <!-- Gem : Ita -->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgGemIta"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="8dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/gem_ita" />
 
                                 </LinearLayout>
 
@@ -393,8 +393,8 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_margin="8dp"
-                                        android:src="@drawable/gem_tur"
-                                        android:scaleType="fitCenter"/>
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/gem_tur" />
 
                                 </LinearLayout>
 
@@ -475,7 +475,7 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:id="@+id/tvGemIta"
+                                        android:id="@+id/tvGemSpa"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:gravity="center"
@@ -493,7 +493,7 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:id="@+id/tvGemSpa"
+                                        android:id="@+id/tvGemIta"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:gravity="center"

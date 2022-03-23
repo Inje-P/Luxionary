@@ -144,7 +144,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="АЛФАВИТ"
                                 android:textColor="@color/rus_background"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus1"
@@ -178,7 +178,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="1. ПРИВЕТСТВИЕ"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus2"
@@ -212,7 +212,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="2. ЧИСЛА"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus3"
@@ -246,7 +246,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="3. ДАТА И ВРЕМЯ"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus4"
@@ -280,7 +280,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="4. СЕМЬЯ"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus5"
@@ -314,7 +314,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="5. ТЕЛО"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus6"
@@ -348,7 +348,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="6. ПИТАНИЕ ВНЕ ДОМА"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus7"
@@ -382,7 +382,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="7. ЕДЫ"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus8"
@@ -416,7 +416,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="8. ПРИЛАГАТЕЛЬНЫЕ"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus9"
@@ -450,7 +450,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="9. МЕСТА"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus10"
@@ -484,7 +484,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="10. ПРЕДЛОГИ"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus11"
@@ -518,7 +518,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="11. ГОТОВКА"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus12"
@@ -552,7 +552,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="12. ШОППИНГ"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus13"
@@ -586,7 +586,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="13. СТРАНЫ"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus14"
@@ -620,7 +620,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="14. ПУТЕШЕСТВИЕ"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus15"
@@ -655,7 +655,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="ОСНОВНЫЕ ГЛАГОЛЫ"
                                 android:textColor="@color/rus_background"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvRus16"

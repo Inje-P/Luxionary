@@ -26,17 +26,20 @@ public class VocaSpa extends AppCompatActivity {
     String username, email, profile, avatar;
 
     TextView tvTitle1, tvTitle2;
-    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10;
-    Button btn11, btn12, btn13, btn14, btn15, btn16, btn17, btn18, btn19, btn20;
-    Button btn21, btn22, btn23, btn24, btn25, btn26, btn27, btn28, btn29, btn30;
-    Button btn31, btn32, btn33, btn34, btn35, btn36, btn37, btn38, btn39, btn40;
-    Button btn41, btn42, btn43, btn44, btn45, btn46, btn47, btn48, btn49, btn50;
-    Button btn51, btn52, btn53, btn54, btn55, btn56, btn57, btn58, btn59, btn60;
-    Button btn61, btn62, btn63, btn64, btn65, btn66, btn67, btn68, btn69, btn70;
-    Button btn71, btn72, btn73, btn74, btn75, btn76, btn77, btn78, btn79, btn80;
-    Button btn81, btn82, btn83, btn84, btn85, btn86, btn87, btn88, btn89, btn90;
-    Button btn91, btn92, btn93, btn94, btn95, btn96, btn97, btn98, btn99, btn100;
-    Button btn101, btn102, btn103, btn104, btn105;
+
+    Button[] buttons = new Button[105];
+    int[] btnId = {R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9, R.id.btn10,
+            R.id.btn11, R.id.btn12, R.id.btn13, R.id.btn14, R.id.btn15, R.id.btn16, R.id.btn17, R.id.btn18, R.id.btn19, R.id.btn20,
+            R.id.btn21, R.id.btn22, R.id.btn23, R.id.btn24, R.id.btn25, R.id.btn26, R.id.btn27, R.id.btn28, R.id.btn29, R.id.btn30,
+            R.id.btn31, R.id.btn32, R.id.btn33, R.id.btn34, R.id.btn35, R.id.btn36, R.id.btn37, R.id.btn38, R.id.btn39, R.id.btn40,
+            R.id.btn41, R.id.btn42, R.id.btn43, R.id.btn44, R.id.btn45, R.id.btn46, R.id.btn47, R.id.btn48, R.id.btn49, R.id.btn50,
+            R.id.btn51, R.id.btn52, R.id.btn53, R.id.btn54, R.id.btn55, R.id.btn56, R.id.btn57, R.id.btn58, R.id.btn59, R.id.btn60,
+            R.id.btn61, R.id.btn62, R.id.btn63, R.id.btn64, R.id.btn65, R.id.btn66, R.id.btn67, R.id.btn68, R.id.btn69, R.id.btn70,
+            R.id.btn71, R.id.btn72, R.id.btn73, R.id.btn74, R.id.btn75, R.id.btn76, R.id.btn77, R.id.btn78, R.id.btn79, R.id.btn80,
+            R.id.btn81, R.id.btn82, R.id.btn83, R.id.btn84, R.id.btn85, R.id.btn86, R.id.btn87, R.id.btn88, R.id.btn89, R.id.btn90,
+            R.id.btn91, R.id.btn92, R.id.btn93, R.id.btn94, R.id.btn95, R.id.btn96, R.id.btn97, R.id.btn98, R.id.btn99, R.id.btn100,
+            R.id.btn101, R.id.btn102, R.id.btn103, R.id.btn104, R.id.btn105};
+
     LinearLayout layoutProfile;
     LinearLayout layoutMain;
 
@@ -153,338 +156,11 @@ public class VocaSpa extends AppCompatActivity {
         layoutMain.startAnimation(aniLayoutMain);
 
         // Buttons & TextViews
-        btn1 = (Button) findViewById(R.id.btn1);
-        btn2 = (Button) findViewById(R.id.btn2);
-        btn3 = (Button) findViewById(R.id.btn3);
-        btn4 = (Button) findViewById(R.id.btn4);
-        btn5 = (Button) findViewById(R.id.btn5);
-        btn6 = (Button) findViewById(R.id.btn6);
-        btn7 = (Button) findViewById(R.id.btn7);
-        btn8 = (Button) findViewById(R.id.btn8);
-        btn9 = (Button) findViewById(R.id.btn9);
-        btn10 = (Button) findViewById(R.id.btn10);
-        btn11 = (Button) findViewById(R.id.btn11);
-        btn12 = (Button) findViewById(R.id.btn12);
-        btn13 = (Button) findViewById(R.id.btn13);
-        btn14 = (Button) findViewById(R.id.btn14);
-        btn15 = (Button) findViewById(R.id.btn15);
-        btn16 = (Button) findViewById(R.id.btn16);
-        btn17 = (Button) findViewById(R.id.btn17);
-        btn18 = (Button) findViewById(R.id.btn18);
-        btn19 = (Button) findViewById(R.id.btn19);
-        btn20 = (Button) findViewById(R.id.btn20);
-
-        btn21 = (Button) findViewById(R.id.btn21);
-        btn22 = (Button) findViewById(R.id.btn22);
-        btn23 = (Button) findViewById(R.id.btn23);
-        btn24 = (Button) findViewById(R.id.btn24);
-        btn25 = (Button) findViewById(R.id.btn25);
-        btn26 = (Button) findViewById(R.id.btn26);
-        btn27 = (Button) findViewById(R.id.btn27);
-        btn28 = (Button) findViewById(R.id.btn28);
-        btn29 = (Button) findViewById(R.id.btn29);
-        btn30 = (Button) findViewById(R.id.btn30);
-        btn31 = (Button) findViewById(R.id.btn31);
-        btn32 = (Button) findViewById(R.id.btn32);
-        btn33 = (Button) findViewById(R.id.btn33);
-        btn34 = (Button) findViewById(R.id.btn34);
-        btn35 = (Button) findViewById(R.id.btn35);
-        btn36 = (Button) findViewById(R.id.btn36);
-        btn37 = (Button) findViewById(R.id.btn37);
-        btn38 = (Button) findViewById(R.id.btn38);
-        btn39 = (Button) findViewById(R.id.btn39);
-        btn40 = (Button) findViewById(R.id.btn40);
-
-        btn41 = (Button) findViewById(R.id.btn41);
-        btn42 = (Button) findViewById(R.id.btn42);
-        btn43 = (Button) findViewById(R.id.btn43);
-        btn44 = (Button) findViewById(R.id.btn44);
-        btn45 = (Button) findViewById(R.id.btn45);
-        btn46 = (Button) findViewById(R.id.btn46);
-        btn47 = (Button) findViewById(R.id.btn47);
-        btn48 = (Button) findViewById(R.id.btn48);
-        btn49 = (Button) findViewById(R.id.btn49);
-        btn50 = (Button) findViewById(R.id.btn50);
-        btn51 = (Button) findViewById(R.id.btn51);
-        btn52 = (Button) findViewById(R.id.btn52);
-        btn53 = (Button) findViewById(R.id.btn53);
-        btn54 = (Button) findViewById(R.id.btn54);
-        btn55 = (Button) findViewById(R.id.btn55);
-        btn56 = (Button) findViewById(R.id.btn56);
-        btn57 = (Button) findViewById(R.id.btn57);
-        btn58 = (Button) findViewById(R.id.btn58);
-        btn59 = (Button) findViewById(R.id.btn59);
-        btn60 = (Button) findViewById(R.id.btn60);
-
-        btn61 = (Button) findViewById(R.id.btn61);
-        btn62 = (Button) findViewById(R.id.btn62);
-        btn63 = (Button) findViewById(R.id.btn63);
-        btn64 = (Button) findViewById(R.id.btn64);
-        btn65 = (Button) findViewById(R.id.btn65);
-        btn66 = (Button) findViewById(R.id.btn66);
-        btn67 = (Button) findViewById(R.id.btn67);
-        btn68 = (Button) findViewById(R.id.btn68);
-        btn69 = (Button) findViewById(R.id.btn69);
-        btn70 = (Button) findViewById(R.id.btn70);
-        btn71 = (Button) findViewById(R.id.btn71);
-        btn72 = (Button) findViewById(R.id.btn72);
-        btn73 = (Button) findViewById(R.id.btn73);
-        btn74 = (Button) findViewById(R.id.btn74);
-        btn75 = (Button) findViewById(R.id.btn75);
-        btn76 = (Button) findViewById(R.id.btn76);
-        btn77 = (Button) findViewById(R.id.btn77);
-        btn78 = (Button) findViewById(R.id.btn78);
-        btn79 = (Button) findViewById(R.id.btn79);
-        btn80 = (Button) findViewById(R.id.btn80);
-
-        btn81 = (Button) findViewById(R.id.btn81);
-        btn82 = (Button) findViewById(R.id.btn82);
-        btn83 = (Button) findViewById(R.id.btn83);
-        btn84 = (Button) findViewById(R.id.btn84);
-        btn85 = (Button) findViewById(R.id.btn85);
-        btn86 = (Button) findViewById(R.id.btn86);
-        btn87 = (Button) findViewById(R.id.btn87);
-        btn88 = (Button) findViewById(R.id.btn88);
-        btn89 = (Button) findViewById(R.id.btn89);
-        btn90 = (Button) findViewById(R.id.btn90);
-        btn91 = (Button) findViewById(R.id.btn91);
-        btn92 = (Button) findViewById(R.id.btn92);
-        btn93 = (Button) findViewById(R.id.btn93);
-        btn94 = (Button) findViewById(R.id.btn94);
-        btn95 = (Button) findViewById(R.id.btn95);
-        btn96 = (Button) findViewById(R.id.btn96);
-        btn97 = (Button) findViewById(R.id.btn97);
-        btn98 = (Button) findViewById(R.id.btn98);
-        btn99 = (Button) findViewById(R.id.btn99);
-        btn100 = (Button) findViewById(R.id.btn100);
-
-        btn101 = (Button) findViewById(R.id.btn101);
-        btn102 = (Button) findViewById(R.id.btn102);
-        btn103 = (Button) findViewById(R.id.btn103);
-        btn104 = (Button) findViewById(R.id.btn104);
-        btn105 = (Button) findViewById(R.id.btn105);
-
-        btn1.setOnClickListener(mClickListener);
-        btn2.setOnClickListener(mClickListener);
-        btn3.setOnClickListener(mClickListener);
-        btn4.setOnClickListener(mClickListener);
-        btn5.setOnClickListener(mClickListener);
-        btn6.setOnClickListener(mClickListener);
-        btn7.setOnClickListener(mClickListener);
-        btn8.setOnClickListener(mClickListener);
-        btn9.setOnClickListener(mClickListener);
-        btn10.setOnClickListener(mClickListener);
-        btn11.setOnClickListener(mClickListener);
-        btn12.setOnClickListener(mClickListener);
-        btn13.setOnClickListener(mClickListener);
-        btn14.setOnClickListener(mClickListener);
-        btn15.setOnClickListener(mClickListener);
-        btn16.setOnClickListener(mClickListener);
-        btn17.setOnClickListener(mClickListener);
-        btn18.setOnClickListener(mClickListener);
-        btn19.setOnClickListener(mClickListener);
-        btn20.setOnClickListener(mClickListener);
-
-        btn21.setOnClickListener(mClickListener);
-        btn22.setOnClickListener(mClickListener);
-        btn23.setOnClickListener(mClickListener);
-        btn24.setOnClickListener(mClickListener);
-        btn25.setOnClickListener(mClickListener);
-        btn26.setOnClickListener(mClickListener);
-        btn27.setOnClickListener(mClickListener);
-        btn28.setOnClickListener(mClickListener);
-        btn29.setOnClickListener(mClickListener);
-        btn30.setOnClickListener(mClickListener);
-        btn31.setOnClickListener(mClickListener);
-        btn32.setOnClickListener(mClickListener);
-        btn33.setOnClickListener(mClickListener);
-        btn34.setOnClickListener(mClickListener);
-        btn35.setOnClickListener(mClickListener);
-        btn36.setOnClickListener(mClickListener);
-        btn37.setOnClickListener(mClickListener);
-        btn38.setOnClickListener(mClickListener);
-        btn39.setOnClickListener(mClickListener);
-        btn40.setOnClickListener(mClickListener);
-
-        btn41.setOnClickListener(mClickListener);
-        btn42.setOnClickListener(mClickListener);
-        btn43.setOnClickListener(mClickListener);
-        btn44.setOnClickListener(mClickListener);
-        btn45.setOnClickListener(mClickListener);
-        btn46.setOnClickListener(mClickListener);
-        btn47.setOnClickListener(mClickListener);
-        btn48.setOnClickListener(mClickListener);
-        btn49.setOnClickListener(mClickListener);
-        btn50.setOnClickListener(mClickListener);
-        btn51.setOnClickListener(mClickListener);
-        btn52.setOnClickListener(mClickListener);
-        btn53.setOnClickListener(mClickListener);
-        btn54.setOnClickListener(mClickListener);
-        btn55.setOnClickListener(mClickListener);
-        btn56.setOnClickListener(mClickListener);
-        btn57.setOnClickListener(mClickListener);
-        btn58.setOnClickListener(mClickListener);
-        btn59.setOnClickListener(mClickListener);
-        btn60.setOnClickListener(mClickListener);
-
-        btn61.setOnClickListener(mClickListener);
-        btn62.setOnClickListener(mClickListener);
-        btn63.setOnClickListener(mClickListener);
-        btn64.setOnClickListener(mClickListener);
-        btn65.setOnClickListener(mClickListener);
-        btn66.setOnClickListener(mClickListener);
-        btn67.setOnClickListener(mClickListener);
-        btn68.setOnClickListener(mClickListener);
-        btn69.setOnClickListener(mClickListener);
-        btn70.setOnClickListener(mClickListener);
-        btn71.setOnClickListener(mClickListener);
-        btn72.setOnClickListener(mClickListener);
-        btn73.setOnClickListener(mClickListener);
-        btn74.setOnClickListener(mClickListener);
-        btn75.setOnClickListener(mClickListener);
-        btn76.setOnClickListener(mClickListener);
-        btn77.setOnClickListener(mClickListener);
-        btn78.setOnClickListener(mClickListener);
-        btn79.setOnClickListener(mClickListener);
-        btn80.setOnClickListener(mClickListener);
-
-        btn81.setOnClickListener(mClickListener);
-        btn82.setOnClickListener(mClickListener);
-        btn83.setOnClickListener(mClickListener);
-        btn84.setOnClickListener(mClickListener);
-        btn85.setOnClickListener(mClickListener);
-        btn86.setOnClickListener(mClickListener);
-        btn87.setOnClickListener(mClickListener);
-        btn88.setOnClickListener(mClickListener);
-        btn89.setOnClickListener(mClickListener);
-        btn90.setOnClickListener(mClickListener);
-        btn91.setOnClickListener(mClickListener);
-        btn92.setOnClickListener(mClickListener);
-        btn93.setOnClickListener(mClickListener);
-        btn94.setOnClickListener(mClickListener);
-        btn95.setOnClickListener(mClickListener);
-        btn96.setOnClickListener(mClickListener);
-        btn97.setOnClickListener(mClickListener);
-        btn98.setOnClickListener(mClickListener);
-        btn99.setOnClickListener(mClickListener);
-        btn100.setOnClickListener(mClickListener);
-
-        btn101.setOnClickListener(mClickListener);
-        btn102.setOnClickListener(mClickListener);
-        btn103.setOnClickListener(mClickListener);
-        btn104.setOnClickListener(mClickListener);
-        btn105.setOnClickListener(mClickListener);
-
-        setColorStateList(btn1, ContextCompat.getColor(this, R.color.spa_background), btn1.getCurrentTextColor());
-        setColorStateList(btn2, ContextCompat.getColor(this, R.color.spa_background), btn2.getCurrentTextColor());
-        setColorStateList(btn3, ContextCompat.getColor(this, R.color.spa_background), btn3.getCurrentTextColor());
-        setColorStateList(btn4, ContextCompat.getColor(this, R.color.spa_background), btn4.getCurrentTextColor());
-        setColorStateList(btn5, ContextCompat.getColor(this, R.color.spa_background), btn5.getCurrentTextColor());
-        setColorStateList(btn6, ContextCompat.getColor(this, R.color.spa_background), btn6.getCurrentTextColor());
-        setColorStateList(btn7, ContextCompat.getColor(this, R.color.spa_background), btn7.getCurrentTextColor());
-        setColorStateList(btn8, ContextCompat.getColor(this, R.color.spa_background), btn8.getCurrentTextColor());
-        setColorStateList(btn9, ContextCompat.getColor(this, R.color.spa_background), btn9.getCurrentTextColor());
-        setColorStateList(btn10, ContextCompat.getColor(this, R.color.spa_background), btn10.getCurrentTextColor());
-        setColorStateList(btn11, ContextCompat.getColor(this, R.color.spa_background), btn11.getCurrentTextColor());
-        setColorStateList(btn12, ContextCompat.getColor(this, R.color.spa_background), btn12.getCurrentTextColor());
-        setColorStateList(btn13, ContextCompat.getColor(this, R.color.spa_background), btn13.getCurrentTextColor());
-        setColorStateList(btn14, ContextCompat.getColor(this, R.color.spa_background), btn14.getCurrentTextColor());
-        setColorStateList(btn15, ContextCompat.getColor(this, R.color.spa_background), btn15.getCurrentTextColor());
-        setColorStateList(btn16, ContextCompat.getColor(this, R.color.spa_background), btn16.getCurrentTextColor());
-        setColorStateList(btn17, ContextCompat.getColor(this, R.color.spa_background), btn17.getCurrentTextColor());
-        setColorStateList(btn18, ContextCompat.getColor(this, R.color.spa_background), btn18.getCurrentTextColor());
-        setColorStateList(btn19, ContextCompat.getColor(this, R.color.spa_background), btn19.getCurrentTextColor());
-        setColorStateList(btn20, ContextCompat.getColor(this, R.color.spa_background), btn20.getCurrentTextColor());
-
-        setColorStateList(btn21, ContextCompat.getColor(this, R.color.spa_background), btn21.getCurrentTextColor());
-        setColorStateList(btn22, ContextCompat.getColor(this, R.color.spa_background), btn22.getCurrentTextColor());
-        setColorStateList(btn23, ContextCompat.getColor(this, R.color.spa_background), btn23.getCurrentTextColor());
-        setColorStateList(btn24, ContextCompat.getColor(this, R.color.spa_background), btn24.getCurrentTextColor());
-        setColorStateList(btn25, ContextCompat.getColor(this, R.color.spa_background), btn25.getCurrentTextColor());
-        setColorStateList(btn26, ContextCompat.getColor(this, R.color.spa_background), btn26.getCurrentTextColor());
-        setColorStateList(btn27, ContextCompat.getColor(this, R.color.spa_background), btn27.getCurrentTextColor());
-        setColorStateList(btn28, ContextCompat.getColor(this, R.color.spa_background), btn28.getCurrentTextColor());
-        setColorStateList(btn29, ContextCompat.getColor(this, R.color.spa_background), btn29.getCurrentTextColor());
-        setColorStateList(btn30, ContextCompat.getColor(this, R.color.spa_background), btn30.getCurrentTextColor());
-        setColorStateList(btn31, ContextCompat.getColor(this, R.color.spa_background), btn31.getCurrentTextColor());
-        setColorStateList(btn32, ContextCompat.getColor(this, R.color.spa_background), btn32.getCurrentTextColor());
-        setColorStateList(btn33, ContextCompat.getColor(this, R.color.spa_background), btn33.getCurrentTextColor());
-        setColorStateList(btn34, ContextCompat.getColor(this, R.color.spa_background), btn34.getCurrentTextColor());
-        setColorStateList(btn35, ContextCompat.getColor(this, R.color.spa_background), btn35.getCurrentTextColor());
-        setColorStateList(btn36, ContextCompat.getColor(this, R.color.spa_background), btn36.getCurrentTextColor());
-        setColorStateList(btn37, ContextCompat.getColor(this, R.color.spa_background), btn37.getCurrentTextColor());
-        setColorStateList(btn38, ContextCompat.getColor(this, R.color.spa_background), btn38.getCurrentTextColor());
-        setColorStateList(btn39, ContextCompat.getColor(this, R.color.spa_background), btn39.getCurrentTextColor());
-        setColorStateList(btn40, ContextCompat.getColor(this, R.color.spa_background), btn40.getCurrentTextColor());
-
-        setColorStateList(btn41, ContextCompat.getColor(this, R.color.spa_background), btn41.getCurrentTextColor());
-        setColorStateList(btn42, ContextCompat.getColor(this, R.color.spa_background), btn42.getCurrentTextColor());
-        setColorStateList(btn43, ContextCompat.getColor(this, R.color.spa_background), btn43.getCurrentTextColor());
-        setColorStateList(btn44, ContextCompat.getColor(this, R.color.spa_background), btn44.getCurrentTextColor());
-        setColorStateList(btn45, ContextCompat.getColor(this, R.color.spa_background), btn45.getCurrentTextColor());
-        setColorStateList(btn46, ContextCompat.getColor(this, R.color.spa_background), btn46.getCurrentTextColor());
-        setColorStateList(btn47, ContextCompat.getColor(this, R.color.spa_background), btn47.getCurrentTextColor());
-        setColorStateList(btn48, ContextCompat.getColor(this, R.color.spa_background), btn48.getCurrentTextColor());
-        setColorStateList(btn49, ContextCompat.getColor(this, R.color.spa_background), btn49.getCurrentTextColor());
-        setColorStateList(btn50, ContextCompat.getColor(this, R.color.spa_background), btn50.getCurrentTextColor());
-        setColorStateList(btn51, ContextCompat.getColor(this, R.color.spa_background), btn51.getCurrentTextColor());
-        setColorStateList(btn52, ContextCompat.getColor(this, R.color.spa_background), btn52.getCurrentTextColor());
-        setColorStateList(btn53, ContextCompat.getColor(this, R.color.spa_background), btn53.getCurrentTextColor());
-        setColorStateList(btn54, ContextCompat.getColor(this, R.color.spa_background), btn54.getCurrentTextColor());
-        setColorStateList(btn55, ContextCompat.getColor(this, R.color.spa_background), btn55.getCurrentTextColor());
-        setColorStateList(btn56, ContextCompat.getColor(this, R.color.spa_background), btn56.getCurrentTextColor());
-        setColorStateList(btn57, ContextCompat.getColor(this, R.color.spa_background), btn57.getCurrentTextColor());
-        setColorStateList(btn58, ContextCompat.getColor(this, R.color.spa_background), btn58.getCurrentTextColor());
-        setColorStateList(btn59, ContextCompat.getColor(this, R.color.spa_background), btn59.getCurrentTextColor());
-        setColorStateList(btn60, ContextCompat.getColor(this, R.color.spa_background), btn60.getCurrentTextColor());
-
-        setColorStateList(btn61, ContextCompat.getColor(this, R.color.spa_background), btn61.getCurrentTextColor());
-        setColorStateList(btn62, ContextCompat.getColor(this, R.color.spa_background), btn62.getCurrentTextColor());
-        setColorStateList(btn63, ContextCompat.getColor(this, R.color.spa_background), btn63.getCurrentTextColor());
-        setColorStateList(btn64, ContextCompat.getColor(this, R.color.spa_background), btn64.getCurrentTextColor());
-        setColorStateList(btn65, ContextCompat.getColor(this, R.color.spa_background), btn65.getCurrentTextColor());
-        setColorStateList(btn66, ContextCompat.getColor(this, R.color.spa_background), btn66.getCurrentTextColor());
-        setColorStateList(btn67, ContextCompat.getColor(this, R.color.spa_background), btn67.getCurrentTextColor());
-        setColorStateList(btn68, ContextCompat.getColor(this, R.color.spa_background), btn68.getCurrentTextColor());
-        setColorStateList(btn69, ContextCompat.getColor(this, R.color.spa_background), btn69.getCurrentTextColor());
-        setColorStateList(btn70, ContextCompat.getColor(this, R.color.spa_background), btn70.getCurrentTextColor());
-        setColorStateList(btn71, ContextCompat.getColor(this, R.color.spa_background), btn71.getCurrentTextColor());
-        setColorStateList(btn72, ContextCompat.getColor(this, R.color.spa_background), btn72.getCurrentTextColor());
-        setColorStateList(btn73, ContextCompat.getColor(this, R.color.spa_background), btn73.getCurrentTextColor());
-        setColorStateList(btn74, ContextCompat.getColor(this, R.color.spa_background), btn74.getCurrentTextColor());
-        setColorStateList(btn75, ContextCompat.getColor(this, R.color.spa_background), btn75.getCurrentTextColor());
-        setColorStateList(btn76, ContextCompat.getColor(this, R.color.spa_background), btn76.getCurrentTextColor());
-        setColorStateList(btn77, ContextCompat.getColor(this, R.color.spa_background), btn77.getCurrentTextColor());
-        setColorStateList(btn78, ContextCompat.getColor(this, R.color.spa_background), btn78.getCurrentTextColor());
-        setColorStateList(btn79, ContextCompat.getColor(this, R.color.spa_background), btn79.getCurrentTextColor());
-        setColorStateList(btn80, ContextCompat.getColor(this, R.color.spa_background), btn80.getCurrentTextColor());
-
-        setColorStateList(btn81, ContextCompat.getColor(this, R.color.spa_background), btn81.getCurrentTextColor());
-        setColorStateList(btn82, ContextCompat.getColor(this, R.color.spa_background), btn82.getCurrentTextColor());
-        setColorStateList(btn83, ContextCompat.getColor(this, R.color.spa_background), btn83.getCurrentTextColor());
-        setColorStateList(btn84, ContextCompat.getColor(this, R.color.spa_background), btn84.getCurrentTextColor());
-        setColorStateList(btn85, ContextCompat.getColor(this, R.color.spa_background), btn85.getCurrentTextColor());
-        setColorStateList(btn86, ContextCompat.getColor(this, R.color.spa_background), btn86.getCurrentTextColor());
-        setColorStateList(btn87, ContextCompat.getColor(this, R.color.spa_background), btn87.getCurrentTextColor());
-        setColorStateList(btn88, ContextCompat.getColor(this, R.color.spa_background), btn88.getCurrentTextColor());
-        setColorStateList(btn89, ContextCompat.getColor(this, R.color.spa_background), btn89.getCurrentTextColor());
-        setColorStateList(btn90, ContextCompat.getColor(this, R.color.spa_background), btn90.getCurrentTextColor());
-        setColorStateList(btn91, ContextCompat.getColor(this, R.color.spa_background), btn91.getCurrentTextColor());
-        setColorStateList(btn92, ContextCompat.getColor(this, R.color.spa_background), btn92.getCurrentTextColor());
-        setColorStateList(btn93, ContextCompat.getColor(this, R.color.spa_background), btn93.getCurrentTextColor());
-        setColorStateList(btn94, ContextCompat.getColor(this, R.color.spa_background), btn94.getCurrentTextColor());
-        setColorStateList(btn95, ContextCompat.getColor(this, R.color.spa_background), btn95.getCurrentTextColor());
-        setColorStateList(btn96, ContextCompat.getColor(this, R.color.spa_background), btn96.getCurrentTextColor());
-        setColorStateList(btn97, ContextCompat.getColor(this, R.color.spa_background), btn97.getCurrentTextColor());
-        setColorStateList(btn98, ContextCompat.getColor(this, R.color.spa_background), btn98.getCurrentTextColor());
-        setColorStateList(btn99, ContextCompat.getColor(this, R.color.spa_background), btn99.getCurrentTextColor());
-        setColorStateList(btn100, ContextCompat.getColor(this, R.color.spa_background), btn100.getCurrentTextColor());
-
-        setColorStateList(btn101, ContextCompat.getColor(this, R.color.spa_background), btn101.getCurrentTextColor());
-        setColorStateList(btn102, ContextCompat.getColor(this, R.color.spa_background), btn102.getCurrentTextColor());
-        setColorStateList(btn103, ContextCompat.getColor(this, R.color.spa_background), btn103.getCurrentTextColor());
-        setColorStateList(btn104, ContextCompat.getColor(this, R.color.spa_background), btn104.getCurrentTextColor());
-        setColorStateList(btn105, ContextCompat.getColor(this, R.color.spa_background), btn105.getCurrentTextColor());
+        for (int i = 0; i < buttons.length; i++) {
+            buttons[i] = (Button) findViewById(btnId[i]);
+            buttons[i].setOnClickListener(mClickListener);
+            setColorStateList(buttons[i], ContextCompat.getColor(this, R.color.spa_background), buttons[i].getCurrentTextColor());
+        }
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -549,325 +225,325 @@ public class VocaSpa extends AppCompatActivity {
             switch (v.getId()) {
                 // Button 1 - 20
                 case R.id.btn1:
-                    btn1.startAnimation(aniTouch);
+                    buttons[0].startAnimation(aniTouch);
                     page001();
                     break;
                 case R.id.btn2:
-                    btn2.startAnimation(aniTouch);
+                    buttons[1].startAnimation(aniTouch);
                     break;
                 case R.id.btn3:
-                    btn3.startAnimation(aniTouch);
+                    buttons[2].startAnimation(aniTouch);
                     break;
                 case R.id.btn4:
-                    btn4.startAnimation(aniTouch);
+                    buttons[3].startAnimation(aniTouch);
                     break;
                 case R.id.btn5:
-                    btn5.startAnimation(aniTouch);
+                    buttons[4].startAnimation(aniTouch);
                     break;
                 case R.id.btn6:
-                    btn6.startAnimation(aniTouch);
+                    buttons[5].startAnimation(aniTouch);
                     break;
                 case R.id.btn7:
-                    btn7.startAnimation(aniTouch);
+                    buttons[6].startAnimation(aniTouch);
                     break;
                 case R.id.btn8:
-                    btn8.startAnimation(aniTouch);
+                    buttons[7].startAnimation(aniTouch);
                     break;
                 case R.id.btn9:
-                    btn9.startAnimation(aniTouch);
+                    buttons[8].startAnimation(aniTouch);
                     break;
                 case R.id.btn10:
-                    btn10.startAnimation(aniTouch);
+                    buttons[9].startAnimation(aniTouch);
                     break;
                 case R.id.btn11:
-                    btn11.startAnimation(aniTouch);
+                    buttons[10].startAnimation(aniTouch);
                     break;
                 case R.id.btn12:
-                    btn12.startAnimation(aniTouch);
+                    buttons[11].startAnimation(aniTouch);
                     break;
                 case R.id.btn13:
-                    btn13.startAnimation(aniTouch);
+                    buttons[12].startAnimation(aniTouch);
                     break;
                 case R.id.btn14:
-                    btn14.startAnimation(aniTouch);
+                    buttons[13].startAnimation(aniTouch);
                     break;
                 case R.id.btn15:
-                    btn15.startAnimation(aniTouch);
+                    buttons[14].startAnimation(aniTouch);
                     break;
                 case R.id.btn16:
-                    btn16.startAnimation(aniTouch);
+                    buttons[15].startAnimation(aniTouch);
                     break;
                 case R.id.btn17:
-                    btn17.startAnimation(aniTouch);
+                    buttons[16].startAnimation(aniTouch);
                     break;
                 case R.id.btn18:
-                    btn18.startAnimation(aniTouch);
+                    buttons[17].startAnimation(aniTouch);
                     break;
                 case R.id.btn19:
-                    btn19.startAnimation(aniTouch);
+                    buttons[18].startAnimation(aniTouch);
                     break;
                 case R.id.btn20:
-                    btn20.startAnimation(aniTouch);
+                    buttons[19].startAnimation(aniTouch);
                     break;
                 // Button 21 - 40
                 case R.id.btn21:
-                    btn21.startAnimation(aniTouch);
+                    buttons[20].startAnimation(aniTouch);
                     break;
                 case R.id.btn22:
-                    btn22.startAnimation(aniTouch);
+                    buttons[21].startAnimation(aniTouch);
                     break;
                 case R.id.btn23:
-                    btn23.startAnimation(aniTouch);
+                    buttons[22].startAnimation(aniTouch);
                     break;
                 case R.id.btn24:
-                    btn24.startAnimation(aniTouch);
+                    buttons[23].startAnimation(aniTouch);
                     break;
                 case R.id.btn25:
-                    btn25.startAnimation(aniTouch);
+                    buttons[24].startAnimation(aniTouch);
                     break;
                 case R.id.btn26:
-                    btn26.startAnimation(aniTouch);
+                    buttons[25].startAnimation(aniTouch);
                     break;
                 case R.id.btn27:
-                    btn27.startAnimation(aniTouch);
+                    buttons[26].startAnimation(aniTouch);
                     break;
                 case R.id.btn28:
-                    btn28.startAnimation(aniTouch);
+                    buttons[27].startAnimation(aniTouch);
                     break;
                 case R.id.btn29:
-                    btn29.startAnimation(aniTouch);
+                    buttons[28].startAnimation(aniTouch);
                     break;
                 case R.id.btn30:
-                    btn30.startAnimation(aniTouch);
+                    buttons[29].startAnimation(aniTouch);
                     break;
                 case R.id.btn31:
-                    btn31.startAnimation(aniTouch);
+                    buttons[30].startAnimation(aniTouch);
                     break;
                 case R.id.btn32:
-                    btn32.startAnimation(aniTouch);
+                    buttons[31].startAnimation(aniTouch);
                     break;
                 case R.id.btn33:
-                    btn33.startAnimation(aniTouch);
+                    buttons[32].startAnimation(aniTouch);
                     break;
                 case R.id.btn34:
-                    btn34.startAnimation(aniTouch);
+                    buttons[33].startAnimation(aniTouch);
                     break;
                 case R.id.btn35:
-                    btn35.startAnimation(aniTouch);
+                    buttons[34].startAnimation(aniTouch);
                     break;
                 case R.id.btn36:
-                    btn36.startAnimation(aniTouch);
+                    buttons[35].startAnimation(aniTouch);
                     break;
                 case R.id.btn37:
-                    btn37.startAnimation(aniTouch);
+                    buttons[36].startAnimation(aniTouch);
                     break;
                 case R.id.btn38:
-                    btn38.startAnimation(aniTouch);
+                    buttons[37].startAnimation(aniTouch);
                     break;
                 case R.id.btn39:
-                    btn39.startAnimation(aniTouch);
+                    buttons[38].startAnimation(aniTouch);
                     break;
                 case R.id.btn40:
-                    btn40.startAnimation(aniTouch);
+                    buttons[39].startAnimation(aniTouch);
                     break;
                 // Button 41 - 60
                 case R.id.btn41:
-                    btn41.startAnimation(aniTouch);
+                    buttons[40].startAnimation(aniTouch);
                     break;
                 case R.id.btn42:
-                    btn42.startAnimation(aniTouch);
+                    buttons[41].startAnimation(aniTouch);
                     break;
                 case R.id.btn43:
-                    btn43.startAnimation(aniTouch);
+                    buttons[42].startAnimation(aniTouch);
                     break;
                 case R.id.btn44:
-                    btn44.startAnimation(aniTouch);
+                    buttons[43].startAnimation(aniTouch);
                     break;
                 case R.id.btn45:
-                    btn45.startAnimation(aniTouch);
+                    buttons[44].startAnimation(aniTouch);
                     break;
                 case R.id.btn46:
-                    btn46.startAnimation(aniTouch);
+                    buttons[45].startAnimation(aniTouch);
                     break;
                 case R.id.btn47:
-                    btn47.startAnimation(aniTouch);
+                    buttons[46].startAnimation(aniTouch);
                     break;
                 case R.id.btn48:
-                    btn48.startAnimation(aniTouch);
+                    buttons[47].startAnimation(aniTouch);
                     break;
                 case R.id.btn49:
-                    btn49.startAnimation(aniTouch);
+                    buttons[48].startAnimation(aniTouch);
                     break;
                 case R.id.btn50:
-                    btn50.startAnimation(aniTouch);
+                    buttons[49].startAnimation(aniTouch);
                     break;
                 case R.id.btn51:
-                    btn51.startAnimation(aniTouch);
+                    buttons[50].startAnimation(aniTouch);
                     break;
                 case R.id.btn52:
-                    btn52.startAnimation(aniTouch);
+                    buttons[51].startAnimation(aniTouch);
                     break;
                 case R.id.btn53:
-                    btn53.startAnimation(aniTouch);
+                    buttons[52].startAnimation(aniTouch);
                     break;
                 case R.id.btn54:
-                    btn54.startAnimation(aniTouch);
+                    buttons[53].startAnimation(aniTouch);
                     break;
                 case R.id.btn55:
-                    btn55.startAnimation(aniTouch);
+                    buttons[54].startAnimation(aniTouch);
                     break;
                 case R.id.btn56:
-                    btn56.startAnimation(aniTouch);
+                    buttons[55].startAnimation(aniTouch);
                     break;
                 case R.id.btn57:
-                    btn57.startAnimation(aniTouch);
+                    buttons[56].startAnimation(aniTouch);
                     break;
                 case R.id.btn58:
-                    btn58.startAnimation(aniTouch);
+                    buttons[57].startAnimation(aniTouch);
                     break;
                 case R.id.btn59:
-                    btn59.startAnimation(aniTouch);
+                    buttons[58].startAnimation(aniTouch);
                     break;
                 case R.id.btn60:
-                    btn60.startAnimation(aniTouch);
+                    buttons[59].startAnimation(aniTouch);
                     break;
                 // Button 61 - 80
                 case R.id.btn61:
-                    btn61.startAnimation(aniTouch);
+                    buttons[60].startAnimation(aniTouch);
                     break;
                 case R.id.btn62:
-                    btn62.startAnimation(aniTouch);
+                    buttons[61].startAnimation(aniTouch);
                     break;
                 case R.id.btn63:
-                    btn63.startAnimation(aniTouch);
+                    buttons[62].startAnimation(aniTouch);
                     break;
                 case R.id.btn64:
-                    btn64.startAnimation(aniTouch);
+                    buttons[63].startAnimation(aniTouch);
                     break;
                 case R.id.btn65:
-                    btn65.startAnimation(aniTouch);
+                    buttons[64].startAnimation(aniTouch);
                     break;
                 case R.id.btn66:
-                    btn66.startAnimation(aniTouch);
+                    buttons[65].startAnimation(aniTouch);
                     break;
                 case R.id.btn67:
-                    btn67.startAnimation(aniTouch);
+                    buttons[66].startAnimation(aniTouch);
                     break;
                 case R.id.btn68:
-                    btn68.startAnimation(aniTouch);
+                    buttons[67].startAnimation(aniTouch);
                     break;
                 case R.id.btn69:
-                    btn69.startAnimation(aniTouch);
+                    buttons[68].startAnimation(aniTouch);
                     break;
                 case R.id.btn70:
-                    btn70.startAnimation(aniTouch);
+                    buttons[69].startAnimation(aniTouch);
                     break;
                 case R.id.btn71:
-                    btn71.startAnimation(aniTouch);
+                    buttons[70].startAnimation(aniTouch);
                     break;
                 case R.id.btn72:
-                    btn72.startAnimation(aniTouch);
+                    buttons[71].startAnimation(aniTouch);
                     break;
                 case R.id.btn73:
-                    btn73.startAnimation(aniTouch);
+                    buttons[72].startAnimation(aniTouch);
                     break;
                 case R.id.btn74:
-                    btn74.startAnimation(aniTouch);
+                    buttons[73].startAnimation(aniTouch);
                     break;
                 case R.id.btn75:
-                    btn75.startAnimation(aniTouch);
+                    buttons[74].startAnimation(aniTouch);
                     break;
                 case R.id.btn76:
-                    btn76.startAnimation(aniTouch);
+                    buttons[75].startAnimation(aniTouch);
                     break;
                 case R.id.btn77:
-                    btn77.startAnimation(aniTouch);
+                    buttons[76].startAnimation(aniTouch);
                     break;
                 case R.id.btn78:
-                    btn78.startAnimation(aniTouch);
+                    buttons[77].startAnimation(aniTouch);
                     break;
                 case R.id.btn79:
-                    btn79.startAnimation(aniTouch);
+                    buttons[78].startAnimation(aniTouch);
                     break;
                 case R.id.btn80:
-                    btn80.startAnimation(aniTouch);
+                    buttons[79].startAnimation(aniTouch);
                     break;
                 // Button 81 - 100
                 case R.id.btn81:
-                    btn81.startAnimation(aniTouch);
+                    buttons[80].startAnimation(aniTouch);
                     break;
                 case R.id.btn82:
-                    btn82.startAnimation(aniTouch);
+                    buttons[81].startAnimation(aniTouch);
                     break;
                 case R.id.btn83:
-                    btn83.startAnimation(aniTouch);
+                    buttons[82].startAnimation(aniTouch);
                     break;
                 case R.id.btn84:
-                    btn84.startAnimation(aniTouch);
+                    buttons[83].startAnimation(aniTouch);
                     break;
                 case R.id.btn85:
-                    btn85.startAnimation(aniTouch);
+                    buttons[84].startAnimation(aniTouch);
                     break;
                 case R.id.btn86:
-                    btn86.startAnimation(aniTouch);
+                    buttons[85].startAnimation(aniTouch);
                     break;
                 case R.id.btn87:
-                    btn87.startAnimation(aniTouch);
+                    buttons[86].startAnimation(aniTouch);
                     break;
                 case R.id.btn88:
-                    btn88.startAnimation(aniTouch);
+                    buttons[87].startAnimation(aniTouch);
                     break;
                 case R.id.btn89:
-                    btn89.startAnimation(aniTouch);
+                    buttons[88].startAnimation(aniTouch);
                     break;
                 case R.id.btn90:
-                    btn90.startAnimation(aniTouch);
+                    buttons[89].startAnimation(aniTouch);
                     break;
                 case R.id.btn91:
-                    btn91.startAnimation(aniTouch);
+                    buttons[90].startAnimation(aniTouch);
                     break;
                 case R.id.btn92:
-                    btn92.startAnimation(aniTouch);
+                    buttons[91].startAnimation(aniTouch);
                     break;
                 case R.id.btn93:
-                    btn93.startAnimation(aniTouch);
+                    buttons[92].startAnimation(aniTouch);
                     break;
                 case R.id.btn94:
-                    btn94.startAnimation(aniTouch);
+                    buttons[93].startAnimation(aniTouch);
                     break;
                 case R.id.btn95:
-                    btn95.startAnimation(aniTouch);
+                    buttons[94].startAnimation(aniTouch);
                     break;
                 case R.id.btn96:
-                    btn96.startAnimation(aniTouch);
+                    buttons[95].startAnimation(aniTouch);
                     break;
                 case R.id.btn97:
-                    btn97.startAnimation(aniTouch);
+                    buttons[96].startAnimation(aniTouch);
                     break;
                 case R.id.btn98:
-                    btn98.startAnimation(aniTouch);
+                    buttons[97].startAnimation(aniTouch);
                     break;
                 case R.id.btn99:
-                    btn99.startAnimation(aniTouch);
+                    buttons[98].startAnimation(aniTouch);
                     break;
                 case R.id.btn100:
-                    btn100.startAnimation(aniTouch);
+                    buttons[99].startAnimation(aniTouch);
                     break;
                 // Button 101 - 110
                 case R.id.btn101:
-                    btn101.startAnimation(aniTouch);
+                    buttons[100].startAnimation(aniTouch);
                     break;
                 case R.id.btn102:
-                    btn102.startAnimation(aniTouch);
+                    buttons[101].startAnimation(aniTouch);
                     break;
                 case R.id.btn103:
-                    btn103.startAnimation(aniTouch);
+                    buttons[102].startAnimation(aniTouch);
                     break;
                 case R.id.btn104:
-                    btn104.startAnimation(aniTouch);
+                    buttons[103].startAnimation(aniTouch);
                     break;
                 case R.id.btn105:
-                    btn105.startAnimation(aniTouch);
+                    buttons[104].startAnimation(aniTouch);
                     break;
                 // Bottom Menu
                 case R.id.btnSidebar:

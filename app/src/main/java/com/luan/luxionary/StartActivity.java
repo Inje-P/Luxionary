@@ -11,10 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -33,10 +29,10 @@ public class StartActivity extends AppCompatActivity {
     TabLayout tabLayout;
 
     // Google Authentication
-    private SignInButton btnGoogle;
-    private FirebaseAuth auth;
-    private static final int REQ_SIGN_GOOGLE = 100;
-    private GoogleSignInClient googleSignInClient;
+//    private SignInButton btnGoogle;
+//    private FirebaseAuth auth;
+//    private static final int REQ_SIGN_GOOGLE = 100;
+//    private GoogleSignInClient googleSignInClient;
 
     Button btnEmail;
 
@@ -48,7 +44,7 @@ public class StartActivity extends AppCompatActivity {
         viewPager2 = findViewById(R.id.viewPager2);
         tabLayout = findViewById(R.id.tabLayout);
         btnEmail = findViewById(R.id.btnEmail);
-        btnEmail.setOnClickListener(mClickListener);
+//        btnEmail.setOnClickListener(mClickListener);
 
         /*
          * ViewPager
@@ -69,76 +65,76 @@ public class StartActivity extends AppCompatActivity {
         /*
          * Google Authentication
          *  */
-        GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
-                .requestEmail()
-                .build();
-
-        googleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions);
-        auth = FirebaseAuth.getInstance();
-
-        btnGoogle = findViewById(R.id.btnGoogle);
-        btnGoogle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = googleSignInClient.getSignInIntent();
-                startActivityForResult(intent, REQ_SIGN_GOOGLE);
-            }
-        });
+//        GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+//                .requestIdToken(getString(R.string.default_web_client_id))
+//                .requestEmail()
+//                .build();
+//
+//        googleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions);
+//        auth = FirebaseAuth.getInstance();
+//
+//        btnGoogle = findViewById(R.id.btnGoogle);
+//        btnGoogle.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = googleSignInClient.getSignInIntent();
+//                startActivityForResult(intent, REQ_SIGN_GOOGLE);
+//            }
+//        });
 
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == REQ_SIGN_GOOGLE) {
-            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
-            if (task.isSuccessful()) {
-                GoogleSignInAccount account = task.getResult();
-                resultLogin(account);
-                Toast.makeText(StartActivity.this, "Completed", Toast.LENGTH_SHORT).show();
-            }
-        } else {
-            Toast.makeText(StartActivity.this, "Failed", Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    private void resultLogin(GoogleSignInAccount account) {
-        AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(), null);
-        auth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(StartActivity.this, "Welcome, " + account.getDisplayName(), Toast.LENGTH_SHORT).show();
-                            Log.d("Login", "Success");
-                            Intent intent = new Intent(StartActivity.this, WelcomeActivity.class);
-                            intent.putExtra("username", account.getDisplayName());
-                            intent.putExtra("email", account.getEmail());
-                            intent.putExtra("profile", String.valueOf(account.getPhotoUrl()));
-                            startActivity(intent);
-                            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
-                            finish();
-                        } else {
-                            Log.d("Login", "Failed");
-                        }
-                    }
-                });
-    }
-
-    View.OnClickListener mClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            switch (v.getId()) {
-                case R.id.btnEmail:
-                    Intent intentEmail = new Intent(StartActivity.this, MainActivity.class);
-                    startActivity(intentEmail);
-                    overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
-                    finish();
-                    break;
-            }
-        }
-    };
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//
+//        if (requestCode == REQ_SIGN_GOOGLE) {
+//            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+//            if (task.isSuccessful()) {
+//                GoogleSignInAccount account = task.getResult();
+//                resultLogin(account);
+//                Toast.makeText(StartActivity.this, "Completed", Toast.LENGTH_SHORT).show();
+//            }
+//        } else {
+//            Toast.makeText(StartActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+//        }
+//    }
+//
+//    private void resultLogin(GoogleSignInAccount account) {
+//        AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(), null);
+//        auth.signInWithCredential(credential)
+//                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                        if (task.isSuccessful()) {
+//                            Toast.makeText(StartActivity.this, "Welcome, " + account.getDisplayName(), Toast.LENGTH_SHORT).show();
+//                            Log.d("Login", "Success");
+//                            Intent intent = new Intent(StartActivity.this, WelcomeActivity.class);
+//                            intent.putExtra("username", account.getDisplayName());
+//                            intent.putExtra("email", account.getEmail());
+//                            intent.putExtra("profile", String.valueOf(account.getPhotoUrl()));
+//                            startActivity(intent);
+//                            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+//                            finish();
+//                        } else {
+//                            Log.d("Login", "Failed");
+//                        }
+//                    }
+//                });
+//    }
+//
+//    View.OnClickListener mClickListener = new View.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
+//            switch (v.getId()) {
+//                case R.id.btnEmail:
+//                    Intent intentEmail = new Intent(StartActivity.this, MainActivity.class);
+//                    startActivity(intentEmail);
+//                    overridePendingTransition(R.anim.fadein, R.anim.fadeout); // 화면 전환 애니메이션
+//                    finish();
+//                    break;
+//            }
+//        }
+//    };
 
 }

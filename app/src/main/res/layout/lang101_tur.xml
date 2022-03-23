@@ -144,7 +144,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="ALFABE"
                                 android:textColor="@color/tur_background"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur1"
@@ -178,7 +178,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="1. SELAMLAMA"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur2"
@@ -212,7 +212,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="2. SAYILAR"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur3"
@@ -246,7 +246,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="3. TARİH VE SAAT"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur4"
@@ -280,7 +280,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="4. AİLE"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur5"
@@ -314,7 +314,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="5. GÖVDE"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur6"
@@ -348,7 +348,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="6. DIŞARIDA YEMEK"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur7"
@@ -382,7 +382,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="7. GIDALAR"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur8"
@@ -416,7 +416,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="8. SIFATLAR"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur9"
@@ -450,7 +450,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="9. YERLER"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur10"
@@ -484,7 +484,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="10. EDATLAR"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur11"
@@ -518,7 +518,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="11. YEMEK PİŞİRME"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur12"
@@ -552,7 +552,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="12. ALIŞVERİŞ"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur13"
@@ -586,7 +586,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="13. ÜLKELER"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur14"
@@ -620,7 +620,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="14. SEYAHAT"
                                 android:textColor="@color/main_text"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur15"
@@ -655,7 +655,7 @@
                                 android:stateListAnimator="@null"
                                 android:text="TEMEL FIILLER"
                                 android:textColor="@color/tur_background"
-                                android:textSize="25dp"></Button>
+                                android:textSize="22dp"></Button>
 
                             <TextView
                                 android:id="@+id/tvTur16"

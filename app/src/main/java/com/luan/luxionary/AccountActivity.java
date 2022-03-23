@@ -29,7 +29,7 @@ public class AccountActivity extends AppCompatActivity {
     Button btnSave;
     LinearLayout layoutTop, layoutPi, layoutBtn;
     Animation aniLayoutTop, aniLayoutPi, aniLayoutBtn;
-    TextView tvMyLux, tvGemEng, tvGemFra, tvGemDeu, tvGemIta, tvGemSpa, tvGemRus;
+    TextView tvMyLux, tvGemEng, tvGemFra, tvGemDeu, tvGemSpa, tvGemIta, tvGemRus, tvGemTur;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -156,11 +156,12 @@ public class AccountActivity extends AppCompatActivity {
          * My Gems
          * */
         tvGemEng = (TextView) findViewById(R.id.tvGemEng);
-        tvGemFra = (TextView) findViewById(R.id.tvGemFra);
         tvGemDeu = (TextView) findViewById(R.id.tvGemDeu);
-        tvGemIta = (TextView) findViewById(R.id.tvGemIta);
+        tvGemFra = (TextView) findViewById(R.id.tvGemFra);
         tvGemSpa = (TextView) findViewById(R.id.tvGemSpa);
+        tvGemIta = (TextView) findViewById(R.id.tvGemIta);
         tvGemRus = (TextView) findViewById(R.id.tvGemRus);
+        tvGemTur = (TextView) findViewById(R.id.tvGemTur);
 
         // Buttons
         btnSave = (Button) findViewById(R.id.btnSave);
@@ -268,16 +269,6 @@ public class AccountActivity extends AppCompatActivity {
             }
         }
     };
-
-    // Email Format Checking
-//    public static boolean isEmail(String email) {
-//        boolean returnValue = false;
-//        String regex = "^[_a-zA-Z0-9-\\.]+@[\\.a-zA-Z0-9-]+\\.[a-zA-Z]+$";
-//        Pattern p = Pattern.compile(regex);
-//        Matcher m = p.matcher(email);
-//        if (m.matches()) { returnValue = true; }
-//        return returnValue;
-//    }
 
     private void showDialog() {
         Dialog dialog = new Dialog(this, R.style.DialogStyle);

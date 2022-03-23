@@ -20,13 +20,13 @@
     <color name="deu_background">#FFD36B</color>
     <color name="deu_dark">#CB920C</color>
 
-    <color name="ita_light">#27FFC7</color>
-    <color name="ita_background">#0EDFA9</color>
-    <color name="ita_dark">#08A87F</color>
-
     <color name="spa_light">#FFBB91</color>
     <color name="spa_background">#FF9450</color>
     <color name="spa_dark">#CD5910</color>
+
+    <color name="ita_light">#27FFC7</color>
+    <color name="ita_background">#0EDFA9</color>
+    <color name="ita_dark">#08A87F</color>
 
     <color name="rus_light">#C2C6FF</color>
     <color name="rus_background">#9A89FF</color>
@@ -41,7 +41,6 @@
     <color name="gc_eng_2">#FDEFF4</color>
     <color name="gc_eng_3">#FFC0D3</color>
     <color name="gc_eng_4">#FF5C8D</color>
-
 
     // Default
     <color name="purple_200">#FFBB86FC</color>

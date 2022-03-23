@@ -45,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="330dp"
                     android:background="@color/main_white"
-                    android:fontFamily="@font/playfairdisplay_800"
+                    android:fontFamily="@font/nunitosans_900"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingBottom="4dp"
@@ -65,7 +65,7 @@
                         android:id="@+id/btn_yes"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/ic_next_black"
+                        android:src="@drawable/ic_next_white"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
                         android:layout_marginLeft="320dp"/>
