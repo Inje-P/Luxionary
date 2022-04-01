@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/main_white"
+        android:background="@color/main_bg"
         android:orientation="vertical">
 
         <!-- Profile -->
@@ -57,7 +57,7 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center|bottom"
                                 android:text="CONJUGATION"
-                                android:textColor="@color/main_text"
+                                android:textColor="@color/eng_background"
                                 android:textSize="40dp"></TextView>
 
                         </LinearLayout>
@@ -129,8 +129,8 @@
                             android:id="@+id/btn1"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -138,14 +138,14 @@
                             android:textAllCaps="true"
                             android:text="1. be"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn2"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -153,14 +153,14 @@
                             android:textAllCaps="true"
                             android:text="2. have"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn3"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -168,14 +168,14 @@
                             android:textAllCaps="true"
                             android:text="3. do"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn4"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -183,14 +183,14 @@
                             android:textAllCaps="true"
                             android:text="4. make"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn5"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -198,14 +198,14 @@
                             android:textAllCaps="true"
                             android:text="5. get"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn6"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -213,14 +213,14 @@
                             android:textAllCaps="true"
                             android:text="6. use"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn7"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -228,14 +228,14 @@
                             android:textAllCaps="true"
                             android:text="7. say"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn8"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -243,14 +243,14 @@
                             android:textAllCaps="true"
                             android:text="8. go"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn9"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -258,14 +258,14 @@
                             android:textAllCaps="true"
                             android:text="9. take"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn10"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -273,14 +273,14 @@
                             android:textAllCaps="true"
                             android:text="10. see"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn11"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -288,14 +288,14 @@
                             android:textAllCaps="true"
                             android:text="11. know"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn12"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -303,14 +303,14 @@
                             android:textAllCaps="true"
                             android:text="12. find"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn13"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -318,14 +318,14 @@
                             android:textAllCaps="true"
                             android:text="13. think"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn14"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -333,14 +333,14 @@
                             android:textAllCaps="true"
                             android:text="14. work"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn15"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -348,14 +348,14 @@
                             android:textAllCaps="true"
                             android:text="15. come"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn16"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -363,14 +363,14 @@
                             android:textAllCaps="true"
                             android:text="16. want"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn17"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -378,14 +378,14 @@
                             android:textAllCaps="true"
                             android:text="17. need"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn18"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -393,14 +393,14 @@
                             android:textAllCaps="true"
                             android:text="18. give"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn19"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -408,14 +408,14 @@
                             android:textAllCaps="true"
                             android:text="19. include"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn20"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -423,14 +423,14 @@
                             android:textAllCaps="true"
                             android:text="20. help"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn21"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -438,14 +438,14 @@
                             android:textAllCaps="true"
                             android:text="21. provide"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn22"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -453,14 +453,14 @@
                             android:textAllCaps="true"
                             android:text="22. look"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn23"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -468,14 +468,14 @@
                             android:textAllCaps="true"
                             android:text="23. start"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn24"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -483,14 +483,14 @@
                             android:textAllCaps="true"
                             android:text="24. create"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn25"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -498,14 +498,14 @@
                             android:textAllCaps="true"
                             android:text="25. try"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn26"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -513,14 +513,14 @@
                             android:textAllCaps="true"
                             android:text="26. become"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn27"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -528,14 +528,14 @@
                             android:textAllCaps="true"
                             android:text="27. keep"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn28"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -543,14 +543,14 @@
                             android:textAllCaps="true"
                             android:text="28. write"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn29"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -558,14 +558,14 @@
                             android:textAllCaps="true"
                             android:text="29. read"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn30"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -573,14 +573,14 @@
                             android:textAllCaps="true"
                             android:text="30. call"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn31"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -588,14 +588,14 @@
                             android:textAllCaps="true"
                             android:text="31. feel"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn32"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -603,14 +603,14 @@
                             android:textAllCaps="true"
                             android:text="32. follow"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn33"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -618,14 +618,14 @@
                             android:textAllCaps="true"
                             android:text="33. tell"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn34"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -633,14 +633,14 @@
                             android:textAllCaps="true"
                             android:text="34. learn"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn35"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -648,14 +648,14 @@
                             android:textAllCaps="true"
                             android:text="35. show"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn36"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -663,14 +663,14 @@
                             android:textAllCaps="true"
                             android:text="36. ask"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn37"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -678,14 +678,14 @@
                             android:textAllCaps="true"
                             android:text="37. add"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn38"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -693,14 +693,14 @@
                             android:textAllCaps="true"
                             android:text="38. put"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn39"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -708,14 +708,14 @@
                             android:textAllCaps="true"
                             android:text="39. offer"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn40"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -723,14 +723,14 @@
                             android:textAllCaps="true"
                             android:text="40. mean"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn41"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -738,14 +738,14 @@
                             android:textAllCaps="true"
                             android:text="41. allow"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn42"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -753,14 +753,14 @@
                             android:textAllCaps="true"
                             android:text="42. leave"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn43"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -768,14 +768,14 @@
                             android:textAllCaps="true"
                             android:text="43. like"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn44"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -783,14 +783,14 @@
                             android:textAllCaps="true"
                             android:text="44. run"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn45"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -798,14 +798,14 @@
                             android:textAllCaps="true"
                             android:text="45. pay"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn46"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -813,14 +813,14 @@
                             android:textAllCaps="true"
                             android:text="46. bring"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn47"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -828,14 +828,14 @@
                             android:textAllCaps="true"
                             android:text="47. seem"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn48"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -843,14 +843,14 @@
                             android:textAllCaps="true"
                             android:text="48. build"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn49"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -858,14 +858,14 @@
                             android:textAllCaps="true"
                             android:text="49. live"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                         <Button
                             android:id="@+id/btn50"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/ripple_eng_full"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
                             android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
                             android:gravity="center"
@@ -873,7 +873,7 @@
                             android:textAllCaps="true"
                             android:text="50. let"
                             android:textColor="@color/main_text"
-                            android:textSize="18dp"></Button>
+                            android:textSize="16dp"></Button>
 
                     </LinearLayout>
 

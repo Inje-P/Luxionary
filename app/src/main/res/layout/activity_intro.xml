@@ -27,7 +27,7 @@
             android:layout_marginLeft="80dp"
             android:layout_marginRight="80dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/intro"
+            app:srcCompat="@drawable/logo_title"
             android:scaleType="fitCenter"
             android:background="@android:color/transparent" />
 

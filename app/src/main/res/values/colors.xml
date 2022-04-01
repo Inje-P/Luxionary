@@ -2,6 +2,7 @@
 <resources>
     // Main
     <color name="main_white">#FFFFFF</color>
+    <color name="main_bg">#FAFAFA</color>
     <color name="main_text">#292929</color>
     <color name="main_gray">#9B9B9B</color>
     <color name="main_lightgray">#E8E5E5</color>

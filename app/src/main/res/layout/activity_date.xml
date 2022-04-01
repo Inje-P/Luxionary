@@ -9,465 +9,457 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/main_white"
-        android:orientation="vertical"
-        tools:context=".DateActivity">
+        android:background="@color/main_bg"
+        android:orientation="vertical">
 
         <!-- Container -->
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="9.4"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <!-- Main -->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Section 1 -->
-                    <LinearLayout
-                        android:id="@+id/layout0"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/ripple_black"
-                        android:elevation="3dp"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="6">
-
-                            <TextView
-                                android:id="@+id/tvTitle1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_marginTop="5dp"
-                                android:fontFamily="@font/pretendard_800"
-                                android:gravity="center"
-                                android:text="TODAY IS"
-                                android:textColor="@color/main_white"
-                                android:textSize="25dp"></TextView>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="4">
-
-                            <TextView
-                                android:id="@+id/tvTitle2"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:fontFamily="@font/pretendard_600"
-                                android:gravity="center_horizontal"
-                                android:text="(영어, 독일어를 제외하고 월, 요일은 모두 소문자를 사용해요)"
-                                android:textColor="@color/main_gray"
-                                android:textSize="12dp"></TextView>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <!-- Section 2 -->
+                    <!-- Main -->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
+                        android:layout_height="match_parent"
                         android:orientation="vertical">
 
-                        <!-- Month -->
+                        <!-- Section 1 -->
                         <LinearLayout
-                            android:id="@+id/layout1"
+                            android:id="@+id/layout0"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
+                            android:layout_height="100dp"
                             android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/ripple_black"
+                            android:background="@drawable/box_white"
                             android:elevation="3dp"
-                            android:orientation="horizontal"
-                            android:paddingLeft="5dp">
+                            android:orientation="vertical">
 
-                            <!-- Korean -->
                             <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1.5">
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2">
 
                                 <TextView
-                                    android:id="@+id/tvMonthTitle"
+                                    android:id="@+id/tvTitle1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_marginTop="15dp"
-                                    android:fontFamily="@font/pretendard_800"
-                                    android:gravity="center_horizontal"
-                                    android:text="1월"
-                                    android:textColor="@color/main_white"
-                                    android:textSize="18dp"></TextView>
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/nunitosans_900"
+                                    android:gravity="center"
+                                    android:text="TODAY IS"
+                                    android:textColor="@color/main_text"
+                                    android:textSize="40dp"></TextView>
 
                             </LinearLayout>
 
-                            <!-- International -->
                             <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="8.5"
-                                android:orientation="horizontal">
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
 
-                                <!-- English, French, German -->
-                                <LinearLayout
-                                    android:layout_width="0dp"
+                                <TextView
+                                    android:id="@+id/tvTitle2"
+                                    android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="5"
-                                    android:orientation="vertical">
-
-                                    <LinearLayout
-                                        android:id="@+id/llMonthEng"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/tvMonthEng"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="January"
-                                            android:textColor="@color/eng_background"
-                                            android:textSize="16dp"></TextView>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/llMonthFra"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/tvMonthFra"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="janvier"
-                                            android:textColor="@color/fra_background"
-                                            android:textSize="16dp"></TextView>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/llMonthDeu"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginBottom="15dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/tvMonthDeu"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="Januar"
-                                            android:textColor="@color/deu_background"
-                                            android:textSize="16dp"></TextView>
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                                <!-- Italian, Spanish, Russian -->
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="5"
-                                    android:orientation="vertical">
-
-                                    <LinearLayout
-                                        android:id="@+id/llMonthIta"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/tvMonthIta"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="gennaio"
-                                            android:textColor="@color/ita_background"
-                                            android:textSize="16dp"></TextView>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/llMonthSpa"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/tvMonthSpa"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="enero"
-                                            android:textColor="@color/spa_background"
-                                            android:textSize="16dp"></TextView>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/llMonthRus"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="15dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/tvMonthRus"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="январь"
-                                            android:textColor="@color/rus_background"
-                                            android:textSize="16dp"></TextView>
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
+                                    android:fontFamily="@font/pretendard_600"
+                                    android:gravity="center_horizontal"
+                                    android:text="(영어, 독일어를 제외하고 월, 요일은 모두 소문자를 사용해요)"
+                                    android:textColor="@color/main_gray"
+                                    android:textSize="14dp"></TextView>
 
                             </LinearLayout>
 
                         </LinearLayout>
 
-                        <!-- Day of the Month -->
+                        <!-- Section 2 -->
                         <LinearLayout
-                            android:id="@+id/layout2"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/ripple_black"
-                            android:elevation="3dp"
-                            android:orientation="horizontal"
-                            android:paddingLeft="5dp">
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
-                            <!-- Korean -->
+                            <!-- Month -->
                             <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1.5">
+                                android:id="@+id/layout1"
+                                android:layout_width="match_parent"
+                                android:layout_height="350dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/box_white"
+                                android:elevation="3dp"
+                                android:orientation="horizontal"
+                                android:padding="10dp"
+                                android:paddingLeft="5dp">
 
-                                <TextView
-                                    android:id="@+id/tvDoMTitle"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginTop="15dp"
-                                    android:fontFamily="@font/pretendard_800"
-                                    android:gravity="center_horizontal"
-                                    android:text="27일"
-                                    android:textColor="@color/main_white"
-                                    android:textSize="18dp"></TextView>
-
-                            </LinearLayout>
-
-                            <!-- International -->
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="8.5"
-                                android:orientation="horizontal">
-
-                                <!-- English, French, German -->
+                                <!-- Korean -->
                                 <LinearLayout
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="5"
-                                    android:orientation="vertical">
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/tvMonthTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/pretendard_800"
+                                        android:gravity="center"
+                                        android:text="1월"
+                                        android:textColor="@color/main_text"
+                                        android:textSize="24dp"></TextView>
+
+                                </LinearLayout>
+
+                                <!-- International -->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="4"
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
-                                        android:id="@+id/llDoMEng"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="5"
+                                        android:orientation="vertical">
 
-                                        <TextView
-                                            android:id="@+id/tvDoMEng"
+                                        <LinearLayout
+                                            android:id="@+id/llMonthEng"
                                             android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="twenty-seventh"
-                                            android:textColor="@color/eng_background"
-                                            android:textSize="12dp"></TextView>
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_eng"
+                                            android:orientation="horizontal">
 
-                                    </LinearLayout>
+                                            <TextView
+                                                android:id="@+id/tvMonthEng"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="January"
+                                                android:textColor="@color/eng_background"
+                                                android:textSize="20dp"></TextView>
 
-                                    <LinearLayout
-                                        android:id="@+id/llDoMFra"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
+                                        </LinearLayout>
 
-                                        <TextView
-                                            android:id="@+id/tvDoMFra"
+                                        <LinearLayout
+                                            android:id="@+id/llMonthFra"
                                             android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="le vingt-sept"
-                                            android:textColor="@color/fra_background"
-                                            android:textSize="12dp"></TextView>
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_fra"
+                                            android:orientation="horizontal">
 
-                                    </LinearLayout>
+                                            <TextView
+                                                android:id="@+id/tvMonthFra"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="janvier"
+                                                android:textColor="@color/fra_background"
+                                                android:textSize="20dp"></TextView>
 
-                                    <LinearLayout
-                                        android:id="@+id/llDoMDeu"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginBottom="15dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
+                                        </LinearLayout>
 
-                                        <TextView
-                                            android:id="@+id/tvDoMDeu"
+                                        <LinearLayout
+                                            android:id="@+id/llMonthDeu"
                                             android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="der siebenundzwanzigste"
-                                            android:textColor="@color/deu_background"
-                                            android:textSize="12dp"></TextView>
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_deu"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvMonthDeu"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="Januar"
+                                                android:textColor="@color/deu_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llMonthIta"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_ita"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvMonthIta"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="gennaio"
+                                                android:textColor="@color/ita_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llMonthSpa"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_spa"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvMonthSpa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="enero"
+                                                android:textColor="@color/spa_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llMonthRus"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_rus"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvMonthRus"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="январь"
+                                                android:textColor="@color/rus_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llMonthTur"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_tur"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvMonthTur"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="ocak"
+                                                android:textColor="@color/tur_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
 
                                     </LinearLayout>
 
                                 </LinearLayout>
 
-                                <!-- Italian, Spanish, Russian -->
+                            </LinearLayout>
+
+                            <!-- Day of the Month -->
+                            <LinearLayout
+                                android:id="@+id/layout2"
+                                android:layout_width="match_parent"
+                                android:layout_height="350dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/box_white"
+                                android:elevation="3dp"
+                                android:orientation="horizontal"
+                                android:padding="10dp"
+                                android:paddingLeft="5dp">
+
+                                <!-- Korean -->
                                 <LinearLayout
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="5"
-                                    android:orientation="vertical">
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/tvDoMTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/pretendard_800"
+                                        android:gravity="center"
+                                        android:text="27일"
+                                        android:textColor="@color/main_text"
+                                        android:textSize="24dp"></TextView>
+
+                                </LinearLayout>
+
+                                <!-- International -->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="4"
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
-                                        android:id="@+id/llDoMIta"
                                         android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
 
-                                        <TextView
-                                            android:id="@+id/tvDoMIta"
+                                        <LinearLayout
+                                            android:id="@+id/llDoMEng"
                                             android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="il ventisette"
-                                            android:textColor="@color/ita_background"
-                                            android:textSize="12dp"></TextView>
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_eng"
+                                            android:orientation="horizontal">
 
-                                    </LinearLayout>
+                                            <TextView
+                                                android:id="@+id/tvDoMEng"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="twenty-seventh"
+                                                android:textColor="@color/eng_background"
+                                                android:textSize="20dp"></TextView>
 
-                                    <LinearLayout
-                                        android:id="@+id/llDoMSpa"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
+                                        </LinearLayout>
 
-                                        <TextView
-                                            android:id="@+id/tvDoMSpa"
+                                        <LinearLayout
+                                            android:id="@+id/llDoMFra"
                                             android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="el veintisiete"
-                                            android:textColor="@color/spa_background"
-                                            android:textSize="12dp"></TextView>
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_fra"
+                                            android:orientation="horizontal">
 
-                                    </LinearLayout>
+                                            <TextView
+                                                android:id="@+id/tvDoMFra"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="le vingt-sept"
+                                                android:textColor="@color/fra_background"
+                                                android:textSize="20dp"></TextView>
 
-                                    <LinearLayout
-                                        android:id="@+id/llDoMRus"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="15dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
+                                        </LinearLayout>
 
-                                        <TextView
-                                            android:id="@+id/tvDoMRus"
+                                        <LinearLayout
+                                            android:id="@+id/llDoMDeu"
                                             android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="двадцать седьмое"
-                                            android:textColor="@color/rus_background"
-                                            android:textSize="12dp"></TextView>
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_deu"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvDoMDeu"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="der siebenundzwanzigste"
+                                                android:textColor="@color/deu_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llDoMIta"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_ita"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvDoMIta"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="il ventisette"
+                                                android:textColor="@color/ita_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llDoMSpa"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_spa"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvDoMSpa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="el veintisiete"
+                                                android:textColor="@color/spa_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llDoMRus"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_rus"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvDoMRus"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="двадцать седьмое"
+                                                android:textColor="@color/rus_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llDoMTur"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_tur"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvDoMTur"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="yirmi yedi"
+                                                android:textColor="@color/tur_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
 
                                     </LinearLayout>
 
@@ -475,198 +467,191 @@
 
                             </LinearLayout>
 
-                        </LinearLayout>
-
-                        <!-- Day of the week -->
-                        <LinearLayout
-                            android:id="@+id/layout3"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginBottom="20dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/ripple_black"
-                            android:elevation="3dp"
-                            android:orientation="horizontal"
-                            android:paddingLeft="5dp">
-
-                            <!-- Korean -->
+                            <!-- Day of the week -->
                             <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1.5">
+                                android:id="@+id/layout3"
+                                android:layout_width="match_parent"
+                                android:layout_height="350dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:background="@drawable/box_white"
+                                android:elevation="3dp"
+                                android:orientation="horizontal"
+                                android:padding="10dp"
+                                android:paddingLeft="5dp">
 
-                                <TextView
-                                    android:id="@+id/tvDoWTitle"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginTop="15dp"
-                                    android:fontFamily="@font/pretendard_800"
-                                    android:gravity="center_horizontal"
-                                    android:text="일\n요\n일"
-                                    android:textColor="@color/main_white"
-                                    android:textSize="18dp"></TextView>
-
-                            </LinearLayout>
-
-                            <!-- International -->
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="8.5"
-                                android:orientation="horizontal">
-
-                                <!-- English, French, German -->
+                                <!-- Korean -->
                                 <LinearLayout
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="5"
-                                    android:orientation="vertical">
+                                    android:layout_weight="1">
 
-                                    <LinearLayout
-                                        android:id="@+id/llDoWEng"
+                                    <TextView
+                                        android:id="@+id/tvDoWTitle"
                                         android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/tvDoWEng"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="Sunday"
-                                            android:textColor="@color/eng_background"
-                                            android:textSize="16dp"></TextView>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/llDoWFra"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/tvDoWFra"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="dimanche"
-                                            android:textColor="@color/fra_background"
-                                            android:textSize="16dp"></TextView>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/llDoWDeu"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginBottom="15dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/tvDoWDeu"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="Sonntag"
-                                            android:textColor="@color/deu_background"
-                                            android:textSize="16dp"></TextView>
-
-                                    </LinearLayout>
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/pretendard_800"
+                                        android:gravity="center"
+                                        android:text="일\n요\n일"
+                                        android:textColor="@color/main_text"
+                                        android:textSize="24dp"></TextView>
 
                                 </LinearLayout>
 
-                                <!-- Italian, Spanish, Russian -->
+                                <!-- International -->
                                 <LinearLayout
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="5"
-                                    android:orientation="vertical">
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="4"
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
-                                        android:id="@+id/llDoWIta"
                                         android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
 
-                                        <TextView
-                                            android:id="@+id/tvDoWIta"
+                                        <LinearLayout
+                                            android:id="@+id/llDoWEng"
                                             android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="domenica"
-                                            android:textColor="@color/ita_background"
-                                            android:textSize="16dp"></TextView>
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_eng"
+                                            android:orientation="horizontal">
 
-                                    </LinearLayout>
+                                            <TextView
+                                                android:id="@+id/tvDoWEng"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="Sunday"
+                                                android:textColor="@color/eng_background"
+                                                android:textSize="20dp"></TextView>
 
-                                    <LinearLayout
-                                        android:id="@+id/llDoWSpa"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
+                                        </LinearLayout>
 
-                                        <TextView
-                                            android:id="@+id/tvDoWSpa"
+                                        <LinearLayout
+                                            android:id="@+id/llDoWFra"
                                             android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="domingo"
-                                            android:textColor="@color/spa_background"
-                                            android:textSize="16dp"></TextView>
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_fra"
+                                            android:orientation="horizontal">
 
-                                    </LinearLayout>
+                                            <TextView
+                                                android:id="@+id/tvDoWFra"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="dimanche"
+                                                android:textColor="@color/fra_background"
+                                                android:textSize="20dp"></TextView>
 
-                                    <LinearLayout
-                                        android:id="@+id/llDoWRus"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginBottom="15dp"
-                                        android:layout_weight="1"
-                                        android:background="@drawable/ripple_white_underline"
-                                        android:orientation="horizontal">
+                                        </LinearLayout>
 
-                                        <TextView
-                                            android:id="@+id/tvDoWRus"
+                                        <LinearLayout
+                                            android:id="@+id/llDoWDeu"
                                             android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginLeft="5dp"
-                                            android:fontFamily="@font/nunitosans_700"
-                                            android:gravity="bottom"
-                                            android:text="воскресенье"
-                                            android:textColor="@color/rus_background"
-                                            android:textSize="16dp"></TextView>
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_deu"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvDoWDeu"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="Sonntag"
+                                                android:textColor="@color/deu_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llDoWIta"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_ita"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvDoWIta"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="domenica"
+                                                android:textColor="@color/ita_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llDoWSpa"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_spa"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvDoWSpa"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="domingo"
+                                                android:textColor="@color/spa_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llDoWRus"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_rus"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvDoWRus"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="воскресенье"
+                                                android:textColor="@color/rus_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llDoWTur"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/ripple_tur"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tvDoWTur"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/nunitosans_800"
+                                                android:gravity="center"
+                                                android:text="pazar"
+                                                android:textColor="@color/tur_background"
+                                                android:textSize="20dp"></TextView>
+
+                                        </LinearLayout>
 
                                     </LinearLayout>
 
@@ -682,7 +667,7 @@
 
             </LinearLayout>
 
-        </LinearLayout>
+        </ScrollView>
 
         <!-- Menu Bar (Bottom) -->
         <LinearLayout

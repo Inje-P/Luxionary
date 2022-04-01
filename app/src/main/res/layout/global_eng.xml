@@ -16,7 +16,7 @@
         <LinearLayout
             android:id="@+id/layoutProfile"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="75dp"
             android:background="@drawable/top_black"
             android:elevation="5dp"
             android:orientation="horizontal">
@@ -35,7 +35,7 @@
                 <LinearLayout
                     android:id="@+id/llProfile"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -53,11 +53,11 @@
                                 android:id="@+id/tvTitle"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:fontFamily="@font/bebas_neue"
+                                android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center|bottom"
                                 android:text="GLOBAL CITIZEN"
                                 android:textColor="@color/main_white"
-                                android:textSize="70dp"></TextView>
+                                android:textSize="40dp"></TextView>
 
                         </LinearLayout>
 

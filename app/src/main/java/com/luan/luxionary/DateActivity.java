@@ -33,6 +33,7 @@ public class DateActivity extends AppCompatActivity {
     String[] monthIta = {"gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"};
     String[] monthSpa = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
     String[] monthRus = {"январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"};
+    String[] monthTur = {"ocak", "şubat", "mart", "nisan", "mayıs", "haziran", "temmuz", "ağustos", "eylül", "ekim", "kasım", "aralık"};
 
     String[] doMKor = {"1일", "2일", "3일", "4일", "5일", "6일", "7일", "8일", "9일", "10일",
             "11일", "12일", "13일", "14일", "15일", "16일", "17일", "18일", "19일", "20일",
@@ -55,6 +56,9 @@ public class DateActivity extends AppCompatActivity {
     String[] doMRus = {"первое", "второе", "третье", "четвёртое", "пятое", "шестое", "седьмое", "восьмое", "девятое", "десятое",
             "одиннадцатое", "двенадцатое", "тринадцатое", "четырнадцатое", "пятнадцатое", "шестнадцатое", "семнадцатое", "восемнадцатое", "девятнадцатое", "двадцатое",
             "двадцать первое", "двадцать второе", "двадцать третье", "двадцать четвёртое", "двадцать пятое", "двадцать шестое", "двадцать седьмое", "двадцать восьмое", "двадцать девятое", "тридцатое", "тридцать первое"};
+    String[] doMTur = {"bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz", "on",
+            "on bir", "on iki", "on üç", "on dört", "on beş", "on altı", "on yedi", "on sekiz", "on dokuz", "yirmi",
+            "yirmi bir", "yirmi iki", "yirmi üç", "yirmi dört", "yirmi beş", "yirmi altı", "yirmi yedi", "yirmi sekiz", "yirmi dokuz", "otuz", "otuz bir"};
 
     String[] doWKor = {"일\n요\n일", "월\n요\n일", "화\n요\n일", "수\n요\n일", "목\n요\n일", "금\n요\n일", "토\n요\n일"};
     String[] doWEng = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
@@ -63,18 +67,19 @@ public class DateActivity extends AppCompatActivity {
     String[] doWIta = {"domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"};
     String[] doWSpa = {"domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"};
     String[] doWRus = {"воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"};
+    String[] doWTur = {"pazar", "pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi"};
 
     TextView tvTitle1, tvTitle2;
-    TextView tvMonthTitle, tvMonthEng, tvMonthFra, tvMonthDeu, tvMonthIta, tvMonthSpa, tvMonthRus;
-    TextView tvDoMTitle, tvDoMEng, tvDoMFra, tvDoMDeu, tvDoMIta, tvDoMSpa, tvDoMRus;
-    TextView tvDoWTitle, tvDoWEng, tvDoWFra, tvDoWDeu, tvDoWIta, tvDoWSpa, tvDoWRus;
+    TextView tvMonthTitle, tvMonthEng, tvMonthFra, tvMonthDeu, tvMonthIta, tvMonthSpa, tvMonthRus, tvMonthTur;
+    TextView tvDoMTitle, tvDoMEng, tvDoMFra, tvDoMDeu, tvDoMIta, tvDoMSpa, tvDoMRus, tvDoMTur;
+    TextView tvDoWTitle, tvDoWEng, tvDoWFra, tvDoWDeu, tvDoWIta, tvDoWSpa, tvDoWRus, tvDoWTur;
 
     int m = 0, dM = 0, dW = 0;
 
     Animation aniTitle1, aniTitle2;
-    Animation aniMonthEng, aniMonthFra, aniMonthDeu, aniMonthIta, aniMonthSpa, aniMonthRus;
-    Animation aniDoMEng, aniDoMFra, aniDoMDeu, aniDoMIta, aniDoMSpa, aniDoMRus;
-    Animation aniDoWEng, aniDoWFra, aniDoWDeu, aniDoWIta, aniDoWSpa, aniDoWRus;
+    Animation aniMonthEng, aniMonthFra, aniMonthDeu, aniMonthIta, aniMonthSpa, aniMonthRus, aniMonthTur;
+    Animation aniDoMEng, aniDoMFra, aniDoMDeu, aniDoMIta, aniDoMSpa, aniDoMRus, aniDoMTur;
+    Animation aniDoWEng, aniDoWFra, aniDoWDeu, aniDoWIta, aniDoWSpa, aniDoWRus, aniDoWTur;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -132,6 +137,7 @@ public class DateActivity extends AppCompatActivity {
         tvMonthIta = (TextView) findViewById(R.id.tvMonthIta);
         tvMonthSpa = (TextView) findViewById(R.id.tvMonthSpa);
         tvMonthRus = (TextView) findViewById(R.id.tvMonthRus);
+        tvMonthTur = (TextView) findViewById(R.id.tvMonthTur);
         tvDoMTitle = (TextView) findViewById(R.id.tvDoMTitle);
         tvDoMEng = (TextView) findViewById(R.id.tvDoMEng);
         tvDoMFra = (TextView) findViewById(R.id.tvDoMFra);
@@ -139,6 +145,7 @@ public class DateActivity extends AppCompatActivity {
         tvDoMIta = (TextView) findViewById(R.id.tvDoMIta);
         tvDoMSpa = (TextView) findViewById(R.id.tvDoMSpa);
         tvDoMRus = (TextView) findViewById(R.id.tvDoMRus);
+        tvDoMTur = (TextView) findViewById(R.id.tvDoMTur);
         tvDoWTitle = (TextView) findViewById(R.id.tvDoWTitle);
         tvDoWEng = (TextView) findViewById(R.id.tvDoWEng);
         tvDoWFra = (TextView) findViewById(R.id.tvDoWFra);
@@ -146,6 +153,7 @@ public class DateActivity extends AppCompatActivity {
         tvDoWIta = (TextView) findViewById(R.id.tvDoWIta);
         tvDoWSpa = (TextView) findViewById(R.id.tvDoWSpa);
         tvDoWRus = (TextView) findViewById(R.id.tvDoWRus);
+        tvDoWTur = (TextView) findViewById(R.id.tvDoWTur);
 
         // Setting the date
         Calendar cal = Calendar.getInstance();
@@ -162,6 +170,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[0]);
                 tvMonthSpa.setText(monthSpa[0]);
                 tvMonthRus.setText(monthRus[0]);
+                tvMonthTur.setText(monthTur[0]);
                 break;
             case 1:
                 tvMonthTitle.setText(monthKor[1]);
@@ -171,6 +180,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[1]);
                 tvMonthSpa.setText(monthSpa[1]);
                 tvMonthRus.setText(monthRus[1]);
+                tvMonthTur.setText(monthTur[1]);
                 break;
             case 2:
                 tvMonthTitle.setText(monthKor[2]);
@@ -180,6 +190,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[2]);
                 tvMonthSpa.setText(monthSpa[2]);
                 tvMonthRus.setText(monthRus[2]);
+                tvMonthTur.setText(monthTur[2]);
                 break;
             case 3:
                 tvMonthTitle.setText(monthKor[3]);
@@ -189,6 +200,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[3]);
                 tvMonthSpa.setText(monthSpa[3]);
                 tvMonthRus.setText(monthRus[3]);
+                tvMonthTur.setText(monthTur[3]);
                 break;
             case 4:
                 tvMonthTitle.setText(monthKor[4]);
@@ -198,6 +210,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[4]);
                 tvMonthSpa.setText(monthSpa[4]);
                 tvMonthRus.setText(monthRus[4]);
+                tvMonthTur.setText(monthTur[4]);
                 break;
             case 5:
                 tvMonthTitle.setText(monthKor[5]);
@@ -207,6 +220,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[5]);
                 tvMonthSpa.setText(monthSpa[5]);
                 tvMonthRus.setText(monthRus[5]);
+                tvMonthTur.setText(monthTur[5]);
                 break;
             case 6:
                 tvMonthTitle.setText(monthKor[6]);
@@ -216,6 +230,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[6]);
                 tvMonthSpa.setText(monthSpa[6]);
                 tvMonthRus.setText(monthRus[6]);
+                tvMonthTur.setText(monthTur[6]);
                 break;
             case 7:
                 tvMonthTitle.setText(monthKor[7]);
@@ -225,6 +240,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[7]);
                 tvMonthSpa.setText(monthSpa[7]);
                 tvMonthRus.setText(monthRus[7]);
+                tvMonthTur.setText(monthTur[7]);
                 break;
             case 8:
                 tvMonthTitle.setText(monthKor[8]);
@@ -234,6 +250,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[8]);
                 tvMonthSpa.setText(monthSpa[8]);
                 tvMonthRus.setText(monthRus[8]);
+                tvMonthTur.setText(monthTur[8]);
                 break;
             case 9:
                 tvMonthTitle.setText(monthKor[9]);
@@ -243,6 +260,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[9]);
                 tvMonthSpa.setText(monthSpa[9]);
                 tvMonthRus.setText(monthRus[9]);
+                tvMonthTur.setText(monthTur[9]);
                 break;
             case 10:
                 tvMonthTitle.setText(monthKor[10]);
@@ -252,6 +270,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[10]);
                 tvMonthSpa.setText(monthSpa[10]);
                 tvMonthRus.setText(monthRus[10]);
+                tvMonthTur.setText(monthTur[10]);
                 break;
             case 11:
                 tvMonthTitle.setText(monthKor[11]);
@@ -261,6 +280,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[11]);
                 tvMonthSpa.setText(monthSpa[11]);
                 tvMonthRus.setText(monthRus[11]);
+                tvMonthTur.setText(monthTur[11]);
                 break;
             case 12:
                 tvMonthTitle.setText(monthKor[12]);
@@ -270,6 +290,7 @@ public class DateActivity extends AppCompatActivity {
                 tvMonthIta.setText(monthIta[12]);
                 tvMonthSpa.setText(monthSpa[12]);
                 tvMonthRus.setText(monthRus[12]);
+                tvMonthTur.setText(monthTur[12]);
                 break;
         }
 
@@ -282,6 +303,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[0]);
                 tvDoMSpa.setText(doMSpa[0]);
                 tvDoMRus.setText(doMRus[0]);
+                tvDoMTur.setText(doMTur[0]);
                 break;
             case 2:
                 tvDoMTitle.setText(doMKor[1]);
@@ -291,6 +313,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[1]);
                 tvDoMSpa.setText(doMSpa[1]);
                 tvDoMRus.setText(doMRus[1]);
+                tvDoMTur.setText(doMTur[1]);
                 break;
             case 3:
                 tvDoMTitle.setText(doMKor[2]);
@@ -300,6 +323,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[2]);
                 tvDoMSpa.setText(doMSpa[2]);
                 tvDoMRus.setText(doMRus[2]);
+                tvDoMTur.setText(doMTur[2]);
                 break;
             case 4:
                 tvDoMTitle.setText(doMKor[3]);
@@ -309,6 +333,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[3]);
                 tvDoMSpa.setText(doMSpa[3]);
                 tvDoMRus.setText(doMRus[3]);
+                tvDoMTur.setText(doMTur[3]);
                 break;
             case 5:
                 tvDoMTitle.setText(doMKor[4]);
@@ -318,6 +343,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[4]);
                 tvDoMSpa.setText(doMSpa[4]);
                 tvDoMRus.setText(doMRus[4]);
+                tvDoMTur.setText(doMTur[4]);
                 break;
             case 6:
                 tvDoMTitle.setText(doMKor[5]);
@@ -327,6 +353,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[5]);
                 tvDoMSpa.setText(doMSpa[5]);
                 tvDoMRus.setText(doMRus[5]);
+                tvDoMTur.setText(doMTur[5]);
                 break;
             case 7:
                 tvDoMTitle.setText(doMKor[6]);
@@ -336,6 +363,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[6]);
                 tvDoMSpa.setText(doMSpa[6]);
                 tvDoMRus.setText(doMRus[6]);
+                tvDoMTur.setText(doMTur[6]);
                 break;
             case 8:
                 tvDoMTitle.setText(doMKor[7]);
@@ -345,6 +373,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[7]);
                 tvDoMSpa.setText(doMSpa[7]);
                 tvDoMRus.setText(doMRus[7]);
+                tvDoMTur.setText(doMTur[7]);
                 break;
             case 9:
                 tvDoMTitle.setText(doMKor[8]);
@@ -354,6 +383,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[8]);
                 tvDoMSpa.setText(doMSpa[8]);
                 tvDoMRus.setText(doMRus[8]);
+                tvDoMTur.setText(doMTur[8]);
                 break;
             case 10:
                 tvDoMTitle.setText(doMKor[9]);
@@ -363,6 +393,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[9]);
                 tvDoMSpa.setText(doMSpa[9]);
                 tvDoMRus.setText(doMRus[9]);
+                tvDoMTur.setText(doMTur[9]);
                 break;
             case 11:
                 tvDoMTitle.setText(doMKor[10]);
@@ -372,6 +403,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[10]);
                 tvDoMSpa.setText(doMSpa[10]);
                 tvDoMRus.setText(doMRus[10]);
+                tvDoMTur.setText(doMTur[10]);
                 break;
             case 12:
                 tvDoMTitle.setText(doMKor[11]);
@@ -381,6 +413,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[11]);
                 tvDoMSpa.setText(doMSpa[11]);
                 tvDoMRus.setText(doMRus[11]);
+                tvDoMTur.setText(doMTur[11]);
                 break;
             case 13:
                 tvDoMTitle.setText(doMKor[12]);
@@ -390,6 +423,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[12]);
                 tvDoMSpa.setText(doMSpa[12]);
                 tvDoMRus.setText(doMRus[12]);
+                tvDoMTur.setText(doMTur[12]);
                 break;
             case 14:
                 tvDoMTitle.setText(doMKor[13]);
@@ -399,6 +433,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[13]);
                 tvDoMSpa.setText(doMSpa[13]);
                 tvDoMRus.setText(doMRus[13]);
+                tvDoMTur.setText(doMTur[13]);
                 break;
             case 15:
                 tvDoMTitle.setText(doMKor[14]);
@@ -408,6 +443,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[14]);
                 tvDoMSpa.setText(doMSpa[14]);
                 tvDoMRus.setText(doMRus[14]);
+                tvDoMTur.setText(doMTur[14]);
                 break;
             case 16:
                 tvDoMTitle.setText(doMKor[15]);
@@ -417,6 +453,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[15]);
                 tvDoMSpa.setText(doMSpa[15]);
                 tvDoMRus.setText(doMRus[15]);
+                tvDoMTur.setText(doMTur[15]);
                 break;
             case 17:
                 tvDoMTitle.setText(doMKor[16]);
@@ -426,6 +463,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[16]);
                 tvDoMSpa.setText(doMSpa[16]);
                 tvDoMRus.setText(doMRus[16]);
+                tvDoMTur.setText(doMTur[16]);
                 break;
             case 18:
                 tvDoMTitle.setText(doMKor[17]);
@@ -435,6 +473,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[17]);
                 tvDoMSpa.setText(doMSpa[17]);
                 tvDoMRus.setText(doMRus[17]);
+                tvDoMTur.setText(doMTur[17]);
                 break;
             case 19:
                 tvDoMTitle.setText(doMKor[18]);
@@ -444,6 +483,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[18]);
                 tvDoMSpa.setText(doMSpa[18]);
                 tvDoMRus.setText(doMRus[18]);
+                tvDoMTur.setText(doMTur[18]);
                 break;
             case 20:
                 tvDoMTitle.setText(doMKor[19]);
@@ -453,6 +493,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[19]);
                 tvDoMSpa.setText(doMSpa[19]);
                 tvDoMRus.setText(doMRus[19]);
+                tvDoMTur.setText(doMTur[19]);
                 break;
             case 21:
                 tvDoMTitle.setText(doMKor[20]);
@@ -462,6 +503,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[20]);
                 tvDoMSpa.setText(doMSpa[20]);
                 tvDoMRus.setText(doMRus[20]);
+                tvDoMTur.setText(doMTur[20]);
                 break;
             case 22:
                 tvDoMTitle.setText(doMKor[21]);
@@ -471,6 +513,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[21]);
                 tvDoMSpa.setText(doMSpa[21]);
                 tvDoMRus.setText(doMRus[21]);
+                tvDoMTur.setText(doMTur[21]);
                 break;
             case 23:
                 tvDoMTitle.setText(doMKor[22]);
@@ -480,6 +523,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[22]);
                 tvDoMSpa.setText(doMSpa[22]);
                 tvDoMRus.setText(doMRus[22]);
+                tvDoMTur.setText(doMTur[22]);
                 break;
             case 24:
                 tvDoMTitle.setText(doMKor[23]);
@@ -489,6 +533,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[23]);
                 tvDoMSpa.setText(doMSpa[23]);
                 tvDoMRus.setText(doMRus[23]);
+                tvDoMTur.setText(doMTur[23]);
                 break;
             case 25:
                 tvDoMTitle.setText(doMKor[24]);
@@ -498,6 +543,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[24]);
                 tvDoMSpa.setText(doMSpa[24]);
                 tvDoMRus.setText(doMRus[24]);
+                tvDoMTur.setText(doMTur[24]);
                 break;
             case 26:
                 tvDoMTitle.setText(doMKor[25]);
@@ -507,6 +553,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[25]);
                 tvDoMSpa.setText(doMSpa[25]);
                 tvDoMRus.setText(doMRus[25]);
+                tvDoMTur.setText(doMTur[25]);
                 break;
             case 27:
                 tvDoMTitle.setText(doMKor[26]);
@@ -516,6 +563,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[26]);
                 tvDoMSpa.setText(doMSpa[26]);
                 tvDoMRus.setText(doMRus[26]);
+                tvDoMTur.setText(doMTur[26]);
                 break;
             case 28:
                 tvDoMTitle.setText(doMKor[27]);
@@ -525,6 +573,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[27]);
                 tvDoMSpa.setText(doMSpa[27]);
                 tvDoMRus.setText(doMRus[27]);
+                tvDoMTur.setText(doMTur[27]);
                 break;
             case 29:
                 tvDoMTitle.setText(doMKor[28]);
@@ -534,6 +583,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[28]);
                 tvDoMSpa.setText(doMSpa[28]);
                 tvDoMRus.setText(doMRus[28]);
+                tvDoMTur.setText(doMTur[28]);
                 break;
             case 30:
                 tvDoMTitle.setText(doMKor[29]);
@@ -543,6 +593,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[29]);
                 tvDoMSpa.setText(doMSpa[29]);
                 tvDoMRus.setText(doMRus[29]);
+                tvDoMTur.setText(doMTur[29]);
                 break;
             case 31:
                 tvDoMTitle.setText(doMKor[30]);
@@ -552,6 +603,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoMIta.setText(doMIta[30]);
                 tvDoMSpa.setText(doMSpa[30]);
                 tvDoMRus.setText(doMRus[30]);
+                tvDoMTur.setText(doMTur[30]);
                 break;
         }
 
@@ -564,6 +616,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoWIta.setText(doWIta[0]);
                 tvDoWSpa.setText(doWSpa[0]);
                 tvDoWRus.setText(doWRus[0]);
+                tvDoWTur.setText(doWTur[0]);
                 break;
             case 2:
                 tvDoWTitle.setText(doWKor[1]);
@@ -573,6 +626,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoWIta.setText(doWIta[1]);
                 tvDoWSpa.setText(doWSpa[1]);
                 tvDoWRus.setText(doWRus[1]);
+                tvDoWTur.setText(doWTur[1]);
                 break;
             case 3:
                 tvDoWTitle.setText(doWKor[2]);
@@ -582,6 +636,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoWIta.setText(doWIta[2]);
                 tvDoWSpa.setText(doWSpa[2]);
                 tvDoWRus.setText(doWRus[2]);
+                tvDoWTur.setText(doWTur[2]);
                 break;
             case 4:
                 tvDoWTitle.setText(doWKor[3]);
@@ -591,6 +646,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoWIta.setText(doWIta[3]);
                 tvDoWSpa.setText(doWSpa[3]);
                 tvDoWRus.setText(doWRus[3]);
+                tvDoWTur.setText(doWTur[3]);
                 break;
             case 5:
                 tvDoWTitle.setText(doWKor[4]);
@@ -600,6 +656,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoWIta.setText(doWIta[4]);
                 tvDoWSpa.setText(doWSpa[4]);
                 tvDoWRus.setText(doWRus[4]);
+                tvDoWTur.setText(doWTur[4]);
                 break;
             case 6:
                 tvDoWTitle.setText(doWKor[5]);
@@ -609,6 +666,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoWIta.setText(doWIta[5]);
                 tvDoWSpa.setText(doWSpa[5]);
                 tvDoWRus.setText(doWRus[5]);
+                tvDoWTur.setText(doWTur[5]);
                 break;
             case 7:
                 tvDoWTitle.setText(doWKor[6]);
@@ -618,6 +676,7 @@ public class DateActivity extends AppCompatActivity {
                 tvDoWIta.setText(doWIta[6]);
                 tvDoWSpa.setText(doWSpa[6]);
                 tvDoWRus.setText(doWRus[6]);
+                tvDoWTur.setText(doWTur[6]);
                 break;
         }
 
@@ -706,12 +765,15 @@ public class DateActivity extends AppCompatActivity {
         aniMonthSpa.setStartOffset(1200);
         aniMonthRus = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
         aniMonthRus.setStartOffset(1400);
+        aniMonthTur = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
+        aniMonthTur.setStartOffset(1400);
         tvMonthEng.startAnimation(aniMonthEng);
         tvMonthFra.startAnimation(aniMonthFra);
         tvMonthDeu.startAnimation(aniMonthDeu);
         tvMonthIta.startAnimation(aniMonthIta);
         tvMonthSpa.startAnimation(aniMonthSpa);
         tvMonthRus.startAnimation(aniMonthRus);
+        tvMonthTur.startAnimation(aniMonthTur);
 
         // Date : Day of the Month (Animation)
         aniDoMEng = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
@@ -726,12 +788,15 @@ public class DateActivity extends AppCompatActivity {
         aniDoMSpa.setStartOffset(1300);
         aniDoMRus = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
         aniDoMRus.setStartOffset(1500);
+        aniDoMTur = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
+        aniDoMTur.setStartOffset(1700);
         tvDoMEng.startAnimation(aniDoMEng);
         tvDoMFra.startAnimation(aniDoMFra);
         tvDoMDeu.startAnimation(aniDoMDeu);
         tvDoMIta.startAnimation(aniDoMIta);
         tvDoMSpa.startAnimation(aniDoMSpa);
         tvDoMRus.startAnimation(aniDoMRus);
+        tvDoMTur.startAnimation(aniDoMTur);
 
         // Date : Day of the Week (Animation)
         aniDoWEng = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
@@ -746,12 +811,15 @@ public class DateActivity extends AppCompatActivity {
         aniDoWSpa.setStartOffset(1400);
         aniDoWRus = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
         aniDoWRus.setStartOffset(1600);
+        aniDoWTur = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
+        aniDoWTur.setStartOffset(1600);
         tvDoWEng.startAnimation(aniDoWEng);
         tvDoWFra.startAnimation(aniDoWFra);
         tvDoWDeu.startAnimation(aniDoWDeu);
         tvDoWIta.startAnimation(aniDoWIta);
         tvDoWSpa.startAnimation(aniDoWSpa);
         tvDoWRus.startAnimation(aniDoWRus);
+        tvDoWTur.startAnimation(aniDoWTur);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);

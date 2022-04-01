@@ -458,7 +458,7 @@ public class Lang101Deu_02_1 extends AppCompatActivity {
 
         TextView tvText = (TextView) custom.findViewById(R.id.tvText);
         tvText.setText(str);
-        tvText.setTextColor(ContextCompat.getColor(this, R.color.main_text));
+        tvText.setTextColor(ContextCompat.getColor(this, R.color.main_white));
         tvText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
 
         Snackbar.SnackbarLayout snackbarLayout = (Snackbar.SnackbarLayout) snackbar.getView();

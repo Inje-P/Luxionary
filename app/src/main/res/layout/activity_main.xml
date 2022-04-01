@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/main_white"
+        android:background="@color/main_bg"
         android:orientation="vertical"
         tools:context=".MainActivity">
 
@@ -135,7 +135,7 @@
                     android:id="@+id/layoutMain1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/main_white"
+                    android:background="@color/main_bg"
                     android:orientation="vertical">
 
                     <!-- Main Layout 2 -->

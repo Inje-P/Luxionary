@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/main_white"
+        android:background="@color/main_bg"
         android:orientation="vertical">
 
         <!-- Profile -->
@@ -133,7 +133,7 @@
                     android:id="@+id/container1"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:background="@color/main_white">
+                    android:background="@color/main_bg">
 
                     <androidx.viewpager.widget.ViewPager
                         android:id="@+id/viewPager1"
@@ -173,7 +173,7 @@
                     android:id="@+id/container2"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:background="@color/main_white">
+                    android:background="@color/main_bg">
 
                     <androidx.viewpager.widget.ViewPager
                         android:id="@+id/viewPager2"
@@ -213,7 +213,7 @@
                     android:id="@+id/container3"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:background="@color/main_white">
+                    android:background="@color/main_bg">
 
                     <androidx.viewpager.widget.ViewPager
                         android:id="@+id/viewPager3"
@@ -253,7 +253,7 @@
                     android:id="@+id/container4"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:background="@color/main_white">
+                    android:background="@color/main_bg">
 
                     <androidx.viewpager.widget.ViewPager
                         android:id="@+id/viewPager4"
@@ -293,7 +293,7 @@
                     android:id="@+id/container5"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:background="@color/main_white">
+                    android:background="@color/main_bg">
 
                     <androidx.viewpager.widget.ViewPager
                         android:id="@+id/viewPager5"
@@ -333,7 +333,7 @@
                     android:id="@+id/container6"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:background="@color/main_white">
+                    android:background="@color/main_bg">
 
                     <androidx.viewpager.widget.ViewPager
                         android:id="@+id/viewPager6"

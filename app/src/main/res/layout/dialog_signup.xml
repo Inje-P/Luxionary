@@ -32,7 +32,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="5dp"
                 android:elevation="8dp"
-                android:src="@drawable/intro" />
+                android:src="@drawable/logo_title" />
 
             <TextView
                 android:id="@+id/txttite"
