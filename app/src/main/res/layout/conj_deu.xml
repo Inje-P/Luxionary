@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:orientation="vertical">
+
+        <!-- Profile -->
+        <LinearLayout
+            android:id="@+id/layoutProfile"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/top_white"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Profile Section -->
+                <LinearLayout
+                    android:id="@+id/llProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="7"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tvTitle1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="center|bottom"
+                                android:text="KONJUGATION"
+                                android:textColor="@color/deu_background"
+                                android:textSize="40dp"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:id="@+id/tvTitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/pretendard_700"
+                                android:gravity="center"
+                                android:text="동사변화"
+                                android:textColor="@color/main_text"
+                                android:textSize="18dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <!-- ScrollView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+
+            <!-- Container -->
+            <LinearLayout
+                android:id="@+id/layoutContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Main Layout -->
+                <LinearLayout
+                    android:id="@+id/layoutMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp" />
+
+                        <Button
+                            android:id="@+id/btn1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="1. SEIN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="2. WERDEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn3"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="3. HABEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn4"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="4. KÖNNEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn5"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="5. GEBEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn6"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="6. SOLLEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn7"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="7. MÜSSEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn8"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="8. FINDEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn9"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:text="9. MACHEN"
+                            android:textAllCaps="false"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn10"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="10. KOMMEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn11"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="11. GEHEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn12"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="12. LASSEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn13"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="13. STEHEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn14"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="14. WOLLEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn15"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="15. SEHEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn16"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="16. BIETEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn17"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="17. STELLEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn18"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="18. MÖGEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn19"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="19. LIEGEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn20"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="20. NEHMEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn21"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="21. SAGEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn22"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="22. FÜHREN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn23"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="23. ZEIGEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn24"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="24. ERHALTEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn25"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="25. BLEIBEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn26"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="26. DÜRFEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn27"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="27. BRINGEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn28"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="28. WISSEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn29"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="29. GELTEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn30"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="30. SETZEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn31"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="31. HALTEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn32"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="32. NUTZEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn33"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="33. TUN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn34"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="34. BEKOMMEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn35"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="35. GEHÖREN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn36"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="36. BESTEHEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn37"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="37. ARBEITEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn38"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="38. SCHREIBEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn39"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="39. ERREICHEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn40"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="40. SUCHEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn41"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="41. SPIELEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn42"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="42. ENTWICKELN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn43"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="43. BEGINNEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn44"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="44. LESEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn45"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="45. HELFEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn46"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="46. UNTERSTÜTZEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn47"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="47. SPRECHEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn48"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="48. BRAUCHEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn49"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="49. SCHAFFEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                        <Button
+                            android:id="@+id/btn50"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ripple_eng"
+                            android:elevation="3dp"
+                            android:fontFamily="@font/nunitosans_900"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:textAllCaps="false"
+                            android:text="50. ENTSTEHEN"
+                            android:textColor="@color/main_text"
+                            android:textSize="16dp"></Button>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Menu Bar (Bottom) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_menubar2"
+            android:elevation="3dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+            <!-- Sidebar -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnSidebar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_sidebar"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- Home -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_home"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- Update -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_update"></ImageButton>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

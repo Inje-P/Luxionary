@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         aniLlTop = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         llTop.startAnimation(aniLlTop);
         llProfile = (LinearLayout) findViewById(R.id.llProfile);
-        aniLlProfile = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fadein);
+        aniLlProfile = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         llProfile.startAnimation(aniLlProfile);
         tvTitleHello = (TextView) findViewById(R.id.tvTitleHello);
         tvTitleName = (TextView) findViewById(R.id.tvTitleName);

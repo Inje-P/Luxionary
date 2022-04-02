@@ -39,7 +39,7 @@
                         <LinearLayout
                             android:id="@+id/layout0"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="90dp"
                             android:layout_margin="10dp"
                             android:background="@drawable/box_white"
                             android:elevation="3dp"
@@ -59,14 +59,14 @@
                                     android:gravity="center"
                                     android:text="TODAY IS"
                                     android:textColor="@color/main_text"
-                                    android:textSize="40dp"></TextView>
+                                    android:textSize="30dp"></TextView>
 
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_weight="1">
+                                android:layout_weight="1.5">
 
                                 <TextView
                                     android:id="@+id/tvTitle2"
@@ -92,7 +92,7 @@
                             <LinearLayout
                                 android:id="@+id/layout1"
                                 android:layout_width="match_parent"
-                                android:layout_height="350dp"
+                                android:layout_height="380dp"
                                 android:layout_margin="10dp"
                                 android:background="@drawable/box_white"
                                 android:elevation="3dp"
@@ -114,7 +114,7 @@
                                         android:gravity="center"
                                         android:text="1월"
                                         android:textColor="@color/main_text"
-                                        android:textSize="24dp"></TextView>
+                                        android:textSize="22dp"></TextView>
 
                                 </LinearLayout>
 
@@ -123,7 +123,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_marginRight="5dp"
-                                    android:layout_weight="4"
+                                    android:layout_weight="3"
                                     android:orientation="horizontal">
 
                                     <LinearLayout
@@ -136,8 +136,9 @@
                                             android:id="@+id/llMonthEng"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_eng"
+                                            android:background="@drawable/ripple_eng_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -148,7 +149,7 @@
                                                 android:gravity="center"
                                                 android:text="January"
                                                 android:textColor="@color/eng_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -156,8 +157,9 @@
                                             android:id="@+id/llMonthFra"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_fra"
+                                            android:background="@drawable/ripple_fra_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -168,7 +170,7 @@
                                                 android:gravity="center"
                                                 android:text="janvier"
                                                 android:textColor="@color/fra_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -176,8 +178,9 @@
                                             android:id="@+id/llMonthDeu"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_deu"
+                                            android:background="@drawable/ripple_deu_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -188,7 +191,7 @@
                                                 android:gravity="center"
                                                 android:text="Januar"
                                                 android:textColor="@color/deu_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -196,8 +199,9 @@
                                             android:id="@+id/llMonthIta"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_ita"
+                                            android:background="@drawable/ripple_ita_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -208,7 +212,7 @@
                                                 android:gravity="center"
                                                 android:text="gennaio"
                                                 android:textColor="@color/ita_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -216,8 +220,9 @@
                                             android:id="@+id/llMonthSpa"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_spa"
+                                            android:background="@drawable/ripple_spa_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -228,7 +233,7 @@
                                                 android:gravity="center"
                                                 android:text="enero"
                                                 android:textColor="@color/spa_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -236,8 +241,9 @@
                                             android:id="@+id/llMonthRus"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_rus"
+                                            android:background="@drawable/ripple_rus_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -248,7 +254,7 @@
                                                 android:gravity="center"
                                                 android:text="январь"
                                                 android:textColor="@color/rus_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -256,8 +262,9 @@
                                             android:id="@+id/llMonthTur"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_tur"
+                                            android:background="@drawable/ripple_tur_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -268,7 +275,7 @@
                                                 android:gravity="center"
                                                 android:text="ocak"
                                                 android:textColor="@color/tur_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -282,7 +289,7 @@
                             <LinearLayout
                                 android:id="@+id/layout2"
                                 android:layout_width="match_parent"
-                                android:layout_height="350dp"
+                                android:layout_height="380dp"
                                 android:layout_margin="10dp"
                                 android:background="@drawable/box_white"
                                 android:elevation="3dp"
@@ -304,7 +311,7 @@
                                         android:gravity="center"
                                         android:text="27일"
                                         android:textColor="@color/main_text"
-                                        android:textSize="24dp"></TextView>
+                                        android:textSize="22dp"></TextView>
 
                                 </LinearLayout>
 
@@ -313,7 +320,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_marginRight="5dp"
-                                    android:layout_weight="4"
+                                    android:layout_weight="3"
                                     android:orientation="horizontal">
 
                                     <LinearLayout
@@ -325,8 +332,9 @@
                                             android:id="@+id/llDoMEng"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_eng"
+                                            android:background="@drawable/ripple_eng_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -337,7 +345,7 @@
                                                 android:gravity="center"
                                                 android:text="twenty-seventh"
                                                 android:textColor="@color/eng_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -345,8 +353,9 @@
                                             android:id="@+id/llDoMFra"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_fra"
+                                            android:background="@drawable/ripple_fra_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -357,7 +366,7 @@
                                                 android:gravity="center"
                                                 android:text="le vingt-sept"
                                                 android:textColor="@color/fra_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -365,8 +374,9 @@
                                             android:id="@+id/llDoMDeu"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_deu"
+                                            android:background="@drawable/ripple_deu_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -377,7 +387,7 @@
                                                 android:gravity="center"
                                                 android:text="der siebenundzwanzigste"
                                                 android:textColor="@color/deu_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -385,8 +395,9 @@
                                             android:id="@+id/llDoMIta"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_ita"
+                                            android:background="@drawable/ripple_ita_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -397,7 +408,7 @@
                                                 android:gravity="center"
                                                 android:text="il ventisette"
                                                 android:textColor="@color/ita_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -405,8 +416,9 @@
                                             android:id="@+id/llDoMSpa"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_spa"
+                                            android:background="@drawable/ripple_spa_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -417,7 +429,7 @@
                                                 android:gravity="center"
                                                 android:text="el veintisiete"
                                                 android:textColor="@color/spa_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -425,8 +437,9 @@
                                             android:id="@+id/llDoMRus"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_rus"
+                                            android:background="@drawable/ripple_rus_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -437,7 +450,7 @@
                                                 android:gravity="center"
                                                 android:text="двадцать седьмое"
                                                 android:textColor="@color/rus_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -445,8 +458,9 @@
                                             android:id="@+id/llDoMTur"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_tur"
+                                            android:background="@drawable/ripple_tur_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -457,7 +471,7 @@
                                                 android:gravity="center"
                                                 android:text="yirmi yedi"
                                                 android:textColor="@color/tur_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -471,7 +485,7 @@
                             <LinearLayout
                                 android:id="@+id/layout3"
                                 android:layout_width="match_parent"
-                                android:layout_height="350dp"
+                                android:layout_height="380dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginRight="10dp"
@@ -496,7 +510,7 @@
                                         android:gravity="center"
                                         android:text="일\n요\n일"
                                         android:textColor="@color/main_text"
-                                        android:textSize="24dp"></TextView>
+                                        android:textSize="22dp"></TextView>
 
                                 </LinearLayout>
 
@@ -505,7 +519,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_marginRight="5dp"
-                                    android:layout_weight="4"
+                                    android:layout_weight="3"
                                     android:orientation="horizontal">
 
                                     <LinearLayout
@@ -517,8 +531,9 @@
                                             android:id="@+id/llDoWEng"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_eng"
+                                            android:background="@drawable/ripple_eng_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -529,7 +544,7 @@
                                                 android:gravity="center"
                                                 android:text="Sunday"
                                                 android:textColor="@color/eng_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -537,8 +552,9 @@
                                             android:id="@+id/llDoWFra"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_fra"
+                                            android:background="@drawable/ripple_fra_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -549,7 +565,7 @@
                                                 android:gravity="center"
                                                 android:text="dimanche"
                                                 android:textColor="@color/fra_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -557,8 +573,9 @@
                                             android:id="@+id/llDoWDeu"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_deu"
+                                            android:background="@drawable/ripple_deu_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -569,7 +586,7 @@
                                                 android:gravity="center"
                                                 android:text="Sonntag"
                                                 android:textColor="@color/deu_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -577,8 +594,9 @@
                                             android:id="@+id/llDoWIta"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_ita"
+                                            android:background="@drawable/ripple_ita_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -589,7 +607,7 @@
                                                 android:gravity="center"
                                                 android:text="domenica"
                                                 android:textColor="@color/ita_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -597,8 +615,9 @@
                                             android:id="@+id/llDoWSpa"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_spa"
+                                            android:background="@drawable/ripple_spa_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -609,7 +628,7 @@
                                                 android:gravity="center"
                                                 android:text="domingo"
                                                 android:textColor="@color/spa_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -617,8 +636,9 @@
                                             android:id="@+id/llDoWRus"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_rus"
+                                            android:background="@drawable/ripple_rus_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -629,7 +649,7 @@
                                                 android:gravity="center"
                                                 android:text="воскресенье"
                                                 android:textColor="@color/rus_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 
@@ -637,8 +657,9 @@
                                             android:id="@+id/llDoWTur"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
+                                            android:layout_margin="5dp"
                                             android:layout_weight="1"
-                                            android:background="@drawable/ripple_tur"
+                                            android:background="@drawable/ripple_tur_full"
                                             android:orientation="horizontal">
 
                                             <TextView
@@ -649,7 +670,7 @@
                                                 android:gravity="center"
                                                 android:text="pazar"
                                                 android:textColor="@color/tur_background"
-                                                android:textSize="20dp"></TextView>
+                                                android:textSize="18dp"></TextView>
 
                                         </LinearLayout>
 

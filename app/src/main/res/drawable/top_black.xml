@@ -3,7 +3,7 @@
     android:color="@color/main_white"> <!-- Ripple Effect 색상 -->
 
     <!-- 배경색 -->
-    <item android:id="@+id/box_black">
+    <item android:id="@+id/top_black">
         <shape android:shape="rectangle">
             <solid android:color="@color/main_text" />
             <corners android:bottomLeftRadius="15dp"
