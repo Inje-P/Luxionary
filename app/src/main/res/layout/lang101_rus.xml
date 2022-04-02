@@ -16,7 +16,7 @@
         <LinearLayout
             android:id="@+id/layoutProfile"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="120dp"
             android:background="@drawable/top_white"
             android:elevation="5dp"
             android:orientation="horizontal">
@@ -35,20 +35,18 @@
                 <LinearLayout
                     android:id="@+id/llProfile"
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
+                    android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="7"
-                        android:layout_marginBottom="20dp"
                         android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="1">
+                            android:layout_weight="1.6">
 
                             <TextView
                                 android:id="@+id/tvTitle1"
@@ -57,21 +55,22 @@
                                 android:fontFamily="@font/nunitosans_900"
                                 android:gravity="center|bottom"
                                 android:text="РУССКИЙ IOI"
-                                android:textColor="@color/main_text"
+                                android:textColor="@color/rus_background"
                                 android:textSize="40dp"></TextView>
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="30dp">
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
 
                             <TextView
                                 android:id="@+id/tvTitle2"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:fontFamily="@font/pretendard_700"
-                                android:gravity="center"
+                                android:gravity="center|top"
                                 android:text="러시아어 첫걸음"
                                 android:textColor="@color/main_text"
                                 android:textSize="18dp"></TextView>

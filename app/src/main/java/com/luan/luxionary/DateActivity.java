@@ -1,6 +1,7 @@
 package com.luan.luxionary;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -73,6 +74,7 @@ public class DateActivity extends AppCompatActivity {
     TextView tvMonthTitle, tvMonthEng, tvMonthFra, tvMonthDeu, tvMonthIta, tvMonthSpa, tvMonthRus, tvMonthTur;
     TextView tvDoMTitle, tvDoMEng, tvDoMFra, tvDoMDeu, tvDoMIta, tvDoMSpa, tvDoMRus, tvDoMTur;
     TextView tvDoWTitle, tvDoWEng, tvDoWFra, tvDoWDeu, tvDoWIta, tvDoWSpa, tvDoWRus, tvDoWTur;
+    ImageView imgVertical1, imgVertical2, imgVertical3;
 
     int m = 0, dM = 0, dW = 0;
 
@@ -752,6 +754,16 @@ public class DateActivity extends AppCompatActivity {
         tvTitle1.startAnimation(aniTitle1);
         tvTitle2.startAnimation(aniTitle2);
 
+        imgVertical1 = (ImageView) findViewById(R.id.imgVertical1);
+        imgVertical2 = (ImageView) findViewById(R.id.imgVertical2);
+        imgVertical3 = (ImageView) findViewById(R.id.imgVertical3);
+        AnimatedVectorDrawable drawable1v = (AnimatedVectorDrawable) imgVertical1.getDrawable();
+        drawable1v.start();
+        AnimatedVectorDrawable drawable2v = (AnimatedVectorDrawable) imgVertical2.getDrawable();
+        drawable2v.start();
+        AnimatedVectorDrawable drawable3v = (AnimatedVectorDrawable) imgVertical3.getDrawable();
+        drawable3v.start();
+
         // Date : Month (Animation)
         aniMonthEng = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
         aniMonthEng.setStartOffset(400);
@@ -766,7 +778,7 @@ public class DateActivity extends AppCompatActivity {
         aniMonthRus = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
         aniMonthRus.setStartOffset(1400);
         aniMonthTur = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniMonthTur.setStartOffset(1400);
+        aniMonthTur.setStartOffset(1600);
         tvMonthEng.startAnimation(aniMonthEng);
         tvMonthFra.startAnimation(aniMonthFra);
         tvMonthDeu.startAnimation(aniMonthDeu);
@@ -777,19 +789,19 @@ public class DateActivity extends AppCompatActivity {
 
         // Date : Day of the Month (Animation)
         aniDoMEng = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoMEng.setStartOffset(500);
+        aniDoMEng.setStartOffset(400);
         aniDoMFra = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoMFra.setStartOffset(700);
+        aniDoMFra.setStartOffset(600);
         aniDoMDeu = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoMDeu.setStartOffset(900);
+        aniDoMDeu.setStartOffset(800);
         aniDoMIta = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoMIta.setStartOffset(1100);
+        aniDoMIta.setStartOffset(1000);
         aniDoMSpa = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoMSpa.setStartOffset(1300);
+        aniDoMSpa.setStartOffset(1200);
         aniDoMRus = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoMRus.setStartOffset(1500);
+        aniDoMRus.setStartOffset(1400);
         aniDoMTur = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoMTur.setStartOffset(1700);
+        aniDoMTur.setStartOffset(1600);
         tvDoMEng.startAnimation(aniDoMEng);
         tvDoMFra.startAnimation(aniDoMFra);
         tvDoMDeu.startAnimation(aniDoMDeu);
@@ -800,17 +812,17 @@ public class DateActivity extends AppCompatActivity {
 
         // Date : Day of the Week (Animation)
         aniDoWEng = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoWEng.setStartOffset(600);
+        aniDoWEng.setStartOffset(400);
         aniDoWFra = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoWFra.setStartOffset(800);
+        aniDoWFra.setStartOffset(600);
         aniDoWDeu = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoWDeu.setStartOffset(1000);
+        aniDoWDeu.setStartOffset(800);
         aniDoWIta = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoWIta.setStartOffset(1200);
+        aniDoWIta.setStartOffset(1000);
         aniDoWSpa = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoWSpa.setStartOffset(1400);
+        aniDoWSpa.setStartOffset(1200);
         aniDoWRus = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
-        aniDoWRus.setStartOffset(1600);
+        aniDoWRus.setStartOffset(1400);
         aniDoWTur = AnimationUtils.loadAnimation(DateActivity.this, R.anim.ascend_fast);
         aniDoWTur.setStartOffset(1600);
         tvDoWEng.startAnimation(aniDoWEng);

@@ -13,18 +13,36 @@
         android:orientation="vertical"
         tools:context=".MainIta">
 
-        <!-- Profile -->
+        <!-- Top -->
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/top_white_sqr"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_title"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"></ImageButton>
+
+        </LinearLayout>
+
+        <!-- Profile Section -->
         <LinearLayout
             android:id="@+id/layoutProfile"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:background="@drawable/top_white"
-            android:elevation="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/box_white"
+            android:elevation="3dp"
             android:orientation="horizontal">
-
-            <Space
-                android:layout_width="30dp"
-                android:layout_height="match_parent" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -34,16 +52,15 @@
 
                 <!-- Profile Section -->
                 <LinearLayout
-                    android:id="@+id/llProfile"
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
+                    android:layout_height="120dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="7"
-                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="30dp"
                         android:orientation="vertical">
 
                         <LinearLayout
@@ -55,44 +72,45 @@
                                 android:id="@+id/tvTitle1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:fontFamily="@font/nunitosans_900"
+                                android:fontFamily="@font/pretendard_700"
                                 android:gravity="bottom"
-                                android:text="ITALIANO"
-                                android:textColor="@color/ita_background"
-                                android:textSize="40dp"></TextView>
+                                android:text="이탈리아어"
+                                android:textColor="@color/main_gray"
+                                android:textSize="18dp"></TextView>
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="30dp">
+                            android:layout_height="0dp"
+                            android:layout_weight="1.3">
 
                             <TextView
                                 android:id="@+id/tvTitle2"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/pretendard_700"
-                                android:text="이탈리아어"
-                                android:textColor="@color/main_text"
-                                android:textSize="18dp"></TextView>
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/nunitosans_900"
+                                android:gravity="top"
+                                android:text="ITALIANO"
+                                android:textColor="@color/ita_background"
+                                android:textSize="32dp"></TextView>
 
                         </LinearLayout>
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="120dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:gravity="bottom"
-                        android:orientation="vertical"
-                        android:paddingLeft="10dp"
-                        android:paddingBottom="20dp">
+                        android:gravity="center"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:id="@+id/llAvatar"
-                            android:layout_width="250px"
-                            android:layout_height="250px"
+                            android:layout_margin="13dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:background="@drawable/custom_main">
 
                             <ImageView
@@ -110,10 +128,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
-            <Space
-                android:layout_width="30dp"
-                android:layout_height="match_parent" />
 
         </LinearLayout>
 

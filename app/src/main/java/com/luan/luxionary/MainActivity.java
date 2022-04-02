@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvTitleHello, tvTitleName;
     TextView tvBanner1, tvBanner2;
-    LinearLayout llTop, llProfile, llAvatar, llBanner;
+    LinearLayout llTop, llIdentification, llProfile, llAvatar, llBanner;
     ImageView imgAvatar;
     Button btnDate;
 
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvEng, tvFra, tvDeu, tvSpa, tvIta, tvRus, tvTur;
 
     Animation aniTouch;
-    Animation aniLlTop, aniLlProfile, aniTitle1, aniTitle2, aniLlAvatar, aniAvatar;
+    Animation aniLlTop, aniLlIdentification, aniLlProfile, aniTitle1, aniTitle2, aniLlAvatar, aniAvatar;
     Animation aniBtnDate;
     Animation aniLlBanner;
     Animation aniBanner1, aniBanner2, aniLlRandom, aniBtnRandom;
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     Animation aniTvEng, aniTvFra, aniTvDeu, aniTvSpa, aniTvIta, aniTvRus, aniTvTur;
 
     // Sound
-    MediaPlayer soundEng, soundFra, soundDeu, soundSpa, soundIta,  soundRus;
+    MediaPlayer soundEng, soundFra, soundDeu, soundSpa, soundIta,  soundRus, soundTur;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -146,10 +146,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Title
+        // Header
         llTop = (LinearLayout) findViewById(R.id.llTop);
         aniLlTop = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         llTop.startAnimation(aniLlTop);
+
+        // Title
+        llIdentification = (LinearLayout) findViewById(R.id.llIdentification);
+        aniLlIdentification = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
+        llIdentification.startAnimation(aniLlIdentification);
         llProfile = (LinearLayout) findViewById(R.id.llProfile);
         aniLlProfile = AnimationUtils.loadAnimation(MainActivity.this, R.anim.descend);
         llProfile.startAnimation(aniLlProfile);

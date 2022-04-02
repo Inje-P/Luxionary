@@ -34,6 +34,10 @@ public class MainTur extends AppCompatActivity {
     LinearLayout layoutProfile;
     RelativeLayout layoutMain;
 
+    // Header
+    LinearLayout llTop;
+    Animation aniLlTop;
+
     Animation aniTouch;
     Animation aniTitle1, aniTitle2, aniAvatar;
     Animation aniLayoutProfile;
@@ -127,6 +131,11 @@ public class MainTur extends AppCompatActivity {
                 finish();
             }
         });
+
+        // Header
+        llTop = (LinearLayout) findViewById(R.id.llTop);
+        aniLlTop = AnimationUtils.loadAnimation(MainTur.this, R.anim.descend);
+        llTop.startAnimation(aniLlTop);
 
         // Title
         layoutProfile = (LinearLayout) findViewById(R.id.layoutProfile);
