@@ -12,64 +12,22 @@
         android:background="@color/main_white"
         android:orientation="vertical">
 
-        <!-- Profile -->
+        <!-- Top -->
         <LinearLayout
-            android:id="@+id/layoutProfile"
+            android:id="@+id/llTop"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:background="@drawable/top_black"
+            android:layout_height="50dp"
+            android:background="@drawable/top_white_sqr"
             android:elevation="5dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
-            <Space
-                android:layout_width="30dp"
-                android:layout_height="match_parent" />
-
-            <LinearLayout
-                android:layout_width="0dp"
+            <ImageButton
+                android:layout_width="180dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <!-- Profile Section -->
-                <LinearLayout
-                    android:id="@+id/llProfile"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp"
-                        android:layout_weight="7"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/tvTitle"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:fontFamily="@font/nunitosans_900"
-                                android:gravity="center|bottom"
-                                android:text="GLOBAL CITIZEN"
-                                android:textColor="@color/main_white"
-                                android:textSize="40dp"></TextView>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <Space
-                android:layout_width="30dp"
-                android:layout_height="match_parent" />
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_title"></ImageButton>
 
         </LinearLayout>
 
@@ -84,6 +42,47 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <!-- Profile -->
+                <LinearLayout
+                    android:id="@+id/layoutProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/box_tur"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!-- Profile Section -->
+                        <LinearLayout
+                            android:id="@+id/llProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/bebas_neue"
+                                android:gravity="center|bottom"
+                                android:text="PATHBREAKER"
+                                android:textColor="@color/main_white"
+                                android:textSize="80dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
                 <Space
                     android:layout_width="match_parent"
@@ -103,11 +102,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_800"
+                        android:fontFamily="@font/nunitosans_900"
                         android:gravity="left|center"
-                        android:text="국가"
+                        android:text="Türkiye Cumhuriyeti"
                         android:textColor="@color/main_text"
-                        android:textSize="22dp"></TextView>
+                        android:textSize="20dp"></TextView>
 
                 </LinearLayout>
 
@@ -144,11 +143,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_800"
+                        android:fontFamily="@font/nunitosans_900"
                         android:gravity="left|center"
-                        android:text="역사"
+                        android:text="Tarih"
                         android:textColor="@color/main_text"
-                        android:textSize="22dp"></TextView>
+                        android:textSize="20dp"></TextView>
 
                 </LinearLayout>
 
@@ -185,11 +184,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_800"
+                        android:fontFamily="@font/nunitosans_900"
                         android:gravity="left|center"
-                        android:text="정치 &amp; 행정"
+                        android:text="Politika &amp; Yönetim"
                         android:textColor="@color/main_text"
-                        android:textSize="22dp"></TextView>
+                        android:textSize="20dp"></TextView>
 
                 </LinearLayout>
 
@@ -205,10 +204,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerInParent="true"
-                        android:textColor="@color/main_white"
                         android:clipToPadding="false"
                         android:foregroundGravity="center"
-                        android:overScrollMode="never" />
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
 
                 </RelativeLayout>
 
@@ -226,11 +225,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_800"
+                        android:fontFamily="@font/nunitosans_900"
                         android:gravity="left|center"
-                        android:text="경제"
+                        android:text="Ekonomi"
                         android:textColor="@color/main_text"
-                        android:textSize="22dp"></TextView>
+                        android:textSize="20dp"></TextView>
 
                 </LinearLayout>
 
@@ -246,10 +245,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerInParent="true"
-                        android:textColor="@color/main_white"
                         android:clipToPadding="false"
                         android:foregroundGravity="center"
-                        android:overScrollMode="never" />
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
 
                 </RelativeLayout>
 
@@ -267,11 +266,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_800"
+                        android:fontFamily="@font/nunitosans_900"
                         android:gravity="left|center"
-                        android:text="문화"
+                        android:text="Kültür"
                         android:textColor="@color/main_text"
-                        android:textSize="22dp"></TextView>
+                        android:textSize="20dp"></TextView>
 
                 </LinearLayout>
 
@@ -287,10 +286,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerInParent="true"
-                        android:textColor="@color/main_white"
                         android:clipToPadding="false"
                         android:foregroundGravity="center"
-                        android:overScrollMode="never" />
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
 
                 </RelativeLayout>
 
@@ -308,11 +307,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_800"
+                        android:fontFamily="@font/nunitosans_900"
                         android:gravity="left|center"
-                        android:text="미디어"
+                        android:text="Medya"
                         android:textColor="@color/main_text"
-                        android:textSize="22dp"></TextView>
+                        android:textSize="20dp"></TextView>
 
                 </LinearLayout>
 
@@ -328,10 +327,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerInParent="true"
-                        android:textColor="@color/main_white"
                         android:clipToPadding="false"
                         android:foregroundGravity="center"
-                        android:overScrollMode="never" />
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
 
                 </RelativeLayout>
 
@@ -349,11 +348,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_800"
+                        android:fontFamily="@font/nunitosans_900"
                         android:gravity="left|center"
-                        android:text="교통"
+                        android:text="Ulaştırma"
                         android:textColor="@color/main_text"
-                        android:textSize="22dp"></TextView>
+                        android:textSize="20dp"></TextView>
 
                 </LinearLayout>
 
@@ -369,10 +368,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerInParent="true"
-                        android:textColor="@color/main_white"
                         android:clipToPadding="false"
                         android:foregroundGravity="center"
-                        android:overScrollMode="never" />
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
 
                 </RelativeLayout>
 
@@ -390,11 +389,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/pretendard_800"
+                        android:fontFamily="@font/nunitosans_900"
                         android:gravity="left|center"
-                        android:text="외교 &amp; 국방"
+                        android:text="Diplomasi &amp; Milli Savunma"
                         android:textColor="@color/main_text"
-                        android:textSize="22dp"></TextView>
+                        android:textSize="20dp"></TextView>
 
                 </LinearLayout>
 
@@ -410,10 +409,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerInParent="true"
-                        android:textColor="@color/main_white"
                         android:clipToPadding="false"
                         android:foregroundGravity="center"
-                        android:overScrollMode="never" />
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
 
                 </RelativeLayout>
 
@@ -429,7 +428,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/bottom_black"
+            android:background="@drawable/bottom_white"
             android:elevation="3dp"
             android:orientation="horizontal">
 
@@ -453,7 +452,7 @@
                     android:background="@drawable/custom_ripple_transparent"
                     android:padding="12dp"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_sidebar_w"></ImageButton>
+                    app:srcCompat="@drawable/ic_sidebar"></ImageButton>
 
             </LinearLayout>
 
@@ -472,7 +471,7 @@
                     android:background="@drawable/custom_ripple_transparent"
                     android:padding="12dp"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_home_w"></ImageButton>
+                    app:srcCompat="@drawable/ic_home"></ImageButton>
 
             </LinearLayout>
 
@@ -491,7 +490,7 @@
                     android:background="@drawable/custom_ripple_transparent"
                     android:padding="12dp"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_update_w"></ImageButton>
+                    app:srcCompat="@drawable/ic_update"></ImageButton>
 
             </LinearLayout>
 

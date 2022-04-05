@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_white"
+        android:orientation="vertical">
+
+        <!-- Top -->
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/top_white_sqr"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_title"></ImageButton>
+
+        </LinearLayout>
+
+        <!-- ScrollView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layoutMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Profile -->
+                <LinearLayout
+                    android:id="@+id/layoutProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/box_spa"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!-- Profile Section -->
+                        <LinearLayout
+                            android:id="@+id/llProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/bebas_neue"
+                                android:gravity="center|bottom"
+                                android:text="PATHBREAKER"
+                                android:textColor="@color/main_white"
+                                android:textSize="80dp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <!-- 1. 국가 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/black_underline"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvGlobal1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/nunitosans_900"
+                        android:gravity="left|center"
+                        android:text="Reino de España"
+                        android:textColor="@color/main_text"
+                        android:textSize="20dp"></TextView>
+
+                </LinearLayout>
+
+                <!-- Container 1 -->
+                <RelativeLayout
+                    android:id="@+id/container1"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@color/main_white">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:clipToPadding="false"
+                        android:foregroundGravity="center"
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
+
+                </RelativeLayout>
+
+                <!-- 2. 역사 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/black_underline"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvGlobal2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/nunitosans_900"
+                        android:gravity="left|center"
+                        android:text="Historia"
+                        android:textColor="@color/main_text"
+                        android:textSize="20dp"></TextView>
+
+                </LinearLayout>
+
+                <!-- Container 2 -->
+                <RelativeLayout
+                    android:id="@+id/container2"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@color/main_white">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:clipToPadding="false"
+                        android:foregroundGravity="center"
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
+
+                </RelativeLayout>
+
+                <!-- 3. 정치 & 행정 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/black_underline"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvGlobal3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/nunitosans_900"
+                        android:gravity="left|center"
+                        android:text="Política &amp; Administración"
+                        android:textColor="@color/main_text"
+                        android:textSize="20dp"></TextView>
+
+                </LinearLayout>
+
+                <!-- Container 3 -->
+                <RelativeLayout
+                    android:id="@+id/container3"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@color/main_white">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:clipToPadding="false"
+                        android:foregroundGravity="center"
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
+
+                </RelativeLayout>
+
+                <!-- 4. 경제 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/black_underline"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvGlobal4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/nunitosans_900"
+                        android:gravity="left|center"
+                        android:text="Economía"
+                        android:textColor="@color/main_text"
+                        android:textSize="20dp"></TextView>
+
+                </LinearLayout>
+
+                <!-- Container 4 -->
+                <RelativeLayout
+                    android:id="@+id/container4"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@color/main_white">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:clipToPadding="false"
+                        android:foregroundGravity="center"
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
+
+                </RelativeLayout>
+
+                <!-- 5. 문화 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/black_underline"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvGlobal5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/nunitosans_900"
+                        android:gravity="left|center"
+                        android:text="Cultura"
+                        android:textColor="@color/main_text"
+                        android:textSize="20dp"></TextView>
+
+                </LinearLayout>
+
+                <!-- Container 5 -->
+                <RelativeLayout
+                    android:id="@+id/container5"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@color/main_white">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:clipToPadding="false"
+                        android:foregroundGravity="center"
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
+
+                </RelativeLayout>
+
+                <!-- 6. 미디어 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/black_underline"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvGlobal6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/nunitosans_900"
+                        android:gravity="left|center"
+                        android:text="Medios de comunicación"
+                        android:textColor="@color/main_text"
+                        android:textSize="20dp"></TextView>
+
+                </LinearLayout>
+
+                <!-- Container 6 -->
+                <RelativeLayout
+                    android:id="@+id/container6"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@color/main_white">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:clipToPadding="false"
+                        android:foregroundGravity="center"
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
+
+                </RelativeLayout>
+
+                <!-- 7. 교통 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/black_underline"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvGlobal7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/nunitosans_900"
+                        android:gravity="left|center"
+                        android:text="Transporte"
+                        android:textColor="@color/main_text"
+                        android:textSize="20dp"></TextView>
+
+                </LinearLayout>
+
+                <!-- Container 7 -->
+                <RelativeLayout
+                    android:id="@+id/container7"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@color/main_white">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:clipToPadding="false"
+                        android:foregroundGravity="center"
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
+
+                </RelativeLayout>
+
+                <!-- 8. 외교 & 국방 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/black_underline"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvGlobal8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/nunitosans_900"
+                        android:gravity="left|center"
+                        android:text="Diplomacia &amp; Defensa Nacional"
+                        android:textColor="@color/main_text"
+                        android:textSize="20dp"></TextView>
+
+                </LinearLayout>
+
+                <!-- Container 8 -->
+                <RelativeLayout
+                    android:id="@+id/container8"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@color/main_white">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:clipToPadding="false"
+                        android:foregroundGravity="center"
+                        android:overScrollMode="never"
+                        android:textColor="@color/main_white" />
+
+                </RelativeLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Menu Bar (Bottom) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bottom_white"
+            android:elevation="3dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+            <!-- Sidebar -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnSidebar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_sidebar"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- Home -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_home"></ImageButton>
+
+            </LinearLayout>
+
+            <!-- Update -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/custom_ripple_transparent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_update"></ImageButton>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"></Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

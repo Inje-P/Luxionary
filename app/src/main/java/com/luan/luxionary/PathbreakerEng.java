@@ -27,20 +27,28 @@ import androidx.viewpager.widget.ViewPager;
 
 import java.util.ArrayList;
 
-public class GlobalEng extends AppCompatActivity {
+public class PathbreakerEng extends AppCompatActivity {
 
     // Data from DB
     String username, email, profile, avatar;
 
     TextView tvTitle;
-    LinearLayout layoutProfile;
+    LinearLayout llProfile;
     LinearLayout layoutMain;
-    TextView tvGlobal1, tvGlobal2, tvGlobal3, tvGlobal4, tvGlobal5, tvGlobal6, tvGlobal7;
+
+    RelativeLayout container1, container2, container3, container4;
+    RelativeLayout container5, container6, container7, container8;
+    Animation aniContainer1, aniContainer2, aniContainer3, aniContainer4;
+    Animation aniContainer5, aniContainer6, aniContainer7, aniContainer8;
 
     Animation aniTouch;
     Animation aniTitle;
-    Animation aniLayoutProfile;
+    Animation aniLlProfile;
     Animation aniLayoutMain;
+
+    // Header
+    LinearLayout llTop;
+    Animation aniLlTop;
 
     // Sidebar
     private DrawerLayout drawerLayout;
@@ -67,7 +75,7 @@ public class GlobalEng extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.global_eng);
+        setContentView(R.layout.pathbreaker_eng);
 
         // Data from Firebase
         Intent getData = getIntent();
@@ -99,7 +107,7 @@ public class GlobalEng extends AppCompatActivity {
         btnAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentAccount = new Intent(GlobalEng.this, AccountActivity.class);
+                Intent intentAccount = new Intent(PathbreakerEng.this, AccountActivity.class);
                 intentAccount.putExtra("username", username);
                 intentAccount.putExtra("email", email);
                 intentAccount.putExtra("profile", profile);
@@ -113,7 +121,7 @@ public class GlobalEng extends AppCompatActivity {
         btnCharge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentCharge = new Intent(GlobalEng.this, ChargeActivity.class);
+                Intent intentCharge = new Intent(PathbreakerEng.this, ChargeActivity.class);
                 intentCharge.putExtra("username", username);
                 intentCharge.putExtra("email", email);
                 intentCharge.putExtra("profile", profile);
@@ -127,7 +135,7 @@ public class GlobalEng extends AppCompatActivity {
         btnSupport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentSupport = new Intent(GlobalEng.this, SupportActivity.class);
+                Intent intentSupport = new Intent(PathbreakerEng.this, SupportActivity.class);
                 intentSupport.putExtra("username", username);
                 intentSupport.putExtra("email", email);
                 intentSupport.putExtra("profile", profile);
@@ -138,18 +146,23 @@ public class GlobalEng extends AppCompatActivity {
             }
         });
 
+        // Header
+        llTop = (LinearLayout) findViewById(R.id.llTop);
+        aniLlTop = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.descend);
+        llTop.startAnimation(aniLlTop);
+
         // Title
-        layoutProfile = (LinearLayout) findViewById(R.id.layoutProfile);
-        aniLayoutProfile = AnimationUtils.loadAnimation(GlobalEng.this, R.anim.descend);
-        layoutProfile.startAnimation(aniLayoutProfile);
+        llProfile = (LinearLayout) findViewById(R.id.llProfile);
+        aniLlProfile = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.ascend);
+        llProfile.startAnimation(aniLlProfile);
         tvTitle = (TextView) findViewById(R.id.tvTitle);
         tvTitle.setOnClickListener(mClickListener);
-        aniTitle = AnimationUtils.loadAnimation(GlobalEng.this, R.anim.fadein);
+        aniTitle = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.fadein);
         aniTitle.setStartOffset(600);
         tvTitle.startAnimation(aniTitle);
 
         // Touch Animation
-        aniTouch = AnimationUtils.loadAnimation(GlobalEng.this, R.anim.scale);
+        aniTouch = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.scale);
 
         // init UI Views
         viewPager1 = findViewById(R.id.viewPager1);
@@ -301,9 +314,42 @@ public class GlobalEng extends AppCompatActivity {
 
         // Main Layout
         layoutMain = (LinearLayout) findViewById(R.id.layoutMain);
-        aniLayoutMain = AnimationUtils.loadAnimation(GlobalEng.this, R.anim.fadein);
+        aniLayoutMain = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.fadein);
         aniLayoutMain.setStartOffset(400);
         layoutMain.startAnimation(aniLayoutMain);
+
+        container1 = (RelativeLayout) findViewById(R.id.container1);
+        container2 = (RelativeLayout) findViewById(R.id.container2);
+        container3 = (RelativeLayout) findViewById(R.id.container3);
+        container4 = (RelativeLayout) findViewById(R.id.container4);
+        container5 = (RelativeLayout) findViewById(R.id.container5);
+        container6 = (RelativeLayout) findViewById(R.id.container6);
+        container7 = (RelativeLayout) findViewById(R.id.container7);
+        container8 = (RelativeLayout) findViewById(R.id.container8);
+        aniContainer1 = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.fadein);
+        aniContainer2 = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.fadein);
+        aniContainer3 = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.fadein);
+        aniContainer4 = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.fadein);
+        aniContainer5 = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.fadein);
+        aniContainer6 = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.fadein);
+        aniContainer7 = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.fadein);
+        aniContainer8 = AnimationUtils.loadAnimation(PathbreakerEng.this, R.anim.fadein);
+        aniContainer1.setStartOffset(600);
+        aniContainer2.setStartOffset(800);
+        aniContainer3.setStartOffset(1000);
+        aniContainer4.setStartOffset(1200);
+        aniContainer5.setStartOffset(1400);
+        aniContainer6.setStartOffset(1600);
+        aniContainer7.setStartOffset(1800);
+        aniContainer8.setStartOffset(2000);
+        container1.startAnimation(aniContainer1);
+        container2.startAnimation(aniContainer2);
+        container3.startAnimation(aniContainer3);
+        container4.startAnimation(aniContainer4);
+        container5.startAnimation(aniContainer5);
+        container6.startAnimation(aniContainer6);
+        container7.startAnimation(aniContainer7);
+        container8.startAnimation(aniContainer8);
 
         // Footer
         btnSidebar = (ImageButton) findViewById(R.id.btnSidebar);
@@ -1290,7 +1336,7 @@ public class GlobalEng extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intentBack = new Intent(GlobalEng.this, MainEng.class);
+        Intent intentBack = new Intent(PathbreakerEng.this, MainEng.class);
         intentBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intentBack.putExtra("username", username);
         intentBack.putExtra("email", email);
@@ -1338,15 +1384,11 @@ public class GlobalEng extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
-                // Title Animation
-                case R.id.tvTitle:
-                    engTitle();
-                    break;
                 case R.id.btnSidebar:
                     drawerLayout.openDrawer(drawerView);
                     break;
                 case R.id.btnHome:
-                    Intent intentHome = new Intent(GlobalEng.this, MainActivity.class);
+                    Intent intentHome = new Intent(PathbreakerEng.this, MainActivity.class);
                     intentHome.putExtra("username", username);
                     intentHome.putExtra("email", email);
                     intentHome.putExtra("profile", profile);
@@ -1360,56 +1402,4 @@ public class GlobalEng extends AppCompatActivity {
             }
         }
     };
-
-    // Title Animation
-    private void engTitle() {
-        Integer white = Color.parseColor("#FFFFFF");
-        Integer engLight = Color.parseColor("#FF93AD");
-        Integer engMain = Color.parseColor("#FF6388");
-
-        ValueAnimator colorAni1 = ValueAnimator.ofObject(new ArgbEvaluator(), white, engLight);
-        colorAni1.setDuration(100);
-        colorAni1.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animator) {
-                tvTitle.setTextColor((Integer) animator.getAnimatedValue());
-            }
-        });
-
-        ValueAnimator colorAni2 = ValueAnimator.ofObject(new ArgbEvaluator(), engLight, engMain);
-        colorAni2.setDuration(100);
-        colorAni2.setStartDelay(100);
-        colorAni2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animator) {
-                tvTitle.setTextColor((Integer) animator.getAnimatedValue());
-            }
-        });
-
-        ValueAnimator colorAni3 = ValueAnimator.ofObject(new ArgbEvaluator(), engMain, engLight);
-        colorAni3.setDuration(100);
-        colorAni3.setStartDelay(200);
-        colorAni3.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animator) {
-                tvTitle.setTextColor((Integer) animator.getAnimatedValue());
-            }
-        });
-
-        ValueAnimator colorAni4 = ValueAnimator.ofObject(new ArgbEvaluator(), engLight, white);
-        colorAni4.setDuration(100);
-        colorAni4.setStartDelay(300);
-        colorAni4.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animator) {
-                tvTitle.setTextColor((Integer) animator.getAnimatedValue());
-            }
-        });
-
-        colorAni1.start();
-        colorAni2.start();
-        colorAni3.start();
-        colorAni4.start();
-    }
-
 }

@@ -8,6 +8,25 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- Top -->
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_white_sqr"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_title"></ImageButton>
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -21,14 +40,13 @@
         android:orientation="horizontal">
 
         <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.7" />
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="8.6"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <LinearLayout
@@ -52,8 +70,8 @@
                             android:id="@+id/tvTitleHello"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
                             android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
                             android:fontFamily="@font/pretendard_600"
                             android:text="나의 아바타"
                             android:textColor="@color/main_gray"
@@ -70,8 +88,8 @@
                             android:id="@+id/tvTitleName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pretendard_800"
                             android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/pretendard_800"
                             android:text="해리슨"
                             android:textColor="@color/main_text"
                             android:textSize="40dp"></TextView>
@@ -116,9 +134,9 @@
                             android:id="@+id/tvBanner"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pretendard_800"
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/pretendard_800"
                             android:text="아바타를 선택해주세요"
                             android:textColor="@color/main_text"
                             android:textSize="22dp"></TextView>
@@ -127,22 +145,22 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="3"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
                         android:layout_marginTop="15dp"
-                        android:layout_marginBottom="15dp">
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="3">
 
                         <Button
                             android:id="@+id/btnSave"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:textCursorDrawable="@drawable/text_cursor2"
-                            android:background="@drawable/custom_ripple_black"
+                            android:background="@drawable/ripple_black"
                             android:fontFamily="@font/pretendard_700"
                             android:text="저장"
-                            android:textSize="22dp"
-                            android:textColor="@color/main_white" />
+                            android:textColor="@color/main_white"
+                            android:textCursorDrawable="@drawable/text_cursor2"
+                            android:textSize="22dp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -159,98 +177,103 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="5"
+                    android:layout_marginLeft="20dp"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginRight="25dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
                         <ImageButton
                             android:id="@+id/btnMale1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:scaleType="fitCenter"
-                            android:padding="10dp"
-                            android:hint="Male1"
-                            android:textColor="@color/main_white"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/ripple_white"
+                            android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
-                            app:srcCompat="@drawable/avt_male1"
-                            android:background="@drawable/custom_ripple_white" />
+                            android:hint="Male1"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:textColor="@color/main_white"
+                            app:srcCompat="@drawable/avt_male1" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginRight="25dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
                         <ImageButton
                             android:id="@+id/btnMale2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:scaleType="fitCenter"
-                            android:padding="10dp"
-                            android:hint="Male2"
-                            android:textColor="@color/main_white"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/ripple_white"
+                            android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
-                            app:srcCompat="@drawable/avt_male2"
-                            android:background="@drawable/custom_ripple_white" />
+                            android:hint="Male2"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:textColor="@color/main_white"
+                            app:srcCompat="@drawable/avt_male2" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginRight="25dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
                         <ImageButton
                             android:id="@+id/btnMale3"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:scaleType="fitCenter"
-                            android:padding="10dp"
-                            android:hint="Male3"
-                            android:textColor="@color/main_white"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/ripple_white"
+                            android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
-                            app:srcCompat="@drawable/avt_male3"
-                            android:background="@drawable/custom_ripple_white" />
+                            android:hint="Male3"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:textColor="@color/main_white"
+                            app:srcCompat="@drawable/avt_male3" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginRight="25dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
                         <ImageButton
                             android:id="@+id/btnMale4"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:scaleType="fitCenter"
-                            android:padding="10dp"
-                            android:hint="Male4"
-                            android:textColor="@color/main_white"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/ripple_white"
+                            android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
-                            app:srcCompat="@drawable/avt_male4"
-                            android:background="@drawable/custom_ripple_white" />
+                            android:hint="Male4"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:textColor="@color/main_white"
+                            app:srcCompat="@drawable/avt_male4" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -260,98 +283,103 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="5"
+                    android:layout_marginRight="20dp"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginRight="25dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
                         <ImageButton
                             android:id="@+id/btnFemale1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:scaleType="fitCenter"
-                            android:padding="10dp"
-                            android:hint="Female1"
-                            android:textColor="@color/main_white"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/ripple_white"
+                            android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
-                            app:srcCompat="@drawable/avt_female1"
-                            android:background="@drawable/custom_ripple_white" />
+                            android:hint="Female1"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:textColor="@color/main_white"
+                            app:srcCompat="@drawable/avt_female1" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginRight="25dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
                         <ImageButton
                             android:id="@+id/btnFemale2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:scaleType="fitCenter"
-                            android:padding="10dp"
-                            android:hint="Female2"
-                            android:textColor="@color/main_white"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/ripple_white"
+                            android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
-                            app:srcCompat="@drawable/avt_female2"
-                            android:background="@drawable/custom_ripple_white" />
+                            android:hint="Female2"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:textColor="@color/main_white"
+                            app:srcCompat="@drawable/avt_female2" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginRight="25dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
                         <ImageButton
                             android:id="@+id/btnFemale3"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:scaleType="fitCenter"
-                            android:padding="10dp"
-                            android:hint="Female3"
-                            android:textColor="@color/main_white"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/ripple_white"
+                            android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
-                            app:srcCompat="@drawable/avt_female3"
-                            android:background="@drawable/custom_ripple_white" />
+                            android:hint="Female3"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:textColor="@color/main_white"
+                            app:srcCompat="@drawable/avt_female3" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginRight="25dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
                         <ImageButton
                             android:id="@+id/btnFemale4"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:scaleType="fitCenter"
-                            android:padding="10dp"
-                            android:hint="Female4"
-                            android:textColor="@color/main_white"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/ripple_white"
+                            android:elevation="3dp"
                             android:fontFamily="@font/nunitosans_900"
-                            app:srcCompat="@drawable/avt_female4"
-                            android:background="@drawable/custom_ripple_white" />
+                            android:hint="Female4"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:textColor="@color/main_white"
+                            app:srcCompat="@drawable/avt_female4" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -360,9 +388,8 @@
         </LinearLayout>
 
         <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.7" />
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
     </LinearLayout>
 
     <LinearLayout

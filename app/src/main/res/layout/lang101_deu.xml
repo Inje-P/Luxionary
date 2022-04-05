@@ -687,7 +687,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/custom_menubar2"
+            android:background="@drawable/bottom_white"
             android:orientation="horizontal"
             android:elevation="3dp">
 

@@ -57,7 +57,6 @@ public class VocaEng extends AppCompatActivity {
             R.id.btn81, R.id.btn82, R.id.btn83, R.id.btn84, R.id.btn85, R.id.btn86, R.id.btn87, R.id.btn88, R.id.btn89, R.id.btn90,
             R.id.btn91, R.id.btn92, R.id.btn93, R.id.btn94, R.id.btn95, R.id.btn96, R.id.btn97, R.id.btn98, R.id.btn99, R.id.btn100,
             R.id.btn101, R.id.btn102, R.id.btn103, R.id.btn104, R.id.btn105};
-
     LinearLayout layoutProfile;
     LinearLayout layoutMain;
 

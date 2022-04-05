@@ -134,7 +134,7 @@ public class MainIta extends AppCompatActivity {
 
         // Title
         layoutProfile = (LinearLayout) findViewById(R.id.layoutProfile);
-        aniLayoutProfile = AnimationUtils.loadAnimation(MainIta.this, R.anim.descend);
+        aniLayoutProfile = AnimationUtils.loadAnimation(MainIta.this, R.anim.ascend);
         layoutProfile.startAnimation(aniLayoutProfile);
         tvTitle1 = (TextView) findViewById(R.id.tvTitle1);
         tvTitle1.setOnClickListener(mClickListener);
@@ -251,10 +251,10 @@ public class MainIta extends AppCompatActivity {
                 4,
                 R.drawable.banner_verbs));
         modelArrayList.add(new MyModel(
-                "Global Citizen",
+                "Pathbreaker",
                 "Italia",
                 5,
-                R.drawable.banner_gc_ita));
+                R.drawable.banner_pathbreaker));
 
         // set up adapter
         myAdapter = new MyAdapter(this, modelArrayList);
@@ -467,13 +467,13 @@ public class MainIta extends AppCompatActivity {
         finish();
     }
 
-    public void pageGlobal() {
-        Intent intentGlobal = new Intent(MainIta.this, GlobalEng.class);
-        intentGlobal.putExtra("username", username);
-        intentGlobal.putExtra("email", email);
-        intentGlobal.putExtra("profile", profile);
-        intentGlobal.putExtra("avatar", avatar);
-        startActivity(intentGlobal);
+    public void pagePathbreaker() {
+        Intent intentPb = new Intent(MainIta.this, PathbreakerEng.class);
+        intentPb.putExtra("username", username);
+        intentPb.putExtra("email", email);
+        intentPb.putExtra("profile", profile);
+        intentPb.putExtra("avatar", avatar);
+        startActivity(intentPb);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         finish();
     }

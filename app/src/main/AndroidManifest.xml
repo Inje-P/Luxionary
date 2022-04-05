@@ -21,11 +21,11 @@
         <activity
             android:name=".IntroActivity"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
         </activity>
         <activity android:name=".StartActivity"></activity>
         <activity android:name=".SigninActivity"></activity>
@@ -36,7 +36,10 @@
         <activity android:name=".ChargeActivity"></activity>
         <activity android:name=".SupportActivity"></activity>
         <activity android:name=".PasswordActivity"></activity>
+        <activity android:name=".DateActivity"></activity>
+        <activity android:name=".WelcomeActivity"></activity>
 
+        <!-- Intro -->
         <activity android:name=".IntroEng"></activity>
         <activity android:name=".IntroFra"></activity>
         <activity android:name=".IntroDeu"></activity>
@@ -44,9 +47,6 @@
         <activity android:name=".IntroSpa"></activity>
         <activity android:name=".IntroRus"></activity>
         <activity android:name=".IntroTur"></activity>
-
-        <activity android:name=".DateActivity"></activity>
-        <activity android:name=".WelcomeActivity"></activity>
 
         <!-- Main -->
         <activity android:name=".MainEng"></activity>
@@ -57,7 +57,11 @@
         <activity android:name=".MainRus"></activity>
         <activity android:name=".MainTur"></activity>
 
-        <!-- Language 101 (English)-->
+        <!-- ******************************************** -->
+        <!-- LANGUAGE 101 -->
+        <!-- ******************************************** -->
+
+        <!-- Language 101 (English) -->
         <activity android:name=".Lang101Eng"></activity>
         <activity android:name=".Lang101Eng_01_1"></activity>
         <activity android:name=".Lang101Eng_01_2"></activity>
@@ -66,14 +70,14 @@
         <activity android:name=".Lang101Eng_02_2"></activity>
         <activity android:name=".Lang101Eng_02_3"></activity>
 
-        <!-- Language 101 (French)-->
+        <!-- Language 101 (French) -->
         <activity android:name=".Lang101Fra"></activity>
         <activity android:name=".Lang101Fra_01_1"></activity>
         <activity android:name=".Lang101Fra_01_2"></activity>
         <activity android:name=".Lang101Fra_01_3"></activity>
         <activity android:name=".Lang101Fra_02_1"></activity>
 
-        <!-- Language 101 (German)-->
+        <!-- Language 101 (German) -->
         <activity android:name=".Lang101Deu"></activity>
         <activity android:name=".Lang101Deu_01_1"></activity>
         <activity android:name=".Lang101Deu_01_2"></activity>
@@ -82,65 +86,99 @@
         <activity android:name=".Lang101Deu_02_2"></activity>
         <activity android:name=".Lang101Deu_02_3"></activity>
 
-        <!-- Language 101 (Italian)-->
-        <activity android:name=".Lang101Ita"></activity>
-        <activity android:name=".Lang101Ita_01_1"></activity>
-        <activity android:name=".Lang101Ita_01_2"></activity>
-        <activity android:name=".Lang101Ita_01_3"></activity>
-        <activity android:name=".Lang101Ita_02_1"></activity>
-
-        <!-- Language 101 (Spanish)-->
+        <!-- Language 101 (Spanish) -->
         <activity android:name=".Lang101Spa"></activity>
         <activity android:name=".Lang101Spa_01_1"></activity>
         <activity android:name=".Lang101Spa_01_2"></activity>
         <activity android:name=".Lang101Spa_01_3"></activity>
         <activity android:name=".Lang101Spa_02_1"></activity>
 
-        <!-- Language 101 (Russian)-->
+        <!-- Language 101 (Italian) -->
+        <activity android:name=".Lang101Ita"></activity>
+        <activity android:name=".Lang101Ita_01_1"></activity>
+        <activity android:name=".Lang101Ita_01_2"></activity>
+        <activity android:name=".Lang101Ita_01_3"></activity>
+        <activity android:name=".Lang101Ita_02_1"></activity>
+
+        <!-- Language 101 (Russian) -->
         <activity android:name=".Lang101Rus"></activity>
         <activity android:name=".Lang101Rus_01_1"></activity>
         <activity android:name=".Lang101Rus_01_2"></activity>
         <activity android:name=".Lang101Rus_01_3"></activity>
         <activity android:name=".Lang101Rus_02_1"></activity>
 
-        <!-- Language 101 (Turkish)-->
+        <!-- Language 101 (Turkish) -->
         <activity android:name=".Lang101Tur"></activity>
         <activity android:name=".Lang101Tur_01_1"></activity>
         <activity android:name=".Lang101Tur_01_2"></activity>
 
-        <!-- Voca (English)-->
+        <!-- ******************************************** -->
+        <!-- VOCABULARY -->
+        <!-- ******************************************** -->
+
+        <!-- Voca (English) -->
         <activity android:name=".VocaEng"></activity>
 
-        <!-- Voca (French)-->
+        <!-- Voca (French) -->
         <activity android:name=".VocaFra"></activity>
 
-        <!-- Voca (German)-->
+        <!-- Voca (German) -->
         <activity android:name=".VocaDeu"></activity>
 
-        <!-- Voca (Italian)-->
-        <activity android:name=".VocaIta"></activity>
-
-        <!-- Voca (Spanish)-->
+        <!-- Voca (Spanish) -->
         <activity android:name=".VocaSpa"></activity>
         <activity android:name=".VocaSpa_001_1"></activity>
 
-        <!-- Voca (Russian)-->
+        <!-- Voca (Italian) -->
+        <activity android:name=".VocaIta"></activity>
+
+        <!-- Voca (Russian) -->
         <activity android:name=".VocaRus"></activity>
 
-        <!-- Voca (Russian)-->
+        <!-- Voca (Turkish) -->
         <activity android:name=".VocaTur"></activity>
 
-        <!-- Grammar (English)-->
+        <!-- ******************************************** -->
+        <!-- GRAMMAR -->
+        <!-- ******************************************** -->
+
+        <!-- Grammar (English) -->
         <activity android:name=".GrammarEng"></activity>
 
-        <!-- Conjugation (English)-->
+        <!-- ******************************************** -->
+        <!-- CONJUGATION -->
+        <!-- ******************************************** -->
+
+        <!-- Conjugation (English) -->
         <activity android:name=".ConjEng"></activity>
 
-        <!-- Conjugation (Spanish)-->
+        <!-- Conjugation (Spanish) -->
         <activity android:name=".ConjSpa"></activity>
 
-        <!-- Global Citizen (English)-->
-        <activity android:name=".GlobalEng"></activity>
+        <!-- ******************************************** -->
+        <!-- PATHBREAKER -->
+        <!-- ******************************************** -->
+
+        <!-- Pathbreaker (English) -->
+        <activity android:name=".PathbreakerEng"></activity>
+
+        <!-- Pathbreaker (French) -->
+        <activity android:name=".PathbreakerFra"></activity>
+
+        <!-- Pathbreaker (German) -->
+<!--        <activity android:name=".PathbreakerDeu"></activity>-->
+
+        <!-- Pathbreaker (Spanish) -->
+<!--        <activity android:name=".PathbreakerSpa"></activity>-->
+
+        <!-- Pathbreaker (Italian) -->
+<!--        <activity android:name=".PathbreakerIta"></activity>-->
+
+        <!-- Pathbreaker (Russian) -->
+<!--        <activity android:name=".PathbreakerRus"></activity>-->
+
+        <!-- Pathbreaker (Turkish) -->
+<!--        <activity android:name=".PathbreakerTur"></activity>-->
 
     </application>
 </manifest>

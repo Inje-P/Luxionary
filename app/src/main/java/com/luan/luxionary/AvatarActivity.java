@@ -16,6 +16,7 @@ public class AvatarActivity extends AppCompatActivity {
     // Data from DB
     String username, email, profile, avatar;
 
+    LinearLayout llTop;
     TextView tvTitleHello, tvTitleName, tvBanner;
     ImageView imgAvatar;
     Button btnSave;
@@ -23,6 +24,7 @@ public class AvatarActivity extends AppCompatActivity {
     ImageButton btnFemale1, btnFemale2, btnFemale3, btnFemale4;
 
     Animation aniTouch;
+    Animation aniLlTop;
     Animation aniAvtTouch, aniAvtAlpha;
     Animation aniTitle1, aniTitle2;
     Animation aniBanner, aniBtnSave;
@@ -38,6 +40,11 @@ public class AvatarActivity extends AppCompatActivity {
         email = getData.getStringExtra("email");
         profile = getData.getStringExtra("profile");
         avatar = getData.getStringExtra("avatar");
+
+        // Header
+        llTop = (LinearLayout) findViewById(R.id.llTop);
+        aniLlTop = AnimationUtils.loadAnimation(AvatarActivity.this, R.anim.descend);
+        llTop.startAnimation(aniLlTop);
 
         // Title
         tvTitleHello = (TextView) findViewById(R.id.tvTitleHello);
